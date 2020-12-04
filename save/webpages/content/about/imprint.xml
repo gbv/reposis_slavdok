@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE MyCoReWebPage>
+<MyCoReWebPage>
+    <section xml:lang="de" title="Impressum">
+        <div class="row">
+            <div class="col-md-10" lang="de">
+                <h1>Impressum</h1>
+
+                <h3>Anbieter</h3>
+                <p>Anbieter dieser Internetpräsenz ist im Rechtssinne die Staatsbibliothek zu Berlin - Preußischer Kulturbesitz</p>
+                <p>
+                    Staatsbibliothek zu Berlin - PK
+                    <br />
+                    Potsdamer Str. 33
+                    <br />
+                    D-10785 Berlin (Tiergarten)
+                </p>
+
+                <h3>Projektleitung</h3>
+                <p>
+                    Olaf Hamann
+                    <br />
+                    Leiter der Osteuropa-Abteilung
+                    <br />
+                    Staatsbibliothek zu Berlin - Preußischer Kulturbesitz
+                    <br />
+                    Potsdamer Straße 33, 10785 Berlin
+                    <br />
+                    <a href="mailto:olafx.hamannx@sbb.spkx-berlin.de" onmouseover="this.href=this.href.replace(/x/g,'');">E-Mail</a>
+                </p>
+                <h3>Projektkoordination und technische Umsetzung</h3>
+                <p>
+                    Vladimir Neumann
+                    <br />
+                    Fachreferent für Slawistik
+                    <br />
+                    Staatsbibliothek zu Berlin - Preußischer Kulturbesitz
+                    <br />
+                    Potsdamer Straße 33, 10785 Berlin
+                    <br />
+                    <a href="mailto:vladimirx.neumannx@sbb.spkx-berlin.de" onmouseover="this.href=this.href.replace(/x/g,'');">E-Mail</a>
+                </p>
+
+                <h3>Ehemalige Projektmitarbeit</h3>
+                <p>
+                    Barbara Martin
+                    <br />
+                    Ivo Ulrich, Berlin
+                    <br />
+                    Mechthild Bernhard
+                    <br />
+
+                </p>
+                <h />
+                <h3>Verwandte und kooperierende Einrichtungen</h3>
+
+                <div id="Logo">
+                    <a href="https://www.osmikon.de/" target="_blank" title="Osmikon">
+                        <img src="/images/Logo_osm.jpg" alt="Logo Osmikon" />
+                    </a>
+                    (ehemals ViFaOst)
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <meta></meta>
+</MyCoReWebPage>

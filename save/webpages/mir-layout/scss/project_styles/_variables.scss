@@ -1,0 +1,90 @@
+// **************************************************
+//  Variables
+// **************************************************
+
+// --------------------------------------------------
+//  modifies bootstrap/bootswatch settings
+// --------------------------------------------------
+//  - you can't use bootstrap variables here,
+//    they are unknown here and has to be set first
+//
+//  TODO: set bootstrap variables in mir variables,
+//        if they are needed there (with !default)
+//        so you can overwrite that rules here if you like,
+//        at the momen you have to set some bs variables,
+//        even if you don't need them
+
+//  Brand colors
+// -------------------------
+
+// style guide
+$projectDarkBlue:   rgb(60,75,120);   //SPK_BLAU
+$projectLightBlue:  rgb(0,119,190);   // outdated
+$projectLightGray:  rgb(230,234,234); // outdated
+$projectDarkGray:   rgb(149,166,177); // outdated
+
+// from website
+$projectGreen:        #009f5e;  // ressourcen
+$projectTurquoise:    #00b3c0;  // service
+$projectDarkPurple:   #3c4b78;  // maps
+$projectLightPurple:  #4d4abf;  // links
+$projectLinkGray:     #7b8890;  // menu link color
+$projectMenuGray:     #e6eaea;  // menu dropdown back
+$projectMenuBlue:     #0A246A;  // Stabi Menu
+
+// own colors
+$projectReducedT:     #76afb8;
+
+// bs variables
+$primary:      $projectDarkBlue;
+$secondary:    $projectDarkBlue;
+$success:      $projectGreen;
+$info:         $projectTurquoise;
+$warning:      $success;
+$danger:       $success;
+$gray-light:   $projectLightGray;
+
+// project variables
+$projectMenu:       $primary;
+$projectBlueHover:  $projectMenuGray;
+$projectDropHover:  $primary;
+$projectLink:       $projectDarkPurple;
+
+// keep deprecated variables alive
+$brand-primary: $primary;
+$brand-success: $success;
+$brand-info:    $info;
+$brand-warning: $warning;
+$brand-danger:  $danger;
+
+// --------------------------------------------------
+//  Projects settings
+// --------------------------------------------------
+
+// typo
+//$web-font-path: "https://webfonts.gbv.de/css?family=Open+Sans";
+$font-family-sans-serif: Helvetica, Arial, sans-serif;
+$font-family-serif: ClanWebBook, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-size-base: 1rem;
+
+$dropdown-color: white;
+$dropdown-bg: $projectBlueHover;
+$dropdown-link-color: white;
+$dropdown-link-hover-color: white;
+$dropdown-link-hover-bg: $projectDropHover;
+$dropdown-border-radius: 0;
+$dropdown-border-width: 0;
+$dropdown-spacer: 0;
+
+$link-color: $projectLink;
+$link-hover-color: darken($link-color, 15%);
+
+$btn-border-radius: 0;
+
+$h1-font-size: $font-size-base * 2;
+$h2-font-size: $font-size-base * 1.75;
+$h3-font-size: $font-size-base * 1.5;
+
+$pagination-bg: $primary;
+$pagination-hover-bg: lighten($pagination-bg, 10%);
+$pagination-disabled-bg: $gray-light;

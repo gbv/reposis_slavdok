@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyCoReWebPage>
+    <section xml:lang="de" title="Datenschutz (Privacy Policy)">
+        <div class="row">
+            <div class="col-md-10" lang="de">
+                <h3>Datenschutz</h3>
+                <p>
+                    Für die Webanalyse setzt unsere Website die von Datenschützern empfohlene
+                    <sup>
+                        <a id="fa1" title="Verweis" href="#fn1">[1]</a>
+                    </sup>
+                    Nutzungsanalyse-Software Matomo (ehemals Piwik) ein. Durch eine automatische Anonymisierung der IP-Adressen mit dem Plugin AnonymizeIP können die erhobenen Daten nicht mehr bestimmten Personen zugeordnet werden. Damit ist ausgeschlossen, dass Nutzungsdaten oder Nutzungsprofile mit personenbezogenen Daten in Verbindung gebracht werden.
+                </p>
+
+                <p>Bei jedem Zugriff auf eine Website im Internet und bei jedem Abruf einer Datei werden von Browsern üblicherweise Daten übertragen. Von den Daten, die übermittelt werden, wenn Sie diese Website besuchen, speichern wir anonymisiert folgende Informationen:</p>
+
+                <ul>
+                    <li>Browsertyp / -version</li>
+                    <li>Bildschirmauflösung</li>
+                    <li>Betriebssystem</li>
+                    <li>Referrer-URL (die weiterleitende Seite)</li>
+                    <li>Uhrzeit der Serveranfrage</li>
+                    <li>Aufgerufene Seite/n und Datei/en</li>
+                    <li>Anonymisierte IP-Adresse</li>
+                    <li>Herkunftsland</li>
+                </ul>
+
+                <p>
+                    Sollten Sie eine Erfassung und Analyse oben beschriebener statistischer Daten nicht wünschen, haben Sie die Möglichkeit das Tracking über die Webseite der Staatsbibliothek zu Berlin zu deaktivieren. Folgen Sie in diesem Fall diesem
+                    <a href="http://staatsbibliothek-berlin.de/extras/allgemeines/impressum/datenschutz-privacy-policy/">Link</a>
+                    und setzen Sie entsprechend ein Deaktivierungs-Cookie in Ihrem Browser.
+                </p>
+
+
+                <p>
+                    Weitere detaillierte Hinweise auf zur Datenschutzerklärung nach der DSGVO (Privacy Policy) finden Sie auf den Seiten der Staatsbibliothek zu Berlin - Preußischer Kulturbesitz unter
+                    <a href="http://staatsbibliothek-berlin.de/extras/allgemeines/impressum/datenschutz-privacy-policy/">dieser Webadresse</a>
+                    .
+                </p>
+                <hr/>
+                <p id="fn1"><a href="#fa1">[1] </a> <a href="https://www.datenschutzzentrum.de/uploads/projekte/verbraucherdatenschutz/20110315-webanalyse-piwik.pdf" target="_blank">Hinweise und  Empfehlungen  zur  Analyse  von  Internet-Angeboten mit „Matomo“</a></p>
+            </div>
+        </div>
+    </section>
+    <meta>
+        <log lastEditor="administrator" date="2020-06-10" time="15:29" />
+    </meta>
+</MyCoReWebPage>

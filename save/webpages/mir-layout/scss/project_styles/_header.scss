@@ -1,0 +1,117 @@
+/*
+ *  header settings
+ */
+
+// Extra large devices (large desktops)
+// set the defaults for all responsive levels here
+// no (xl) media query necessary (desktop first)
+
+header {
+
+  background-image: url("../../../../images/sp_h_05_b.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;  
+  margin-top: 70px;
+}
+
+.navbar {
+  margin-top: -70px;
+}
+
+// logo and menu container
+#header_box {
+  position: relative;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.project-logo__link {
+  display: inline-block;
+  margin: 5px 0 20px 0;
+  text-decoration: none;
+  .fid.logo.main {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 30px;
+  }
+  .fid.logo.sub {
+    font-size: 19px;
+    line-height: 1.2;
+    padding-left: 0px;
+    margin-top: 0rem;
+  }
+  .fid.logo {
+    color: #1A3374;
+    display: inline-block;
+    font-family: ClanWebMedium;
+    line-height: initial;
+    width: 100%;
+  }
+}
+
+.project_logo_box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  .project_parent_logo {
+    .sbb-logo {
+      height: 50px;
+    }
+  }
+}
+
+#options_nav_box {
+  float: none;
+  .navbar-nav {
+    justify-content: flex-end;
+  }
+}
+.searchBox {
+  float: none;
+  .form-control {
+    border-radius: 0;
+    border-color: blue;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  .btn {
+    border-color: white;
+  }
+  .btn:not(:first-child) {
+    margin-left: 0;
+  }
+}
+.searchfield_box {
+  flex-wrap: nowrap;
+  .form-control {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+  .btn {
+    border-radius: 0;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+}
+
+// Large devices (desktops) and below: <= 1200px
+@include media-breakpoint-down(lg) {
+  // add/overwrite styles for responsive level lg and lower
+}
+
+// Medium devices (tablets) and below: <= 992px
+@include media-breakpoint-down(md) {
+  // add/overwrite styles for responsive level md and lower
+}
+
+// Small devices (landscape phones) and below: <= 768px
+@include media-breakpoint-down(sm) {
+  // add/overwrite styles for responsive level sm and lower
+}
+
+// Extra small devices (portrait phones): <= 576px
+@include media-breakpoint-down(xs) {
+  // add/overwrite styles for responsive level xs
+}

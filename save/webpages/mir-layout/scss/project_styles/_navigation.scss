@@ -1,0 +1,208 @@
+/*  navigation
+ *  - all styles about menus
+ */
+
+// Extra large devices (large desktops)
+// set the defaults for all responsive levels here
+// no (xl) media query necessary (desktop first)
+
+.mir-main-nav {
+  margin-bottom: 3px;
+  #basket-list-item,
+  .nav-item {
+    border-bottom: 5px solid transparent;
+    &.active {
+      border-bottom: 5px solid #76afb8;
+    }
+    &:hover {
+      border-bottom: 5px solid $primary;
+    }
+  }
+}
+
+.navbar {
+  padding: 0;
+}
+
+.nav-link {
+  font-family: $font-family-serif;
+  text-transform: uppercase;
+  padding: 1rem 1rem 1rem 1rem;
+  font-size: 18px;
+  font-weight: normal;
+  color: $projectMenuBlue !important;
+  &:hover,
+  &:active,
+  &:focus {
+    color: white;
+    background-color: transparent;
+  }
+}
+
+.dropdown-menu {
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 4px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  background-color: $projectMenuGray;
+  border-color: $projectMenuGray;
+  border-top: 0px;
+  //margin-top: 8px;
+  border-top: 5px solid white;
+}
+.dropdown-item {
+  color: $projectLinkGray;
+}
+.mir-prop-nav {
+  background-color: rgba(255,255,255,0.7);
+  .nav-link {
+    color: $projectMenu;
+    font-family: $font-family-sans-serif;
+    text-transform: none;
+    font-weight: normal;
+    &:hover,
+    &:active,
+    &:focus {
+      color: $projectMenu;
+    }
+  }
+}
+.mir-prop-nav .navbar-nav > li > a {
+  color: $projectMenu;
+  &:hover,
+  &:active,
+  &:focus {
+    color: $projectMenu;
+  }
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+  color: white;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.bg-primary .navbar-nav .active > .nav-link {
+  color: white !important;
+}
+
+html[lang="en"] .flatmir-footer .nav-link:first-child,
+html[lang="de"] .flatmir-footer .nav-link:nth-child(2) {
+  display: none;
+}
+
+.flatmir-footer .nav-link {
+  padding: 0; // override mir settings
+}
+
+footer {
+  .nav-link {
+    padding: 0;
+    a {
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+      border-top: 2px solid transparent;
+      &:hover {
+        text-decoration: none;
+        border-top: 2px solid white;
+      }
+    }
+    &.active a {
+      border-top: 2px solid rgba(255,255,255, 0.6);
+    }
+  }
+}
+.internal_links {
+  margin-bottom: 2rem;
+}
+.internal_links  > li:first-child a,
+#mir-main-nav__entries > ul > li:first-child > a {
+  padding-left: 0;
+}
+.internal_links.navbar-nav {
+  justify-content: flex-start;
+}
+
+.logo-section {
+  margin-top: 1rem;
+  a.logo {
+    display: inline-block;
+    margin: 0px 0 0px 0;
+    text-decoration: none;
+    margin-bottom: 1rem;
+  }
+  .fid.logo {
+    color: white;
+    display: inline-block;
+    font-family: ClanWebMedium;
+    line-height: initial;
+    width: 100%;
+  }
+  .fid.logo.main {
+    font-size: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 30px;
+    line-height: 25px;
+    text-transform: uppercase;
+  }
+  .fid.logo.sub {
+    font-size: 19px;
+    font-size: 16px;
+    line-height: 1.2;
+    padding-left: 0px;
+  }
+}
+
+
+// Large devices (desktops) and below: <= 1200px
+@include media-breakpoint-down(lg) {
+  // add/overwrite styles for responsive level lg and lower
+  .internal_links.navbar-nav {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .internal_links  > li:first-child a {
+    padding-left: 1rem;
+  }
+
+  footer {
+    .nav-link {
+      a {
+        border-top: none;
+        border-left: 2px solid transparent;
+        &:hover {
+          border-top: none;
+          border-left: 2px solid white;
+        }
+      }
+      &.active a {
+        border-top: none;
+        border-left: 2px solid rgba(255,255,255, 0.6);
+      }
+    }
+  }
+}
+
+// Medium devices (tablets) and below: <= 992px
+@include media-breakpoint-down(md) {
+  // add/overwrite styles for responsive level md and lower
+}
+
+// Small devices (landscape phones) and below: <= 768px
+@include media-breakpoint-down(sm) {
+  // add/overwrite styles for responsive level sm and lower
+}
+
+// Extra small devices (portrait phones): <= 576px
+@include media-breakpoint-down(xs) {
+  // add/overwrite styles for responsive level xs
+  .logo-section {
+    margin-left: 1rem;
+  }
+}
