@@ -35,7 +35,7 @@
               </ul>
             </div>
 
-            <!-- <div class="searchBox">
+            <div class="searchBox">
               <form
                       action="{$WebApplicationBaseURL}servlets/solr/find"
                       class="searchfield_box form-inline my-2 my-lg-0"
@@ -59,7 +59,7 @@
                   <i class="fas fa-search"></i>
                 </button>
               </form>
-            </div> -->
+            </div>
 
             <div id="options_nav_box" class="mir-prop-nav">
               <div class="container container-no-padding">

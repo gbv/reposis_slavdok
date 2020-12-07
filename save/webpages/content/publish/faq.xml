@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MyCoReWebPage>
-    <section xml:lang="de" title="Hinweise für Autoren">
+    <section xml:lang="de" title="Leitlinie">
         <div class="row">
             <div class="col-md-12">
-                <h2>Hinweise für Autor/innen</h2>
-
+                <h2>Häufig gestellte Fragen (FAQ)</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                     labore et dolore magna aliqua. Ullamcorper morbi tincidunt ornare massa eget egestas purus
                     viverra. Vitae purus faucibus ornare suspendisse sed nisi lacus. Erat velit scelerisque in
@@ -56,6 +55,5 @@
         </div>
     </section>
     <meta>
-        <log lastEditor="administrator" date="2020-08-28" time="14:46"/>
     </meta>
 </MyCoReWebPage>

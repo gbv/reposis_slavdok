@@ -4,9 +4,77 @@
         <label xml:lang="de">Hauptmenü</label>
         <label xml:lang="en">Main menu</label>
     </menu>
+    <menu id="search">
+        <label xml:lang="de">Suche</label>
+        <label xml:lang="en">Search</label>
+        <item href="/content/search/simple.xed" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">einfach</label>
+            <label xml:lang="en">simple</label>
+        </item>
+        <item href="/content/search/simple_intern.xed" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">einfach</label>
+            <label xml:lang="en">simple</label>
+        </item>
+        <item href="/content/search/complex.xed" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">komplex</label>
+            <label xml:lang="en">complex</label>
+        </item>
+        <item href="/content/browse/institutes.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">nach Institution</label>
+            <label xml:lang="en">by department</label>
+        </item>
+        <item href="/content/browse/genres.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">nach Dokumenttyp</label>
+            <label xml:lang="en">by document type</label>
+        </item>
+        <item href="/servlets/MCRActionMappingServlet/personindex/browse" type="extern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">nach Person</label>
+            <label xml:lang="en">for people</label>
+        </item>
+        <item href="/content/browse/classification.xml" type="extern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">nach Systematik</label>
+            <label xml:lang="en">by classification</label>
+        </item>
+        <item href="/search/search-expert.xed" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Experte</label>
+            <label xml:lang="en">Expert</label>
+        </item>
+    </menu>
+    <menu id="publish" dir="/content/publish">
+        <label xml:lang="de">Veröffentlichen</label>
+        <label xml:lang="en">Publish</label>
+        <item href="/authorization/new-author.xed?action=register" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Registrieren</label>
+            <label xml:lang="en">Register</label>
+        </item>
+        <item href="/content/publish/index.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Publizieren</label>
+            <label xml:lang="en">Publish</label>
+        </item>
+        <item href="/content/publish/publish_with_ppn.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Publizieren mit Metadatenübernahme</label>
+            <label xml:lang="en">Publish with metadata import</label>
+        </item>
+        <item href="/editor/editor-admins.xed" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Erfassung für Experten</label>
+            <label xml:lang="en">Submit as expert</label>
+        </item>
+        <item href="/content/publish/general_information.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Allgemeine Informationen</label>
+            <label xml:lang="en">General Informations</label>
+        </item>
+        <item href="/content/publish/faq.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Häufig gestellte Fragen (FAQ)</label>
+            <label xml:lang="en">Frequently Asked Qustions (FAQ)</label>
+        </item>
+    </menu>
     <menu id="about" dir="/content/about">
         <label xml:lang="de">Über uns</label>
         <label xml:lang="en">About us</label>
+        <item href="/content/about/about_us.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Über uns</label>
+            <label xml:lang="en">About us</label>
+        </item>
         <item href="/content/about/contact.xml" type="intern" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">Kontakt</label>
             <label xml:lang="en">Contact</label>
@@ -26,74 +94,6 @@
         <item href="/content/about/accessibility.xml" type="intern" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">Barrierefreiheit</label>
             <label xml:lang="en">Accessibility</label>
-        </item>
-    </menu>
-    <menu id="search">
-        <label xml:lang="de">Suche</label>
-        <label xml:lang="en">Search</label>
-        <item href="/content/search/simple.xed" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">einfach</label>
-            <label xml:lang="en">simple</label>
-        </item>
-        <item href="/content/search/simple_intern.xed" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">einfach</label>
-            <label xml:lang="en">simple</label>
-        </item>
-        <item href="/content/search/complex.xed" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">komplex</label>
-            <label xml:lang="en">complex</label>
-        </item>
-        <item href="/content/browse/institutes.xml" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">nach Einrichtung</label>
-            <label xml:lang="en">by department</label>
-        </item>
-        <item href="/content/browse/genres.xml" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">nach Dokumenttyp</label>
-            <label xml:lang="en">by document type</label>
-        </item>
-        <item href="/servlets/MCRActionMappingServlet/personindex/browse" type="extern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">nach Person</label>
-            <label xml:lang="en">for people</label>
-        </item>
-        <item href="/search/search-expert.xed" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">Suche (expert)</label>
-            <label xml:lang="en">Search (expert)</label>
-        </item>
-    </menu>
-    <menu id="publish" dir="/content/publish">
-        <label xml:lang="de">Veröffentlichen</label>
-        <label xml:lang="en">Publish</label>
-        <item href="/content/publish/index.xml" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">Dokument einreichen</label>
-            <label xml:lang="en">Submit document</label>
-        </item>
-        <item href="/servlets/solr/select?q=createdby:USERNAME" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">Eigene Dokumente</label>
-            <label xml:lang="en">My Documents</label>
-        </item>
-        <item href="/content/publish/publish_with_ppn.xml" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">mit Metadatenübernahme</label>
-            <label xml:lang="en">with metadata import</label>
-        </item>
-        <item href="/editor/editor-admins.xed" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">Erfassung für Experten</label>
-            <label xml:lang="en">Submit as expert</label>
-        </item>
-        <item href="/content/publish/author_notes.xml" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">Hinweise für Autor/-innen</label>
-            <label xml:lang="en">Notes for authors</label>
-        </item>
-        <item href="/content/publish/policy.xml" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">Leitline</label>
-            <label xml:lang="en">Policy</label>
-        </item>
-        <item href="/content/rights/copyright.xml" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">Urheberrecht</label>
-            <label xml:lang="en">Copyright</label>
-        </item>
-        <item href="/authorization/new-author.xed?action=register" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">Registrieren</label>
-            <label xml:lang="en">Register</label>
         </item>
     </menu>
     <menu id="user">
