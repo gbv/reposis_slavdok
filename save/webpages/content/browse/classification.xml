@@ -3,13 +3,13 @@
 
 <MyCoReWebPage>
 
-    <section i18n="browse.systematik.title" xml:lang="all">
+    <section i18n="browse.language_classification.title" xml:lang="all">
         <div class="row">
             <div class="col-md-8" lang="de">
                 <h3>
-                    <i18n key="browse.systematik.title"/>
+                    <i18n key="browse.language_classification.title"/>
                 </h3>
-                <classificationbrowser classification="systematik"
+                <classificationbrowser classification="language_classification"
                                        objecttype="mods"
                                        restriction="+category.top:&quot;state:published&quot;"
                                        field="category.top"
