@@ -13,7 +13,7 @@
 
       <div class="mir-main-nav">
         <div class="container container-no-padding">
-          <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+          <nav class="navbar navbar-expand-lg navbar-dark">
 
             <button
                     class="navbar-toggler"
@@ -55,7 +55,7 @@
                     <input name="owner" type="hidden" value="createdby:{$CurrentUser}" />
                   </xsl:when>
                 </xsl:choose>
-                <button type="submit" class="btn btn-primary-inverted my-2 my-sm-0">
+                <button type="submit" class="btn btn-primary my-2 my-sm-0">
                   <i class="fas fa-search"></i>
                 </button>
               </form>
@@ -76,10 +76,20 @@
         </div>
       </div>
     <div id="header_box" class="clearfix container container-no-padding">
-      <hr></hr>
-      <p class="logo">SlavDok</p>
-      <hr></hr>
-      <p>Dokumentenserver</p>
+      <div class="project_logo_box">
+        <div class="project_logo">
+          <a href="{concat($WebApplicationBaseURL,substring($loaded_navigation_xml/@hrefStartingPage,2),$HttpSession)}" title="Home" class="project-logo__link">
+            <hr class="fid logo hr" />
+            <span class="fid logo main">
+              SlavDok
+            </span>
+            <hr class="fid logo hr" />
+            <span class="fid logo sub">
+              Dokumentenserver
+            </span>
+          </a>
+        </div>
+      </div>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -93,18 +103,20 @@
   <xsl:template name="mir.footer">
     <div class="container container-no-padding">
       <div class="row">
-        <div class="col-12 col-sm-6 col-lg-8 col-xl-9">
+        <div class="col-12">
           <ul class="internal_links nav navbar-nav">
             <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='below']/*" mode="footerMenu" />
           </ul>
         </div>
-        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 d-flex flex-column logo-section">
-          <a class="sbb logo" href="http://www.staatsbibliothek-berlin.de" target="_blank">
-            <span>Ein Dienst der</span><br/>
-            <img class="sbb_logo img-fluid" src="{$WebApplicationBaseURL}/images/web_footer-sbb-weiss-180x40.png" />
+      </div>
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center logo-section">
+          <a href="http://www.staatsbibliothek-berlin.de" title="Staatsbibliothek Berlin Home" class="logo">
+            <span class="fid logo main">Ein Dienst der</span>
+            <span class="fid logo sub">
+              <img class="sbb_logo img-fluid" src="{$WebApplicationBaseURL}/images/web_footer-sbb-weiss-180x40.png" />
+            </span>
           </a>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 col-xl-3 d-flex flex-column logo-section">
           <a class="dfg logo" href="http://www.dfg.de" target="_blank">
             <span>Gefördert durch</span><br />
             <img class="dfg_logo img-fluid" src="{$WebApplicationBaseURL}/images/web_footer-dfg-weiss.png" />

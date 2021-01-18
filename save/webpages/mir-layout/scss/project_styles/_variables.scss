@@ -28,20 +28,27 @@ $projectGreen:        #009f5e;  // ressourcen
 $projectTurquoise:    #00b3c0;  // service
 $projectDarkPurple:   #3c4b78;  // maps
 $projectLightPurple:  #4d4abf;  // links
+$projectLogoBlue:     #1A3374;  // from fid logo
 $projectLinkGray:     #7b8890;  // menu link color
-$projectMenuGray:     #e6eaea;  // menu dropdown back
+$projectMenuGray:     rgba(60, 60, 60, 0.9);  // menu dropdown back
 $projectMenuBlue:     #0A246A;  // Stabi Menu
 
 // own colors
 $projectReducedT:     #76afb8;
 
+// from genarator by given primary
+$genPurple:           #813e84;
+$genPink:             #cb527d;
+$genRed:              #fa7d6a;
+$genOrange:           #ffb85b;
+
 // bs variables
-$primary:      $projectDarkBlue;
-$secondary:    $projectDarkBlue;
+$primary:      $projectMenuGray;
+$secondary:    $projectLogoBlue;
 $success:      $projectGreen;
 $info:         $projectTurquoise;
-$warning:      $success;
-$danger:       $success;
+$warning:      $genOrange;
+$danger:       $genRed;
 $gray-light:   $projectLightGray;
 
 // project variables

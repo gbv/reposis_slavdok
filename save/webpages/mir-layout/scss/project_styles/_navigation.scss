@@ -8,6 +8,8 @@
 
 .mir-main-nav {
   margin-bottom: 3px;
+  background-color: $projectMenuGray;
+  border-color: black;
   #basket-list-item,
   .nav-item {
     border-bottom: 5px solid transparent;
@@ -30,7 +32,7 @@
   padding: 1rem 1rem 1rem 1rem;
   font-size: 18px;
   font-weight: normal;
-  color: $projectMenuBlue !important;
+  color: $projectLightGray !important;
   &:hover,
   &:active,
   &:focus {
@@ -46,7 +48,7 @@
   border-top-right-radius: 0;
   -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
   box-shadow: 0 6px 12px rgba(0,0,0,.175);
-  background-color: $projectMenuGray;
+  background-color: $projectLightGray;
   border-color: $projectMenuGray;
   border-top: 0px;
   //margin-top: 8px;
@@ -56,7 +58,7 @@
   color: $projectLinkGray;
 }
 .mir-prop-nav {
-  background-color: rgba(255,255,255,0.7);
+  background-color: transparent;
   .nav-link {
     color: $projectMenu;
     font-family: $font-family-sans-serif;
@@ -91,11 +93,6 @@
   color: white !important;
 }
 
-html[lang="en"] .flatmir-footer .nav-link:first-child,
-html[lang="de"] .flatmir-footer .nav-link:nth-child(2) {
-  display: none;
-}
-
 .flatmir-footer .nav-link {
   padding: 0; // override mir settings
 }
@@ -103,6 +100,7 @@ html[lang="de"] .flatmir-footer .nav-link:nth-child(2) {
 footer {
   .nav-link {
     padding: 0;
+    margin-bottom: 0.5rem;
     a {
       padding: 0.5rem 1rem;
       font-size: 0.9rem;
@@ -118,18 +116,18 @@ footer {
   }
 }
 .internal_links {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .internal_links  > li:first-child a,
 #mir-main-nav__entries > ul > li:first-child > a {
   padding-left: 0;
 }
 .internal_links.navbar-nav {
-  justify-content: flex-start;
+  justify-content: flex-center;
 }
 
 .logo-section {
-  margin-top: 1rem;
+  margin: 0;
   a.logo {
     display: inline-block;
     margin: 0px 0 0px 0;
@@ -139,38 +137,58 @@ footer {
   .fid.logo {
     color: white;
     display: inline-block;
-    font-family: ClanWebMedium;
     line-height: initial;
     width: 100%;
   }
   .fid.logo.main {
-    font-size: 30px;
-    font-size: 25px;
-    font-weight: bold;
-    line-height: 30px;
-    line-height: 25px;
-    text-transform: uppercase;
+    font-size: 0.8rem;
   }
   .fid.logo.sub {
-    font-size: 19px;
-    font-size: 16px;
+    font-size: 10px;
     line-height: 1.2;
     padding-left: 0px;
   }
+  .logo.dfg {
+    span {
+      font-size: 0.8rem;
+    }
+  }
+  .dfg_logo {
+    width: 220px;
+  }
 }
-
+#powered_by {
+  padding: 1em 0px;
+}
 
 // Large devices (desktops) and below: <= 1200px
 @include media-breakpoint-down(lg) {
   // add/overwrite styles for responsive level lg and lower
+  .internal_links  > li:first-child a {
+    padding-left: 1rem;
+  }
+}
+
+// Medium devices (tablets) and below: <= 992px
+@include media-breakpoint-down(md) {
+  // add/overwrite styles for responsive level md and lower
+  #mir-main-nav__entries > ul > li:first-child > a {
+    padding-left: 1rem;
+  }
+}
+
+// Small devices (landscape phones) and below: <= 768px
+@include media-breakpoint-down(sm) {
+  // add/overwrite styles for responsive level sm and lower
+}
+
+// Extra small devices (portrait phones): <= 576px
+@include media-breakpoint-down(xs) {
+  // add/overwrite styles for responsive level xs
   .internal_links.navbar-nav {
     flex-direction: column;
     justify-content: flex-start;
   }
-  .internal_links  > li:first-child a {
-    padding-left: 1rem;
-  }
-
   footer {
     .nav-link {
       a {
@@ -187,21 +205,6 @@ footer {
       }
     }
   }
-}
-
-// Medium devices (tablets) and below: <= 992px
-@include media-breakpoint-down(md) {
-  // add/overwrite styles for responsive level md and lower
-}
-
-// Small devices (landscape phones) and below: <= 768px
-@include media-breakpoint-down(sm) {
-  // add/overwrite styles for responsive level sm and lower
-}
-
-// Extra small devices (portrait phones): <= 576px
-@include media-breakpoint-down(xs) {
-  // add/overwrite styles for responsive level xs
   .logo-section {
     margin-left: 1rem;
   }

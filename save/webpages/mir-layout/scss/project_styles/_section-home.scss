@@ -18,8 +18,7 @@
       color: $white;
       margin-bottom: 0rem;
       padding: 1.5rem 1rem 1.5rem;
-      background-color: rgba(101,177,190,.8);
-      background-color: rgba(68, 157, 173, 0.8);
+      background-color: $projectMenuGray;
       border-top-right-radius: 10px;
       border-top-left-radius: 10px;
     }
@@ -27,12 +26,12 @@
       margin-top: 0px;
     }
     .input-group {
-      border-color: white;
+      border-color: $projectMenuGray;
     }
     .btn,
     .form-control {
       border-radius: 0;
-      border: 1px solid white;
+      border: 1px solid $projectMenuGray;
       &:focus {
         box-shadow: none;
       }
@@ -43,7 +42,7 @@
     .btn {
       color: $projectMenu;
       background-color: white;
-      border-color: white;
+      border-color: $projectMenuGray;
       border-bottom-right-radius: 10px;
     }
   }
@@ -67,4 +66,13 @@
 // Extra small devices (portrait phones): <= 576px
 @include media-breakpoint-down(xs) {
   // add/overwrite styles for responsive level xs
+  #project-index-search {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  #project-searchMainPage button,
+  #project-searchInput {
+    font-size: 1rem;
+  }
 }

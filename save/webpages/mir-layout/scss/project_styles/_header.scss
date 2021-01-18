@@ -12,6 +12,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #e6eaea;
 }
 
 // logo and menu container
@@ -25,30 +26,38 @@ header {
   margin: 5px 0 20px 0;
   text-decoration: none;
   .fid.logo.main {
-    font-size: 30px;
-    font-weight: bold;
-    line-height: 30px;
+    font-size: 44px;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+
   }
   .fid.logo.sub {
-    font-size: 19px;
-    line-height: 1.2;
+    font-size: 20px;
+    line-height: 1.1;
     padding-left: 0px;
     margin-top: 0rem;
   }
   .fid.logo {
-    color: #1A3374;
+    color: #023263;
     display: inline-block;
-    font-family: ClanWebMedium;
     line-height: initial;
     width: 100%;
+  }
+  .fid.logo.hr{
+    border-top-width: 3px;
+    height: 4px;
+    width: 165px;
+    border-color: #038abb;
+    margin: 0px 0px 0px 1px;
+    text-align: left;
   }
 }
 
 .project_logo_box {
   display: flex;
   justify-content: space-between;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0rem;
   .project_parent_logo {
     .sbb-logo {
       height: 50px;
@@ -63,16 +72,18 @@ header {
   }
 }
 .searchBox {
+
   float: none;
   .form-control {
     border-radius: 0;
-    border-color: blue;
+    border-color: black;
     &:focus {
       box-shadow: none;
     }
   }
   .btn {
-    border-color: white;
+    border-color: transparent;
+    padding-left: 10px;
   }
   .btn:not(:first-child) {
     margin-left: 0;
@@ -109,4 +120,10 @@ header {
 // Extra small devices (portrait phones): <= 576px
 @include media-breakpoint-down(xs) {
   // add/overwrite styles for responsive level xs
+  .project_logo_box {
+    flex-direction: column;
+    .project_parent_logo {
+      align-self: flex-end;
+    }
+  }
 }
