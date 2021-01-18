@@ -8,16 +8,20 @@
         <label xml:lang="de">Suche</label>
         <label xml:lang="en">Search</label>
         <item href="/content/search/simple.xed" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">einfach</label>
-            <label xml:lang="en">simple</label>
+            <label xml:lang="de">Einfach</label>
+            <label xml:lang="en">Simple</label>
         </item>
         <item href="/content/search/simple_intern.xed" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">einfach</label>
-            <label xml:lang="en">simple</label>
+            <label xml:lang="de">Einfach</label>
+            <label xml:lang="en">Simple</label>
         </item>
         <item href="/content/search/complex.xed" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">komplex</label>
-            <label xml:lang="en">complex</label>
+            <label xml:lang="de">Erweitert</label>
+            <label xml:lang="en">Extended</label>
+        </item>
+        <item href="/search/search-expert.xed" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Experte</label>
+            <label xml:lang="en">Expert</label>
         </item>
         <item href="/content/browse/institutes.xml" type="intern" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">nach Institution</label>
@@ -35,37 +39,26 @@
             <label xml:lang="de">nach Systematik</label>
             <label xml:lang="en">by classification</label>
         </item>
-        <item href="/search/search-expert.xed" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">Experte</label>
-            <label xml:lang="en">Expert</label>
-        </item>
+
     </menu>
     <menu id="publish" dir="/content/publish">
         <label xml:lang="de">Veröffentlichen</label>
         <label xml:lang="en">Publish</label>
-        <item href="/authorization/new-author.xed?action=register" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">Registrieren</label>
-            <label xml:lang="en">Register</label>
+        <item href="/content/publish/general_information.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Allgemeine Informationen</label>
+            <label xml:lang="en">General Informations</label>
         </item>
         <item href="/content/publish/index.xml" type="intern" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">Publizieren</label>
             <label xml:lang="en">Publish</label>
         </item>
-        <item href="/content/publish/publish_with_ppn.xml" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">Publizieren mit Metadatenübernahme</label>
-            <label xml:lang="en">Publish with metadata import</label>
-        </item>
-        <item href="/editor/editor-admins.xed" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">Erfassung für Experten</label>
-            <label xml:lang="en">Submit as expert</label>
-        </item>
-        <item href="/content/publish/general_information.xml" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">Allgemeine Informationen</label>
-            <label xml:lang="en">General Informations</label>
-        </item>
         <item href="/content/publish/faq.xml" type="intern" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">Häufig gestellte Fragen (FAQ)</label>
             <label xml:lang="en">Frequently Asked Qustions (FAQ)</label>
+        </item>
+        <item href="/authorization/new-author.xed?action=register" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Registrieren</label>
+            <label xml:lang="en">Register</label>
         </item>
     </menu>
     <menu id="about" dir="/content/about">
@@ -75,7 +68,11 @@
             <label xml:lang="de">Über uns</label>
             <label xml:lang="en">About us</label>
         </item>
-        <item href="/content/about/contact.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+        <item href="/content/about/collection_profile.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Sammelprofil</label>
+            <label xml:lang="en">Collection Profile</label>
+        </item>
+<!--         <item href="/content/about/contact.xml" type="intern" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">Kontakt</label>
             <label xml:lang="en">Contact</label>
         </item>
@@ -94,7 +91,7 @@
         <item href="/content/about/accessibility.xml" type="intern" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">Barrierefreiheit</label>
             <label xml:lang="en">Accessibility</label>
-        </item>
+        </item> -->
     </menu>
     <menu id="user">
         <label xml:lang="de">Nutzermenü</label>
