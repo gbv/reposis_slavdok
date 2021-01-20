@@ -5,21 +5,6 @@
 // set the defaults for all responsive levels here
 // no (xl) media query necessary (desktop first)
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: $font-family-serif;
-  color: $projectLink;
-}
-
-a {
-  text-decoration: underline;
-}
-header a,
-footer a,
-a.btn,
-ul.names li a {
-  text-decoration: none;
-}
-
 // Large devices (desktops) and below: <= 1200px
 @include media-breakpoint-down(lg) {
   // add/overwrite styles for responsive level lg and lower

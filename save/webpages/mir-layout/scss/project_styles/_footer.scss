@@ -7,32 +7,41 @@
 // no (xl) media query necessary (desktop first)
 
 .flatmir-footer {
-  position: relative;
-  padding-top: 0px;
-  margin-top: 0px;
-  border: none;
-  background-color: #4F4F4F;
-  .nav-link {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    &:hover,
-    &:active,
-    &:focus {
-      background-color: transparent;
-    }
-  }
-}
-
-.internal_links {
-  &.navbar-nav {
-    flex-direction: row;
-    justify-content: center;
-  }
+  border:none;
+  background-color: transparent;
 }
 .logo-section {
-  margin-bottom: 1rem;
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+  a.logo {
+    color: $footerGray;
+    display: inline-block;
+    margin: 0px 0 0px 0;
+    text-decoration: none;
+    margin-bottom: 1rem;
+  }
+  .fid.logo {
+    display: inline-block;
+    line-height: initial;
+    width: 100%;
+  }
+  .fid.logo.main {
+    font-size: 0.8rem;
+  }
+  .fid.logo.sub {
+    font-size: 10px;
+    line-height: 1.2;
+    padding-left: 0px;
+  }
+  .logo.dfg {
+    span {
+      font-size: 0.8rem;
+    }
+  }
+  .dfg_logo {
+    width: 220px;
+  }
 }
-
 
 // Large devices (desktops) and below: <= 1200px
 @include media-breakpoint-down(lg) {
@@ -52,7 +61,4 @@
 // Extra small devices (portrait phones): <= 576px
 @include media-breakpoint-down(xs) {
   // add/overwrite styles for responsive level xs
-  .logo-section {
-    flex-direction: column;
-  }
 }

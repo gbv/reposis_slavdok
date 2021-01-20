@@ -10,42 +10,6 @@
   .searchBox {
     display: none;
   }
-  #page {
-    background-color: transparent;
-  }
-  #project-index-search {
-    h1 {
-      color: $white;
-      margin-bottom: 0rem;
-      padding: 1.5rem 1rem 1.5rem;
-      background-color: $projectMenuGray;
-      border-top-right-radius: 10px;
-      border-top-left-radius: 10px;
-    }
-    form {
-      margin-top: 0px;
-    }
-    .input-group {
-      border-color: $projectMenuGray;
-    }
-    .btn,
-    .form-control {
-      border-radius: 0;
-      border: 1px solid $projectMenuGray;
-      &:focus {
-        box-shadow: none;
-      }
-    }
-    .form-control {
-      border-bottom-left-radius: 10px;
-    }
-    .btn {
-      color: $projectMenu;
-      background-color: white;
-      border-color: $projectMenuGray;
-      border-bottom-right-radius: 10px;
-    }
-  }
 }
 
 // Large devices (desktops) and below: <= 1200px
@@ -66,13 +30,4 @@
 // Extra small devices (portrait phones): <= 576px
 @include media-breakpoint-down(xs) {
   // add/overwrite styles for responsive level xs
-  #project-index-search {
-    h1 {
-      font-size: 2rem;
-    }
-  }
-  #project-searchMainPage button,
-  #project-searchInput {
-    font-size: 1rem;
-  }
 }

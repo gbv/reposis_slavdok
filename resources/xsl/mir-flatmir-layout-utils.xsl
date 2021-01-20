@@ -66,7 +66,17 @@
                 <nav>
                   <ul class="navbar-nav ml-auto flex-row">
                     <xsl:call-template name="mir.loginMenu" />
-                    <xsl:call-template name="mir.languageMenu" />
+                    <li class="nav-item">
+                      <a title="Sprache wechseln"
+                         data-toggle="dropdown"
+                         class="nav-link  d-none"
+                         href="#">DE</a>
+                      <a title="Sprache wechseln"
+                         data-toggle="dropdown"
+                         class="nav-link"
+                         href="#">EN</a>
+                    </li>
+
                   </ul>
                 </nav>
               </div>
@@ -78,15 +88,11 @@
     <div id="header_box" class="clearfix container container-no-padding">
       <div class="project_logo_box">
         <div class="project_logo">
-          <a href="{concat($WebApplicationBaseURL,substring($loaded_navigation_xml/@hrefStartingPage,2),$HttpSession)}" title="Home" class="project-logo__link">
-            <hr class="fid logo hr" />
-            <span class="fid logo main">
-              SlavDok
-            </span>
-            <hr class="fid logo hr" />
-            <span class="fid logo sub">
-              Dokumentenserver
-            </span>
+          <a href="{concat($WebApplicationBaseURL,substring($loaded_navigation_xml/@hrefStartingPage,2),$HttpSession)}"
+             title="Home"
+             class="project-logo__link">
+            <span class="fid logo main">SlavDok</span>
+            <span class="fid logo sub">Dokumentenserver</span>
           </a>
         </div>
       </div>
@@ -103,24 +109,24 @@
   <xsl:template name="mir.footer">
     <div class="container container-no-padding">
       <div class="row">
-        <div class="col-12">
-          <ul class="internal_links nav navbar-nav">
-            <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='below']/*" mode="footerMenu" />
-          </ul>
-        </div>
-      </div>
-      <div class="row">
         <div class="col-12 d-flex justify-content-center logo-section">
           <a href="http://www.staatsbibliothek-berlin.de" title="Staatsbibliothek Berlin Home" class="logo">
             <span class="fid logo main">Ein Dienst der</span>
             <span class="fid logo sub">
-              <img class="sbb_logo img-fluid" src="{$WebApplicationBaseURL}/images/web_footer-sbb-weiss-180x40.png" />
+              <img class="sbb_logo img-fluid" src="{$WebApplicationBaseURL}/images/logo-sbb-grau.png" />
             </span>
           </a>
           <a class="dfg logo" href="http://www.dfg.de" target="_blank">
             <span>Gefördert durch</span><br />
-            <img class="dfg_logo img-fluid" src="{$WebApplicationBaseURL}/images/web_footer-dfg-weiss.png" />
+            <img class="dfg_logo img-fluid" src="{$WebApplicationBaseURL}/images/logo-dfg-grau.png" />
           </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <ul class="internal_links nav navbar-nav">
+            <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='below']/*" mode="footerMenu" />
+          </ul>
         </div>
       </div>
     </div>

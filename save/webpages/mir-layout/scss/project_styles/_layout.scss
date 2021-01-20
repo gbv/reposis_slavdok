@@ -6,28 +6,9 @@
 // set the defaults for all responsive levels here
 // no (xl) media query necessary (desktop first)
 
-body > section {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  background-color: #ffffff;
+body {
+  padding-top: 56px;
 }
-.mir-start_page > section {
-  background-image: url('../../../../images/background-document-world-xl.jpg');
-}
-
-#page {
-  padding-bottom: 3rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  background-color: rgba(255,255,255,0.95);
-  border-radius: 0.5rem;
-}
-
-.container-no-padding {
-  padding-left: 0;
-  padding-right: 0;
-}
-
 
 // Large devices (desktops) and below: <= 1200px
 @include media-breakpoint-down(lg) {

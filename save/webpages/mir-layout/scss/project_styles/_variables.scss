@@ -17,45 +17,47 @@
 //  Brand colors
 // -------------------------
 
-// style guide
-$projectDarkBlue:   rgb(60,75,120);   //SPK_BLAU
-$projectLightBlue:  rgb(0,119,190);   // outdated
-$projectLightGray:  rgb(230,234,234); // outdated
-$projectDarkGray:   rgb(149,166,177); // outdated
-
 // from website
-$projectGreen:        #009f5e;  // ressourcen
-$projectTurquoise:    #00b3c0;  // service
-$projectDarkPurple:   #3c4b78;  // maps
-$projectLightPurple:  #4d4abf;  // links
-$projectLogoBlue:     #1A3374;  // from fid logo
-$projectLinkGray:     #7b8890;  // menu link color
-$projectMenuGray:     rgba(60, 60, 60, 0.9);  // menu dropdown back
-$projectMenuBlue:     #0A246A;  // Stabi Menu
+
+$logoBlue:          #038abb;  // logo border
+$linkBlue:          #337ab7;  // link
+$linkHoverBlue:     #23527c;  // link hover
+$logoFontBlue:      #114152;
+$lightGray:         #ddd;     // table back
+$menuFontGray:      rgba(222, 222, 222, 1); // menu font color
+$footerGray:        #9d9d9d;  // footer text
+$contrastGray:      rgba(158, 158, 158, 0.4); // sub menu hover
+$darkGray:          rgba(60, 60, 60, 0.9); // navbar
+$darkContrastGray:  rgba(51, 51, 51, 0.9); // navbar active
+$fontBlack:         #333333;  // fontColor
+
+$headerYellow:      #fcebbf;  // header image color pick
+
+$statusGreen:       #66cc00; // access level
+$statusYellow:      #ffcc00;
+$statusRed:         #ff3300;
 
 // own colors
-$projectReducedT:     #76afb8;
 
 // from genarator by given primary
-$genPurple:           #813e84;
-$genPink:             #cb527d;
-$genRed:              #fa7d6a;
-$genOrange:           #ffb85b;
 
 // bs variables
-$primary:      $projectMenuGray;
-$secondary:    $projectLogoBlue;
-$success:      $projectGreen;
-$info:         $projectTurquoise;
-$warning:      $genOrange;
-$danger:       $genRed;
-$gray-light:   $projectLightGray;
+$primary:   $linkBlue;
+$secondary: $darkGray;
+$success:   $statusGreen;
+$info:      $logoBlue;
+$warning:   $statusYellow;
+$danger:    $statusRed;
+
+$link-color: $linkBlue;
+$link-hover-color: $linkHoverBlue;
+
+$btn-border-radius: 4px;
+
+$font-family-sans-serif: Helvetica, Arial, sans-serif;
+$font-size-base: 1rem;
 
 // project variables
-$projectMenu:       $primary;
-$projectBlueHover:  $projectMenuGray;
-$projectDropHover:  $primary;
-$projectLink:       $projectDarkPurple;
 
 // keep deprecated variables alive
 $brand-primary: $primary;
@@ -69,29 +71,3 @@ $brand-danger:  $danger;
 // --------------------------------------------------
 
 // typo
-//$web-font-path: "https://webfonts.gbv.de/css?family=Open+Sans";
-$font-family-sans-serif: Helvetica, Arial, sans-serif;
-$font-family-serif: ClanWebBook, "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-size-base: 1rem;
-
-$dropdown-color: white;
-$dropdown-bg: $projectBlueHover;
-$dropdown-link-color: white;
-$dropdown-link-hover-color: white;
-$dropdown-link-hover-bg: $projectDropHover;
-$dropdown-border-radius: 0;
-$dropdown-border-width: 0;
-$dropdown-spacer: 0;
-
-$link-color: $projectLink;
-$link-hover-color: darken($link-color, 15%);
-
-$btn-border-radius: 0;
-
-$h1-font-size: $font-size-base * 2;
-$h2-font-size: $font-size-base * 1.75;
-$h3-font-size: $font-size-base * 1.5;
-
-$pagination-bg: $primary;
-$pagination-hover-bg: lighten($pagination-bg, 10%);
-$pagination-disabled-bg: $gray-light;

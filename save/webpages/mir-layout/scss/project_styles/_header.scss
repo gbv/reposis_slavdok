@@ -7,12 +7,11 @@
 // no (xl) media query necessary (desktop first)
 
 header {
-
-  background-image: url("../../../../images/sp_h_05_b.jpg");
+  background-image: url("../../../../images/background-header-default.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #e6eaea;
+  background-color: $headerYellow;
 }
 
 // logo and menu container
@@ -25,44 +24,34 @@ header {
   display: inline-block;
   margin: 5px 0 20px 0;
   text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
   .fid.logo.main {
-    font-size: 44px;
+    font-size: 43px;
     margin-top: 0rem;
     margin-bottom: 0rem;
-
+    border: 3px solid #038abb;
+    border-width: 3px 0 3px 0;
   }
   .fid.logo.sub {
-    font-size: 20px;
+    display: inline-block;
+    font-size: 21px;
     line-height: 1.1;
     padding-left: 0px;
-    margin-top: 0rem;
+    margin-top: 0.25rem;
   }
   .fid.logo {
-    color: #023263;
-    display: inline-block;
+    color: $logoFontBlue;
     line-height: initial;
     width: 100%;
-  }
-  .fid.logo.hr{
-    border-top-width: 3px;
-    height: 4px;
-    width: 165px;
-    border-color: #038abb;
-    margin: 0px 0px 0px 1px;
-    text-align: left;
+    text-shadow:2px 2px 2px white;
   }
 }
 
 .project_logo_box {
-  display: flex;
-  justify-content: space-between;
   margin-top: 1rem;
   margin-bottom: 0rem;
-  .project_parent_logo {
-    .sbb-logo {
-      height: 50px;
-    }
-  }
 }
 
 #options_nav_box {
@@ -72,7 +61,6 @@ header {
   }
 }
 .searchBox {
-
   float: none;
   .form-control {
     border-radius: 0;
@@ -120,10 +108,4 @@ header {
 // Extra small devices (portrait phones): <= 576px
 @include media-breakpoint-down(xs) {
   // add/overwrite styles for responsive level xs
-  .project_logo_box {
-    flex-direction: column;
-    .project_parent_logo {
-      align-self: flex-end;
-    }
-  }
 }
