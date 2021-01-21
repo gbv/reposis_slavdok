@@ -34,7 +34,16 @@
 .nav-item.active {
   background-color: $darkContrastGray;
 }
-
+html[lang="de"] {
+  .lang-switch-de {
+    display: none;
+  }
+}
+html[lang="en"] {
+  .lang-switch-en {
+    display: none;
+  }
+}
 
 
 

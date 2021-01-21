@@ -68,13 +68,11 @@
                     <xsl:call-template name="mir.loginMenu" />
                     <li class="nav-item">
                       <a title="Sprache wechseln"
-                         data-toggle="dropdown"
-                         class="nav-link  d-none"
-                         href="#">DE</a>
-                      <a title="Sprache wechseln"
-                         data-toggle="dropdown"
-                         class="nav-link"
-                         href="#">EN</a>
+                         class="nav-link lang-switch-de"
+                         href="?lang=de">DE</a>
+                      <a title="Change language"
+                         class="nav-link lang-switch-en"
+                         href="?lang=en">EN</a>
                     </li>
 
                   </ul>
