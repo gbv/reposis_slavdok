@@ -2,12 +2,9 @@
 <MyCoReWebPage>
 
     <section xml:lang="de" title="SlavDok - Dokumentenserver">
-        <div class="jumbotwo" id="project-index-search" style="margin-top:50px;">
-            <div class="row">
-                <div class="col-md-9 offset-md-2" lang="de">
-                    <h1>
-                        SlavDok - Dokumentenserver
-                    </h1>
+        <div class="jumbotwo" id="project-index-search">
+            <div class="row" style="margin-bottom:30px;">
+                <div class="col-md-12" lang="de">
                     <form action="../servlets/solr/find" id="project-searchMainPage" class="form-inline" role="search">
                         <div class="input-group input-group-lg w-100">
                             <input
@@ -25,32 +22,113 @@
                     </form>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-md-8">
+                  <div class="card">
+                    <div class="card-header">
+                      <h3 class="card-title">
+                        <i class="fas fa-arrow-right" style="margin-right:1ex;" aria-hidden="true"/>
+                        Neueste Veröffentlichungen
+                      </h3>
+                    </div>
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-12 result_body">
+                          <div class="result_list">
+                            <div id="hit_list"/>
+                          </div>
+                        </div>
+                      </div>
+                      <script type="text/javascript">
+                        $(document).ready( function() {
+                        getNewestSubmissions();
+                        });
+                      </script>
+                      <div class="row">
+                        <a href="../servlets/solr/find" class="btn btn-secondary btn-sm" style="margin:auto; display:block; max-width:200px;">
+                          Weitere Veröffentlichungen …
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <div class="card-header">
+                      <h3 class="card-title">
+                        <i class="fas fa-info" style="margin-right:1ex;" aria-hidden="true"/>
+                        Information
+                      </h3>
+                    </div>
+                    <div class="card-body">
+                      <span>Der SlavDok Open-Access-Publikationsserver, stellt wissenschaftliche Werke in
+                        unterschiedlichen Medienformaten weltweit im Open Access zur Verfügung.
+                      </span>
+                    </div>
+                    <div class="card-footer">
+                      <a href="/content/publish/general_information.xml" class="btn btn-secondary btn-block with-icon">
+                        <i class="fas fa-arrow-circle-right" style="margin-right:1ex;" aria-hidden="true"/>
+                        Weitere Informationen
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h3 class="card-title">
+                        <i class="fas fa-file-alt" style="margin-right:1ex;" aria-hidden="true"/>
+                        E-Publikationen
+                      </h3>
+                    </div>
+                    <div class="card-body">
+                      Veröffentlichen Sie Ihre wissenschaftliche Arbeit im Open Access und steigern Sie dadurch die Sichtbarkeit Ihrer Forschungsleistungen.
+                    </div>
+                    <div class="card-footer">
+                      <a href="/content/publish/index.xml" class="btn btn-primary btn-block with-icon">
+                        <i class="fas fa-arrow-circle-right" style="margin-right:1ex;" aria-hidden="true"/>
+                        Digital publizieren
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h3 class="card-title">
+                        <i class="fas fa-graduation-cap" style="margin-right:1ex;" aria-hidden="true"/>
+                        Dissertationen
+                      </h3>
+                    </div>
+                    <div class="card-body">
+                      Veröffentlichen Sie ihre Dissertation über SlavDok und sorgen damit für eine weltweite Sichtbarkeit und langfristige freie Zugänglichkeit.
+                    </div>
+                    <div class="card-footer">
+                      <a href="/content/publish/contact.xml" class="btn btn-primary btn-block with-icon">
+                        <i class="fas fa-arrow-circle-right" style="margin-right:1ex;" aria-hidden="true"/>
+                        Dissertation veröffentlichen
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </div>
         <script src="../js/jquery.number.js"></script>
         <script>
             $( document ).ready(function() {
-            $.ajax({
-            type: "GET",
-            url: "../api/v1/search?q=objectType:mods AND state:published&amp;rows=0&amp;wt=json&amp;json.wrf=?",
-            dataType: "jsonp",
-            success: function (data) {
-            $('#project-searchInput').attr('placeholder', 'Suche in ' + $.number(data.response.numFound,0, ',', '.') + '
-            Dokumenten');
-            },
-            });
-            });
+                $.ajax({
+                type: "GET",
+                url: "../api/v1/search?q=objectType:mods AND state:published&amp;rows=0&amp;wt=json&amp;json.wrf=?",
+                dataType: "jsonp",
+                success: function (data) {
+                $('#project-searchInput').attr('placeholder', 'Suche in ' + $.number(data.response.numFound,0, ',', '.') +
+                ' Dokumenten');
+                },
+                });
+                });
         </script>
     </section>
 
     <section xml:lang="en" title="SlavDok - Document server">
-        <div class="jumbotwo" id="project-index-search" style="margin-top:50px;">
-            <div class="row">
-                <div class="col-md-9 offset-md-2" lang="de">
-                    <h1>
-                        SlavDok
-                        <br/>
-                        Document server
-                    </h1>
+        <div class="jumbotwo" id="project-index-search">
+            <div class="row" style="margin-bottom:30px;">
+                <div class="col-md-12" lang="en">
                     <form action="../servlets/solr/find" id="project-searchMainPage" class="form-inline" role="search">
                         <div class="input-group input-group-lg w-100">
                             <input
@@ -60,12 +138,98 @@
                                     id="project-searchInput"
                                     type="text"/>
                             <div class="input-group-append">
-                                <button type="submit" class="btn btn-primary-inverted">
+                                <button type="submit" class="btn btn-primary">
                                     <i class="fa fa-search"></i>
                                 </button>
                             </div>
                         </div>
                     </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                  <div class="card">
+                    <div class="card-header">
+                      <h3 class="card-title">
+                        <i class="fas fa-arrow-right" style="margin-right:1ex;" aria-hidden="true"/>
+                        Recent publications
+                      </h3>
+                    </div>
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-12 result_body">
+                          <div class="result_list">
+                            <div id="hit_list"/>
+                          </div>
+                        </div>
+                      </div>
+                      <script type="text/javascript">
+                        $(document).ready( function() {
+                        getNewestSubmissions();
+                        });
+                      </script>
+                      <div class="row">
+                        <a href="../servlets/solr/find" class="btn btn-secondary btn-sm" style="margin:auto; display:block; max-width:200px;">
+                          More publications …
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <div class="card-header">
+                      <h3 class="card-title">
+                        <i class="fas fa-info" style="margin-right:1ex;" aria-hidden="true"/>
+                        Informations
+                      </h3>
+                    </div>
+                    <div class="card-body">
+                      <span>
+                          The SlavDok open access publication server, makes scholarly works available in various media formats worldwide in open access.
+                      </span>
+                    </div>
+                    <div class="card-footer">
+                      <a href="/content/publish/general_information.xml" class="btn btn-secondary btn-block with-icon">
+                        <i class="fas fa-arrow-circle-right" style="margin-right:1ex;" aria-hidden="true"/>
+                        More publications
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h3 class="card-title">
+                        <i class="fas fa-file-alt" style="margin-right:1ex;" aria-hidden="true"/>
+                        E-Publikations
+                      </h3>
+                    </div>
+                    <div class="card-body">
+                        Publish your scientific work in open access and thereby increase the visibility of your research achievements.
+                    </div>
+                    <div class="card-footer">
+                      <a href="/content/publish/index.xml" class="btn btn-primary btn-block with-icon">
+                        <i class="fas fa-arrow-circle-right" style="margin-right:1ex;" aria-hidden="true"/>
+                        Digital publishing
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h3 class="card-title">
+                        <i class="fas fa-graduation-cap" style="margin-right:1ex;" aria-hidden="true"/>
+                        Dissertations
+                      </h3>
+                    </div>
+                    <div class="card-body">
+                        Publish your dissertation via SlavDok and ensure worldwide visibility and long-term free accessibility.
+                    </div>
+                    <div class="card-footer">
+                      <a href="/content/publish/contact.xml" class="btn btn-primary btn-block with-icon">
+                        <i class="fas fa-arrow-circle-right" style="margin-right:1ex;" aria-hidden="true"/>
+                        Publish dissertation
+                      </a>
+                    </div>
+                  </div>
                 </div>
             </div>
         </div>
