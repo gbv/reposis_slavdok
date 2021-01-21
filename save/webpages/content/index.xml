@@ -23,7 +23,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-12">
                   <div class="card">
                     <div class="card-header">
                       <h3 class="card-title">
@@ -49,61 +49,6 @@
                           Weitere Veröffentlichungen …
                         </a>
                       </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <div class="card-header">
-                      <h3 class="card-title">
-                        <i class="fas fa-info" style="margin-right:1ex;" aria-hidden="true"/>
-                        Information
-                      </h3>
-                    </div>
-                    <div class="card-body">
-                      <span>Der SlavDok Open-Access-Publikationsserver, stellt wissenschaftliche Werke in
-                        unterschiedlichen Medienformaten weltweit im Open Access zur Verfügung.
-                      </span>
-                    </div>
-                    <div class="card-footer">
-                      <a href="/content/publish/general_information.xml" class="btn btn-secondary btn-block with-icon">
-                        <i class="fas fa-arrow-circle-right" style="margin-right:1ex;" aria-hidden="true"/>
-                        Weitere Informationen
-                      </a>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-header">
-                      <h3 class="card-title">
-                        <i class="fas fa-file-alt" style="margin-right:1ex;" aria-hidden="true"/>
-                        E-Publikationen
-                      </h3>
-                    </div>
-                    <div class="card-body">
-                      Veröffentlichen Sie Ihre wissenschaftliche Arbeit im Open Access und steigern Sie dadurch die Sichtbarkeit Ihrer Forschungsleistungen.
-                    </div>
-                    <div class="card-footer">
-                      <a href="/content/publish/index.xml" class="btn btn-primary btn-block with-icon">
-                        <i class="fas fa-arrow-circle-right" style="margin-right:1ex;" aria-hidden="true"/>
-                        Digital publizieren
-                      </a>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-header">
-                      <h3 class="card-title">
-                        <i class="fas fa-graduation-cap" style="margin-right:1ex;" aria-hidden="true"/>
-                        Dissertationen
-                      </h3>
-                    </div>
-                    <div class="card-body">
-                      Veröffentlichen Sie ihre Dissertation über SlavDok und sorgen damit für eine weltweite Sichtbarkeit und langfristige freie Zugänglichkeit.
-                    </div>
-                    <div class="card-footer">
-                      <a href="/content/publish/contact.xml" class="btn btn-primary btn-block with-icon">
-                        <i class="fas fa-arrow-circle-right" style="margin-right:1ex;" aria-hidden="true"/>
-                        Dissertation veröffentlichen
-                      </a>
                     </div>
                   </div>
                 </div>
@@ -147,7 +92,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-12">
                   <div class="card">
                     <div class="card-header">
                       <h3 class="card-title">
@@ -173,61 +118,6 @@
                           More publications …
                         </a>
                       </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <div class="card-header">
-                      <h3 class="card-title">
-                        <i class="fas fa-info" style="margin-right:1ex;" aria-hidden="true"/>
-                        Informations
-                      </h3>
-                    </div>
-                    <div class="card-body">
-                      <span>
-                          The SlavDok open access publication server, makes scholarly works available in various media formats worldwide in open access.
-                      </span>
-                    </div>
-                    <div class="card-footer">
-                      <a href="/content/publish/general_information.xml" class="btn btn-secondary btn-block with-icon">
-                        <i class="fas fa-arrow-circle-right" style="margin-right:1ex;" aria-hidden="true"/>
-                        More publications
-                      </a>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-header">
-                      <h3 class="card-title">
-                        <i class="fas fa-file-alt" style="margin-right:1ex;" aria-hidden="true"/>
-                        E-Publikations
-                      </h3>
-                    </div>
-                    <div class="card-body">
-                        Publish your scientific work in open access and thereby increase the visibility of your research achievements.
-                    </div>
-                    <div class="card-footer">
-                      <a href="/content/publish/index.xml" class="btn btn-primary btn-block with-icon">
-                        <i class="fas fa-arrow-circle-right" style="margin-right:1ex;" aria-hidden="true"/>
-                        Digital publishing
-                      </a>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-header">
-                      <h3 class="card-title">
-                        <i class="fas fa-graduation-cap" style="margin-right:1ex;" aria-hidden="true"/>
-                        Dissertations
-                      </h3>
-                    </div>
-                    <div class="card-body">
-                        Publish your dissertation via SlavDok and ensure worldwide visibility and long-term free accessibility.
-                    </div>
-                    <div class="card-footer">
-                      <a href="/content/publish/contact.xml" class="btn btn-primary btn-block with-icon">
-                        <i class="fas fa-arrow-circle-right" style="margin-right:1ex;" aria-hidden="true"/>
-                        Publish dissertation
-                      </a>
                     </div>
                   </div>
                 </div>
