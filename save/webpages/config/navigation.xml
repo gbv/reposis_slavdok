@@ -5,34 +5,34 @@
         <label xml:lang="en">Main menu</label>
     </menu>
     <menu id="below" dir="/content/below">
-      <label xml:lang="de">Footer-Menü</label>
-      <label xml:lang="en">Footer menu</label>
-      <item href="/content/below/contact.xml" type="intern" replaceMenu="false" constrainPopUp="false">
-          <label xml:lang="de">Kontakt</label>
-          <label xml:lang="en">Contact</label>
-      </item>
-      <item href="/content/below/imprint.xml" type="intern" replaceMenu="false" constrainPopUp="false">
-          <label xml:lang="de">Impressum</label>
-          <label xml:lang="en">Legal Notice</label>
-      </item>
-      <item href="/content/below/rights.xml" type="intern" replaceMenu="false" constrainPopUp="false">
-          <label xml:lang="de">Datenschutz</label>
-          <label xml:lang="en">Privacy Notice</label>
-          <label xml:lang="it"></label>
-      </item>
-      <item href="/content/below/terms_of_use.xml" type="intern" replaceMenu="false" constrainPopUp="false">
-          <label xml:lang="de">Nutzungsbedingungen</label>
-          <label xml:lang="en">Terms of use</label>
-      </item>
-      <item href="/content/below/disclaimer.xml" type="intern" replaceMenu="false" constrainPopUp="false">
-          <label xml:lang="de">Haftungshinweise</label>
-          <label xml:lang="en">Disclaimer</label>
-      </item>
-      <item href="/content/below/accessibility.xml" type="intern" replaceMenu="false" constrainPopUp="false">
-          <label xml:lang="de">Barrierefreiheit</label>
-          <label xml:lang="en">Accessibility</label>
-      </item>
-    </menu>    
+        <label xml:lang="de">Footer-Menü</label>
+        <label xml:lang="en">Footer menu</label>
+        <item href="/content/below/contact.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Kontakt</label>
+            <label xml:lang="en">Contact</label>
+        </item>
+        <item href="/content/below/imprint.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Impressum</label>
+            <label xml:lang="en">Legal Notice</label>
+        </item>
+        <item href="/content/below/rights.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Datenschutz</label>
+            <label xml:lang="en">Privacy Notice</label>
+            <label xml:lang="it"></label>
+        </item>
+        <item href="/content/below/terms_of_use.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Nutzungsbedingungen</label>
+            <label xml:lang="en">Terms of use</label>
+        </item>
+        <item href="/content/below/disclaimer.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Haftungshinweise</label>
+            <label xml:lang="en">Disclaimer</label>
+        </item>
+        <item href="/content/below/accessibility.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Barrierefreiheit</label>
+            <label xml:lang="en">Accessibility</label>
+        </item>
+    </menu>
     <menu id="search">
         <label xml:lang="de">Suche</label>
         <label xml:lang="en">Search</label>
@@ -68,26 +68,29 @@
             <label xml:lang="de">nach Systematik</label>
             <label xml:lang="en">by classification</label>
         </item>
-
     </menu>
     <menu id="publish" dir="/content/publish">
         <label xml:lang="de">Veröffentlichen</label>
         <label xml:lang="en">Publish</label>
         <item href="/content/publish/general_information.xml" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">Allgemeine Informationen</label>
+            <label xml:lang="de">Funktionsweise</label>
             <label xml:lang="en">General Informations</label>
+        </item>
+        <item href="/authorization/new-author.xed?action=register" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Registrieren</label>
+            <label xml:lang="en">Register</label>
         </item>
         <item href="/content/publish/index.xml" type="intern" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">Publizieren</label>
             <label xml:lang="en">Publish</label>
         </item>
+        <item href="/content/folder/myfile.xml" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Urheberrecht</label>
+            <label xml:lang="en">new entry</label>
+        </item>
         <item href="/content/publish/faq.xml" type="intern" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">Häufig gestellte Fragen (FAQ)</label>
             <label xml:lang="en">Frequently Asked Qustions (FAQ)</label>
-        </item>
-        <item href="/authorization/new-author.xed?action=register" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">Registrieren</label>
-            <label xml:lang="en">Register</label>
         </item>
     </menu>
     <menu id="about" dir="/content/about">

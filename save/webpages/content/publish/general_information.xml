@@ -1,60 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MyCoReWebPage>
-    <section xml:lang="de" title="Hinweise für Autoren">
-        <div class="row">
-            <div class="col-md-12">
-                <h2>Allgemeine Hinweise</h2>
+<MyCoReWebPage><section xml:lang="de" title="Hinweise für Autoren"><div class="row">
+<div class="col-md-12">
+<h1>Funktionsweise</h1>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ullamcorper morbi tincidunt ornare massa eget egestas purus
-                    viverra. Vitae purus faucibus ornare suspendisse sed nisi lacus. Erat velit scelerisque in
-                    dictum non consectetur a erat. Faucibus et molestie ac feugiat sed lectus. Turpis in eu mi
-                    bibendum neque. At erat pellentesque adipiscing commodo elit at imperdiet dui. Ut porttitor leo
-                    a diam. Gravida cum sociis natoque penatibus et magnis dis parturient montes. Mollis nunc sed id
-                    semper risus in hendrerit gravida rutrum. Eget nunc scelerisque viverra mauris. Et ligula
-                    ullamcorper malesuada proin libero nunc. Felis donec et odio pellentesque. Quis ipsum
-                    suspendisse ultrices gravida dictum. Amet dictum sit amet justo donec enim diam vulputate ut.
-                    Consequat ac felis donec et odio pellentesque diam.
-                </p>
-                <p>Vulputate odio ut enim blandit volutpat maecenas volutpat blandit. Imperdiet sed euismod nisi
-                    porta lorem mollis aliquam ut. Pretium vulputate sapien nec sagittis aliquam malesuada bibendum
-                    arcu. Nec feugiat in fermentum posuere urna nec tincidunt praesent. Praesent elementum facilisis
-                    leo vel fringilla est. Sit amet mattis vulputate enim nulla aliquet porttitor lacus. Suscipit
-                    tellus mauris a diam maecenas sed. Praesent elementum facilisis leo vel fringilla est
-                    ullamcorper eget nulla. Orci sagittis eu volutpat odio facilisis mauris sit amet. Eget gravida
-                    cum sociis natoque penatibus et magnis dis. In nisl nisi scelerisque eu. Massa tincidunt dui ut
-                    ornare. Semper eget duis at tellus at urna condimentum mattis. Viverra suspendisse potenti
-                    nullam ac tortor vitae purus faucibus ornare.
-                </p>
-                <p>Fermentum odio eu feugiat pretium nibh. Fermentum posuere urna nec tincidunt praesent semper
-                    feugiat nibh sed. Dignissim cras tincidunt lobortis feugiat vivamus at augue. Sit amet dictum
-                    sit amet. Aliquam sem fringilla ut morbi tincidunt augue interdum velit. Viverra orci sagittis
-                    eu volutpat. Non diam phasellus vestibulum lorem sed risus ultricies. Odio tempor orci dapibus
-                    ultrices in iaculis nunc sed. Pharetra vel turpis nunc eget. Odio morbi quis commodo odio aenean
-                    sed adipiscing. Amet cursus sit amet dictum sit. Nam libero justo laoreet sit amet cursus sit.
-                    Amet risus nullam eget felis eget nunc lobortis mattis.
-                </p>
-                <p>
-                    Odio aenean sed adipiscing diam donec adipiscing. Eget nunc lobortis mattis aliquam. Viverra
-                    accumsan in nisl nisi scelerisque eu. Netus et malesuada fames ac turpis. Egestas integer eget
-                    aliquet nibh praesent tristique magna sit. Ultrices neque ornare aenean euismod. Platea dictumst
-                    quisque sagittis purus sit amet volutpat. Suscipit adipiscing bibendum est ultricies integer
-                    quis. Varius quam quisque id diam vel quam elementum. At consectetur lorem donec massa sapien
-                    faucibus. Volutpat consequat mauris nunc congue. Pellentesque dignissim enim sit amet venenatis.
-                    Vitae tempus quam pellentesque nec nam aliquam. Tristique sollicitudin nibh sit amet commodo.
-                    Felis donec et odio pellentesque.
-                </p>
-                <p>Potenti nullam ac tortor vitae purus faucibus ornare. Volutpat maecenas volutpat blandit aliquam
-                    etiam. Orci eu lobortis elementum nibh tellus molestie nunc. Quam adipiscing vitae proin
-                    sagittis nisl rhoncus mattis rhoncus urna. Est ullamcorper eget nulla facilisi etiam dignissim
-                    diam quis enim. Risus at ultrices mi tempus imperdiet nulla. Non nisi est sit amet facilisis
-                    magna etiam. Fermentum dui faucibus in ornare quam. Duis ultricies lacus sed turpis tincidunt id
-                    aliquet risus. Sagittis vitae et leo duis ut diam quam nulla. Egestas dui id ornare arcu odio
-                    ut.
-                </p>
-            </div>
-        </div>
-    </section>
-    <meta>
-    </meta>
-</MyCoReWebPage>
+<p>Als Serviceangebot des Fachinformationsdiensts (FID) Slawistik steht SlavDok als Plattform für das wissenschaftliche Open Access-Publizieren vorrangig dem Personal universitärer wie außeruniversitärer Forschungseinrichtungen offen. Sollten Sie aktuell also mit einer entsprechenden Institution affiliiert sein und der Schwerpunkt Ihrer wissenschaftlichen Aktivitäten auf den verschiedenen Feldern der Forschung zur Slawistik liegen, so bietet Ihnen SlavDok die Möglichkeit, wissenschaftliche Originalbeiträge sowie Zweitpublikationen bereits an anderer Stelle erschienener Texte nach den Prinzipien des Open Access zu veröffentlichen.</p>
+
+<h2>Registrierung</h2>
+
+<p>Vor der erstmaligen Nutzung des Publikationsservice ist eine Registrierung obligatorisch. Zu diesem Zweck vervollständigen Sie bitte dieses Anmeldeformular oder senden alternativ eine formlose E-Mail mit Ihren Kontaktdaten sowie Angaben zur Forschungseinrichtung, der Sie gegenwärtig angehören, an: xxxxx@sbb.spk-berlin.de. Bitte verwenden Sie in beiden Fällen Ihre dienstliche E-Mail-Adresse. Unmittelbar im Anschluss wird Ihnen ein Link an die angegebene E-Mail-Adresse zugesendet, dessen Aktivierung den Registrierungsvorgang abschließt. Mit Ihren Zugangsdaten können Sie sich nun jederzeit am Server von SlavDok anmelden.</p>
+
+<h2>Dokumenten-Upload</h2>
+
+<p>Nach erfolgter Registrierung haben Sie als Inhaberin bzw. als Inhaber der jeweiligen Urheberrechte die Möglichkeit, in Übereinstimmung mit den verbindlichen Publikationsleitlinien beliebig viele Texte auf SlavDok zu veröffentlichen. Den Publikationsvorgang starten Sie bitte durch Ihre Anmeldung am Server. Nach Erfassung und Speicherung der bibliographischen Metadaten Ihres Beitrags laden Sie bitte die zugehörige(n) Datei(en) über die Menüfelder "Aktionen" und "Hinzufügen eines Datenobjektes" in das Repositorium. Bitte beachten Sie, dass die von Ihnen zur Veröffentlichung vorgesehenen Beiträge erst nach formaler und inhaltlicher Prüfung auf SlavDok freigeschaltet werden. Im Übrigen tragen Sie die Verantwortung dafür, dass keine Urheberrechte oder andere Rechte Dritter verletzt werden – etwa im Kontext von Gemeinschaftspublikationen. Mit dem Upload Ihres Dokuments u.a. in den Dateiformaten MP3, PDF oder idealerweise PDF/A (nicht passwort- oder schreibgeschützt) sowie auf Grundlage eines schriftlichen Publikationsvertrags wird SlavDok ein einfaches Nutzungsrecht zur Verbreitung und öffentlichen Zugänglichmachung des Werks im Internet übertragen sowie ergänzend das Recht, insbesondere für Archivierungszwecke Änderungen am jeweiligen Dateiformat vorzunehmen. Den vollständig ausgefüllten und mit Ihrer elektronischen Unterschrift versehenen Publikationsvertrag im Dateiformat PDF senden Sie bitte per E-Mail an: xxxxx@sbb.spk-berlin.de. Inhaltliche Modifikationen an bereits auf SlavDok veröffentlichten Beiträgen sind dagegen ausschließlich durch Upload einer aktualisierten Version möglich.</p>
+
+<p>Handelt es sich bei dem zur Publikation auf SlavDok vorgesehenen Dokument um eine Erstveröffentlichung, so verbleibt das ausschließliche Nutzungsrecht auch weiterhin bei Ihnen, weshalb Sie beliebig anderweitig über das von Ihnen geschaffene Werk verfügen können. Bitte beachten Sie in diesem Zusammenhang auch die ausführlichen Hinweise zu den urheberrechtlichen Rahmenbedingungen des Open Access-Publizierens auf dem Fachrepositorium SlavDok. Der FID Slawistik empfiehlt Ihnen im Interesse der eindeutigen Personenidentifikation die Nutzung der kostenfreien Open Researcher and Contributor ID (ORCID) und unterstützt Sie auf Wunsch beim Upload Ihrer Beiträge. Anleitungen und multimediale Schulungsmaterialien zur Bedienung von SlavDok finden Sie hier.</p>
+
+<h2>Inhaltserschließung</h2>
+
+<p>Alle auf SlavDok veröffentlichten Textbeiträge werden mit Suchmaschinentechnologie im Volltext recherchierbar gemacht. Zur Gewährleistung eines thematischen Browsings aller Inhalte von SlavDok sind Sie zudem gebeten, Ihr Werk mit beschreibenden Metadaten systematisch zu erschließen. Hierzu wählen Sie im Zuge des Einreichungsvorgangs bitte die passende Notation aus den beiden Ausklappmenüs "Systematik Slawistik" aus. Zusätzlich haben Sie die Möglichkeit, den Inhalt Ihres Beitrags sowohl mit frei wählbaren als auch mit normierten Schlagworten zu umschreiben. Bitte erfassen Sie jedes Schlagwort separat und überprüfen Sie – sofern Sie normiertes Vokabular verwenden wollen – via "Suchen" dessen Konformität mit der Terminologie der im Hintergrund eingebundenen Gemeinsamen Normdatei der Deutschen Nationalbibliothek (GND). Bitte nutzen Sie die bevorzugte Singularform der GND-Schlagwörter.</p>
+
+<h2>Kontaktdaten und Löschpolitik</h2>
+
+<p>Sollten Sie weitere Rückfragen haben oder technische Schwierigkeiten während des Registrierungsvorgangs auftreten, so stehen wir Ihnen jederzeit beratend zur Seite. Unsere Kontaktdaten finden Sie bitte hier.</p>
+
+<p>Der FID Slawistik behält es sich vor, die Registrierung bei SlavDok wie auch die Veröffentlichung einzelner Beiträge in begründeten Ausnahmefällen zu verweigern. Auch ist eine Löschung sowie jede nachträgliche Veränderung von auf SlavDok veröffentlichten Dokumenten nicht vorgesehen. Selbstverständlich steht es Ihnen aber frei, Ihre Beiträge in aktualisierten Versionen erneut zu publizieren. Sollte – etwa aus strafrechtlichen oder urheberrechtlichen Gründen – die öffentliche Zugänglichkeit eines bereits publizierten Beitrags nicht erlaubt sein, so wird der Zugriff auf ihn gesperrt und dies unter seinen persistenten Webadressen bekanntgegeben.</p>
+</div>
+</div>
+</section><meta><log lastEditor="administrator" date="2021-01-26" time="20:48" /></meta></MyCoReWebPage>

@@ -1,34 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MyCoReWebPage>
-    <section xml:lang="de" title="HAFTUNGSHINWEISE">
-        <div class="row">
-            <div class="col-md-10" lang="de">
-                <h1>Über uns</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ullamcorper morbi tincidunt ornare massa eget egestas purus
-                    viverra. Vitae purus faucibus ornare suspendisse sed nisi lacus. Erat velit scelerisque in
-                    dictum non consectetur a erat. Faucibus et molestie ac feugiat sed lectus. Turpis in eu mi
-                    bibendum neque. At erat pellentesque adipiscing commodo elit at imperdiet dui. Ut porttitor leo
-                    a diam. Gravida cum sociis natoque penatibus et magnis dis parturient montes. Mollis nunc sed id
-                    semper risus in hendrerit gravida rutrum. Eget nunc scelerisque viverra mauris. Et ligula
-                    ullamcorper malesuada proin libero nunc. Felis donec et odio pellentesque. Quis ipsum
-                    suspendisse ultrices gravida dictum. Amet dictum sit amet justo donec enim diam vulputate ut.
-                    Consequat ac felis donec et odio pellentesque diam.
-                </p>
-                <p>Vulputate odio ut enim blandit volutpat maecenas volutpat blandit. Imperdiet sed euismod nisi
-                    porta lorem mollis aliquam ut. Pretium vulputate sapien nec sagittis aliquam malesuada bibendum
-                    arcu. Nec feugiat in fermentum posuere urna nec tincidunt praesent. Praesent elementum facilisis
-                    leo vel fringilla est. Sit amet mattis vulputate enim nulla aliquet porttitor lacus. Suscipit
-                    tellus mauris a diam maecenas sed. Praesent elementum facilisis leo vel fringilla est
-                    ullamcorper eget nulla. Orci sagittis eu volutpat odio facilisis mauris sit amet. Eget gravida
-                    cum sociis natoque penatibus et magnis dis. In nisl nisi scelerisque eu. Massa tincidunt dui ut
-                    ornare. Semper eget duis at tellus at urna condimentum mattis. Viverra suspendisse potenti
-                    nullam ac tortor vitae purus faucibus ornare.
-                </p>
-            </div>
-        </div>
-    </section>
+<MyCoReWebPage><section xml:lang="de" title="HAFTUNGSHINWEISE"><div class="row">
+<div class="col-md-10" lang="de">
+<h1>SlavDok – wir über uns</h1>
 
-    <meta>
-    </meta>
-</MyCoReWebPage>
+<p>Das disziplinäre Open Access-Repositorium SlavDok ist die zentrale Publikationsplattform des von der Deutschen Forschungsgemeinschaft an der Staatsbibliothek zu Berlin – Preußischer Kulturbesitz eingerichteten Fachinformationsdienstes für Slawistik.</p>
+
+<p>SlavDok bietet allen Angehörigen slawistischer Forschungseinrichtungen Services zur kostenfreien öffentlichen Präsentation sowie zur elektronischen Langzeitarchivierung qualitätsgesicherter, persistent adressierbarer und damit dauerhaft zitierfähiger Erst- und Zweitveröffentlichungen aus allen Bereichen der slawistischen Forschung im Open Access. Nicht zuletzt aufgrund seiner nachgewiesenen positiven Effekte für die internationale Sichtbarkeit, Rezeption und Zitierhäufigkeit empfehlen sowohl zahlreiche Hochschulen und Forschungseinrichtungen als auch namhafte Wissenschafts- und Förderorganisationen Open Access als Publikationsstrategie der Zukunft. Neben universitären Open Access-Resolutionen – u.a. der League of European Research Universities – und den Open Access-Mandaten von Forschungsfördereinrichtungen ist in diesem Zusammenhang vor allem die Schwerpunktinitiative Digitale Information zu erwähnen, unter deren Dach die Allianz der deutschen Wissenschaftsorganisationen ihre Aktivitäten zur Akzeptanzsteigerung und Etablierung des Open Access-Paradigmas bündelt.</p>
+
+<p>In Übereinstimmung mit der Open Access-Politik von Deutscher Forschungsgemeinschaft, Global Research Council und Stiftung Preußischer Kulturbesitz versteht sich SlavDok als Beitrag zur Förderung des offenen Zugangs zu wissenschaftlichem Wissen.</p>
+</div>
+</div>
+</section><meta><log lastEditor="administrator" date="2021-01-26" time="20:28" /></meta></MyCoReWebPage>

@@ -1,33 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MyCoReWebPage>
-    <section xml:lang="de" title="HAFTUNGSHINWEISE">
-        <div class="row">
-            <div class="col-md-10" lang="de">
-                <h1>Sammelprofil</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ullamcorper morbi tincidunt ornare massa eget egestas purus
-                    viverra. Vitae purus faucibus ornare suspendisse sed nisi lacus. Erat velit scelerisque in
-                    dictum non consectetur a erat. Faucibus et molestie ac feugiat sed lectus. Turpis in eu mi
-                    bibendum neque. At erat pellentesque adipiscing commodo elit at imperdiet dui. Ut porttitor leo
-                    a diam. Gravida cum sociis natoque penatibus et magnis dis parturient montes. Mollis nunc sed id
-                    semper risus in hendrerit gravida rutrum. Eget nunc scelerisque viverra mauris. Et ligula
-                    ullamcorper malesuada proin libero nunc. Felis donec et odio pellentesque. Quis ipsum
-                    suspendisse ultrices gravida dictum. Amet dictum sit amet justo donec enim diam vulputate ut.
-                    Consequat ac felis donec et odio pellentesque diam.
-                </p>
-                <p>Vulputate odio ut enim blandit volutpat maecenas volutpat blandit. Imperdiet sed euismod nisi
-                    porta lorem mollis aliquam ut. Pretium vulputate sapien nec sagittis aliquam malesuada bibendum
-                    arcu. Nec feugiat in fermentum posuere urna nec tincidunt praesent. Praesent elementum facilisis
-                    leo vel fringilla est. Sit amet mattis vulputate enim nulla aliquet porttitor lacus. Suscipit
-                    tellus mauris a diam maecenas sed. Praesent elementum facilisis leo vel fringilla est
-                    ullamcorper eget nulla. Orci sagittis eu volutpat odio facilisis mauris sit amet. Eget gravida
-                    cum sociis natoque penatibus et magnis dis. In nisl nisi scelerisque eu. Massa tincidunt dui ut
-                    ornare. Semper eget duis at tellus at urna condimentum mattis. Viverra suspendisse potenti
-                    nullam ac tortor vitae purus faucibus ornare.
-                </p>
-            </div>
-        </div>
-    </section>
-    <meta>
-    </meta>
-</MyCoReWebPage>
+<MyCoReWebPage><section xml:lang="de" title="HAFTUNGSHINWEISE"><div class="row">
+<div class="col-md-10" lang="de">
+<h1>Unser Sammelprofil</h1>
+
+<p>Als slawistisches Fachrepositorium in Deutschland ist SlavDok dem Ziel verpflichtet, offenen und kostenfreien Zugang zu qualitätsgesicherten wissenschaftlichen Originalbeiträgen, Zweitveröffentlichungen und Forschungsdaten aus allen Bereichen der Slawistik dauerhaft zu sichern und für eine Benutzung bereitzustellen.</p>
+
+<p>Insofern markiert SlavDok den zentralen Beitrag des Fachinformationsdiensts Slawistik zur Beförderung und Akzeptanzsteigerung des Open Access-Paradigmas auf Seiten der slawistischen Wissenschaftsgemeinde. Der Fachinformationsdienst Slawistik bekennt sich ausdrücklich zu den Inhalten der Berliner Erklärung über den offenen Zugang zu wissenschaftlichem Wissen sowie der von der Stiftung Preußischer Kulturbesitz formulierten Empfehlung für die Umsetzung der Berliner Erklärung von 2003 im Bereich der unterzeichnenden Kultureinrichtungen. Mit seinem Publikationsservice SlavDok möchte der Fachinformationsdienst Slawistik die Angehörigen der slawistischen Fachcommunity zudem bei der Erfüllung von Open Access-Mandaten unterstützen, die gerade im Kontext der drittmittelfinanzierten Projektforschung – so z.B. auch innerhalb des 7. Europäischen Forschungsrahmenprogramms (Special Clause 39 des Grant Agreement) und Horizon 2020 – zunehmend an Bedeutung gewinnen. Sollte Ihre Publikation mit Mitteln der Europäischen Kommission entstanden sein, so garantiert SlavDok – wie von den EU-Förderrichtlinien verlangt – deren automatische Meldung an das Forschungsinformationssystem OpenAIRE (Open Access Infrastructure for Research in Europe). Über die Open Access-Politik der internationalen Forschungsfördereinrichtungen informiert das SHERPA/JULIET-Verzeichnis. Alle auf SlavDok veröffentlichten Beiträge sind im Volltext durchsuchbar und zusätzlich auf Basis einer slawistischen Fachsystematik sowie durch frei zu vergebende Schlagwörter inhaltlich erschlossen. Zur Gewährleistung ihrer optimalen globalen Sichtbarkeit werden die auf SlavDok verfügbaren Inhalte über die Metasuche des Slavistik-Portals sowie über die wissenschaftlichen Suchmaschinen Google Scholar, BASE, WorldCat/OAIster und CORE recherchierbar gemacht.</p>
+
+<h2>Sammelprofil – formal</h2>
+
+<p>Als Open Access-Angebot ist der lesende Zugriff auf die auf SlavDok veröffentlichten Inhalte ohne jede Einschränkung weltweit möglich. Als zielgruppenorientierter Publikationsservice des Fachinformationsdiensts Slawistik steht SlavDok jedoch ausschließlich dem graduierten wissenschaftlichen Personal von Universitäten und außeruniversitären Forschungseinrichtungen zur Verfügung. Studentische Qualifikationsschriften werden nur in Ausnahmefällen und ausschließlich auf Basis schriftlicher Gutachten von Hochschullehrenden zur Veröffentlichung auf SlavDok zugelassen. Formale Restriktionen bezüglich der akzeptierten Textsorten – von Monographien bis zu Konferenzbeiträgen und Blogposts – bestehen dagegen nicht. Allerdings wird gerade bei zuvor bereits in Zeitschriften und Sammelwerken publizierten Aufsätzen die Selbstarchivierung der paginierten Verlagsversion oder zumindest eines Postprints der tatsächlich erschienenen Textfassung gegenüber der Veröffentlichung eines nicht inhaltsidentischen Preprints bevorzugt. Bitte beachten Sie in diesem Zusammenhang auch die Informationen des SHERPA/RoMEO-Verzeichnisses zur Open Access-Politik internationaler Verlage sowie ergänzend die Hinweise zu den urheberrechtlichen Rahmenbedingungen des elektronischen Publizierens auf SlavDok.</p>
+
+<h2>Sammelprofil – inhaltlich</h2>
+
+<p>Unter inhaltlichem Aspekt sind zwei Auswahlkriterien für eine Erst- oder Zweitveröffentlichung auf SlavDok verbindlich: Zum einen die thematische Verortung des betreffenden Beitrags auf dem Feld der Slawistik und zum anderen dessen wissenschaftliche Qualität, wie sie durch die akademische Reputation der einreichenden Person – dokumentiert durch deren Affiliation mit einer universitären oder außeruniversitären Forschungseinrichtung – oder aber durch das wissenschaftliche Renommee des ursprünglichen Publikationsorts verbürgt ist. Eine darüber hinaus gehende wissenschaftliche Qualitätsprüfung der eingereichten Texte nimmt SlavDok ausdrücklich nicht vor, bedingt sich aber grundsätzlich das Recht aus, Beiträge aus formalen wie inhaltlichen Gründen nicht zu veröffentlichen. Der Fachinformationsdienst Slawistik ermuntert Sie nachdrücklich dazu, sich beim Abschluss von künftigen Verlagsverträgen ein nicht ausschließliches Verwertungsrecht zur elektronischen Publikation Ihrer Forschungsergebnisse zwecks entgeltfreier Nutzung dauerhaft vorzubehalten. Musterformulierungen für ein entsprechendes Vertrags-Addendum finden Sie bitte hier.</p>
+</div>
+</div>
+</section><meta><log lastEditor="administrator" date="2021-01-26" time="20:18" /></meta></MyCoReWebPage>
