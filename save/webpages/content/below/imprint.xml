@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE MyCoReWebPage>
 <MyCoReWebPage>
     <section xml:lang="de" title="Impressum">
         <div class="row">
             <div class="col-md-10" lang="de">
                 <h1>Impressum</h1>
-
                 <h3>Anbieter</h3>
                 <p>Anbieter dieser Internetpräsenz ist im Rechtssinne die Staatsbibliothek zu Berlin - Preußischer Kulturbesitz</p>
                 <p>
@@ -63,6 +61,5 @@
             </div>
         </div>
     </section>
-
     <meta></meta>
 </MyCoReWebPage>
