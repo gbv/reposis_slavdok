@@ -122,6 +122,10 @@
             </item>
         </group>
         <group id="contentadmin">
+            <item href="/editor/editor-admins.xed" type="intern" replaceMenu="false" constrainPopUp="false">
+                <label xml:lang="de">Erfassung für Experten</label>
+                <label xml:lang="en">submit as expert</label>
+            </item>
             <item href="/modules/classeditor/classificationEditor.xml?XSL.classeditor.showId=true" type="extern" replaceMenu="false" constrainPopUp="false">
                 <label xml:lang="de">Klassifikationseditor</label>
                 <label xml:lang="en">Edit Classifications</label>
