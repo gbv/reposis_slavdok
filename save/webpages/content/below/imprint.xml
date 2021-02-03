@@ -5,67 +5,71 @@
             <div class="col-md-10" lang="de">
                 <h1>Impressum</h1>
 
-                <h3>Anbieter</h3>
+                <p>Die nachstehenden Informationen enthalten die gesetzlich vorgesehenen Pflichtangaben zur Anbieterkennzeichnung, sowie wichtige rechtliche Hinweise zur Internetpräsenz von SlavDok.</p>
+
+                <h2>Anbieter</h2>
 
                 <p>Anbieter dieser Internetpräsenz ist im Rechtssinne die Staatsbibliothek zu Berlin - Preußischer Kulturbesitz</p>
 
                 <p>
-                    Staatsbibliothek zu Berlin - PK
+                    Stiftung Preußischer Kulturbesitz
                     <br />
-                    Potsdamer Str. 33
+                    Staatsbibliothek zu Berlin
                     <br />
-                    D-10785 Berlin (Tiergarten)
+                    Unter den Linden 8
+                    <br />
+                    D-10117 Berlin
                 </p>
 
-                <h3>Projektleitung</h3>
+                <h2>Vertreter</h2>
+
+                <p>Die Stiftung Preußischer Kulturbesitz wird gesetzlich vertreten durch ihren Präsidenten, Herrn Prof. Dr. Dr. hc. mult. Hermann Parzinger. Dieser wird vertreten durch die Generaldirektorin der Staatsbibliothek zu Berlin – Preußischer Kulturbesitz, Frau Barbara Schneider-Kempf.</p>
+
+                <h2>Umsatzsteueridentifikationsnummer</h2>
+
+                <p>Die Umsatzsteueridentifikationsnummer der Staatsbibliothek zu Berlin – Preußischer Kulturbesitz lautet: DE 81 117 697 6</p>
+
+                <h2>Redaktion</h2>
+
+                <p>Fachinformationsdienst Slavistik</p>
 
                 <p>
-                    Olaf Hamann
+                    Staatsbibliothek zu Berlin – Preußischer Kulturbesitz
                     <br />
-                    Leiter der Osteuropa-Abteilung
+                    Potsdamer Straße 33
                     <br />
-                    Staatsbibliothek zu Berlin - Preußischer Kulturbesitz
-                    <br />
-                    Potsdamer Straße 33, 10785 Berlin
-                    <br />
-                    <a href="mailto:olafx.hamannx@sbb.spkx-berlin.de" onmouseover="this.href=this.href.replace(/x/g,'');">E-Mail</a>
+                    D-10785 Berlin
                 </p>
-
-                <h3>Projektkoordination und technische Umsetzung</h3>
 
                 <p>
-                    Vladimir Neumann
+                    E-Mail: slavdok@sbb.spk-berlin.de
                     <br />
-                    Fachreferent für Slawistik
-                    <br />
-                    Staatsbibliothek zu Berlin - Preußischer Kulturbesitz
-                    <br />
-                    Potsdamer Straße 33, 10785 Berlin
-                    <br />
-                    <a href="mailto:vladimirx.neumannx@sbb.spkx-berlin.de" onmouseover="this.href=this.href.replace(/x/g,'');">E-Mail</a>
+                    https://slavistik-portal.de/kontakt.html
                 </p>
 
-                <h3>Ehemalige Projektmitarbeit</h3>
+                <h2>Technischer Betrieb</h2>
 
                 <p>
-                    Barbara Martin
+                    Verbundzentrale des GBV (VZG)
                     <br />
-                    Ivo Ulrich, Berlin
+                    Platz der Göttinger Sieben 1
                     <br />
-                    Mechthild Bernhard
+                    D-37073 Göttingen
                 </p>
-                <h3>Verwandte und kooperierende Einrichtungen</h3>
 
-                <div id="Logo">
-                    <a href="https://www.osmikon.de/" target="_blank" title="Osmikon">
-                        <img alt="Logo Osmikon" src="/images/logo-osm.jpg" />
-                    </a>
-                    (ehemals ViFaOst)
-                </div>
+                <h2>Digitale Bibliothek, Reposis</h2>
+
+                <p>
+                    Telefon: 0551 39 5398
+                    <br />
+                    E-Mail: dms-list@lists.gbv.de
+                    <br />
+                    https://www.gbv.de/Verbundzentrale/serviceangebote/reposis-repository-service
+                </p>
             </div>
         </div>
     </section>
     <meta>
-        <log lastEditor="administrator" date="2021-02-03" time="11:04" />
+        <log lastEditor="administrator" date="2021-02-03" time="15:38" />
     </meta>
 </MyCoReWebPage>
