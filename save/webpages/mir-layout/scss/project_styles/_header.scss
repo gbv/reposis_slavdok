@@ -7,11 +7,12 @@
 // no (xl) media query necessary (desktop first)
 
 header {
-  background-image: url("../../../../images/background-header-default.jpg");
-  background-position: center;
+  background-image: url("../../../../images/sp_h_05_b.jpg");
+  background-position: top right;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% auto;
   background-color: $headerYellow;
+  border-bottom: 1px solid #eee;
 }
 
 // logo and menu container
@@ -22,7 +23,7 @@ header {
 }
 .project-logo__link {
   display: inline-block;
-  margin: 5px 0 20px 0;
+  margin: 5px 0 32px 0;
   text-decoration: none;
   &:hover {
     text-decoration: none;
@@ -39,18 +40,19 @@ header {
     font-size: 21px;
     line-height: 1.1;
     padding-left: 0px;
-    margin-top: 0.25rem;
+    margin-top: 10px;
+    letter-spacing: -1.1px;
   }
   .fid.logo {
     color: $logoFontBlue;
     line-height: initial;
     width: 100%;
-    text-shadow:2px 2px 2px white;
+    text-shadow: 0px 0px 4px white;
   }
 }
 
 .project_logo_box {
-  margin-top: 1rem;
+  margin-top: 20px;
   margin-bottom: 0rem;
 }
 
@@ -93,6 +95,9 @@ header {
 // Large devices (desktops) and below: <= 1200px
 @include media-breakpoint-down(lg) {
   // add/overwrite styles for responsive level lg and lower
+  header {
+    background-image: url("../../../../images/sp_h_05.jpg");
+  }
 }
 
 // Medium devices (tablets) and below: <= 992px
@@ -108,4 +113,7 @@ header {
 // Extra small devices (portrait phones): <= 576px
 @include media-breakpoint-down(xs) {
   // add/overwrite styles for responsive level xs
+  header {
+    background-image: url("../../../../images/sp_h_05_k.jpg");
+  }
 }
