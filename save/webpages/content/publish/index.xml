@@ -31,9 +31,6 @@
 
             <!-- genre -->
             <div class="row form-group">
-                <label for="genre" class="col-sm-3 col-lg-2 control-label">
-                    <text i18n="component.mods.genre"/>
-                </label>
                 <div class="col-sm-7 col-md-5 col-lg-4">
                     <select id="genre" class="form-control" name="genre" size="1">
                     </select>
@@ -42,9 +39,6 @@
 
             <!-- host -->
             <div class="row form-group">
-                <label for="host" class="col-sm-3 col-lg-2 control-label">
-                    <text i18n="mir.select.host"/>
-                </label>
                 <div class="col-sm-7 col-md-5 col-lg-4">
                     <select id="host" class="form-control" name="host" size="1">
                     </select>
@@ -53,7 +47,6 @@
 
             <!-- submit -->
             <div class="row form-group">
-                <div class="col-sm-3 col-md-2"></div>
                 <div class="col-sm-5 col-md-4">
                     <button type="submit" class="btn btn-primary">Weiter</button>
                 </div>

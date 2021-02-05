@@ -28,9 +28,6 @@
 
 <!-- genre -->
     <div class="row form-group">
-      <label for="genre" class="col-sm-3 col-lg-2 control-label">
-        <text i18n="component.mods.genre" />
-      </label>
       <div class="col-sm-7 col-md-5 col-lg-4">
         <select id="genre" class="form-control" name="genre" size="1">
         </select>
@@ -39,9 +36,6 @@
 
 <!-- host -->
     <div class="row form-group">
-      <label for="host"  class="col-sm-3 col-lg-2 control-label">
-        <text i18n="mir.select.host" />
-      </label>
       <div class="col-sm-7 col-md-5 col-lg-4">
         <select id="host" class="form-control" name="host" size="1">
         </select>
@@ -49,33 +43,36 @@
     </div>
 
       <div id="more_options_toggle" class="row">
-        <div class="col-sm-3 col-lg-2"></div>
         <div class="col-sm-9 col-lg-10">
           <span id="more_options_trigger">
             <span id="more_options_label">weitere Optionen anzeigen</span>
+            <span id="more_options_label_hide" class="d-none">weitere Optionen ausblenden</span>
             <span id="more_options_button" class="fa fa-chevron-up"></span>
           </span>
         </div>
       </div>
 
-      <div id="more_options_box" class="row form-group">
-        <h2>Publikation aus anderen Datenquellen importieren</h2>
+      <div id="more_options_box">
+        <div class="row">
+          <div class="col-sm-12 col-md-8">
+          <h2>Publikation aus anderen Datenquellen importieren</h2>
+        </div>
+        </div>
         <div class="row form-group">
-          <label class="col-sm-3 col-lg-2 control-label">
+          <label class="col-sm-3 col-lg-2 control-label mb-1">
             <select name="type">
               <option value="doi">DOI</option>
               <option value="isbn">ISBN</option>
             </select>
           </label>
-          <div class="col-sm-7 col-md-5 col-lg-4">
+          <div class="col-md-5 col-lg-4 mb-1">
             <input class="form-control" type="text" name="modsId" />
           </div>
         </div>
       </div>
 
 <!-- submit -->
-      <div class="row form-group">
-        <div class="col-sm-3 col-md-2"></div>
+      <div class="row form-group mt-1">
         <div class="col-sm-5 col-md-4">
           <button type="submit" class="btn btn-primary">Weiter</button>
         </div>
