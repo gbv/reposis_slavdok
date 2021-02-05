@@ -35,7 +35,7 @@
     <menu id="search">
         <label xml:lang="de">Suche</label>
         <label xml:lang="en">Search</label>
-        <group id="1">
+        <group id="search">
           <item href="/content/search/simple.xed" type="intern" replaceMenu="false" constrainPopUp="false">
               <label xml:lang="de">Einfach</label>
               <label xml:lang="en">Simple</label>
@@ -48,12 +48,11 @@
               <label xml:lang="de">Erweitert</label>
               <label xml:lang="en">Extended</label>
           </item>
+          <item href="/search/search-expert.xed" type="intern" replaceMenu="false" constrainPopUp="false">
+              <label xml:lang="de">Experte</label>
+              <label xml:lang="en">Expert</label>
+          </item>
         </group>
-
-        <item href="/search/search-expert.xed" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">Experte</label>
-            <label xml:lang="en">Expert</label>
-        </item>
         <item href="/content/browse/institutes.xml" type="intern" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">nach Institution</label>
             <label xml:lang="en">by department</label>
@@ -75,18 +74,22 @@
     <menu id="publish" dir="/content/publish">
         <label xml:lang="de">Veröffentlichen</label>
         <label xml:lang="en">Publish</label>
-        <item href="/content/publish/general_information.xml" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">Funktionsweise</label>
-            <label xml:lang="en">General Informations</label>
-        </item>
-        <item href="/authorization/new-author.xed?action=register" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">Registrieren</label>
-            <label xml:lang="en">Register</label>
-        </item>
-        <item href="/content/publish/index.xml" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">Publizieren</label>
-            <label xml:lang="en">Publish</label>
-        </item>
+        <group id="general">
+          <item href="/content/publish/general_information.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+              <label xml:lang="de">Funktionsweise</label>
+              <label xml:lang="en">General Informations</label>
+          </item>
+        </group>
+        <group id="puplish">
+          <item href="/authorization/new-author.xed?action=register" type="intern" replaceMenu="false" constrainPopUp="false">
+              <label xml:lang="de">Registrieren</label>
+              <label xml:lang="en">Register</label>
+          </item>
+          <item href="/content/publish/index.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+              <label xml:lang="de">Publizieren</label>
+              <label xml:lang="en">Publish</label>
+          </item>
+        </group>
         <item href="/content/publish/urheberrecht.xml" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">Urheberrecht</label>
             <label xml:lang="en">Copyright</label>
