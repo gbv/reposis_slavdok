@@ -35,18 +35,21 @@
     <menu id="search">
         <label xml:lang="de">Suche</label>
         <label xml:lang="en">Search</label>
-        <item href="/content/search/simple.xed" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">Einfach</label>
-            <label xml:lang="en">Simple</label>
-        </item>
-        <item href="/content/search/simple_intern.xed" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">Einfach</label>
-            <label xml:lang="en">Simple</label>
-        </item>
-        <item href="/content/search/complex.xed" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">Erweitert</label>
-            <label xml:lang="en">Extended</label>
-        </item>
+        <group id="1">
+          <item href="/content/search/simple.xed" type="intern" replaceMenu="false" constrainPopUp="false">
+              <label xml:lang="de">Einfach</label>
+              <label xml:lang="en">Simple</label>
+          </item>
+          <item href="/content/search/simple_intern.xed" type="intern" replaceMenu="false" constrainPopUp="false">
+              <label xml:lang="de">Einfach</label>
+              <label xml:lang="en">Simple</label>
+          </item>
+          <item href="/content/search/complex.xed" type="intern" replaceMenu="false" constrainPopUp="false">
+              <label xml:lang="de">Erweitert</label>
+              <label xml:lang="en">Extended</label>
+          </item>
+        </group>
+
         <item href="/search/search-expert.xed" type="intern" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">Experte</label>
             <label xml:lang="en">Expert</label>
@@ -67,6 +70,7 @@
             <label xml:lang="de">nach Systematik</label>
             <label xml:lang="en">by classification</label>
         </item>
+
     </menu>
     <menu id="publish" dir="/content/publish">
         <label xml:lang="de">Veröffentlichen</label>
