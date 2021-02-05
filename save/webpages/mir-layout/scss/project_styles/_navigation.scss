@@ -9,11 +9,12 @@
 // main menu -------------------------------------------------------------------
 .mir-main-nav {
   position: fixed;
+  z-index: 1000;
   top: 0;
   left: 0;
   width: 100%;
   background-color: $darkGray;
-  z-index: 1000;
+  border-bottom: 1px solid black;
   .nav-item {
     > .active {
       background-color: $darkContrastGray;
@@ -23,6 +24,7 @@
     margin-top: 0;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+    font-size: 14px;
   }
 }
 .dropdown-item {
@@ -38,23 +40,37 @@
   padding: 0;
 }
 .nav-link {
-  padding: 1rem 1rem 1rem 1rem;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 10px 15px 15px;
+  line-height: 20px;
   color: $menuFontGray !important;
   &:hover,
   &:active,
   &:focus {
     color: white !important;
+    background-color: $darkContrastGray;
   }
 }
 .nav-item.active {
   background-color: $darkContrastGray;
+  .nav-link {
+    color: white !important;
+  }
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 15px 10px 15px 15px;
+}
+
+.dropdown-divider {
+  border-top: 1px solid $menuFontGray;
 }
 
 // user options nav ------------------------------------------------------------
 .mir-prop-nav .navbar-nav > li > a {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  line-height: 1.5rem;
+  line-height: 20px;
 }
 
 // language switch -------------------------------------------------------------
