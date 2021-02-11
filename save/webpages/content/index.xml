@@ -45,8 +45,8 @@
                         });
                       </script>
                       <div class="row">
-                        <a href="../servlets/solr/find" class="btn btn-secondary btn-sm" style="margin:auto; display:block; max-width:200px;">
-                          Weitere Veröffentlichungen …
+                        <a href="../servlets/solr/find" class="btn btn-primary btn-sm" style="margin:auto; display:block; max-width:200px;">
+                          Weitere Veröffentlichungen
                         </a>
                       </div>
                     </div>
@@ -115,7 +115,7 @@
                       </script>
                       <div class="row">
                         <a href="../servlets/solr/find" class="btn btn-secondary btn-sm" style="margin:auto; display:block; max-width:200px;">
-                          More publications …
+                          More publications
                         </a>
                       </div>
                     </div>

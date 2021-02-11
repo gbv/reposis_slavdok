@@ -27,7 +27,7 @@ $(document).ready(function() {
 function getNewestSubmissions() {
   $.ajax({
     method: "GET",
-    url: webApplicationBaseURL + "servlets/solr/find?rows=3",
+    url: webApplicationBaseURL + "servlets/solr/find?rows=5&sort=created+desc",
     dataType: "html"
   }).done( function( html ) {
     var hitListHtml = $(html).find('#hit_list').html();
