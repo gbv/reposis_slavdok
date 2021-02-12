@@ -52,6 +52,9 @@
     background-color: $darkContrastGray;
   }
 }
+.mir-prop-nav .navbar-nav > li > a {
+  font-size: 14px;
+}
 .nav-item.active {
   background-color: $darkContrastGray;
   .nav-link {
