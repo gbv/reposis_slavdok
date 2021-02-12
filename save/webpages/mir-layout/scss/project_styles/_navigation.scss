@@ -55,6 +55,11 @@
 .mir-prop-nav .navbar-nav > li > a {
   font-size: 14px;
 }
+.mir-prop-nav .navbar-nav > li > a:hover,
+.mir-prop-nav .navbar-nav > li > a:focus {
+  color: white !important;
+  background-color: $darkContrastGray;
+}
 .nav-item.active {
   background-color: $darkContrastGray;
   .nav-link {
@@ -96,6 +101,11 @@ html[lang="en"] {
 }
 footer {
   .nav-link {
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: transparent;
+    }
     a {
       color: $footerGray;
       padding: 0.5rem 1rem;
