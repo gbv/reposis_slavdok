@@ -80,7 +80,7 @@
               <label xml:lang="en">General Informations</label>
           </item>
         </group>
-        <group id="puplish">
+        <group id="publish">
           <item href="/authorization/new-author.xed?action=register" type="intern" replaceMenu="false" constrainPopUp="false">
               <label xml:lang="de">Registrieren</label>
               <label xml:lang="en">Register</label>
@@ -89,6 +89,10 @@
               <label xml:lang="de">Publizieren</label>
               <label xml:lang="en">Publish</label>
           </item>
+          <item href="/servlets/solr/select?q=createdby:USERNAME" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Eigene Dokumente</label>
+            <label xml:lang="en">My Documents</label>
+        </item>
         </group>
         <item href="/content/publish/urheberrecht.xml" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">Urheberrecht</label>
@@ -130,6 +134,10 @@
             <item href="/content/publish/index.xml" type="intern" replaceMenu="false" constrainPopUp="false">
                 <label xml:lang="de">Publizieren</label>
                 <label xml:lang="en">Publish</label>
+            </item>
+            <item href="/servlets/solr/select?q=createdby:USERNAME" type="intern" replaceMenu="false" constrainPopUp="false">
+                <label xml:lang="de">Eigene Dokumente</label>
+                <label xml:lang="en">My Documents</label>
             </item>
         </group>
         <group id="contentadmin">
