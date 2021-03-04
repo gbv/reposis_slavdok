@@ -1,75 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MyCoReWebPage>
-    <section xml:lang="de" title="Impressum">
-        <div class="row">
-            <div class="col-md-10" lang="de">
-                <h1>Impressum</h1>
+<MyCoReWebPage><section xml:lang="de" title="Impressum"><div class="row">
+<div class="col-md-10" lang="de">
+<h1>Impressum</h1>
 
-                <p>Die nachstehenden Informationen enthalten die gesetzlich vorgesehenen Pflichtangaben zur Anbieterkennzeichnung, sowie wichtige rechtliche Hinweise zur Internetpräsenz von SlavDok.</p>
+<p>Die nachstehenden Informationen enthalten die gesetzlich vorgesehenen Pflichtangaben zur Anbieterkennzeichnung, sowie wichtige rechtliche Hinweise zur Internetpräsenz von SlavDok.</p>
 
-                <h2>Anbieter</h2>
+<h2>Anbieter</h2>
 
-                <p>Anbieter dieser Internetpräsenz ist im Rechtssinne die Staatsbibliothek zu Berlin - Preußischer Kulturbesitz</p>
+<p>Anbieter dieser Internetpräsenz ist im Rechtssinne die Staatsbibliothek zu Berlin - Preußischer Kulturbesitz</p>
 
-                <p>
-                    Stiftung Preußischer Kulturbesitz
-                    <br />
-                    Staatsbibliothek zu Berlin
-                    <br />
-                    Unter den Linden 8
-                    <br />
-                    D-10117 Berlin
-                </p>
+<p>Stiftung Preußischer Kulturbesitz<br />
+Staatsbibliothek zu Berlin<br />
+Unter den Linden 8<br />
+D-10117 Berlin</p>
 
-                <h2>Vertreter</h2>
+<h2>Vertreter</h2>
 
-                <p>Die Stiftung Preußischer Kulturbesitz wird gesetzlich vertreten durch ihren Präsidenten, Herrn Prof. Dr. Dr. hc. mult. Hermann Parzinger. Dieser wird vertreten durch die Generaldirektorin der Staatsbibliothek zu Berlin – Preußischer Kulturbesitz, Frau Barbara Schneider-Kempf.</p>
+<p>Die Stiftung Preußischer Kulturbesitz wird gesetzlich vertreten durch ihren Präsidenten, Herrn Prof. Dr. Dr. hc. mult. Hermann Parzinger. Dieser wird vertreten durch die Generaldirektorin der Staatsbibliothek zu Berlin – Preußischer Kulturbesitz, Frau Barbara Schneider-Kempf.</p>
 
-                <h2>Umsatzsteueridentifikationsnummer</h2>
+<h2>Umsatzsteueridentifikationsnummer</h2>
 
-                <p>Die Umsatzsteueridentifikationsnummer der Staatsbibliothek zu Berlin – Preußischer Kulturbesitz lautet: DE 81 117 697 6</p>
+<p>Die Umsatzsteueridentifikationsnummer der Staatsbibliothek zu Berlin – Preußischer Kulturbesitz lautet: DE 81 117 697 6</p>
 
-                <h2>Redaktion</h2>
+<h2>Redaktion</h2>
 
-                <p>Fachinformationsdienst Slavistik</p>
+<p>Fachinformationsdienst Slavistik</p>
 
-                <p>
-                    Staatsbibliothek zu Berlin – Preußischer Kulturbesitz
-                    <br />
-                    Potsdamer Straße 33
-                    <br />
-                    D-10785 Berlin
-                </p>
+<p>Staatsbibliothek zu Berlin – Preußischer Kulturbesitz<br />
+Potsdamer Straße 33<br />
+D-10785 Berlin</p>
 
-                <p>
-                    E-Mail: slavdok@sbb.spk-berlin.de
-                    <br />
-                    https://slavistik-portal.de/kontakt.html
-                </p>
+<p>E-Mail: <a href="mailto:slavdok@sbb.spk-berlin.de">slavdok@sbb.spk-berlin.de</a><br />
+<a href="https://slavistik-portal.de/kontakt.html" target="_blank">https://slavistik-portal.de/kontakt.html</a></p>
 
-                <h2>Technischer Betrieb</h2>
+<h2>Technischer Betrieb</h2>
 
-                <p>
-                    Verbundzentrale des GBV (VZG)
-                    <br />
-                    Platz der Göttinger Sieben 1
-                    <br />
-                    D-37073 Göttingen
-                </p>
+<p>Verbundzentrale des GBV (VZG)<br />
+Platz der Göttinger Sieben 1<br />
+D-37073 Göttingen</p>
 
-                <h2>Digitale Bibliothek, Reposis</h2>
+<h2>Digitale Bibliothek, Reposis</h2>
 
-                <p>
-                    Telefon: 0551 39 5398
-                    <br />
-                    E-Mail: dms-list@lists.gbv.de
-                    <br />
-                    https://www.gbv.de/Verbundzentrale/serviceangebote/reposis-repository-service
-                </p>
-            </div>
-        </div>
-    </section>
-    <meta>
-        <log lastEditor="administrator" date="2021-02-03" time="15:38" />
-    </meta>
-</MyCoReWebPage>
+<p>Telefon: 0551 39 5398<br />
+E-Mail: <a href="mailto:dms-list@lists.gbv.de">dms-list@lists.gbv.de</a><br />
+<a href="https://www.gbv.de/Verbundzentrale/serviceangebote/reposis-repository-service" target="_blank">https://www.gbv.de/Verbundzentrale/serviceangebote/reposis-repository-service</a></p>
+</div>
+</div>
+</section><meta><log lastEditor="administrator" date="2021-03-01" time="11:03" /></meta></MyCoReWebPage>
