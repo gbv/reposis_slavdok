@@ -7,8 +7,8 @@
   <xed:modify ref="admin.fields">
     <xed:remove ref="abstract.repeated" />
     <xed:include ref="abstract.repeated.collapsed" after="link.repeated" />
-    <xed:include ref="language_classification" after="sdnb.repeat" />
-    <xed:include ref="openAIRE.collapsed" after="openAIRE" />
+    <xed:include ref="subject_indexing" before="abstract.repeated.collapsed" />
+    <xed:include ref="openAIRE.collapsed" after="abstract.repeated.collapsed" />
     <xed:remove ref="openAIRE" />
   </xed:modify>
 
@@ -26,11 +26,8 @@
     <xed:include ref="identifier.managed" />
     <xed:include ref="doi.handle.urn.repeated" />
     <xed:include ref="link.repeated" />
+    <xed:include ref="subject_indexing" />
     <xed:include ref="abstract.repeated.collapsed" />
-    <xed:include ref="slavdok.subject" />
-    <xed:include ref="geographic" />
-    <xed:include ref="cartographics" />
-    <xed:include ref="language_classification" />
     <xed:include ref="openAIRE.collapsed" />
     <xed:include ref="further_information" />
   </xed:template>
@@ -42,12 +39,9 @@
     <xed:remove ref="sdnb.repeat" />
     <xed:remove ref="abstract.simple" />
     <xed:include ref="abstract.repeated.collapsed" after="link.repeated" />
-    <xed:include ref="slavdok.subject" after="abstract.repeated" />
+    <xed:include ref="subject_indexing" before="abstract.repeated.collapsed" />
     <xed:remove ref="subject.simple" />
-    <xed:include ref="geographic" after="slavdok.subject" />
-    <xed:include ref="cartographics" after="geographic" />
-    <xed:include ref="language_classification" after="cartographics" />
-    <xed:include ref="openAIRE.collapsed" after="language_classification" />
+    <xed:include ref="openAIRE.collapsed" after="abstract.repeated.collapsed" />
     <xed:remove ref="rights" />
     <xed:remove ref="institutes" />
     <xed:remove ref="comment" />
@@ -75,11 +69,8 @@
     <xed:remove ref="subject.simple" />
     <xed:include ref="abstract.repeated.collapsed" after="abstract.repeated" />
     <xed:remove ref="abstract.repeated" />
-    <xed:include ref="slavdok.subject" after="abstract.repeated.collapsed" />
-    <xed:include ref="geographic" after="slavdok.subject" />
-    <xed:include ref="cartographics" after="geographic" />
-    <xed:include ref="language_classification" after="cartographics" />
-    <xed:include ref="openAIRE.collapsed" after="language_classification" />
+    <xed:include ref="subject_indexing" before="abstract.repeated.collapsed" />
+    <xed:include ref="openAIRE.collapsed" after="abstract.repeated.collapsed" />
     <xed:remove ref="rights" />
     <xed:remove ref="institutes" />
     <xed:remove ref="comment" />
@@ -124,12 +115,9 @@
     <xed:remove ref="sdnb.repeat" />
     <xed:remove ref="abstract.simple" />
     <xed:include ref="abstract.repeated.collapsed" after="link.repeated" />
-    <xed:include ref="slavdok.subject" after="abstract.repeated.collapsed" />
+    <xed:include ref="subject_indexing" before="abstract.repeated.collapsed" />
     <xed:remove ref="subject.simple" />
-    <xed:include ref="geographic" after="slavdok.subject" />
-    <xed:include ref="cartographics" after="geographic" />
-    <xed:include ref="language_classification" after="cartographics" />
-    <xed:include ref="openAIRE.collapsed" after="language_classification" />
+    <xed:include ref="openAIRE.collapsed" after="abstract.repeated.collapsed" />
     <xed:remove ref="rights" />
     <xed:remove ref="institutes" />
     <xed:remove ref="comment" />
@@ -148,12 +136,9 @@
     <xed:remove ref="sdnb.repeat" />
     <xed:remove ref="abstract.simple" />
     <xed:include ref="abstract.repeated.collapsed" after="link.repeated" />
-    <xed:include ref="slavdok.subject" after="abstract.repeated.collapsed" />
+    <xed:include ref="subject_indexing" before="abstract.repeated.collapsed" />
     <xed:remove ref="subject.simple" />
-    <xed:include ref="geographic" after="slavdok.subject" />
-    <xed:include ref="cartographics" after="geographic" />
-    <xed:include ref="language_classification" after="cartographics" />
-    <xed:include ref="openAIRE.collapsed" after="language_classification" />
+    <xed:include ref="openAIRE.collapsed" after="abstract.repeated.collapsed" />
     <xed:remove ref="rights" />
     <xed:remove ref="institutes" />
     <xed:remove ref="comment" />
@@ -163,7 +148,7 @@
   <xed:modify ref="genres.journal.common">
     <xed:include ref="link.repeated" after="sdnb.repeat" />
     <xed:remove ref="sdnb.repeat" />
-    <xed:include ref="slavdok.subject" after="abstract.simple" />
+    <xed:include ref="subject_indexing" after="link.repeated" />
     <xed:remove ref="subject.simple" />
     <xed:remove ref="shelfmark" />
     <xed:include ref="identifier.issn.fixed" after="identifier.issn" />
@@ -185,14 +170,11 @@
     <xed:remove ref="physical.description.note" />
     <xed:remove ref="cartographics" />
     <xed:include ref="abstract.repeated.collapsed" after="link.repeated" />
-    <xed:include ref="slavdok.subject" after="abstract.repeated.collapsed" />
     <xed:remove ref="subject.simple" />
-    <xed:include ref="physical.description.form" after="slavdok.subject" />
+    <xed:include ref="subject_indexing" before="abstract.repeated.collapsed" />
+    <xed:include ref="physical.description.form" after="subject_indexing" />
     <xed:include ref="physical.description.note" after="physical.description.form" />
-    <xed:include ref="geographic" after="physical.description.note" />
-    <xed:include ref="cartographics" after="geographic" />
-    <xed:include ref="language_classification" after="cartographics" />
-    <xed:include ref="openAIRE.collapsed" after="language_classification" />
+    <xed:include ref="openAIRE.collapsed" after="abstract.repeated.collapsed" />
     <xed:remove ref="rights" />
     <xed:remove ref="institutes" />
     <xed:remove ref="comment" />
@@ -207,15 +189,13 @@
     <xed:include ref="link.repeated" after="sdnb.repeat" />
     <xed:remove ref="sdnb.repeat" />
     <xed:include ref="abstract.repeated.collapsed" after="abstract.simple" />
-    <xed:remove ref="abstract.simple" />
-    <xed:include ref="slavdok.subject" after="abstract.simple" />
+    <xed:include ref="subject_indexing" before="abstract.repeated.collapsed" />
+    <xed:remove ref="abstract.simple" /> 
     <xed:remove ref="subject.simple" />
-    <xed:include ref="geographic" after="slavdok.subject" />
-    <xed:include ref="cartographics" after="geographic" />
     <xed:remove ref="rights" />
     <xed:remove ref="institutes" />
     <xed:remove ref="comment" />
-    <xed:include ref="further_information.without_embargo" after="cartographics" />
+    <xed:include ref="further_information.without_embargo" after="abstract.repeated.collapsed" />
   </xed:modify>
 
   <xed:modify ref="genres.av.common">
@@ -228,18 +208,13 @@
     <xed:include ref="link.repeated" after="doi.handle.urn.repeated" />
     <xed:remove ref="sdnb.repeat" />
     <xed:remove ref="abstract.simple" />
-    <xed:remove ref="geographic" />
-    <xed:remove ref="cartographics" />
     <xed:include ref="research.data.date.repeated.creation.fixed" after="date.recorded.datetimepicker" />
     <xed:remove ref="date.recorded.datetimepicker" />
     <xed:include ref="station" before="language" />
     <xed:include ref="abstract.repeated.collapsed" after="link.repeated" />
-    <xed:include ref="slavdok.subject" after="abstract.repeated.collapsed" />
+    <xed:include ref="subject_indexing" before="abstract.repeated.collapsed" />
     <xed:remove ref="subject.simple" />
-    <xed:include ref="geographic" after="slavdok.subject" />
-    <xed:include ref="cartographics" after="geographic" />
-    <xed:include ref="language_classification" after="cartographics" />
-    <xed:include ref="openAIRE.collapsed" after="language_classification" />
+    <xed:include ref="openAIRE.collapsed" after="abstract.repeated.collapsed" />
     <xed:remove ref="rights" />
     <xed:remove ref="institutes" />
     <xed:remove ref="comment" />
@@ -290,13 +265,16 @@
     <xed:include ref="identifier.isbn.fixed" />
     <xed:include ref="doi.handle.urn.repeated" />
     <xed:include ref="link.repeated" />
+    <xed:include ref="subject_indexing" />
     <xed:include ref="abstract.repeated.collapsed" />
-    <xed:include ref="slavdok.subject" />
-    <xed:include ref="geographic" />
-    <xed:include ref="cartographics" />
-    <xed:include ref="language_classification" />
     <xed:include ref="openAIRE.collapsed" />
     <xed:include ref="further_information" after="openAIRE.collapsed" />
+  </xed:template>
+
+  <xed:template id="subject_indexing">
+    <xed:include ref="slavdok_subject" />
+    <xed:include ref="base_classification" after="slavdok_subject" />
+    <xed:include ref="language_classification" after="base_classification" />
   </xed:template>
 
   <xed:template id="further_information">
@@ -360,7 +338,26 @@
     </xed:bind>
   </xed:template>
 
-  <xed:template id="slavdok.subject">
+  <xed:template id="base_classification">
+    <xed:bind xpath="mods:classification[@authorityURI='https://slavdok.slavistik-portal.de/classifications/base_classification'][@displayLabel='base_classification']/@valueURIxEditor">
+      <div class="form-group row {$xed-validation-marker}">
+        <label class="col-md-3 col-form-label text-right">
+          <xed:output i18n="slavdok.form.label.base_classification" />
+        </label>
+        <div class="col-md-6">
+          <select class="form-control form-control-inline">
+            <option value="">
+              <xed:output i18n="mir.select" />
+            </option>
+            <xed:include uri="xslStyle:items2options:classification:editor:-1:children:base_classification" />
+          </select>
+        </div>
+        <mir:help-pmud help-text="{i18n:slavdok.help.base_classification}" pmud="false" />
+      </div>
+    </xed:bind>
+  </xed:template>
+
+  <xed:template id="slavdok_subject">
     <xed:bind xpath="mods:subject">
       <mir:topic.repeated min="1" max="20" label="mir.subject.topic" help-text="{i18n:mir.help.subject.topic.gnd}" class="required" required="true" required-i18n="mir.validation.subject" />
     </xed:bind>
@@ -410,14 +407,12 @@
     <xed:include ref="author.repeated" />
     <xed:include ref="date.issued.required" />
     <xed:include ref="language" />
-    <xed:include ref="language_classification" />
     <xed:include ref="identifier.managed" />
     <xed:include ref="doi.handle.urn.repeated" />
     <xed:include ref="blog_entry_link" />
+    <xed:include ref="subject_indexing" />
     <xed:include ref="abstract.repeated.collapsed" />
-    <xed:include ref="slavdok.subject" after="subject.simple" />
     <xed:remove ref="subject.simple" />
-    <xed:include ref="geographic" />
     <xed:include ref="further_information" />
   </xed:template>
 
@@ -482,11 +477,8 @@
     <xed:include ref="identifier.isbn.fixed" />
     <xed:include ref="doi.handle.urn.repeated" />
     <xed:include ref="link.repeated" />
+    <xed:include ref="subject_indexing" />
     <xed:include ref="abstract.repeated.collapsed" />
-    <xed:include ref="slavdok.subject" />
-    <xed:include ref="geographic" />
-    <xed:include ref="cartographics.repeated" />
-    <xed:include ref="language_classification" />
     <xed:include ref="openAIRE.collapsed" />
     <xed:include ref="further_information.without_embargo" after="openAIRE.collapsed" />
   </xed:template>
