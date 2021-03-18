@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MyCoReWebPage>
-
     <section xml:lang="de" title="SlavDok - Dokumentenserver">
         <div class="jumbotwo" id="project-index-search">
             <div class="row" style="margin-bottom:30px;">
@@ -22,6 +21,7 @@
                     </form>
                 </div>
             </div>
+            <recent_documents />
             <div class="row">
                 <div class="col-md-12">
                   <div class="card">
@@ -40,9 +40,21 @@
                         </div>
                       </div>
                       <script type="text/javascript">
-                        $(document).ready( function() {
-                        getNewestSubmissions();
+                        $( document ).ready(function() {
+                            $.ajax({
+                              method: "GET",
+                              url: webApplicationBaseURL + "servlets/solr/find?rows=5&amp;sort=created+desc",
+                              dataType: "html"
+                            }).done(function (html) {
+                              var hitListHtml = $(html).find('#hit_list').html();
+                              if (hitListHtml.includes("hit_1")) {
+                                $('#hit_list').html(hitListHtml);
+                                $('.hit_counter').html("&amp;nbsp");
+                                $('.hit_options').html("&amp;nbsp");
+                                $('.single_hit_option').html("&amp;nbsp");
+                              }
                         });
+                      });
                       </script>
                       <div class="row">
                         <a href="../servlets/solr/find" class="btn btn-primary btn-sm" style="margin:auto; display:block; max-width:200px;">
@@ -109,9 +121,21 @@
                         </div>
                       </div>
                       <script type="text/javascript">
-                        $(document).ready( function() {
-                        getNewestSubmissions();
-                        });
+                        $( document ).ready(function() {
+                          $.ajax({
+                            method: "GET",
+                            url: webApplicationBaseURL + "servlets/solr/find?rows=5&amp;sort=created+desc",
+                            dataType: "html"
+                          }).done(function (html) {
+                            var hitListHtml = $(html).find('#hit_list').html();
+                            if (hitListHtml.includes("hit_1")) {
+                              $('#hit_list').html(hitListHtml);
+                              $('.hit_counter').html("&amp;nbsp");
+                              $('.hit_options').html("&amp;nbsp");
+                              $('.single_hit_option').html("&amp;nbsp");
+                            }
+                      });
+                    });
                       </script>
                       <div class="row">
                         <a href="../servlets/solr/find" class="btn btn-secondary btn-sm" style="margin:auto; display:block; max-width:200px;">
