@@ -59,6 +59,9 @@
           </div>
         </xed:bind>
 
+        <!-- Captacha -->
+        <xed:include uri="xslStyle:user-xeditor-templates:webapp:authorization/new-author-includes.xed" ref="captcha" />
+        
         <!-- Approvement -->
         <xed:bind xpath="approvement">
           <div class="form-group row ">
@@ -71,8 +74,6 @@
             </div>
           </div>
         </xed:bind>
-
-        <!-- Captacha -->
 
         <!-- Hidden parameters for MCRMailer -->
         <input type="hidden" value="../content/below/contact.xed?XSL.Status.Style=success&amp;XSL.Status.Message=slavdok.contact.success" name="goto" /> <!-- where to go after sending mail -->
