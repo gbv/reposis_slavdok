@@ -288,8 +288,8 @@
 
   <xed:template id="subject_indexing">
     <xed:include ref="slavdok_subject" />
-    <xed:include ref="base_classification" after="slavdok_subject" />
-    <xed:include ref="language_classification" after="base_classification" />
+    <xed:include ref="base_classification.search" after="slavdok_subject" />
+    <xed:include ref="language_classification" after="base_classification.search" />
   </xed:template>
 
   <xed:template id="further_information">
@@ -370,6 +370,39 @@
         <mir:help-pmud help-text="{i18n:slavdok.help.base_classification}" pmud="false" />
       </div>
     </xed:bind>
+  </xed:template>
+
+  <xed:template id="base_classification.search">
+      <div class="form-group row {$xed-validation-marker}">
+        <label class="col-md-3 col-form-label text-right">
+          <xed:output i18n="slavdok.form.label.base_classification" />
+        </label>
+        <div class="col-md-6">
+          <xed:bind xpath="mods:classification[@authorityURI='https://slavdok.slavistik-portal.de/classifications/base_classification'][@displayLabel='base_classification']/@valueURIxEditor">
+            <div class="controls">
+              <xed:include ref="base_classification.list" />
+            </div>
+          </xed:bind>
+        </div>
+        <mir:help-pmud help-text="{i18n:slavdok.help.base_classification}" pmud="false"/>
+      </div>
+  </xed:template>
+
+  <xed:template id="base_classification.list">
+    <select class="form-control form-control-inline bc-select">
+      <xed:choose>
+        <xed:when test="string-length(.) &gt; 0">
+          <option value="{.}" selected="">
+            <xed:output value="." />
+          </option>
+        </xed:when>
+        <xed:otherwise>
+          <option value="" selected="">
+            <xed:output value="" />
+          </option>
+        </xed:otherwise>
+      </xed:choose>
+    </select>
   </xed:template>
 
   <xed:template id="slavdok_subject">
