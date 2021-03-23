@@ -1,155 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MyCoReWebPage>
-    <section xml:lang="de" title="SlavDok - Dokumentenserver">
-        <div class="jumbotwo" id="project-index-search">
-            <div class="row" style="margin-bottom:30px;">
-                <div class="col-md-12" lang="de">
-                    <form action="../servlets/solr/find" id="project-searchMainPage" class="form-inline" role="search">
-                        <div class="input-group input-group-lg w-100">
-                            <input
-                                    name="condQuery"
-                                    placeholder="Suche in allen Dokumenten"
-                                    class="form-control search-query"
-                                    id="project-searchInput"
-                                    type="text"/>
-                            <div class="input-group-append">
-                                <button type="submit" class="btn btn-primary">
-                                    <i class="fa fa-search"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <recent_documents />
-            <div class="row">
-                <div class="col-md-12">
-                  <div class="card">
-                    <div class="card-header">
-                      <h3 class="card-title">
-                        <i class="fas fa-arrow-right" style="margin-right:1ex;" aria-hidden="true"/>
-                        Neueste Veröffentlichungen
-                      </h3>
-                    </div>
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="col-12 result_body">
-                          <div class="result_list">
-                            <div id="hit_list"/>
-                          </div>
-                        </div>
-                      </div>
-                      <script type="text/javascript">
-                        $( document ).ready(function() {
-                            $.ajax({
-                              method: "GET",
-                              url: webApplicationBaseURL + "servlets/solr/find?rows=5&amp;sort=created+desc",
-                              dataType: "html"
-                            }).done(function (html) {
-                              var hitListHtml = $(html).find('#hit_list').html();
-                              if (hitListHtml.includes("hit_1")) {
-                                $('#hit_list').html(hitListHtml);
-                                $('.hit_counter').html("&amp;nbsp");
-                                $('.hit_options').html("&amp;nbsp");
-                                $('.single_hit_option').html("&amp;nbsp");
-                              }
-                        });
-                      });
-                      </script>
-                      <div class="row">
-                        <a href="../servlets/solr/find" class="btn btn-primary btn-sm" style="margin:auto; display:block; max-width:200px;">
-                          Weitere Veröffentlichungen
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+  <section xml:lang="de" i18n="index.title">
+    <div class="jumbotwo" id="project-index-search">
+      <div class="row" style="margin-bottom:30px;">
+        <div class="col-md-12" lang="de">
+          <form action="../servlets/solr/find" id="project-searchMainPage" class="form-inline" role="search">
+            <div class="input-group input-group-lg w-100">
+              <input name="condQuery" placeholder="Suche in allen Dokumenten" class="form-control search-query" id="project-searchInput" type="text" />
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-primary">
+                  <i class="fa fa-search"></i>
+                </button>
               </div>
-        </div>
-        <script src="../js/jquery.number.js"></script>
-        <script>
-            $( document ).ready(function() {
-                $.ajax({
-                type: "GET",
-                url: "../api/v1/search?q=objectType:mods AND state:published&amp;rows=0&amp;wt=json&amp;json.wrf=?",
-                dataType: "jsonp",
-                success: function (data) {
-                $('#project-searchInput').attr('placeholder', 'Suche in ' + $.number(data.response.numFound,0, ',', '.') +
-                ' Dokumenten');
-                },
-                });
-                });
-        </script>
-    </section>
-
-    <section xml:lang="en" title="SlavDok - Document server">
-        <div class="jumbotwo" id="project-index-search">
-            <div class="row" style="margin-bottom:30px;">
-                <div class="col-md-12" lang="en">
-                    <form action="../servlets/solr/find" id="project-searchMainPage" class="form-inline" role="search">
-                        <div class="input-group input-group-lg w-100">
-                            <input
-                                    name="condQuery"
-                                    placeholder="Search in all documents"
-                                    class="form-control search-query"
-                                    id="project-searchInput"
-                                    type="text"/>
-                            <div class="input-group-append">
-                                <button type="submit" class="btn btn-primary">
-                                    <i class="fa fa-search"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                  <div class="card">
-                    <div class="card-header">
-                      <h3 class="card-title">
-                        <i class="fas fa-arrow-right" style="margin-right:1ex;" aria-hidden="true"/>
-                        Recent publications
-                      </h3>
-                    </div>
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="col-12 result_body">
-                          <div class="result_list">
-                            <div id="hit_list"/>
-                          </div>
-                        </div>
-                      </div>
-                      <script type="text/javascript">
-                        $( document ).ready(function() {
-                          $.ajax({
-                            method: "GET",
-                            url: webApplicationBaseURL + "servlets/solr/find?rows=5&amp;sort=created+desc",
-                            dataType: "html"
-                          }).done(function (html) {
-                            var hitListHtml = $(html).find('#hit_list').html();
-                            if (hitListHtml.includes("hit_1")) {
-                              $('#hit_list').html(hitListHtml);
-                              $('.hit_counter').html("&amp;nbsp");
-                              $('.hit_options').html("&amp;nbsp");
-                              $('.single_hit_option').html("&amp;nbsp");
-                            }
-                      });
-                    });
-                      </script>
-                      <div class="row">
-                        <a href="../servlets/solr/find" class="btn btn-secondary btn-sm" style="margin:auto; display:block; max-width:200px;">
-                          More publications
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-            </div>
+          </form>
         </div>
-        <script src="../js/jquery.number.js"></script>
-        <script>
-            $( document ).ready(function() {
+      </div>
+      <recent_documents />
+    </div>
+    <script src="../js/jquery.number.js"></script>
+    <script>
+        $( document ).ready(function() {
+            $.ajax({
+            type: "GET",
+            url: "../api/v1/search?q=objectType:mods AND state:published&amp;rows=0&amp;wt=json&amp;json.wrf=?",
+            dataType: "jsonp",
+            success: function (data) {
+            $('#project-searchInput').attr('placeholder', 'Suche in ' + $.number(data.response.numFound,0, ',', '.') +
+            ' Dokumenten');
+            },
+            });
+            });
+    </script>
+  </section>
+  <section xml:lang="en" i18n="index.title">
+    <div class="jumbotwo" id="project-index-search">
+      <div class="row" style="margin-bottom:30px;">
+        <div class="col-md-12" lang="de">
+          <form action="../servlets/solr/find" id="project-searchMainPage" class="form-inline" role="search">
+            <div class="input-group input-group-lg w-100">
+              <input name="condQuery" placeholder="Search in all documents" class="form-control search-query" id="project-searchInput" type="text" />
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-primary">
+                  <i class="fa fa-search"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <recent_documents />
+    </div>
+    <script src="../js/jquery.number.js"></script>
+    <script>
+        $( document ).ready(function() {
             $.ajax({
             type: "GET",
             url: "../api/v1/search?q=objectType:mods AND state:published&amp;rows=0&amp;wt=json&amp;json.wrf=?",
@@ -160,10 +64,7 @@
             },
             });
             });
-        </script>
-    </section>
-
-    <meta>
-    </meta>
-
+    </script>
+  </section>
+  <meta></meta>
 </MyCoReWebPage>
