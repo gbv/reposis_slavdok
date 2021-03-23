@@ -4,11 +4,11 @@
   xmlns:mcrxsl="xalan://org.mycore.common.xml.MCRXMLFunctions"
   exclude-result-prefixes="">
 
-  <xsl:include href="response-mir.xsl" />
   <xsl:include href="response-utils.xsl" />
-
-  <xsl:param name="WebApplicationBaseURL"></xsl:param>
-  <xsl:variable name="parameters" select="@data-parameters" />
+  <xsl:include href="xslInclude:solrResponse" />
+  
+  <xsl:param name="WebApplicationBaseURL" />
+  <xsl:param name="currentPage" select="'1'" />
 
   <xsl:template match="recent_documents">
     <div class="row">
@@ -23,7 +23,7 @@
           <div class="row result_body">
             <div class="col-12 result_list">
               <div id="hit_list">
-                <xsl:apply-templates select="document(concat('solr:q=', '*&amp;rows=3&amp;sort=created+desc'))//doc|arr[@name='groups']/lst/str[@name='groupValue']" mode="resultList" />
+                <xsl:apply-templates select="document(concat('solr:q=*', '&amp;rows=3&amp;start=0&amp;sort=created+desc'))//doc" mode="resultList" />
               </div>
             </div>
           </div>
