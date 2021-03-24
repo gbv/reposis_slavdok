@@ -8,7 +8,7 @@
   <xsl:include href="response-utils.xsl" />
   <xsl:include href="xslInclude:solrResponse" />
 
-  <xsl:param name="WebApplicationBaseURL" />
+  <xsl:param name="proxyBaseURL" select="concat($WebApplicationBaseURL,'servlets/solr/find')" />
   <xsl:param name="currentPage" select="'1'" />
 
   <xsl:template match="recent_documents">
