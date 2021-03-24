@@ -26,7 +26,7 @@
               <div class="col-12 result_body">
                 <div class="result_list">
                   <div id="hit_list">
-                    <xsl:apply-templates select="document(concat('solr:q=*', '&amp;rows=5&amp;start=0&amp;sort=created+desc'))//doc" mode="resultList" />
+                    <xsl:apply-templates select="document(concat('solr:q=state:published AND objectType:mods', '&amp;rows=5&amp;start=0&amp;sort=created+desc'))//doc" mode="resultList" />
                   </div>
                 </div>
               </div>
