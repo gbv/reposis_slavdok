@@ -5,12 +5,6 @@
                 xmlns:i18n="xalan://org.mycore.services.i18n.MCRTranslation"
                 exclude-result-prefixes="">
 
-  <xsl:include href="response-utils.xsl" />
-  <xsl:include href="xslInclude:solrResponse" />
-
-  <xsl:param name="proxyBaseURL" select="concat($WebApplicationBaseURL,'servlets/solr/find')" />
-  <xsl:param name="currentPage" select="'1'" />
-
   <xsl:template match="recent_documents">
     <div class="row">
       <div class="col-md-12">
@@ -26,7 +20,7 @@
               <div class="col-12 result_body">
                 <div class="result_list">
                   <div id="hit_list">
-                    <xsl:apply-templates select="document(concat('solr:q=state:published AND objectType:mods', '&amp;rows=5&amp;start=0&amp;sort=created+desc'))//doc" mode="resultList" />
+                    <xsl:copy-of select="document('xslStyle:response2html:xslTransform:response-prepared:solr:q=state:published AND objectType:mods&amp;rows=5&amp;start=0&amp;sort=created+desc')/div/*" />
                   </div>
                 </div>
               </div>
