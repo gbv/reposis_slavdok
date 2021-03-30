@@ -8,6 +8,7 @@
   <xsl:include href="response-utils.xsl" />
   <xsl:include href="xslInclude:solrResponse" />
 
+  <xsl:param name="proxyBaseURL" select="concat($WebApplicationBaseURL,'servlets/solr/find')" />
 
   <xsl:template match="/">
     <div>
