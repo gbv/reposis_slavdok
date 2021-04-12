@@ -288,8 +288,10 @@
 
   <xed:template id="subject_indexing">
     <xed:include ref="slavdok_subject" />
-    <xed:include ref="base_classification.search" after="slavdok_subject" />
-    <xed:include ref="language_classification" after="base_classification.search" />
+    <xed:include ref="language_classification" after="slavdok_subject" />
+    <xed:if test="xed:call-java('org.mycore.common.xml.MCRXMLFunctions','isCurrentUserInRole','admin')">
+      <xed:include ref="base_classification.search" after="language_classification" />
+    </xed:if>
   </xed:template>
 
   <xed:template id="further_information">
