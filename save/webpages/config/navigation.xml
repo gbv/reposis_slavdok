@@ -48,6 +48,10 @@
                 <label xml:lang="de">Erweitert</label>
                 <label xml:lang="en">Extended</label>
             </item>
+            <item href="/content/search/complex_intern.xed" type="intern" replaceMenu="false" constrainPopUp="false">
+                <label xml:lang="de">Erweitert</label>
+                <label xml:lang="en">Extended</label>
+            </item>
             <item href="/search/search-expert.xed" type="intern" replaceMenu="false" constrainPopUp="false">
                 <label xml:lang="de">Experte</label>
                 <label xml:lang="en">Expert</label>
