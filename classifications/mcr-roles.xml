@@ -2,7 +2,7 @@
 <mycoreclass xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="MCRClassification.xsd" ID="mcr-roles">
   <label xml:lang="en" text="system user roles" />
   <label xml:lang="de" text="Systemnutzerrollen" />
-  <label xml:lang="x-uri" text="http://www.mycore.org/classifications/mcr-roles" />
+  <label xml:lang="x-uri" text="https://slavdok.slavistik-portal.de/api/v2/classifications/mcr-roles" />
   <categories>
     <category ID="fiduser">
       <label xml:lang="de" text="FID-Nutzer" />

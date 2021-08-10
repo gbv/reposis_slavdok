@@ -3,7 +3,7 @@
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
              xsi:noNamespaceSchemaLocation="MCRClassification.xsd" ID="mir_genres">
   <label xml:lang="en" text="genre" description="A list of publication types" />
-  <label xml:lang="x-uri" text="https://kartdok.sbb-berlin.de/classifications/mir_genres" />
+  <label xml:lang="x-uri" text="https://slavdok.slavistik-portal.de/api/v2/classifications/mir_genres" />
   <label xml:lang="de" text="Genre" description="Liste der Publikationsarten" />
   <categories>
     <category ID="article">

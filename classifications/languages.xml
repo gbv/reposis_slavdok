@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <mycoreclass xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="MCRClassification.xsd" ID="language_classification">
-  <label xml:lang="x-uri" text="https://slavdok.slavistik-portal.de/classifications/languages"/>
+  <label xml:lang="x-uri" text="https://slavdok.slavistik-portal.de/api/v2/classifications/languages"/>
   <label xml:lang="de" text="Sprachensystematik" description="Liste der Sprachkategorien"/>
   <label xml:lang="en" text="Language classification" description="List of language types"/>
   <categories>
