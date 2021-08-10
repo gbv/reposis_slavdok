@@ -413,7 +413,7 @@
   </xed:template>
 
   <xed:template id="language_classification">
-    <xed:bind xpath="mods:classification[@authorityURI='https://slavdok.slavistik-portal.de/classifications/languages'][@displayLabel='language_classification']/@valueURIxEditor">
+    <xed:bind xpath="mods:classification[@authorityURI='https://slavdok.slavistik-portal.de/api/v2/classifications/languages'][@displayLabel='language_classification']/@valueURIxEditor">
       <div class="form-group row {$xed-validation-marker}">
         <label class="col-md-3 col-form-label text-right">
           <xed:output i18n="slavdok.form.label.systematik" />
@@ -432,7 +432,7 @@
   </xed:template>
 
   <xed:template id="base_classification">
-    <xed:bind xpath="mods:classification[@authorityURI='https://slavdok.slavistik-portal.de/classifications/base_classification'][@displayLabel='base_classification']/@valueURIxEditor">
+    <xed:bind xpath="mods:classification[@authorityURI='https://slavdok.slavistik-portal.de/api/v2/classifications/base_classification'][@displayLabel='base_classification']/@valueURIxEditor">
       <div class="form-group row {$xed-validation-marker}">
         <label class="col-md-3 col-form-label text-right">
           <xed:output i18n="slavdok.form.label.base_classification" />
@@ -456,7 +456,7 @@
           <xed:output i18n="slavdok.form.label.base_classification" />
         </label>
         <div class="col-md-6">
-          <xed:bind xpath="mods:classification[@authorityURI='https://slavdok.slavistik-portal.de/classifications/base_classification'][@displayLabel='base_classification']/@valueURIxEditor">
+          <xed:bind xpath="mods:classification[@authorityURI='https://slavdok.slavistik-portal.de/api/v2/classifications/base_classification'][@displayLabel='base_classification']/@valueURIxEditor">
             <div class="controls">
               <xed:include ref="base_classification.list" />
             </div>
