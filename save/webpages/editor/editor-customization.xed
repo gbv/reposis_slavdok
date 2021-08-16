@@ -233,8 +233,8 @@
 
   <xed:modify ref="admin.fields">
     <xed:remove ref="abstract.repeated" />
-    <xed:remove ref="geographic" />
-    <xed:remove ref="cartographics" />
+    <xed:remove ref="geographic.complex" />
+    <xed:remove ref="cartographics.repeat" />
     <xed:include ref="abstract.repeated.collapsed" after="link.repeated" />
     <xed:include ref="base_classification.search" before="abstract.repeated.collapsed" />
     <xed:include ref="language_classification" after="base_classification.search" />
