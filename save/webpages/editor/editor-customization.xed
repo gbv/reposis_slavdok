@@ -28,8 +28,8 @@
     <xed:include ref="conference" />
     <xed:include ref="producer.speaker.repeated" />
     <xed:include ref="research.data.date.repeated.creation" />
-    <xed:include ref="geographic" />
-    <xed:include ref="cartographics" />
+    <!-- <xed:include ref="geographic" /> -->
+    <!-- <xed:include ref="cartographics" /> -->
     <xed:include ref="station" />
     <xed:include ref="language" />
     <xed:include ref="link.repeated" />
@@ -233,6 +233,8 @@
 
   <xed:modify ref="admin.fields">
     <xed:remove ref="abstract.repeated" />
+    <xed:remove ref="geographic" />
+    <xed:remove ref="cartographics" />
     <xed:include ref="abstract.repeated.collapsed" after="link.repeated" />
     <xed:include ref="base_classification.search" before="abstract.repeated.collapsed" />
     <xed:include ref="language_classification" after="base_classification.search" />
