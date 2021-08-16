@@ -234,7 +234,8 @@
   <xed:modify ref="admin.fields">
     <xed:remove ref="abstract.repeated" />
     <xed:include ref="abstract.repeated.collapsed" after="link.repeated" />
-    <xed:include ref="subject_indexing" before="abstract.repeated.collapsed" />
+    <xed:include ref="base_classification.search" before="abstract.repeated.collapsed" />
+    <xed:include ref="language_classification" after="base_classification.search" />
   </xed:modify>
 
   <xed:modify ref="genres.thesis">
@@ -285,9 +286,9 @@
   <!-- ========== field group templates ========== -->
 
   <xed:template id="subject_indexing">
-    <!--<xed:include ref="project_subject" />-->
-    <!-- <xed:include ref="base_classification.search" />-->
-    <!-- <xed:include ref="language_classification" /> -->
+    <xed:include ref="subject.simple.required" />
+    <xed:include ref="base_classification.search" />
+    <xed:include ref="language_classification" />
   </xed:template>
 
   <xed:template id="further_information">
@@ -466,14 +467,6 @@
         </xed:otherwise>
       </xed:choose>
     </select>
-  </xed:template>
-
-  <xed:template id="project_subject">
-    <xed:bind xpath="mods:subject">
-      <mir:topic.repeated min="1" max="20" label="mir.subject.topic" 
-        help-text="{i18n:mir.help.subject.topic.gnd}" class="required" required="true" 
-        required-i18n="mir.validation.subject" />
-    </xed:bind>
   </xed:template>
 
   <xed:template id="blog_entry_link">
