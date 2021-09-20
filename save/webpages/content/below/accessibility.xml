@@ -1,94 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MyCoReWebPage><section xml:lang="de" title="Barrierefreiheitserklärung"><div class="row">
-<div class="col-md-12" lang="de">
-<h1>Erklärung zur Barrierefreiheit (Stand der Erklärung: [Datum])</h1>
-
-<p>Der Fachinformationsdienst Slawistik (FID Slawistik) bemüht sich, sein Open Access-Repositorium Slavistik (SlavDok) barrierefrei zu gestalten. Die im Folgenden gemachte Erklärung zur digitalen Barrierefreiheit wird in den aktuell gültigen Fassungen von Barrierefreie-Informationstechnik-Verordnung (BITV 2.0) und Behindertengleichstellungsgesetz (BGG) verlangt. Aus beiden Normen ergeben sich auch die Anforderungen zur technischen Umsetzung digitaler Barrierefreiheit.</p>
-
-<p>Diese Erklärung zur Barrierefreiheit gilt für https://slavdok.slavistik-portal.de/.</p>
-
-<h2>Wann wurde die Erklärung zur digitalen Barrierefreiheit erstellt?</h2>
-
-<p>Diese Erklärung wurde am [Datum] erstellt.</p>
-
-<h2>Wie barrierefrei ist dieses Angebot?</h2>
-
-<p>Dieses Angebot ist weitgehend barrierefrei. Es werden die Mehrzahl der Anforderungen der BITV 2.0 erfüllt.</p>
-
-<h2>Welche Bereiche sind nicht barrierefrei?</h2>
-
-<p><strong>Eingeschränkte Barrierefreiheit eingebundener Dokumente im PDF-Format.</strong><br />
-Die eingebundenen Dokumente im PDF-Format sind möglicherweise nicht barrierefrei.<br />
-Aufgrund der hohen Zahl eingebundener Dokumente können diese nicht vollständig in ein barrierefreies Format umgewandelt werden, zumal in Teilen die Ausgangsdateien fehlen und eine nachträgliche Bearbeitung nach § 12a Abs. 6 BGG als unverhältnismäßig arbeitsaufwendig zu werten ist. Wir sind bestrebt, künftig ausschließlich barrierefreie Dokumente auf SlavDok zu veröffentlichen. Sollten Sie eine bestimmte PDF-Datei benötigen, die noch nicht barrierefrei zur Verfügung steht, so kontaktieren Sie uns bitte unter den weiter unten genannten Kontaktdaten.</p>
-
-<p><strong>Audiodateien ohne Volltextalternative.</strong><br />
-Transkriptionen oder andere Volltextalternativen von Audiodateien sind nicht verfügbar.<br />
-Aufgrund der hohen Zahl sowie des Umfangs der auf SlavDok veröffentlichten Audiodateien ist deren rückwirkende Transkription gemäß § 12a Abs. 6 BGG als unverhältnismäßig arbeitsaufwendig zu werten.</p>
-
-<p><strong>Videos ohne Untertitel oder Volltextalternative</strong><br />
-Videos mit Ton verfügen weder über Untertitel noch über Transkriptionen.<br />
-Aufgrund der hohen Zahl sowie des Umfangs der auf SlavDok veröffentlichten Videodateien ist deren rückwirkende Transkription gemäß § 12a Abs. 6 BGG als unverhältnismäßig arbeitsaufwendig zu werten.</p>
-
-<p><strong>Abweichende Sprache einzelner Wörter oder Abschnitte nicht ausgezeichnet.</strong><br />
-Anderssprachige Wörter und Abschnitte sind nicht mit lang-Attributen ausgezeichnet.<br />
-Aufgrund der hohen Zahl sowie des Umfangs der auf SlavDok veröffentlichten Dokumente ist deren rückwirkende Auszeichnung mit lang-Attributen gemäß § 12a Abs. 6 BGG als unverhältnismäßig arbeitsaufwendig zu werten.</p>
-
-<p><strong>Inhalte nicht in Leichter oder Gebärdensprache verfügbar.</strong><br />
-Sämtliche Inhalte von SlavDok stehen nicht in Leichter oder Gebärdensprache zur Verfügung.<br />
-Aufgrund seines ausschließlich wissenschaftlichen Zielpublikums ist die Übersetzung der Inhalte von SlavDok in Leichte Sprache verzichtbar. Mit Blick auf Umfang und Komplexität der ausschließlich wissenschaftlichen Inhalte von SlavDok ist deren rückwirkende Übersetzung in Gebärdensprache gemäß § 12a Abs. 6 BGG als unverhältnismäßig arbeitsaufwendig zu werten.</p>
-
-<p><strong>Alternativtexte (1.1.1 a-c)</strong><br />
-An einigen Stellen fehlen die Alternativtexte. Bei einem nächsten Update werden diese ergänzt werden.</p>
-
-<p><strong>HTML-Strukturelemente (1.3.1 a-f)</strong><br />
-Einige HTML-Strukturelemente sind nur teilweise barrierefrei, da die entsprechenden Bootstrap-Klassen fehlen. <span style="color:#FF0000;">Eine Überarbeitung ist in Arbeit.</span></p>
-
-<p><strong>Eingabefelder zu Nutzerdaten vermitteln den Zweck (1.3.5a)</strong><br />
-Einige der eingebundenen Formulare nutzen keine Autovervollständigung. Das Fehlen der „autocomplete“-Attribute erschwert das Ausfüllen der Formulare. Bei einem Update soll die Funktionalität künftig ergänzt werden.</p>
-
-<p><strong>Kontraste von Texten ausreichend (1.4.3)</strong><br />
-Da das strukturelle Layout der Webseite vor dem Erscheinen der Richtlinie (EU) 2016/2102 erstellt wurde, ist das Kontrastverhältnis von 4,5:1 nicht grundsätzlich sichergestellt. An einer Lösung wird gearbeitet.</p>
-
-<p><strong>Aktuelle Position des Fokus deutlich (2.4.7a)</strong><br />
-Der Fokus ist bei der Bedienung mit der Tastatur nicht immer erkennbar. Die Anpassung des Fokus-Managements erfolgt bei der nächsten grundlegenden Überarbeitung der Website.</p>
-
-<p><strong>Fehlererkennung (3.3.1a)</strong><br />
-Angaben in Formularen werden vor dem Abschicken nicht automatisch überprüft. Bei der nächsten grundlegenden Überarbeitung der Website soll die Funktionalität künftig ergänzt werden.</p>
-
-<p><strong>Statusmeldungen programmatisch verfügbar (4.1.3a)</strong><br />
-Es erfolgt weder visuell noch im Screenreader ein Hinweis, dass das Dokument auf die Merkliste gesetzt wurde. Diese Funktion wird im Rahmen eines Updates ergänzt.</p>
-
-<p>Die identifizierten technischen Mängel werden sukzessive behoben.</p>
-
-<h2>Wen können Sie bei Anmerkungen oder Rückfragen zur digitalen Barrierefreiheit kontaktieren?</h2>
-
-<p>Sind Ihnen Mängel beim barrierefreien Zugang zu Inhalten von https://slavdok.slavistik-portal.de aufgefallen? Dann teilen Sie uns diese bitte mit – vielen Dank. Unsere Kontaktdaten lauten:</p>
-
-<p>Publikationsservice SlavDok<br />
-Fachinformationsdienst Slawistik<br />
-Staatsbibliothek zu Berlin – Preußischer Kulturbesitz<br />
-Potsdamer Straße 33<br />
-D-10785 Berlin<br />
-E-Mail: xxxxx@sbb.spk-berlin.de<br />
-Internet: <a href="https://slavdok.slavistik-portal.de">https://slavdok.slavistik-portal.de</a></p>
-
-<h2>Kontakt zur Schlichtungsstelle</h2>
-
-<p>Sollten Sie der Ansicht sein, durch eine nicht ausreichend barrierefreie Gestaltung von SlavDok benachteiligt zu werden, können Sie sich an die Schlichtungsstelle nach § 16 des Gesetzes zur Gleichstellung von Menschen mit Behinderungen (BGG) wenden.</p>
-
-<p>Das Schlichtungsverfahren ist kostenlos. Sie benötigen auch keinen Rechtsbeistand.</p>
-
-<p>Auf der Internetseite der Schlichtungsstelle finden Sie alle Informationen zum Schlichtungsverfahren. Dort können Sie nachlesen, wie ein Schlichtungsverfahren abläuft und wie Sie den Antrag auf Schlichtung stellen. Sie können den Antrag auch in Leichter Sprache oder in Deutscher Gebärdensprache stellen.</p>
-
-<p>Sie erreichen die Schlichtungsstelle unter folgender Adresse:</p>
-
-<p>Schlichtungsstelle nach dem Behindertengleichstellungsgesetz bei dem Beauftragten der Bundesregierung für die Belange von Menschen mit Behinderungen<br />
-Mauerstraße 53<br />
-D-10117 Berlin<br />
-Telefon: +49 30 18 527-2805</p>
-
-<p>E-Mail: <a href="mailto:info@schlichtungsstelle-bgg.de">info@schlichtungsstelle-bgg.de</a><br />
-Internet: <a href="https://www.schlichtungsstelle-bgg.de" target="_blank">www.schlichtungsstelle-bgg.de</a></p>
-</div>
-</div>
-</section><meta><log lastEditor="administrator" date="2021-03-01" time="11:03" /></meta></MyCoReWebPage>
+<!DOCTYPE MyCoReWebPage>
+<MyCoReWebPage>
+    <section xml:lang="de" title="Barrierefreiheitserklärung">
+        <div class="row">
+            <div class="col-md-12" lang="de">
+                <h1>Erklärung zur Barrierefreiheit</h1>
+                <p>Um eine weitestgehende Barrierefreiheit zu ermöglichen, ist die Staatsbibliothek zu Berlin –
+                    Preußischer Kulturbesitz bemüht, das Webangebot entsprechend zu optimieren. Rechtsgrundlagen
+                    sind das Behindertengleichstellungsgesetz (BGG) sowie die
+                    Barrierefreie-Informationstechnik-Verordnung (BITV).
+                </p>
+                <p>Bereits in der Vergangenheit haben wir, für unterschiedliche Bereiche dieser Website, ein
+                    entsprechendes Prüfverfahren durchführen lassen. Vor diesem Hintergrund wird für die Website
+                    der Staatsbibliothek zu Berlin baldmöglichst ein aktualisierter (manueller), von der W3C Web
+                    Accessibility Initiative (WAI) entwickelter, <a
+                            href="https://bik-fuer-alle.de/easy-checks.html" target="_blank" class="extern">Test
+                    </a> durchgeführt werden.
+                </p>
+                <h2>Stand der Vereinbarkeit mit den Anforderungen</h2>
+                <p>
+                  Diese Website befindet sich im Aufbau. Beim einen vorläufige BITV-Test über die funktionale Teile und 
+                  das Design sind unterschiedlichste technischen Defizite und Mängel
+                  identifiziert worden, die eine barrierefreie Nutzung der Webseite erschweren. Diese sind in dem 
+                  <a href="accessibility_test_mir.xml">Protokoll</a> vom Test aufgelistet und werden sukzessive behoben.
+                </p>
+                <p>Diese Erklärung wurde am 20.09.2021 erstellt.</p>
+                <h2>Möglichkeiten der Kontaktaufnahme</h2>
+                <p>Falls Sie der Meinung sind, dass die Barrierefreiheit in unserem Webangebot nicht ausreichend
+                    umgesetzt wurde, bitten wir Sie um Kontaktaufnahme. Wir versuchen, den Mangel
+                    schnellstmöglich zu beheben.
+                </p>
+                <p>Bitte wenden Sie sich dazu per E-Mail an:
+                    <a href="mailto:bitv@sbb.spk-berlin.de">bitv@sbb.spk-berlin.de</a>
+                </p>
+                <p>oder per Post an:<br/>
+                    Staatsbibliothek zu Berlin – Preußischer Kulturbesitz<br/>
+                    Abteilung IDM 3<br/>
+                    Potsdamer Str. 33<br/>
+                    10785 Berlin
+                </p>
+            </div>
+        </div>
+    </section>
+    <meta>
+        <log lastEditor="administrator" date="2021-07-08" time="08:53"/>
+    </meta>
+</MyCoReWebPage>
