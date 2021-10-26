@@ -39,8 +39,9 @@
   </xsl:variable>
 
   <xsl:template name="mir.loginMenu">
+    <!-- SLAV-28 and SLAV-41 : go to dashboard after login  -->
     <xsl:variable xmlns:encoder="xalan://java.net.URLEncoder" name="loginURL"
-      select="concat( $ServletsBaseURL, 'MCRLoginServlet',$HttpSession,'?url=', encoder:encode( string( $RequestURL ) ) )" />
+      select="concat( $ServletsBaseURL, 'MCRLoginServlet',$HttpSession,'?url=', encoder:encode( string(  '../content/dashboard.xml' ) ) )" />
     <xsl:choose>
       <xsl:when test="contains($RequestURL, 'MCRLoginServlet') and mcrxsl:isCurrentUserGuestUser()"></xsl:when>
       <xsl:when test="mcrxsl:isCurrentUserGuestUser()">

@@ -8,7 +8,8 @@
   <xsl:include href="response-utils.xsl" />
   <xsl:include href="xslInclude:solrResponse" />
 
-  <xsl:param name="proxyBaseURL" select="concat($WebApplicationBaseURL,'servlets/solr/find')" />
+  <!-- Changed from find to select in order to work properly with the dashboard-->
+  <xsl:param name="proxyBaseURL" select="concat($WebApplicationBaseURL,'servlets/solr/select')" />
 
   <xsl:template match="/">
     <div>
