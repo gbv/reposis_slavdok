@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyCoReWebPage>
+	<section xml:lang="de" title="Nutzungsbedingungen">
+		<div class="row">
+			<div class="col-md-10">
+				<h1>Nutzungsbedingungen für SlavDok</h1>
+				
+				<p>Die elektronischen Dokumente werden in SlavDok, sofern möglich, unter einer <a href="https://creativecommons.org/share-your-work/licensing-types-examples/licensing-examples" title="CC-Lizenz">CC-Lizenz</a> veröffentlicht. Alle auf SlavDok veröffentlichten beschreibenden bibliographischen Metadaten – mit Ausnahme der Abstracts – stehen unter der <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.de">CC0 1.0 Universell-Lizenz</a> zur freien Weiterverwendung zur Verfügung.</p>
+				
+				<p>Bitte geben Sie bei Nutzung die vollständige Quellenangabe an (siehe unten). Bitte schicken Sie uns bei der Verwendung auf Webseiten zur Information den Link auf die entsprechende Stelle per E-Mail: <a href="mailto:slavdok@sbb.spk-berlin.de">slavdok@sbb.spk-berlin.de</a>. Wir würden uns freuen, wenn Sie uns bei der Verwendung in wissenschaftlichen Publikationen ein Belegexemplar der Publikation zusenden könnten.</p>
+				
+				<p><strong>Quellenangabe:</strong></p>
+				
+				<p>SlavDok - Dokumentenserver, Persistent-Identifier (DOI, URN) des digitalen Objects</p>
+				
+				<p>Beispiele:</p>
+				
+				<ul>
+					<li><em>SlavDok - Dokumentenserver, </em><a href="https://doi.org/10.24355/dbbs.084-201802231113"><em>https://doi.org/10.24355/dbbs.084-201802231113</em></a><em> (DOI)</em></li>
+					<li><em>SlavDok - Dokumentenserver, <a href="https://nbn-resolving.org/urn:nbn:de:0307-20210328-000-2">https://nbn-resolving.org/urn:nbn:de:0307-20210328-000-2</a></em><em> (URN)</em></li>
+				</ul>
+				
+				<p><strong>OAI-Schnittstelle zum Metadata Harvesting unter:</strong></p>
+				
+				<p><a href="https://slavistik-portal.de/servlets/OAIDataProvider">https://slavistik-portal.de/servlets/OAIDataProvider</a></p>
+			</div>
+		</div>
+	</section>
+	<meta>
+	</meta>
+</MyCoReWebPage>
