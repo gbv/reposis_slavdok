@@ -34,10 +34,19 @@
                 <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='about']" />
               </ul>
             </div>
-
             <div class="searchBox">
+              <xsl:variable name="Find">
+                <xsl:choose>
+                  <xsl:when test="mcrxsl:isCurrentUserInRole('editor') or mcrxsl:isCurrentUserInRole('admin')">
+                    <xsl:copy-of select="concat('servlets/solr/', 'find')"/> 
+                  </xsl:when>
+                  <xsl:otherwise>
+                    <xsl:copy-of select="concat('servlets/solr/', 'findPublic')" /> 
+                  </xsl:otherwise>
+                </xsl:choose>
+              </xsl:variable>
               <form
-                      action="{$WebApplicationBaseURL}servlets/solr/find"
+                      action="{$WebApplicationBaseURL}{$Find}"
                       class="searchfield_box form-inline my-2 my-lg-0"
                       role="search">
                 <input

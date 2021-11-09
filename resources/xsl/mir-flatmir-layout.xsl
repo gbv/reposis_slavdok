@@ -18,12 +18,15 @@
   <xsl:param name="MIR.Layout.Theme" />
 
   <xsl:variable name="PageTitle" select="/*/@title" />
+  <xsl:variable name="Description" select="@description" />
 
   <xsl:template match="/site">
     <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
     <html lang="{$CurrentLang}" class="no-js">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="title" content="{$PageTitle}" />
+        <meta name="description" content="{$Description}" />
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>
           <xsl:value-of select="$PageTitle" />
@@ -32,7 +35,7 @@
         <script src="{$WebApplicationBaseURL}mir-layout/assets/jquery/jquery.min.js"></script>
         <script src="{$WebApplicationBaseURL}mir-layout/assets/jquery/plugins/jquery-migrate/jquery-migrate.min.js"></script>
         <xsl:copy-of select="head/*" />
-        <link href="{$WebApplicationBaseURL}rsc/sass/mir-layout/scss/{$MIR.Layout.Theme}-{$MIR.DefaultLayout.CSS}.css?2021-02-05" rel="stylesheet" />
+        <link href="{$WebApplicationBaseURL}rsc/sass/mir-layout/scss/{$MIR.Layout.Theme}-{$MIR.DefaultLayout.CSS}.css" rel="stylesheet" />
         <xsl:if test="string-length($MIR.CustomLayout.CSS) &gt; 0">
           <link href="{$WebApplicationBaseURL}css/{$MIR.CustomLayout.CSS}" rel="stylesheet" />
         </xsl:if>

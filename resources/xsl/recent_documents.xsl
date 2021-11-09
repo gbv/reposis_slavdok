@@ -36,4 +36,31 @@
     </div>
   </xsl:template>
 
+  <xsl:template match="index_search_form">
+
+    <xsl:variable name="Find">
+      <xsl:choose>
+        <xsl:when test="mcrxsl:isCurrentUserInRole('editor') or mcrxsl:isCurrentUserInRole('admin')">
+          <xsl:copy-of select="concat('../servlets/solr/', 'find')"/> 
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:copy-of select="concat('../servlets/solr/', 'findPublic')" /> 
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
+
+    <form action="{$Find}" id="project-searchMainPage" class="form-inline" role="search">
+      <div class="input-group input-group-lg w-100">
+        <input name="condQuery" placeholder="{i18n:translate('project.index_search.placeholder')}" class="form-control search-query" id="project-searchInput" type="text" />
+        <div class="input-group-append">
+          <button type="submit" class="btn btn-primary">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+
+  </xsl:template>
+
+
 </xsl:stylesheet>

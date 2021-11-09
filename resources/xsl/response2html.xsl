@@ -8,8 +8,19 @@
   <xsl:include href="response-utils.xsl" />
   <xsl:include href="xslInclude:solrResponse" />
 
+  <xsl:variable name="Select">
+    <xsl:choose>
+      <xsl:when test="mcrxsl:isCurrentUserInRole('editor') or mcrxsl:isCurrentUserInRole('admin') or mcrxsl:isCurrentUserInRole('submitter')">
+        <xsl:copy-of select="concat('servlets/solr/', 'select')"/> 
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:copy-of select="concat('servlets/solr/', 'selectPublic')" /> 
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:variable>
+
   <!-- Changed from find to select in order to work properly with the dashboard-->
-  <xsl:param name="proxyBaseURL" select="concat($WebApplicationBaseURL,'servlets/solr/select')" />
+  <xsl:param name="proxyBaseURL" select="concat($WebApplicationBaseURL, $Select)" />
 
   <xsl:template match="/">
     <div>

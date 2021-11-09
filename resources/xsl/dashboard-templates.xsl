@@ -64,7 +64,7 @@
   <xsl:template match="unpublished_documents">
     <xsl:variable name="solrQuery">
       <xsl:choose>
-        <xsl:when test="mcrxsl:isCurrentUserInRole('editor') or mcrxsl:isCurrentUserInRole('admin')">
+        <xsl:when test="mcrxsl:isCurrentUserInRole('editor') or mcrxsl:isCurrentUserInRole('admin') or mcrxsl:isCurrentUserInRole('submitter')">
           <xsl:copy-of select="concat('q=state:(state:submitted OR state:blocked) AND objectType:mods','&amp;sort=created+desc')"/> 
         </xsl:when>
         <xsl:otherwise>
