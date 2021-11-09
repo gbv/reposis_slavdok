@@ -15,7 +15,7 @@
           <xsl:copy-of select="concat('q=state:published AND objectType:mods','&amp;sort=created+desc')"/> 
         </xsl:when>
         <xsl:otherwise>
-          <xsl:copy-of select="concat('q=state:published AND objectType:mods&amp;owner=createdby:', $CurrentUser,'&amp;sort=created+desc')" /> 
+          <xsl:copy-of select="concat('q=state:published AND createdby:', $CurrentUser, '&amp;fq=objectType:mods&amp;sort=created+desc')" /> 
         </xsl:otherwise>
       </xsl:choose>
     </xsl:variable>
@@ -64,11 +64,11 @@
   <xsl:template match="unpublished_documents">
     <xsl:variable name="solrQuery">
       <xsl:choose>
-        <xsl:when test="mcrxsl:isCurrentUserInRole('editor') or mcrxsl:isCurrentUserInRole('admin') or mcrxsl:isCurrentUserInRole('submitter')">
+        <xsl:when test="mcrxsl:isCurrentUserInRole('editor') or mcrxsl:isCurrentUserInRole('admin')">
           <xsl:copy-of select="concat('q=state:(state:submitted OR state:blocked) AND objectType:mods','&amp;sort=created+desc')"/> 
         </xsl:when>
         <xsl:otherwise>
-          <xsl:copy-of select="concat('q=state:submitted AND objectType:mods&amp;owner=createdby:', $CurrentUser,'&amp;sort=created+desc')" /> 
+          <xsl:copy-of select="concat('q=state:submitted AND createdby:', $CurrentUser, '&amp;fq=objectType:mods&amp;sort=created+desc')" /> 
         </xsl:otherwise>
       </xsl:choose>
     </xsl:variable>
