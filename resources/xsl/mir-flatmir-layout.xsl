@@ -18,7 +18,8 @@
   <xsl:param name="MIR.Layout.Theme" />
 
   <xsl:variable name="PageTitle" select="/*/@title" />
-  <xsl:variable name="Description" select="@description" />
+  <xsl:variable name="DescriptionI18N" select="/*/text/@i18n" />
+  <xsl:variable name="Description" select="i18n:translate($DescriptionI18N)" />
 
   <xsl:template match="/site">
     <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
