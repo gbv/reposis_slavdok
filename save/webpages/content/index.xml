@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MyCoReWebPage>
-  <section xml:lang="de" i18n="index.title">
-    <text i18n="index.description" />
+  <section xml:lang="all" i18n="project.index.title">
+    <meta name='description' i18n="project.index.description" />
+  </section>
+  <section xml:lang="de" i18n="project.index.title">
     <div class="jumbotwo" id="project-index-search">
       <div class="row" style="margin-bottom:30px;">
         <div class="col-md-12" lang="de">
@@ -25,7 +27,7 @@
             });
     </script>
   </section>
-  <section xml:lang="en" i18n="index.title">
+  <section xml:lang="en" i18n="project.index.title">
     <div class="jumbotwo" id="project-index-search">
       <div class="row" style="margin-bottom:30px;">
         <div class="col-md-12" lang="de">

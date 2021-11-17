@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MyCoReWebPage>
-    <section xml:lang="de" title="Leitlinie">
+    <section xml:lang="all" i18n="project.faq.title" >
+        <meta name='description' i18n="project.faq.description" />
+    </section>
+    <section xml:lang="de" i18n="project.faq.title">
         <div class="row">
             <div class="col-md-12">
                 <h2>Häufig gestellte Fragen (FAQ)</h2>

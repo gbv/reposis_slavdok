@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MyCoReWebPage>
 <MyCoReWebPage>
-    <section xml:lang="de" title="Barrierefreiheitserklärung">
+    <section xml:lang="all" i18n="project.accessibility.title" >
+        <meta name='description' i18n="project.accessibility.description" />
+    </section>
+    <section xml:lang="de" i18n="project.accessibility.title">
         <div class="row">
             <div class="col-md-12" lang="de">
                 <h1>Erklärung zur Barrierefreiheit</h1>

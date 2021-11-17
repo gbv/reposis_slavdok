@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MyCoReWebPage>
 <MyCoReWebPage>
-  <section xml:lang="de" i18n="component.user2.admin.create.title">
+  <section xml:lang="de" i18n="project.registration.title">
     <h3>Registrierung</h3>
     <p>
       Vor der Publikation Ihres Beitrags auf SlavDok ist eine einmalige Registrierung erforderlich. 
@@ -18,7 +18,7 @@
     </p>
   </section>
 
-  <section xml:lang="en" i18n="component.user2.admin.create.title">
+  <section xml:lang="en" i18n="project.registration.title">
     <h3>Registration</h3>
     <p>
       Before publishing your contribution on SlavDok, a one-time registration is required. For this purpose, 
@@ -34,7 +34,8 @@
     </p>
   </section>
 
-  <section xml:lang="all" i18n="component.user2.admin.create.title">
+  <section xml:lang="all" i18n="project.registration.title">
+    <meta name='description' i18n="project.registration.description" />
     <xed:form class="userEditor form-horizontal" role="form" xmlns:xed="http://www.mycore.de/xeditor" xmlns:mcruser="http://www.mycore.de/components/mcruser">
       <xed:cancel url="{$ServletsBaseURL}MirSelfRegistrationServlet" />
       <xed:bind xpath="user">
@@ -43,7 +44,7 @@
         <div class="card">
           <div class="card-header">
             <h3 class="card-title">
-              <xed:output i18n="component.user2.admin.create.title" />
+              <xed:output i18n="project.registration.title" />
             </h3>
           </div>
           <div class="card-body">

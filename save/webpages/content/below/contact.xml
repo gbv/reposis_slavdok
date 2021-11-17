@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MyCoReWebPage>
 <MyCoReWebPage>
-    <section xml:lang="de" title="Kontakt">
+    <section xml:lang="all" i18n="project.contact.title" >
+        <meta name='description' i18n="project.contact.description" />
+    </section>
+    <section xml:lang="de" i18n="project.contact.title">
         <div class="row">
             <div class="col-md-10" lang="de">
                 <h1>Kontakt</h1>

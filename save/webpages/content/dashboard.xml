@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MyCoReWebPage>
-  <section xml:lang="all" i18n="index.title">
+  <section xml:lang="all" i18n="project.index.title">
     <div class="jumbotwo" id="project-index-search">
       <unpublished_documents />
     </div>

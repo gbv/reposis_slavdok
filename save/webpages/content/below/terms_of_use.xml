@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MyCoReWebPage>
-	<section xml:lang="de" title="Nutzungsbedingungen">
+	<section xml:lang="all" i18n="project.termsofuse.title" >
+		<meta name='description' i18n="project.termsofuse.description" />
+	</section>
+	<section xml:lang="de" i18n="project.termsofuse.title">
 		<div class="row">
 			<div class="col-md-10">
 				<h1>Nutzungsbedingungen für SlavDok</h1>

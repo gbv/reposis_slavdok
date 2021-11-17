@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MyCoReWebPage>
 <MyCoReWebPage>
-
-  <section xml:lang="all" title="Veröffentlichen von E-Publikationen">
+  <section xml:lang="all" i18n="project.contact.title" >
+    <meta name='description' i18n="project.contact.description" />
+  </section>
+  <section xml:lang="de" i18n="project.contact.title">
     <div id="page" class="container">
       <div id="main_content">
         <div class="row">
@@ -11,10 +13,10 @@
               <h1>Kontakt</h1>
               <p>Hier können Sie Kontakt zum SlavDok-Team aufnehmen. Bitte beachten Sie, dass wir keine Rechtsberatung anbieten.</p>
             </div>
-
+            
             <xed:form xmlns:xed="http://www.mycore.de/xeditor" method="post" role="form" class="form-horizontal">
               <xed:bind xpath="/contactMail">
-
+                
                 <!-- Subject -->
                 <xed:bind xpath="subject">
                   <div class="form-group row">
@@ -29,7 +31,7 @@
                     </div>
                   </div>
                 </xed:bind>
-
+                
                 <!-- Message -->
                 <xed:bind xpath="body">
                   <div class="form-group row">
@@ -39,37 +41,37 @@
                     </div>
                   </div>
                 </xed:bind>
-
+                
                 <!-- Sender Name -->
                 <xed:bind xpath="to_name">
                   <div class="form-group row">
                     <label class="col-md-2 control-label required">
-              * Name:
-            </label>
+                      * Name:
+                    </label>
                     <div class="col-md-6">
                       <input placeholder="Max Mustermann" class="form-control input-md" type="text" required="required" />
                     </div>
                   </div>
                 </xed:bind>
-
+                
                 <!-- Sender Mail Address -->
                 <xed:bind xpath="to_mail">
                   <div class="form-group row">
                     <label class="col-md-2 control-label required">
-              * E-Mail:
-            </label>
+                      * E-Mail:
+                    </label>
                     <div class="col-md-6">
                       <input class="form-control input-md" type="email" required="required" />
                     </div>
                   </div>
                 </xed:bind>
-
+                
                 <!-- Captacha -->
                 <!-- TODO: Remove this once MIR-993 is fixed -->
                 <xed:if test="string-length($MIR.ReCaptcha.site.key) &gt; 0">
                   <script src='https://www.google.com/recaptcha/api.js' />
                   <script type="text/javascript">
-                  <![CDATA[
+                    <![CDATA[
                       var verifyCallback = function(response) {
                         $('#my-g-recaptcha-response').val(response);
                       };
@@ -88,7 +90,7 @@
                   </xed:bind>
                   <xed:cleanup-rule xpath="//attribute[@name='recaptchaParam']" relevant-if="true" />
                 </xed:if>
-
+                
                 <!-- Approvement -->
                 <xed:bind xpath="approvement">
                   <div class="form-group row ">
@@ -101,11 +103,11 @@
                     </div>
                   </div>
                 </xed:bind>
-
+                
                 <!-- Hidden parameters for MCRMailer -->
                 <input type="hidden" value="../content/below/contact.xed?XSL.Status.Style=success&amp;XSL.Status.Message=slavdok.contact.success" name="goto" /> <!-- where to go after sending mail -->
                 <input type="hidden" value="e-mail-contact" name="xsl" /> <!-- specify xsl to convert mail to for MCRMailer -->
-
+                
                 <!-- Buttons -->
                 <div id="editor-buttons" class="form-group row ">
                   <div class="ml-3">
@@ -113,7 +115,7 @@
                     <button id="save" class="btn btn-primary" xed:target="servlet" xed:href="MCRMailer" type="submit">Nachricht senden</button>
                   </div>
                 </div>
-
+                
                 <script src="../../js/validator.min.js" type="text/javascript"></script>
               </xed:bind>
             </xed:form>
@@ -122,5 +124,5 @@
       </div>
     </div>
   </section>
-
+  
 </MyCoReWebPage>

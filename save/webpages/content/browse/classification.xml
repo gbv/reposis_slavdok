@@ -4,6 +4,7 @@
 <MyCoReWebPage>
 
     <section i18n="browse.language_classification.title" xml:lang="all">
+        <meta name='description' i18n="project.classification.description" />
         <div class="row">
             <div class="col-md-8" lang="de">
                 <h3>
