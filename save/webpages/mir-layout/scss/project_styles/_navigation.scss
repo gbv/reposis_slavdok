@@ -82,16 +82,9 @@
 }
 
 // language switch -------------------------------------------------------------
-html[lang="de"] {
-  .lang-switch-de {
-    display: none;
+.lang-switch {
+    text-transform: uppercase;
   }
-}
-html[lang="en"] {
-  .lang-switch-en {
-    display: none;
-  }
-}
 
 // footer ----------------------------------------------------------------------
 .internal_links.navbar-nav {

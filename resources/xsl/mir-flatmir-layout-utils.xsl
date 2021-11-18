@@ -75,15 +75,7 @@
                 <nav>
                   <ul class="navbar-nav ml-auto flex-row">
                     <xsl:call-template name="mir.loginMenu" />
-                    <li class="nav-item">
-                      <a title="Sprache wechseln"
-                         class="nav-link lang-switch-de"
-                         href="?lang=de">DE</a>
-                      <a title="Change language"
-                         class="nav-link lang-switch-en"
-                         href="?lang=en">EN</a>
-                    </li>
-
+                    <xsl:call-template name="mir.languageMenu" />
                   </ul>
                 </nav>
               </div>
