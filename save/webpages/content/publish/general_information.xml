@@ -4,7 +4,6 @@
         <meta name='description' i18n="project.general_information.description" />
     </section>
     <section xml:lang="de" i18n="project.general_information.title">
-    <section xml:lang="de" title="Hinweise für Autoren">
         <div class="row">
             <div class="col-md-12">
                 <h1>Funktionsweise</h1>
