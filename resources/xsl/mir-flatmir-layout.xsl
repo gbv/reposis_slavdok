@@ -27,7 +27,9 @@
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="title" content="{$PageTitle}" />
-        <meta name="description" content="{$Description}" />
+        <xsl:if test="string-length($DescriptionI18N) &gt; 0">
+            <meta name="description" content="{$Description}" />
+        </xsl:if>
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>
           <xsl:value-of select="$PageTitle" />
