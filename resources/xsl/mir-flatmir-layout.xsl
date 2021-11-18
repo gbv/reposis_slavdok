@@ -18,8 +18,7 @@
   <xsl:param name="MIR.Layout.Theme" />
 
   <xsl:variable name="PageTitle" select="/*/@title" />
-  <xsl:variable name="DescriptionI18N" select="/*/meta/@i18n" />
-  <xsl:variable name="Description" select="i18n:translate($DescriptionI18N)" />
+  <xsl:variable name="Description" select="i18n:translate(/*/meta/@i18n)" />
 
   <xsl:template match="/site">
     <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
@@ -27,7 +26,7 @@
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="title" content="{$PageTitle}" />
-        <xsl:if test="string-length($DescriptionI18N) &gt; 0">
+        <xsl:if test="not($Description = '??????')">
             <meta name="description" content="{$Description}" />
         </xsl:if>
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->

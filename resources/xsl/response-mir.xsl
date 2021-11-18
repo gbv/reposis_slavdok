@@ -24,7 +24,27 @@
 
   <xsl:variable name="maxScore" select="//result[@name='response'][1]/@maxScore" />
 
+  <xsl:variable name="searchString">
+    <xsl:variable name="queryPrefix" select="'{!join from=returnId to=id}+content:'" />
+    <xsl:variable name="fullTextQuery"
+                  select="/response/lst[@name='responseHeader']/lst[@name='params']/str[@name='fq' and contains(., $queryPrefix)]" />
+    <xsl:choose>
+      <xsl:when test="$fullTextQuery">
+        <xsl:value-of select="substring-after($fullTextQuery, $queryPrefix)" />
+      </xsl:when>
+      <xsl:when test="/response/lst[@name='responseHeader']/lst[@name='params']/str[@name='condQuery']">
+        <xsl:value-of select="/response/lst[@name='responseHeader']/lst[@name='params']/str[@name='condQuery']" />
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:value-of select="'*'" />
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:variable>
+
   <xsl:template match="/response/result|lst[@name='grouped']/lst[@name='returnId']" priority="10">
+    <head>
+      <meta name="description" content="{i18n:translate('project.results.description', concat($hits, ';', $searchString))}" />
+    </head>
     <xsl:variable name="ResultPages">
       <xsl:if test="($hits &gt; 0) and ($hits &gt; $rows)">
         <div class="pagination_box text-center">
