@@ -4,7 +4,18 @@
                 xmlns:mcrxsl="xalan://org.mycore.common.xml.MCRXMLFunctions"
                 xmlns:i18n="xalan://org.mycore.services.i18n.MCRTranslation"
                 exclude-result-prefixes="">
-
+  
+  <xsl:variable name="Find">
+    <xsl:choose>
+      <xsl:when test="mcrxsl:isCurrentUserInRole('editor') or mcrxsl:isCurrentUserInRole('admin')">
+        <xsl:copy-of select="concat('../servlets/solr/', 'find')"/> 
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:copy-of select="concat('../servlets/solr/', 'findPublic')" /> 
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:variable>
+  
   <xsl:template match="recent_documents">
     <div class="row">
       <div class="col-md-12">
@@ -26,7 +37,7 @@
               </div>
             </div>
             <div class="row">
-              <a href="../servlets/solr/find" class="btn btn-primary btn-sm" style="margin:auto; display:block; max-width:200px;">
+              <a href="{$Find}" class="btn btn-primary btn-sm" style="margin:auto; display:block; max-width:200px;">
                 <xsl:value-of select="i18n:translate('index.button.furtherPublications')"/>
               </a>
             </div>
@@ -35,20 +46,8 @@
       </div>
     </div>
   </xsl:template>
-
+  
   <xsl:template match="index_search_form">
-
-    <xsl:variable name="Find">
-      <xsl:choose>
-        <xsl:when test="mcrxsl:isCurrentUserInRole('editor') or mcrxsl:isCurrentUserInRole('admin')">
-          <xsl:copy-of select="concat('../servlets/solr/', 'find')"/> 
-        </xsl:when>
-        <xsl:otherwise>
-          <xsl:copy-of select="concat('../servlets/solr/', 'findPublic')" /> 
-        </xsl:otherwise>
-      </xsl:choose>
-    </xsl:variable>
-
     <form action="{$Find}" id="project-searchMainPage" class="form-inline" role="search">
       <div class="input-group input-group-lg w-100">
         <input name="condQuery" placeholder="{i18n:translate('project.index_search.placeholder')}" class="form-control search-query" id="project-searchInput" type="text" />
@@ -59,8 +58,6 @@
         </div>
       </div>
     </form>
-
   </xsl:template>
-
-
+  
 </xsl:stylesheet>
