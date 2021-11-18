@@ -7,27 +7,27 @@
     <menu id="below" dir="/content/below">
         <label xml:lang="de">Footer-Menü</label>
         <label xml:lang="en">Footer menu</label>
-        <item href="/content/below/contact.xed" type="intern" replaceMenu="false" constrainPopUp="false">
+        <item href="/content/below/kontakt.xed" type="intern" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">Kontakt</label>
             <label xml:lang="en">Contact</label>
         </item>
-        <item href="/content/below/imprint.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+        <item href="/content/below/impressum.xml" type="intern" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">Impressum</label>
             <label xml:lang="en">Legal Notice</label>
         </item>
-        <item href="/content/below/rights.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+        <item href="/content/below/datenschutz.xml" type="intern" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">Datenschutz</label>
             <label xml:lang="en">Privacy Notice</label>
         </item>
-        <item href="/content/below/terms_of_use.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+        <item href="/content/below/nutzungsbedingungen.xml" type="intern" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">Nutzungsbedingungen</label>
             <label xml:lang="en">Terms of use</label>
         </item>
-        <item href="/content/below/disclaimer.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+        <item href="/content/below/haftungshinweise.xml" type="intern" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">Haftungshinweise</label>
             <label xml:lang="en">Disclaimer</label>
         </item>
-        <item href="/content/below/accessibility.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+        <item href="/content/below/barrierefreiheit.xml" type="intern" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">Barrierefreiheit</label>
             <label xml:lang="en">Accessibility</label>
         </item>
@@ -78,13 +78,13 @@
         <label xml:lang="de">Veröffentlichen</label>
         <label xml:lang="en">Publish</label>
         <group id="general">
-            <item href="/content/publish/general_information.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+            <item href="/content/publish/funktionsweise.xml" type="intern" replaceMenu="false" constrainPopUp="false">
                 <label xml:lang="de">Funktionsweise</label>
                 <label xml:lang="en">General Informations</label>
             </item>
         </group>
         <group id="publish">
-            <item href="/authorization/new-author.xed?action=register" type="intern" replaceMenu="false" constrainPopUp="false">
+            <item href="/authorization/registrierung.xed?action=register" type="intern" replaceMenu="false" constrainPopUp="false">
                 <label xml:lang="de">Registrieren</label>
                 <label xml:lang="en">Register</label>
             </item>
@@ -109,11 +109,11 @@
     <menu id="about" dir="/content/about">
         <label xml:lang="de">Über uns</label>
         <label xml:lang="en">About us</label>
-        <item href="/content/about/about_us.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+        <item href="/content/about/wir-ueber-uns.xml" type="intern" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">Über uns</label>
             <label xml:lang="en">About us</label>
         </item>
-        <item href="/content/about/collection_profile.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+        <item href="/content/about/sammelprofil.xml" type="intern" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">Sammelprofil</label>
             <label xml:lang="en">Collection Profile</label>
         </item>
