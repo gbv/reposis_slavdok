@@ -438,39 +438,22 @@
     </xed:bind>
   </xed:template>
 
-  <xed:template id="base_classification">
-    <xed:bind xpath="mods:classification[@authorityURI='https://slavdok.slavistik-portal.de/api/v2/classifications/base_classification'][@displayLabel='base_classification']/@valueURIxEditor">
-      <div class="form-group row {$xed-validation-marker}">
-        <label class="col-md-3 col-form-label text-right">
-          <xed:output i18n="project.form.label.base_classification" />
-        </label>
-        <div class="col-md-6">
-          <select class="form-control form-control-inline">
-            <option value="">
-              <xed:output i18n="mir.select" />
-            </option>
-            <xed:include uri="xslStyle:items2options:classification:editor:-1:children:base_classification" />
-          </select>
-        </div>
-        <mir:help-pmud help-text="{i18n:project.help.base_classification}" pmud="false" />
-      </div>
-    </xed:bind>
-  </xed:template>
-
   <xed:template id="base_classification.search">
+    <xed:repeat xpath="mods:classification[@authorityURI='https://karten.sbb-berlin.de/classifications/base_classification'][@displayLabel='base_classification']" min="1" max="20" method="build">
       <div class="form-group row {$xed-validation-marker}">
         <label class="col-md-3 col-form-label text-right">
           <xed:output i18n="project.form.label.base_classification" />
         </label>
         <div class="col-md-6">
-          <xed:bind xpath="mods:classification[@authorityURI='https://slavdok.slavistik-portal.de/api/v2/classifications/base_classification'][@displayLabel='base_classification']/@valueURIxEditor">
+          <xed:bind xpath="@valueURIxEditor">
             <div class="controls">
               <xed:include ref="base_classification.list" />
             </div>
           </xed:bind>
         </div>
-        <mir:help-pmud help-text="{i18n:project.help.base_classification}" pmud="false"/>
+        <mir:help-pmud help-text="{i18n:project.help.base_classification}" pmud="true"/>
       </div>
+    </xed:repeat>
   </xed:template>
 
   <xed:template id="base_classification.list">
