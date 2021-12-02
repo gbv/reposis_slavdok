@@ -418,24 +418,26 @@
       xpath="mods:titleInfo/mods:title" label="mir.title" class="required" required="true"
       required-i18n="mir.validation.title.proceedings" />
   </xed:template>
-
+  
   <xed:template id="language_classification">
-    <xed:bind xpath="mods:classification[@authorityURI='https://slavdok.slavistik-portal.de/api/v2/classifications/languages'][@displayLabel='language_classification']/@valueURIxEditor">
+    <xed:repeat xpath="mods:classification[@authorityURI='https://slavdok.slavistik-portal.de/api/v2/classifications/languages'][@displayLabel='language_classification']">
       <div class="form-group row {$xed-validation-marker}">
         <label class="col-md-3 col-form-label text-right">
           <xed:output i18n="project.form.label.systematics" />
         </label>
         <div class="col-md-6">
-          <select class="form-control form-control-inline">
-            <option value="">
-              <xed:output i18n="mir.select" />
-            </option>
-            <xed:include uri="xslStyle:items2options:classification:editor:-1:children:language_classification" />
-          </select>
+          <xed:bind xpath="@valueURIxEditor">
+            <select class="form-control form-control-inline">
+              <option value="">
+                <xed:output i18n="mir.select" />
+              </option>
+              <xed:include uri="xslStyle:items2options:classification:editor:-1:children:language_classification" />
+            </select>
+          </xed:bind>
         </div>
-        <mir:help-pmud help-text="{i18n:project.help.language_classification}" pmud="false" />
+        <mir:help-pmud help-text="{i18n:project.help.language_classification}" pmud="true" />
       </div>
-    </xed:bind>
+    </xed:repeat>
   </xed:template>
 
   <xed:template id="base_classification.search">
