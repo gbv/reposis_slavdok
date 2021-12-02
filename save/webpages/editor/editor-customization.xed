@@ -338,6 +338,25 @@
 
   <!-- ========== field templates ========== -->
 
+  <!-- TODO: Fix wrong message property in mir -->
+  <xed:template id="language">
+    <xed:repeat xpath="mods:language" max="5">
+      <div class="form-group row {$xed-validation-marker}">
+        <label class="col-md-3 col-form-label text-right">
+          <xed:output i18n="mir.editor.language" />
+        </label>
+        <div class="col-md-6">
+          <xed:bind xpath="mods:languageTerm[@authority='rfc5646'][@type='code']" initially="de">
+            <div class="controls">
+              <xed:include ref="lang.list" />
+            </div>
+          </xed:bind>
+        </div>
+        <mir:help-pmud help-text="{i18n:mir.help.language}" pmud="true" />
+      </div>
+    </xed:repeat>
+  </xed:template>
+
   <!-- TODO: Fix in mir missing help text  -->
   <xed:template id="identifier.isbn">
     <mir:textfield xpath="mods:identifier[@type='isbn']" label="mir.identifier.isbn"
