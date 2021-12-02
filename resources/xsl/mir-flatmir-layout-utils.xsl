@@ -11,79 +11,83 @@
 
   <xsl:template name="mir.navigation">
 
-      <div class="mir-main-nav">
-        <div class="container container-no-padding">
-          <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="mir-main-nav">
+      <div class="container container-no-padding">
+        <nav class="navbar navbar-expand-lg navbar-dark">
 
-            <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#mir-main-nav__entries"
-                    aria-controls="mir-main-nav__entries"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+          <button
+                  class="navbar-toggler order-1"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#mir-main-nav__entries"
+                  aria-controls="mir-main-nav__entries"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-            <div id="mir-main-nav__entries" class="collapse navbar-collapse mir-main-nav__entries">
-              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='search']" />
-                <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='publish']" />
-                <xsl:call-template name="mir.basketMenu" />
-                <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='about']" />
-              </ul>
+          <div
+            id="mir-main-nav__entries"
+            class="collapse navbar-collapse mir-main-nav__entries order-4 order-lg-2">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='search']" />
+              <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='publish']" />
+              <xsl:call-template name="mir.basketMenu" />
+              <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='about']" />
+            </ul>
+          </div>
+
+          <div class="searchBox order-3 order-sm-2 order-lg-3">
+            <xsl:variable name="Find">
+              <xsl:choose>
+                <xsl:when test="mcrxsl:isCurrentUserInRole('editor') or mcrxsl:isCurrentUserInRole('admin')">
+                  <xsl:copy-of select="concat('servlets/solr/', 'find')"/>
+                </xsl:when>
+                <xsl:otherwise>
+                  <xsl:copy-of select="concat('servlets/solr/', 'findPublic')" />
+                </xsl:otherwise>
+              </xsl:choose>
+            </xsl:variable>
+            <form
+                    action="{$WebApplicationBaseURL}{$Find}"
+                    class="searchfield_box form-inline my-2 my-lg-0"
+                    role="search">
+              <input
+                      name="condQuery"
+                      placeholder="{i18n:translate('mir.navsearch.placeholder')}"
+                      class="form-control search-query"
+                      id="searchInput"
+                      type="text"
+                      aria-label="Search" />
+              <xsl:choose>
+                <xsl:when test="mcrxsl:isCurrentUserInRole('admin') or mcrxsl:isCurrentUserInRole('editor')">
+                  <input name="owner" type="hidden" value="createdby:*" />
+                </xsl:when>
+                <xsl:when test="not(mcrxsl:isCurrentUserGuestUser())">
+                  <input name="owner" type="hidden" value="createdby:{$CurrentUser}" />
+                </xsl:when>
+              </xsl:choose>
+              <button type="submit" class="btn btn-primary my-2 my-sm-0">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
+
+          <div id="options_nav_box" class="mir-prop-nav order-2 order-sm-3 order-lg-4">
+            <div class="container container-no-padding">
+              <nav>
+                <ul class="navbar-nav ml-auto flex-row">
+                  <xsl:call-template name="mir.loginMenu" />
+                  <xsl:call-template name="mir.languageMenu" />
+                </ul>
+              </nav>
             </div>
-            <div class="searchBox">
-              <xsl:variable name="Find">
-                <xsl:choose>
-                  <xsl:when test="mcrxsl:isCurrentUserInRole('editor') or mcrxsl:isCurrentUserInRole('admin')">
-                    <xsl:copy-of select="concat('servlets/solr/', 'find')"/> 
-                  </xsl:when>
-                  <xsl:otherwise>
-                    <xsl:copy-of select="concat('servlets/solr/', 'findPublic')" /> 
-                  </xsl:otherwise>
-                </xsl:choose>
-              </xsl:variable>
-              <form
-                      action="{$WebApplicationBaseURL}{$Find}"
-                      class="searchfield_box form-inline my-2 my-lg-0"
-                      role="search">
-                <input
-                        name="condQuery"
-                        placeholder="{i18n:translate('mir.navsearch.placeholder')}"
-                        class="form-control search-query"
-                        id="searchInput"
-                        type="text"
-                        aria-label="Search" />
-                <xsl:choose>
-                  <xsl:when test="mcrxsl:isCurrentUserInRole('admin') or mcrxsl:isCurrentUserInRole('editor')">
-                    <input name="owner" type="hidden" value="createdby:*" />
-                  </xsl:when>
-                  <xsl:when test="not(mcrxsl:isCurrentUserGuestUser())">
-                    <input name="owner" type="hidden" value="createdby:{$CurrentUser}" />
-                  </xsl:when>
-                </xsl:choose>
-                <button type="submit" class="btn btn-primary my-2 my-sm-0">
-                  <i class="fas fa-search"></i>
-                </button>
-              </form>
-            </div>
+          </div>
 
-            <div id="options_nav_box" class="mir-prop-nav">
-              <div class="container container-no-padding">
-                <nav>
-                  <ul class="navbar-nav ml-auto flex-row">
-                    <xsl:call-template name="mir.loginMenu" />
-                    <xsl:call-template name="mir.languageMenu" />
-                  </ul>
-                </nav>
-              </div>
-            </div>
-
-          </nav>
-        </div>
+        </nav>
       </div>
+    </div>
+
     <div id="header_box" class="clearfix container container-no-padding">
       <div class="project_logo_box">
         <div class="project_logo">

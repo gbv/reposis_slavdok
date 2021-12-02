@@ -31,6 +31,10 @@
   }
 }
 
+.searchBox {
+  flex-basis: auto;
+}
+
 // Large devices (desktops) and below: <= 1200px
 @include media-breakpoint-down(lg) {
   // add/overwrite styles for responsive level lg and lower
@@ -51,5 +55,8 @@
   // add/overwrite styles for responsive level xs
   .form-login .form-control {
     width: 100%;
+  }
+  .searchBox {
+    flex-basis: 100%;
   }
 }
