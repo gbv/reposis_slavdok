@@ -88,15 +88,17 @@
       </div>
     </div>
 
-    <div id="header_box" class="clearfix container container-no-padding">
-      <div class="project_logo_box">
-        <div class="project_logo">
-          <a href="{concat($WebApplicationBaseURL,substring($loaded_navigation_xml/@hrefStartingPage,2),$HttpSession)}"
-             title="Home"
-             class="project-logo__link">
-            <span class="fid logo main">SlavDok</span>
-            <span class="fid logo sub">Dokumentenserver</span>
-          </a>
+    <div id="header_box">
+      <div class="clearfix container container-no-padding">
+        <div class="project_logo_box">
+          <div class="project_logo">
+            <a href="{concat($WebApplicationBaseURL,substring($loaded_navigation_xml/@hrefStartingPage,2),$HttpSession)}"
+               title="Home"
+               class="project-logo__link">
+              <span class="fid logo main">SlavDok</span>
+              <span class="fid logo sub">Dokumentenserver</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>

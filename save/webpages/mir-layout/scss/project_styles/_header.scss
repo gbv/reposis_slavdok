@@ -7,12 +7,6 @@
 // no (xl) media query necessary (desktop first)
 
 header {
-  background-image: url("../../../../images/sp_h_05_b_xs.jpg");
-  background-position: top right;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-color: $headerYellow;
-  border-bottom: 1px solid #eee;
 }
 
 // logo and menu container
@@ -20,6 +14,12 @@ header {
   position: relative;
   margin-top: 0px;
   margin-bottom: 0px;
+  background-image: url("../../../../images/sp_h_05_b_xs.jpg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-color: white;
+  border-bottom: 1px solid #eee;
 }
 .project-logo__link {
   display: inline-block;
@@ -52,7 +52,7 @@ header {
 }
 
 .project_logo_box {
-  margin-top: 20px;
+  padding-top: 20px;
   margin-bottom: 0rem;
 }
 
@@ -95,7 +95,7 @@ header {
 // Large devices (desktops) and below: <= 1200px
 @include media-breakpoint-down(lg) {
   // add/overwrite styles for responsive level lg and lower
-  header {
+  #header_box {
     background-image: url("../../../../images/sp_h_05.jpg");
   }
 }
@@ -113,7 +113,7 @@ header {
 // Extra small devices (portrait phones): <= 576px
 @include media-breakpoint-down(xs) {
   // add/overwrite styles for responsive level xs
-  header {
+  #header_box {
     background-image: url("../../../../images/sp_h_05_k.jpg");
   }
 }

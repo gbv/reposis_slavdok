@@ -114,22 +114,20 @@ footer {
   padding: 1em 0px;
 }
 
-.navbar-expand-lg .navbar-nav .dropdown-menu {
-  overflow: scroll;
-  max-height: 80vh;
-}
-
 // Large devices (desktops) and below: <= 1200px
 @include media-breakpoint-down(lg) {
   // add/overwrite styles for responsive level lg and lower
-  .navbar-expand-lg .navbar-nav .dropdown-menu {
-    position: absolute;
-  }
 }
 
 // Medium devices (tablets) and below: <= 992px
 @include media-breakpoint-down(md) {
   // add/overwrite styles for responsive level md and lower
+  .mir-main-nav {
+    position: static;
+  }
+  #options_nav_box .navbar-nav .dropdown-menu {
+    position: absolute;
+  }
 }
 
 // Small devices (landscape phones) and below: <= 768px
