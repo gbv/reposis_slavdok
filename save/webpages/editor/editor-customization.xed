@@ -18,6 +18,7 @@
         <xed:include ref="blog_link.relItemsearch" />
       </xed:bind>
     </div>
+    <xed:include ref="hosts_upload_hint" />
   </xed:template>
 
 
@@ -38,6 +39,7 @@
     <xed:include ref="abstract.repeated.collapsed" />
     <xed:include ref="openAIRE" />
     <xed:include ref="further_information" />
+    <xed:include ref="genres_upload_hint" />
   </xed:template>
 
   <xed:template id="genres.blog">
@@ -76,6 +78,7 @@
     <xed:include ref="subject_indexing" />
     <xed:include ref="openAIRE" />
     <xed:include ref="further_information" />
+    <xed:include ref="genres_upload_hint" />
   </xed:template>
 
   <xed:template id="genres.journal.common">
@@ -111,6 +114,7 @@
     <xed:include ref="abstract.repeated.collapsed" />
     <xed:include ref="further_information.without_embargo" />
     <xed:include ref="subject_indexing" />
+    <xed:include ref="genres_upload_hint" />
   </xed:template>
 
   <xed:template id="genres.publication.common">
@@ -132,6 +136,7 @@
     <xed:include ref="openAIRE" />
     <xed:include ref="further_information" />
     <xed:include ref="sdnb.hidden" />
+    <xed:include ref="genres_upload_hint" />
   </xed:template>
 
   <xed:template id="genres.single_contribution">
@@ -151,6 +156,7 @@
     <xed:include ref="openAIRE" />
     <xed:include ref="further_information" />
     <xed:include ref="sdnb.hidden" />
+    <xed:include ref="genres_upload_hint" />
   </xed:template>
 
   <xed:template id="genres.report.common">
@@ -169,6 +175,7 @@
     <xed:include ref="openAIRE" />
     <xed:include ref="further_information" />
     <xed:include ref="sdnb.hidden" />
+    <xed:include ref="genres_upload_hint" />
   </xed:template>
 
   <xed:template id="genres.research_data">
@@ -189,6 +196,7 @@
     <xed:include ref="openAIRE" />
     <xed:include ref="further_information_with_copyrightMD" />
     <xed:include ref="sdnb.hidden" />
+    <xed:include ref="genres_upload_hint" />
   </xed:template>
 
   <!-- ToDo: Fix this in MIR-->
@@ -209,6 +217,7 @@
     <xed:include ref="sdnb.hidden" />
     <xed:include ref="openAIRE" />
     <xed:include ref="further_information" />
+    <xed:include ref="genres_upload_hint" />
   </xed:template>
 
   <xed:template id="genres.thesis.common">
@@ -226,6 +235,7 @@
     <xed:include ref="subject_indexing" />
     <xed:include ref="openAIRE" />
     <xed:include ref="further_information" />
+    <xed:include ref="genres_upload_hint" />
   </xed:template>
 
 
@@ -278,10 +288,24 @@
   <xed:modify ref="hosts.journal">
     <xed:remove ref="identifier.isbn.journal.relItemsearch" />
     <xed:remove ref="shelfmark.journal.relItemsearch" />
+    <xed:include ref="hosts_upload_hint" />
   </xed:modify>
 
   <xed:modify ref="hosts.book">
     <xed:remove ref="shelfmark.book.relItemsearch" />
+    <xed:include ref="hosts_upload_hint" />
+  </xed:modify>
+
+  <xed:modify ref="hosts.series">
+    <xed:include ref="hosts_upload_hint" />
+  </xed:modify>
+
+  <xed:modify ref="hosts.collection">
+    <xed:include ref="hosts_upload_hint" />
+  </xed:modify>
+
+  <xed:modify ref="hosts.proceedings">
+    <xed:include ref="hosts_upload_hint" />
   </xed:modify>
 
 
@@ -653,6 +677,21 @@
         </xed:repeat>
       </div>
     </fieldset>
+  </xed:template>
+  
+  <xed:template id="genres_upload_hint">
+    <xed:if test="$host='standalone'">
+      <div class="col-md-9 mb-3">
+        <xed:output i18n="project.forms.hint" />
+      </div>
+    </xed:if>
+  </xed:template>
+
+  <xed:template id="hosts_upload_hint">
+    <div class="col-md-9 pt-3" style="position: absolute;">
+      <xed:output i18n="project.forms.hint" />
+    </div>
+    <div class="mb-5 pt-1" />
   </xed:template>
 
   <!-- ========== validation ========== -->
