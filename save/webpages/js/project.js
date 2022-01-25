@@ -56,6 +56,7 @@ $(document).ready(function () {
     }
   });
 
+
 });
 
 function getNewestSubmissions() {
@@ -181,3 +182,10 @@ function getOptionWithValBC(elm, val) {
   return $(elm).find("option[value='" + val + "']");
 };
 
+$( document ).ajaxComplete(function() {
+  // remove DDC from metadata view if it is the default one
+  if ($('dd').text().indexOf('491.8') != -1) {
+      $("dt:contains('DDC')").remove();
+      $("dd:contains('491.8')").remove();
+  }
+});
