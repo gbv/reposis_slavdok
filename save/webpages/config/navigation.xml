@@ -101,6 +101,10 @@
             <label xml:lang="de">Urheberrecht</label>
             <label xml:lang="en">Copyright</label>
         </item>
+        <item href="/content/rights/vertrag.pdf" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Publikationsvertrag (PDF)</label>
+            <label xml:lang="en">Publication Agreement (PDF)</label>
+        </item>
         <item href="/content/publish/faq.xml" type="intern" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">Häufig gestellte Fragen (FAQ)</label>
             <label xml:lang="en">Frequently Asked Qustions (FAQ)</label>
