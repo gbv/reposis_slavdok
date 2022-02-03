@@ -17,8 +17,7 @@
   </xsl:variable>
   
   <xsl:template match="recent_documents">
-    <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-8">
         <div class="card">
           <div class="card-header">
             <h3 class="card-title">
@@ -44,7 +43,6 @@
           </div>
         </div>
       </div>
-    </div>
   </xsl:template>
   
   <xsl:template match="index_search_form">
