@@ -57,6 +57,10 @@ $btn-border-radius: 4px;
 $font-family-sans-serif: Helvetica, Arial, sans-serif;
 $font-size-base: 1rem;
 
+$pagination-bg: $primary;
+$pagination-hover-bg: lighten($pagination-bg, 10%);
+$pagination-disabled-bg: $footerGray;
+
 // project variables
 
 // keep deprecated variables alive
