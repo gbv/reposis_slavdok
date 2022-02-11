@@ -81,7 +81,9 @@
         </div>
       </div>
       <div class="row">
-        <recent_documents />
+        <div class="col-md-8">
+          <recent_documents />
+        </div>
         <div class="col-md-4">
           <div class="card">
             <div class="card-header">
