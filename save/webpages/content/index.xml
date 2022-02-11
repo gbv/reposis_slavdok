@@ -1,53 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MyCoReWebPage>
+
   <section xml:lang="all" i18n="project.index.title">
     <meta name='description' i18n="project.index.description" />
   </section>
+
   <section xml:lang="de" i18n="project.index.title">
     <div class="jumbotwo" id="project-index-search">
-      <div class="row" style="margin-bottom:30px;">
+      <div class="row mb-4">
         <div class="col-md-12" lang="de">
           <index_search_form />
         </div>
       </div>
       <div class="row">
-        <recent_documents />
+        <div class="col-md-8">
+          <recent_documents />
+        </div>
         <div class="col-md-4">
           <div class="card">
             <div class="card-header">
-              <h3 class="card-title">
-                <i class="fas fa-info glyph" aria-hidden="true"></i>
-                Was ist SlavDok?
+              <h3 class="card-title slav-icon-headline">
+                <i class="fas fa-info" aria-hidden="true" />
+                <span>Was ist SlavDok?</span>
               </h3>
             </div>
             <div class="card-body">
-              <span>SlavDok ist das <a href="./about/wir-ueber-uns.xml">disziplinäre Open Access-Repositorium</a> des Fachinformationsdienstes für Slawistik, der von der 
+              <span>SlavDok ist das <a href="./about/wir-ueber-uns.xml">disziplinäre Open Access-Repositorium</a> des Fachinformationsdienstes für Slawistik, der von der
                 Staatsbibliothek zu Berlin betrieben wird.</span>
             </div>
           </div>
-          
+
           <div class="card">
             <div class="card-header">
-              <h3 class="card-title">
-                <i class="fas fa-bookmark glyph" aria-hidden="true"></i>
-                Sammelprofil
+              <h3 class="card-title slav-icon-headline">
+                <i class="fas fa-bookmark" aria-hidden="true" />
+                <span>Sammelprofil</span>
               </h3>
             </div>
-            <div class="card-body">Lesen Sie hier über unsere <a href="./about/sammelprofil.xml">formalen und inhaltlichen Kriterien</a> für das Publizieren auf SlavDok.</div>            
+            <div class="card-body">Lesen Sie hier über unsere <a href="./about/sammelprofil.xml">formalen und inhaltlichen Kriterien</a> für das Publizieren auf SlavDok.</div>
           </div>
-          
+
           <div class="card">
             <div class="card-header">
-              <h3 class="card-title">
-                <i class="fas fa-file-alt glyph" aria-hidden="true"></i>
-                Publizieren
+              <h3 class="card-title slav-icon-headline">
+                <i class="fas fa-file-alt" aria-hidden="true" />
+                <span>Publizieren</span>
               </h3>
             </div>
             <div class="card-body">
-              Das Veröffentlichen Ihrer wissenschaftlichen Arbeit auf SlavDok ist ganz einfach. Lesen Sie hier alles zur <a href="./publish/funktionsweise.xml">Funktionsweise, 
-                vom Registrieren bis zum Dokumenten-Upload</a>. 
+              Das Veröffentlichen Ihrer wissenschaftlichen Arbeit auf SlavDok ist ganz einfach. Lesen Sie hier alles zur <a href="./publish/funktionsweise.xml">Funktionsweise,
+                vom Registrieren bis zum Dokumenten-Upload</a>.
             </div>
-            
+
           </div>
         </div>
       </div>
@@ -67,10 +71,11 @@
       });
     </script>
   </section>
-  
+
   <section xml:lang="en" i18n="project.index.title">
+
     <div class="jumbotwo" id="project-index-search">
-      <div class="row" style="margin-bottom:30px;">
+      <div class="row mb-4">
         <div class="col-md-12" lang="de">
           <index_search_form />
         </div>
@@ -80,8 +85,8 @@
         <div class="col-md-4">
           <div class="card">
             <div class="card-header">
-              <h3 class="card-title">
-                <i class="fas fa-info glyph" aria-hidden="true"></i>
+              <h3 class="card-title slav-icon-headline">
+                <i class="fas fa-info" aria-hidden="true" />
                 What is SlavDok?
               </h3>
             </div>
@@ -90,21 +95,21 @@
                   State library to Berlin.</span>
               </div>
             </div>
-            
+
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">
-                  <i class="fas fa-bookmark glyph" aria-hidden="true"></i>
+                <h3 class="card-title slav-icon-headline">
+                  <i class="fas fa-bookmark" aria-hidden="true" />
                   Collection profile
                 </h3>
               </div>
-              <div class="card-body">Read about our <a href="./about/sammelprofil.xml"> formal and content criteria</a> for publishing on SlavDok.</div>          
+              <div class="card-body">Read about our <a href="./about/sammelprofil.xml"> formal and content criteria</a> for publishing on SlavDok.</div>
             </div>
-            
+
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">
-                  <i class="fas fa-file-alt glyph" aria-hidden="true"></i>
+                <h3 class="card-title slav-icon-headline">
+                  <i class="fas fa-file-alt" aria-hidden="true" />
                   Publish
                 </h3>
               </div>
@@ -116,7 +121,7 @@
           </div>
         </div>
       </div>
-      
+
       <script src="../js/jquery.number.js"></script>
       <script>
         $( document ).ready(function() {

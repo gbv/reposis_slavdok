@@ -5,15 +5,25 @@
 // set the defaults for all responsive levels here
 // no (xl) media query necessary (desktop first)
 
-h1 {
-  font-size: 2rem;
-}
-h2 {
-  font-size: 1.6rem;
-}
-h3 {
-  font-size: 1.4rem;
-}
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  .slav-icon-headline {
+    display: flex;
+    align-items: center;
+    i {
+      color: $logoFontBlue;
+      font-size: 1.2rem;
+      margin-right: 0.8rem;
+    }
+  }
 
 // Large devices (desktops) and below: <= 1200px
 @include media-breakpoint-down(lg) {

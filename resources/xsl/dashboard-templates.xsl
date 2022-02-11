@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0"
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
+                xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns:mcrxsl="xalan://org.mycore.common.xml.MCRXMLFunctions"
                 xmlns:i18n="xalan://org.mycore.services.i18n.MCRTranslation"
                 exclude-result-prefixes="">
-  
+
   <xsl:param name="CurrentUser"/>
-  
+
   <xsl:template match="published_documents">
-    
+
     <xsl:variable name="solrQuery">
       <xsl:choose>
         <xsl:when test="mcrxsl:isCurrentUserInRole('editor') or mcrxsl:isCurrentUserInRole('admin')">
-          <xsl:copy-of select="concat('q=state:published AND objectType:mods','&amp;sort=created+desc')"/> 
+          <xsl:copy-of select="concat('q=state:published AND objectType:mods','&amp;sort=created+desc')"/>
         </xsl:when>
         <xsl:otherwise>
-          <xsl:copy-of select="concat('q=state:published AND createdby:', $CurrentUser, '&amp;fq=objectType:mods&amp;sort=created+desc')" /> 
+          <xsl:copy-of select="concat('q=state:published AND createdby:', $CurrentUser, '&amp;fq=objectType:mods&amp;sort=created+desc')" />
         </xsl:otherwise>
       </xsl:choose>
     </xsl:variable>
@@ -30,14 +30,14 @@
         </xsl:otherwise>
       </xsl:choose>
     </xsl:variable>
-  
+
     <div class="row">
       <div class="col-md-12">
         <div class="card">
           <div class="card-header">
-            <h3 class="card-title">
-              <i class="fas fa-arrow-right" style="margin-right:1ex;" aria-hidden="true" />
-              <xsl:value-of select="$headline"/>
+            <h3 class="card-title slav-icon-headline">
+              <i class="fas fa-arrow-right" aria-hidden="true" />
+              <span><xsl:value-of select="$headline"/></span>
             </h3>
           </div>
           <div class="card-body">
@@ -60,15 +60,15 @@
       </div>
     </div>
   </xsl:template>
-  
+
   <xsl:template match="unpublished_documents">
     <xsl:variable name="solrQuery">
       <xsl:choose>
         <xsl:when test="mcrxsl:isCurrentUserInRole('editor') or mcrxsl:isCurrentUserInRole('admin')">
-          <xsl:copy-of select="concat('q=state:(state:submitted OR state:blocked) AND objectType:mods','&amp;sort=created+desc')"/> 
+          <xsl:copy-of select="concat('q=state:(state:submitted OR state:blocked) AND objectType:mods','&amp;sort=created+desc')"/>
         </xsl:when>
         <xsl:otherwise>
-          <xsl:copy-of select="concat('q=state:submitted AND createdby:', $CurrentUser, '&amp;fq=objectType:mods&amp;sort=created+desc')" /> 
+          <xsl:copy-of select="concat('q=state:submitted AND createdby:', $CurrentUser, '&amp;fq=objectType:mods&amp;sort=created+desc')" />
         </xsl:otherwise>
       </xsl:choose>
     </xsl:variable>
@@ -88,9 +88,9 @@
       <div class="col-md-12">
         <div class="card">
           <div class="card-header">
-            <h3 class="card-title">
-              <i class="fas fa-arrow-right" style="margin-right:1ex;" aria-hidden="true" />
-              <xsl:value-of select="$headline"/>
+            <h3 class="card-title slav-icon-headline">
+              <i class="fas fa-arrow-right" aria-hidden="true" />
+              <span><xsl:value-of select="$headline"/></span>
             </h3>
           </div>
           <div class="card-body">
@@ -113,5 +113,5 @@
       </div>
     </div>
   </xsl:template>
-  
+
 </xsl:stylesheet>
