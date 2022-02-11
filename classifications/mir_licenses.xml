@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mycoreclass xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="MCRClassification.xsd" ID="mir_licenses">
   <label xml:lang="de" text="Lizenzen" />
-  <label xml:lang="x-uri" text="https://slavdok.slavistik-portal.de/api/v2/classifications/mir_licenses" />
   <label xml:lang="en" text="Licenses" />
+  <label xml:lang="x-uri" text="https://slavdok.slavistik-portal.de/api/v2/classifications/mir_licenses" />
   <categories>
     <category ID="rights_reserved">
       <label xml:lang="en" text="SlavDok licence (all rights reserved)" />
@@ -13,8 +13,8 @@
       <label xml:lang="en" text="Open Access related to alliance or national license" />
     </category>
     <category ID="cc_4.0">
-      <label xml:lang="de" text="Creative Commons 4.0 International Lizenzen" />
       <label xml:lang="x-group" text="true" />
+      <label xml:lang="de" text="Creative Commons 4.0 International Lizenzen" />
       <label xml:lang="en" text="Creative Commons 4.0 International Lizences" />
       <url xlink:href="https://creativecommons.org/licenses/" xlink:type="locator" />
       <category ID="cc_by_4.0">
@@ -28,8 +28,8 @@
         <url xlink:href="https://creativecommons.org/licenses/by-sa/4.0/" xlink:type="locator" />
       </category>
       <category ID="cc_by-nd_4.0">
-        <label xml:lang="de" text="CC BY-ND 4.0" description="Namensnennung - Keine Bearbeitungen 4.0" />
         <label xml:lang="en" text="CC BY-ND 4.0" description="Attribution-NoDerivatives 4.0" />
+        <label xml:lang="de" text="CC BY-ND 4.0" description="Namensnennung - Keine Bearbeitungen 4.0" />
         <url xlink:href="https://creativecommons.org/licenses/by-nd/4.0/" xlink:type="locator" />
       </category>
       <category ID="cc_by-nc_4.0">
@@ -64,8 +64,8 @@
         <url xlink:href="https://creativecommons.org/licenses/by-sa/3.0/" xlink:type="locator" />
       </category>
       <category ID="cc_by-nd_3.0">
-        <label xml:lang="de" text="CC BY-ND 3.0" description="Namensnennung - Keine Bearbeitungen 3.0" />
         <label xml:lang="en" text="CC BY-ND 3.0" description="Attribution-NoDerivatives 3.0" />
+        <label xml:lang="de" text="CC BY-ND 3.0" description="Namensnennung - Keine Bearbeitungen 3.0" />
         <url xlink:href="https://creativecommons.org/licenses/by-nd/3.0/" xlink:type="locator" />
       </category>
       <category ID="cc_by-nc_3.0">
@@ -85,9 +85,9 @@
       </category>
     </category>
     <category ID="odc">
-      <label xml:lang="de" text="Open Data Commons Lizenzen" />
-      <label xml:lang="x-group" text="true" />
       <label xml:lang="en" text="Open Data Commons Lizences" />
+      <label xml:lang="x-group" text="true" />
+      <label xml:lang="de" text="Open Data Commons Lizenzen" />
       <category ID="odc_by">
         <label xml:lang="de" text="ODC-By - Attribution License" />
         <label xml:lang="en" text="ODC-By - Attribution License" />
