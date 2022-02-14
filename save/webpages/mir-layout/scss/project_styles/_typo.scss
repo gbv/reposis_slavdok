@@ -5,6 +5,10 @@
 // set the defaults for all responsive levels here
 // no (xl) media query necessary (desktop first)
 
+  body {
+    hyphens: auto;
+  }
+
   h1 {
     font-size: 2rem;
   }
