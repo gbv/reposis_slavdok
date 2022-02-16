@@ -101,7 +101,7 @@
             <label xml:lang="de">Urheberrecht</label>
             <label xml:lang="en">Copyright</label>
         </item>
-        <item href="/content/rights/vertrag.pdf" replaceMenu="false" constrainPopUp="false">
+        <item href="/content/rights/Publikationsvertrag-SlavDok.pdf" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">Publikationsvertrag (PDF)</label>
             <label xml:lang="en">Publication Agreement (PDF)</label>
         </item>
