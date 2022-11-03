@@ -507,7 +507,7 @@
   </xed:template>
 
   <xed:template id="base_classification.search">
-    <xed:repeat xpath="mods:classification[@authorityURI='https://karten.sbb-berlin.de/classifications/base_classification'][@displayLabel='base_classification']" min="1" max="20" method="build">
+    <xed:repeat xpath="mods:classification[@authorityURI='https://slavdok.slavistik-portal.de/classifications/base_classification'][@displayLabel='base_classification']" min="1" max="20" method="build">
       <div class="form-group row {$xed-validation-marker}">
         <label class="col-md-3 col-form-label text-right">
           <xed:output i18n="project.form.label.base_classification" />
