@@ -115,16 +115,43 @@
     <div class="container container-no-padding">
       <div class="row">
         <div class="col-12 d-flex justify-content-center logo-section">
-          <a href="http://www.staatsbibliothek-berlin.de" title="Staatsbibliothek Berlin Home" class="logo">
-            <span class="fid logo main">Ein Dienst der</span>
-            <span class="fid logo sub">
-              <img class="sbb_logo img-fluid" src="{$WebApplicationBaseURL}/images/logo-sbb-grau.png" />
-            </span>
+
+          <a
+            class="sbb-logo-link logo-link"
+            href="https://www.staatsbibliothek-berlin.de"
+            title="Staatsbibliothek Berlin Home"
+            target="_blank">
+            <span>Ein Dienst der</span>
+            <img
+              class="img-fluid"
+              src="{$WebApplicationBaseURL}/images/logo-sbb-grau.png"
+              alt="Logo SBB" />
           </a>
-          <a class="dfg logo" href="http://www.dfg.de" target="_blank">
-            <span>Gefördert durch</span><br />
-            <img class="dfg_logo img-fluid" src="{$WebApplicationBaseURL}/images/logo-dfg-grau.png" />
+
+          <a
+            class="dfg-logo-link logo-link"
+            href="https://www.dfg.de"
+            title="DFG Home"
+            target="_blank">
+            <span>Gefördert durch</span>
+            <img
+              class="img-fluid"
+              src="{$WebApplicationBaseURL}/images/logo-dfg-grau.png"
+              alt="Logo DFG" />
           </a>
+
+          <a
+            class="slavistik-logo-link logo-link"
+            href="https://slavistik-portal.de/"
+            title="Slavistik-Portal Home"
+            target="_blank">
+            <span>Ein Projekt von</span>
+            <img
+              class="img-fluid"
+              src="{$WebApplicationBaseURL}/images/logo-slavistikportal-grau.png"
+              alt="Logo Slavistik-Portal" />
+          </a>
+
         </div>
       </div>
       <div class="row">
