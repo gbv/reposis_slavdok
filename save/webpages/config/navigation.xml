@@ -121,6 +121,10 @@
             <label xml:lang="de">Sammelprofil</label>
             <label xml:lang="en">Collection Profile</label>
         </item>
+        <item href="/content/folder/myfile.xml" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Technische Grundlagen</label>
+            <label xml:lang="en">new entry</label>
+        </item>
     </menu>
     <menu id="user">
         <label xml:lang="de">Nutzermenü</label>
