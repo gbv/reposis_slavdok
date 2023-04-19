@@ -1,3 +1,4 @@
+Sitemap: https://slavdok.slavistik-portal.de/sitemap_google.xml
 User-agent: *
 Crawl-delay: 10
 Allow: /servlets/MCRFileNodeServlet/
@@ -9,5 +10,4 @@ Disallow: /servlets/
 Disallow: /browse/
 Disallow: /rsc/
 Disallow: /api/
-disallow: /*jsessionid*
-Sitemap: https://slavdok.slavistik-portal.de/sitemap_google.xml
+Disallow: /*jsessionid*
