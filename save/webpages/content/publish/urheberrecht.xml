@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MyCoReWebPage><section xml:lang="all"><meta i18n="project.copyright.description" name="description" /></section><section xml:lang="de"><div class="row">
+<MyCoReWebPage><section xml:lang="all"><meta i18n="project.copyright.description" name="description" /></section><section xml:lang="de" i18n="project.copyright.title"><div class="row">
 <div class="col-sm-12 col-md-12">
 <h1>Urheberrecht und Open Access</h1>
 

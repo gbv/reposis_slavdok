@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MyCoReWebPage><section xml:lang="all"><meta i18n="project.imprint.description" name="description" /></section><section xml:lang="de"><div class="row">
+<MyCoReWebPage><section xml:lang="all"><meta i18n="project.imprint.description" name="description" /></section><section xml:lang="de" i18n="project.imprint.title"><div class="row">
 <div class="col-md-12" lang="de">
 <h1>Impressum</h1>
 

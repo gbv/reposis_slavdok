@@ -98,14 +98,14 @@
                       *
                       <input type="checkbox" value="true" required="required" />
                       Ich habe die
-                      <a href="../below/rights.xml">Datenschutzerklärung</a>
+                      <a href="../below/datenschutz.xml">Datenschutzerklärung</a>
                       gelesen und erkenne sie an.
                     </div>
                   </div>
                 </xed:bind>
                 
                 <!-- Hidden parameters for MCRMailer -->
-                <input type="hidden" value="../content/below/contact.xed?XSL.Status.Style=success&amp;XSL.Status.Message=slavdok.contact.success" name="goto" /> <!-- where to go after sending mail -->
+                <input type="hidden" value="../content/below/kontakt.xed?XSL.Status.Style=success&amp;XSL.Status.Message=slavdok.contact.success" name="goto" /> <!-- where to go after sending mail -->
                 <input type="hidden" value="e-mail-contact" name="xsl" /> <!-- specify xsl to convert mail to for MCRMailer -->
                 
                 <!-- Buttons -->
