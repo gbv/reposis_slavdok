@@ -9,4 +9,5 @@ Disallow: /servlets/
 Disallow: /browse/
 Disallow: /rsc/
 Disallow: /api/
+disallow: /*jsessionid*
 Sitemap: https://slavdok.slavistik-portal.de/sitemap_google.xml

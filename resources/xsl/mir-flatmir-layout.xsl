@@ -34,9 +34,6 @@
         <title>
           <xsl:value-of select="$PageTitle" />
         </title>
-        <xsl:if test="string-length($MIR.CanonicalBaseURL) &gt; 0 and //div/@class='jumbotwo'">
-          <link rel="canonical" href="{$MIR.CanonicalBaseURL}" />
-        </xsl:if>
         <link href="{$WebApplicationBaseURL}assets/font-awesome/css/all.min.css" rel="stylesheet" />
         <script src="{$WebApplicationBaseURL}mir-layout/assets/jquery/jquery.min.js"></script>
         <script src="{$WebApplicationBaseURL}mir-layout/assets/jquery/plugins/jquery-migrate/jquery-migrate.min.js"></script>
