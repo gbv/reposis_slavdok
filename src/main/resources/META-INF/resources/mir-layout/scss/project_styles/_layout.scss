@@ -1,0 +1,46 @@
+/*  layout settings
+ *  - styles for basic layout elements
+ */
+
+// Extra large devices (large desktops)
+// set the defaults for all responsive levels here
+// no (xl) media query necessary (desktop first)
+
+body {
+  padding-top: 51px;
+}
+
+// Large devices (desktops) and below: <= 1200px
+@include media-breakpoint-down(lg) {
+  // add/overwrite styles for responsive level lg and lower
+}
+
+// Medium devices (tablets) and below: <= 992px
+@include media-breakpoint-down(md) {
+  // add/overwrite styles for responsive level md and lower
+  body {
+    padding-top: 0;
+  }
+}
+
+// Small devices (landscape phones) and below: <= 768px
+@include media-breakpoint-down(sm) {
+  // add/overwrite styles for responsive level sm and lower
+}
+
+// Extra small devices (portrait phones): <= 576px
+@include media-breakpoint-down(xs) {
+  // add/overwrite styles for responsive level xs
+  section {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  #page {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .container-no-padding {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}

@@ -1,0 +1,141 @@
+/*  navigation
+ *  - all styles about menus
+ */
+
+// Extra large devices (large desktops)
+// set the defaults for all responsive levels here
+// no (xl) media query necessary (desktop first)
+
+// main menu -------------------------------------------------------------------
+.mir-main-nav {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $darkGray;
+  border-bottom: 1px solid black;
+  .nav-item {
+    > .active {
+      background-color: $darkContrastGray;
+    }
+  }
+  .dropdown-menu {
+    margin-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    font-size: 14px;
+  }
+}
+.dropdown-item {
+  color: $fontBlack;
+  &:hover,
+  &:active,
+  &:focus {
+    color: $fontBlack;
+    background-color: $contrastGray;
+  }
+}
+.navbar {
+  padding: 0;
+}
+.nav-link {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 10px 15px 15px;
+  line-height: 20px;
+  color: $menuFontGray !important;
+  &:hover,
+  &:active,
+  &:focus {
+    color: white !important;
+    background-color: $darkContrastGray;
+  }
+}
+.mir-prop-nav .navbar-nav > li > a {
+  font-size: 14px;
+}
+.mir-prop-nav .navbar-nav > li > a:hover,
+.mir-prop-nav .navbar-nav > li > a:focus {
+  color: white !important;
+  background-color: $darkContrastGray;
+}
+.nav-item.active {
+  background-color: $darkContrastGray;
+  .nav-link {
+    color: white !important;
+  }
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 15px 10px 15px 15px;
+}
+
+.dropdown-divider {
+  border-top: 1px solid $menuFontGray;
+}
+
+// user options nav ------------------------------------------------------------
+.mir-prop-nav .navbar-nav > li > a {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  line-height: 20px;
+}
+
+// language switch -------------------------------------------------------------
+.lang-switch {
+    text-transform: uppercase;
+  }
+
+// footer ----------------------------------------------------------------------
+.internal_links.navbar-nav {
+  margin-top: 1rem;
+  justify-content: center;
+  flex-direction: row;
+}
+footer {
+  .nav-link {
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: transparent;
+    }
+    a {
+      color: $footerGray;
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+      &:hover {
+        color: $linkHoverBlue;
+        text-decoration: none;
+      }
+    }
+  }
+}
+#powered_by {
+  padding: 1em 0px;
+}
+
+// Large devices (desktops) and below: <= 1200px
+@include media-breakpoint-down(lg) {
+  // add/overwrite styles for responsive level lg and lower
+}
+
+// Medium devices (tablets) and below: <= 992px
+@include media-breakpoint-down(md) {
+  // add/overwrite styles for responsive level md and lower
+  .mir-main-nav {
+    position: static;
+  }
+  #options_nav_box .navbar-nav .dropdown-menu {
+    position: absolute;
+  }
+}
+
+// Small devices (landscape phones) and below: <= 768px
+@include media-breakpoint-down(sm) {
+  // add/overwrite styles for responsive level sm and lower
+}
+
+// Extra small devices (portrait phones): <= 576px
+@include media-breakpoint-down(xs) {
+  // add/overwrite styles for responsive level xs
+}

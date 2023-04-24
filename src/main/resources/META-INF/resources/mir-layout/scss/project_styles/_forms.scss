@@ -1,0 +1,62 @@
+/*  form settings
+ *  - styles for forms and form fields
+ */
+
+// Extra large devices (large desktops)
+// set the defaults for all responsive levels here
+// no (xl) media query necessary (desktop first)
+
+// TODO: seems it's a unsolved migration problem
+// see mir _form.scss with the same selector
+#submit_publication {
+  input,
+  select,
+  #more_options_box p {
+    width: 100%;
+  }
+}
+.mir-fieldset-collapsed {
+  margin-bottom: 2rem;
+  position: relative;
+  cursor: pointer;
+  &.hiddenDetail {
+    margin-bottom: 0;
+    border-style: solid;
+    border-width: 0px 0px 2px;
+    border-color: #ccc;
+  }
+  span.expand-item {
+    position: absolute;
+    right: 5px;
+  }
+}
+
+.searchBox {
+  flex-basis: auto;
+}
+
+// Large devices (desktops) and below: <= 1200px
+@include media-breakpoint-down(lg) {
+  // add/overwrite styles for responsive level lg and lower
+}
+
+// Medium devices (tablets) and below: <= 992px
+@include media-breakpoint-down(md) {
+  // add/overwrite styles for responsive level md and lower
+}
+
+// Small devices (landscape phones) and below: <= 768px
+@include media-breakpoint-down(sm) {
+  // add/overwrite styles for responsive level sm and lower
+}
+
+// Extra small devices (portrait phones): <= 576px
+@include media-breakpoint-down(xs) {
+  // add/overwrite styles for responsive level xs
+  .form-login .form-control {
+    width: 100%;
+  }
+  .searchBox {
+    flex-basis: 100%;
+  }
+}

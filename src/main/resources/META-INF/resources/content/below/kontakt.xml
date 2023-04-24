@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE MyCoReWebPage>
+<MyCoReWebPage>
+    <section xml:lang="all" i18n="project.contact.title" >
+        <meta name='description' i18n="project.contact.description" />
+    </section>
+    <section xml:lang="de" i18n="project.contact.title">
+        <div class="row">
+            <div class="col-md-12" lang="de">
+                <h1>Kontakt</h1>
+                <p>Hier können Sie Kontakt zum Team des Slavistik-Portals aufnehmen:</p>
+                <div class="col-xs-12 col-md-9">
+                    <form class="form-horizontal" action="#">
+                        <div class="form-group">
+                            <label for="name" class="col-sm-1 control-label">Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control ang" id="name" name="name" placeholder="Ihr Name" value="" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="col-sm-1 control-label">E-Mail</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control ang" id="email" name="email" placeholder="email@adresse.de" value="" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="thema" class="col-sm-1 control-label">Anliegen</label>
+                            <div class="col-sm-10">
+                                <select class="form-control ang" id="thema" name="thema">
+                                    <option>Frage</option>
+                                    <option>Anregung</option>
+                                    <option>Korrektur melden</option>
+                                    <option>Anderes</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="col-sm-1 control-label">Nachricht</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control ang" rows="4" id="message" name="message" placeholder="Ihre Nachricht"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="form-group">
+                        <label for="leer" class="col-sm-1 control-label"></label>
+                        <div class="col-sm-10">
+                            <input id="senden" type="submit" value="Senden" class="search btn btn-primary" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="leer" class="col-sm-1 control-label"></label>
+                        <div class="col-sm-10">
+                            <div id="result"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <meta>
+    </meta>
+</MyCoReWebPage>

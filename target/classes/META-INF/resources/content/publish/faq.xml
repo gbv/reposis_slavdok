@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyCoReWebPage><section xml:lang="all"><meta i18n="project.faq.description" name="description" /></section><section xml:lang="de"><div class="row">
+<div class="col-md-12">
+<h1>Häufig gestellte Fragen (FAQ)</h1>
+
+<h2>Wie erfolgt der Publikationsprozess?</h2>
+
+<p>Die Publikation eines Dokuments auf SlavDok erfolgt nach erfolgreichem <a href="https://slavdok.slavistik-portal.de/servlets/MCRLoginServlet?action=login&amp;url=..%2Fcontent%2Fdashboard.xml&amp;realm=local">Login</a> in drei Schritten und mittels Online-Eingabemaske:</p>
+
+<ol>
+	<li><strong>Publikationstyp auswählen, bibliographische Angaben erfassen und Lizenz auswählen</strong><br />
+	<br />
+	Nach <a href="https://slavdok.slavistik-portal.de/content/publish/index.xml" target="_self"><em>Auswahl des Publikationstyps</em></a> erfassen Sie in der Eingabemaske bitte die bibliographischen Angaben zu Ihrem Dokument (Autoren, Titel, Jahr, Abstract usw.). Außerdem haben Sie hier die Möglichkeit, eine Creative-Commons-Lizenz für die Publikation auszuwählen.<br />
+	 </li>
+	<li><strong>Dokument (z.B. PDF, PDF/A, MP3) hochladen</strong><br />
+	<br />
+	Nach dem Speichern Ihrer Eingaben kann das zu publizierende Dokument auf den SlavDok-Server hochgeladen werden.<br />
+	 </li>
+	<li><strong>Publikationsvertrag ausfüllen und per Email an SlavDok senden</strong><br />
+	<br />
+	Nach dem Hochladen des Dokuments laden Sie bitte den <a href="https://slavdok.slavistik-portal.de/content/rights/Publikationsvertrag-SlavDok.pdf" target="_blank"><em>Publikationsvertrag</em></a> herunter, füllen ihn (online) aus, unterschreiben ihn (digital) und senden ihn eingescannt per Email an <a href="mailto:slavdok@sbb.spk-berlin.de">slavdok@sbb.spk-berlin.de</a>. Das SlavDok-Team prüft dann die bibliographischen Angaben, sowie die hochgeladene Datei und publiziert nach Eintreffen der unterschriebenen Veröffentlichungsgenehmigung Ihr Dokument auf SlavDok. Sie werden per E-Mail informiert.</li>
+</ol>
+
+<p> </p>
+</div>
+</div>
+</section><meta><log lastEditor="ivoulrich" date="2022-07-20" time="15:47" /></meta></MyCoReWebPage>
