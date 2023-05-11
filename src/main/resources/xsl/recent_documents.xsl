@@ -3,7 +3,8 @@
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns:mcrxsl="xalan://org.mycore.common.xml.MCRXMLFunctions"
                 xmlns:i18n="xalan://org.mycore.services.i18n.MCRTranslation"
-                exclude-result-prefixes="">
+                xmlns:encoder="xalan://java.net.URLEncoder"
+                exclude-result-prefixes="mcrxsl i18n encoder">
 
   <xsl:variable name="Find">
     <xsl:choose>
@@ -15,6 +16,8 @@
       </xsl:otherwise>
     </xsl:choose>
   </xsl:variable>
+
+  <xsl:variable name="solrQuery" select="concat('q=', encoder:encode('state:published AND objectType:mods'))" />
 
   <xsl:template match="recent_documents">
     <div class="card">
@@ -29,7 +32,7 @@
           <div class="col-12 result_body">
             <div class="result_list">
               <div id="hit_list">
-                <xsl:copy-of select="document('xslStyle:response2html:xslTransform:response-prepared:solr:q=state:published AND objectType:mods&amp;rows=5&amp;start=0&amp;sort=created+desc')/div/*" />
+                <xsl:copy-of select="document(concat('xslStyle:response2html:xslTransform:response-prepared:solr:', $solrQuery, '&amp;rows=5&amp;start=0&amp;sort=created+desc'))/div/*" />
               </div>
             </div>
           </div>
@@ -51,7 +54,7 @@
         <input name="condQuery" placeholder="{i18n:translate('project.index_search.placeholder')}" class="form-control search-query" id="project-searchInput" type="text" />
         <div class="input-group-append">
           <button type="submit" class="btn btn-primary">
-            <i class="fa fa-search"></i>
+            <i class="fa fa-search"/>
           </button>
         </div>
       </div>

@@ -48,9 +48,9 @@
     </category>
     <category ID="tdt">
       <label xml:lang="x-bibl" text="tdt" />
+      <label xml:lang="x-term" text="tdt" />
       <label xml:lang="en" text="Tetun Dili" />
       <label xml:lang="de" text="Tetum" />
-      <label xml:lang="x-term" text="tdt" />
     </category>
     <category ID="ccg">
       <label xml:lang="en" text="Samba Daka" />
@@ -105,8 +105,8 @@
       <label xml:lang="en" text="Tetete" />
     </category>
     <category ID="ccp">
-      <label xml:lang="en" text="Chakma" />
       <label xml:lang="x-term" text="ccp" />
+      <label xml:lang="en" text="Chakma" />
       <label xml:lang="x-bibl" text="ccp" />
       <label xml:lang="de" text="Chakma" />
     </category>
@@ -138,8 +138,8 @@
     <category ID="teh">
       <label xml:lang="de" text="Tehuelche" />
       <label xml:lang="x-bibl" text="teh" />
-      <label xml:lang="en" text="Tehuelche" />
       <label xml:lang="x-term" text="teh" />
+      <label xml:lang="en" text="Tehuelche" />
     </category>
     <category ID="teg">
       <label xml:lang="x-bibl" text="teg" />
@@ -201,8 +201,8 @@
       <label xml:lang="x-term" text="tet" />
     </category>
     <category ID="tes">
-      <label xml:lang="en" text="Tengger" />
       <label xml:lang="x-bibl" text="tes" />
+      <label xml:lang="en" text="Tengger" />
       <label xml:lang="de" text="Javanisch" />
       <label xml:lang="x-term" text="tes" />
     </category>
@@ -284,8 +284,8 @@
     </category>
     <category ID="tfi">
       <label xml:lang="x-bibl" text="tfi" />
-      <label xml:lang="en" text="Tofin Gbe" />
       <label xml:lang="x-term" text="tfi" />
+      <label xml:lang="en" text="Tofin Gbe" />
     </category>
     <category ID="cdz">
       <label xml:lang="en" text="Koda" />
@@ -401,8 +401,8 @@
       <label xml:lang="x-term" text="tgi" />
     </category>
     <category ID="tgn">
-      <label xml:lang="en" text="Tandaganon" />
       <label xml:lang="x-term" text="tgn" />
+      <label xml:lang="en" text="Tandaganon" />
       <label xml:lang="x-bibl" text="tgn" />
     </category>
     <category ID="tgp">
@@ -421,8 +421,8 @@
       <label xml:lang="en" text="Tareng" />
     </category>
     <category ID="cfa">
-      <label xml:lang="en" text="Dijim-Bwilim" />
       <label xml:lang="x-term" text="cfa" />
+      <label xml:lang="en" text="Dijim-Bwilim" />
       <label xml:lang="x-bibl" text="cfa" />
     </category>
     <category ID="tgq">
@@ -464,8 +464,8 @@
     <category ID="cfg">
       <label xml:lang="en" text="Como Karim" />
       <label xml:lang="x-bibl" text="cfg" />
-      <label xml:lang="de" text="Como Karim" />
       <label xml:lang="x-term" text="cfg" />
+      <label xml:lang="de" text="Como Karim" />
     </category>
     <category ID="tgw">
       <label xml:lang="x-bibl" text="tgw" />
@@ -528,8 +528,8 @@
     </category>
     <category ID="thm">
       <label xml:lang="de" text="Aheu" />
-      <label xml:lang="en" text="Aheu" />
       <label xml:lang="x-bibl" text="thm" />
+      <label xml:lang="en" text="Aheu" />
       <label xml:lang="x-term" text="thm" />
     </category>
     <category ID="thl">
@@ -719,8 +719,8 @@
       <label xml:lang="x-bibl" text="tis" />
     </category>
     <category ID="chf">
-      <label xml:lang="en" text="Tabasco Chontal" />
       <label xml:lang="x-bibl" text="chf" />
+      <label xml:lang="en" text="Tabasco Chontal" />
       <label xml:lang="x-term" text="chf" />
       <label xml:lang="de" text="Chontal-Maya" />
     </category>
@@ -742,8 +742,8 @@
     </category>
     <category ID="tix">
       <label xml:lang="x-bibl" text="tix" />
-      <label xml:lang="en" text="Southern Tiwa" />
       <label xml:lang="x-term" text="tix" />
+      <label xml:lang="en" text="Southern Tiwa" />
     </category>
     <category ID="chg">
       <label xml:lang="de" text="Tschagataisch" />
@@ -772,8 +772,8 @@
       <label xml:lang="en" text="Tiruray" />
     </category>
     <category ID="chl">
-      <label xml:lang="en" text="Cahuilla" />
       <label xml:lang="x-bibl" text="chl" />
+      <label xml:lang="en" text="Cahuilla" />
       <label xml:lang="x-term" text="chl" />
     </category>
     <category ID="chk">
@@ -790,8 +790,8 @@
     </category>
     <category ID="chm">
       <label xml:lang="x-term" text="chm" />
-      <label xml:lang="en" text="Mari (Russia)" />
       <label xml:lang="de" text="Mari" />
+      <label xml:lang="en" text="Mari (Russia)" />
       <label xml:lang="x-bibl" text="chm" />
       <category ID="chm-mhr">
         <label xml:lang="en" text="Eastern Mari" />
@@ -824,8 +824,8 @@
     <category ID="chr">
       <label xml:lang="de" text="Cherokee" />
       <label xml:lang="x-term" text="chr" />
-      <label xml:lang="en" text="Cherokee" />
       <label xml:lang="x-bibl" text="chr" />
+      <label xml:lang="en" text="Cherokee" />
     </category>
     <category ID="chq">
       <label xml:lang="x-term" text="chq" />
@@ -906,10 +906,10 @@
       <label xml:lang="en" text="Southern Tujia" />
     </category>
     <category ID="cib">
-      <label xml:lang="de" text="Fon" />
       <label xml:lang="x-term" text="cib" />
-      <label xml:lang="en" text="Ci Gbe" />
+      <label xml:lang="de" text="Fon" />
       <label xml:lang="x-bibl" text="cib" />
+      <label xml:lang="en" text="Ci Gbe" />
     </category>
     <category ID="cie">
       <label xml:lang="x-bibl" text="cie" />
@@ -923,8 +923,8 @@
     </category>
     <category ID="cid">
       <label xml:lang="x-term" text="cid" />
-      <label xml:lang="en" text="Chimariko" />
       <label xml:lang="x-bibl" text="cid" />
+      <label xml:lang="en" text="Chimariko" />
     </category>
     <category ID="tjw">
       <label xml:lang="x-bibl" text="tjw" />
@@ -975,8 +975,8 @@
     </category>
     <category ID="cir">
       <label xml:lang="x-term" text="cir" />
-      <label xml:lang="en" text="Tiri" />
       <label xml:lang="x-bibl" text="cir" />
+      <label xml:lang="en" text="Tiri" />
     </category>
     <category ID="tkf">
       <label xml:lang="x-bibl" text="tkf" />
@@ -1064,8 +1064,8 @@
       <label xml:lang="x-bibl" text="tku" />
     </category>
     <category ID="cjh">
-      <label xml:lang="en" text="Upper Chehalis" />
       <label xml:lang="x-bibl" text="cjh" />
+      <label xml:lang="en" text="Upper Chehalis" />
       <label xml:lang="x-term" text="cjh" />
     </category>
     <category ID="tkx">
@@ -1105,8 +1105,8 @@
       <label xml:lang="x-term" text="cjm" />
     </category>
     <category ID="cjp">
-      <label xml:lang="en" text="Cabécar" />
       <label xml:lang="x-bibl" text="cjp" />
+      <label xml:lang="en" text="Cabécar" />
       <label xml:lang="x-term" text="cjp" />
     </category>
     <category ID="tla">
@@ -1116,14 +1116,14 @@
     </category>
     <category ID="cjo">
       <label xml:lang="x-term" text="cjo" />
-      <label xml:lang="en" text="Ashéninka Pajonal" />
       <label xml:lang="x-bibl" text="cjo" />
+      <label xml:lang="en" text="Ashéninka Pajonal" />
     </category>
     <category ID="cjr">
       <label xml:lang="x-term" text="cjr" description="auto-generated" />
       <label xml:lang="de" text="Chorotega" />
-      <label xml:lang="en" text="Chorotega" />
       <label xml:lang="x-bibl" text="cjr" description="auto-generated" />
+      <label xml:lang="en" text="Chorotega" />
     </category>
     <category ID="tlc">
       <label xml:lang="x-term" text="tlc" />
@@ -1181,8 +1181,8 @@
     </category>
     <category ID="tlj">
       <label xml:lang="x-bibl" text="tlj" />
-      <label xml:lang="en" text="Talinga-Bwisi" />
       <label xml:lang="x-term" text="tlj" />
+      <label xml:lang="en" text="Talinga-Bwisi" />
     </category>
     <category ID="tlm">
       <label xml:lang="x-bibl" text="tlm" />
@@ -1190,8 +1190,8 @@
       <label xml:lang="en" text="Tolomako" />
     </category>
     <category ID="tll">
-      <label xml:lang="en" text="Tetela" />
       <label xml:lang="x-bibl" text="tll" />
+      <label xml:lang="en" text="Tetela" />
       <label xml:lang="x-term" text="tll" />
     </category>
     <category ID="tlo">
@@ -1247,8 +1247,8 @@
       <label xml:lang="x-bibl" text="tlw" description="auto-generated" />
     </category>
     <category ID="tlv">
-      <label xml:lang="en" text="Taliabu" />
       <label xml:lang="x-term" text="tlv" />
+      <label xml:lang="en" text="Taliabu" />
       <label xml:lang="x-bibl" text="tlv" />
     </category>
     <category ID="tly">
@@ -1290,8 +1290,8 @@
     </category>
     <category ID="tmb">
       <label xml:lang="x-bibl" text="tmb" />
-      <label xml:lang="en" text="Katbol" />
       <label xml:lang="x-term" text="tmb" />
+      <label xml:lang="en" text="Katbol" />
     </category>
     <category ID="tma">
       <label xml:lang="en" text="Tama (Chad)" />
@@ -1370,8 +1370,8 @@
     </category>
     <category ID="ckv">
       <label xml:lang="x-term" text="ckv" />
-      <label xml:lang="en" text="Kavalan" />
       <label xml:lang="x-bibl" text="ckv" />
+      <label xml:lang="en" text="Kavalan" />
     </category>
     <category ID="tmg">
       <label xml:lang="x-term" text="tmg" />
@@ -1380,8 +1380,8 @@
     </category>
     <category ID="cky">
       <label xml:lang="x-bibl" text="cky" />
-      <label xml:lang="en" text="Cakfem-Mushere" />
       <label xml:lang="x-term" text="cky" />
+      <label xml:lang="en" text="Cakfem-Mushere" />
     </category>
     <category ID="tmj">
       <label xml:lang="en" text="Samarokena" />
@@ -1395,8 +1395,8 @@
     </category>
     <category ID="tmi">
       <label xml:lang="x-term" text="tmi" />
-      <label xml:lang="en" text="Tutuba" />
       <label xml:lang="x-bibl" text="tmi" />
+      <label xml:lang="en" text="Tutuba" />
     </category>
     <category ID="tml">
       <label xml:lang="en" text="Tamnim Citak" />
@@ -1452,8 +1452,8 @@
     </category>
     <category ID="tmt">
       <label xml:lang="x-term" text="tmt" />
-      <label xml:lang="en" text="Tasmate" />
       <label xml:lang="x-bibl" text="tmt" />
+      <label xml:lang="en" text="Tasmate" />
     </category>
     <category ID="clc">
       <label xml:lang="x-term" text="clc" />
@@ -1467,8 +1467,8 @@
       <label xml:lang="de" text="Tima" />
     </category>
     <category ID="tmv">
-      <label xml:lang="en" text="Tembo (Motembo)" />
       <label xml:lang="x-term" text="tmv" />
+      <label xml:lang="en" text="Tembo (Motembo)" />
       <label xml:lang="x-bibl" text="tmv" />
     </category>
     <category ID="cle">
@@ -1477,8 +1477,8 @@
       <label xml:lang="x-bibl" text="cle" />
     </category>
     <category ID="tmu">
-      <label xml:lang="en" text="Iau" />
       <label xml:lang="x-term" text="tmu" />
+      <label xml:lang="en" text="Iau" />
       <label xml:lang="x-bibl" text="tmu" />
     </category>
     <category ID="clh">
@@ -1514,8 +1514,8 @@
       <label xml:lang="de" text="Chala" />
     </category>
     <category ID="clk">
-      <label xml:lang="en" text="Idu-Mishmi" />
       <label xml:lang="x-bibl" text="clk" />
+      <label xml:lang="en" text="Idu-Mishmi" />
       <label xml:lang="x-term" text="clk" />
     </category>
     <category ID="clm">
@@ -1536,8 +1536,8 @@
     <category ID="tnc">
       <label xml:lang="en" text="Tanimuca-Retuarã" />
       <label xml:lang="x-bibl" text="tnc" />
-      <label xml:lang="de" text="Tanimuca-Retuarã" />
       <label xml:lang="x-term" text="tnc" />
+      <label xml:lang="de" text="Tanimuca-Retuarã" />
     </category>
     <category ID="tnb">
       <label xml:lang="en" text="Western Tunebo" />
@@ -1551,8 +1551,8 @@
     </category>
     <category ID="tne">
       <label xml:lang="x-term" text="tne" description="auto-generated" />
-      <label xml:lang="en" text="Tinoc Kallahan" />
       <label xml:lang="x-bibl" text="tne" description="auto-generated" />
+      <label xml:lang="en" text="Tinoc Kallahan" />
     </category>
     <category ID="tnd">
       <label xml:lang="x-term" text="tnd" />
@@ -1648,8 +1648,8 @@
       <label xml:lang="x-bibl" text="tnr" />
     </category>
     <category ID="cme">
-      <label xml:lang="de" text="Cerma" />
       <label xml:lang="x-term" text="cme" />
+      <label xml:lang="de" text="Cerma" />
       <label xml:lang="x-bibl" text="cme" />
       <label xml:lang="en" text="Cerma" />
     </category>
@@ -1919,8 +1919,8 @@
     </category>
     <category ID="tpe">
       <label xml:lang="de" text="Kokborok" />
-      <label xml:lang="en" text="Tippera" />
       <label xml:lang="x-bibl" text="tpe" />
+      <label xml:lang="en" text="Tippera" />
       <label xml:lang="x-term" text="tpe" />
     </category>
     <category ID="cns">
@@ -1996,8 +1996,8 @@
     </category>
     <category ID="tpq">
       <label xml:lang="x-bibl" text="tpq" />
-      <label xml:lang="en" text="Tukpa" />
       <label xml:lang="x-term" text="tpq" />
+      <label xml:lang="en" text="Tukpa" />
     </category>
     <category ID="tpp">
       <label xml:lang="x-bibl" text="tpp" />
@@ -2042,8 +2042,8 @@
     </category>
     <category ID="cog">
       <label xml:lang="x-term" text="cog" />
-      <label xml:lang="en" text="Chong" />
       <label xml:lang="x-bibl" text="cog" />
+      <label xml:lang="en" text="Chong" />
     </category>
     <category ID="tpw">
       <label xml:lang="de" text="Tupi" />
@@ -2130,8 +2130,8 @@
     </category>
     <category ID="cou">
       <label xml:lang="en" text="Wamey" />
-      <label xml:lang="de" text="Wamey" />
       <label xml:lang="x-bibl" text="cou" />
+      <label xml:lang="de" text="Wamey" />
       <label xml:lang="x-term" text="cou" />
     </category>
     <category ID="cot">
@@ -2216,8 +2216,8 @@
       <label xml:lang="x-term" text="tqt" />
     </category>
     <category ID="cpc">
-      <label xml:lang="en" text="Ajyíninka Apurucayali" />
       <label xml:lang="x-bibl" text="cpc" />
+      <label xml:lang="en" text="Ajyíninka Apurucayali" />
       <label xml:lang="x-term" text="cpc" />
     </category>
     <category ID="tqu">
@@ -2319,13 +2319,13 @@
       <label xml:lang="en" text="Toram" />
     </category>
     <category ID="trm">
-      <label xml:lang="en" text="Tregami" />
       <label xml:lang="x-bibl" text="trm" />
+      <label xml:lang="en" text="Tregami" />
       <label xml:lang="x-term" text="trm" />
     </category>
     <category ID="trl">
-      <label xml:lang="en" text="Traveller Scottish" />
       <label xml:lang="x-term" text="trl" />
+      <label xml:lang="en" text="Traveller Scottish" />
       <label xml:lang="x-bibl" text="trl" />
     </category>
     <category ID="tro">
@@ -2396,8 +2396,8 @@
       <label xml:lang="x-bibl" text="trz" />
     </category>
     <category ID="tsb">
-      <label xml:lang="en" text="Tsamai" />
       <label xml:lang="x-bibl" text="tsb" />
+      <label xml:lang="en" text="Tsamai" />
       <label xml:lang="x-term" text="tsb" />
     </category>
     <category ID="tsa">
@@ -2419,8 +2419,8 @@
     </category>
     <category ID="tsf">
       <label xml:lang="x-term" text="tsf" description="auto-generated" />
-      <label xml:lang="en" text="Southwestern Tamang" />
       <label xml:lang="x-bibl" text="tsf" description="auto-generated" />
+      <label xml:lang="en" text="Southwestern Tamang" />
     </category>
     <category ID="tse">
       <label xml:lang="x-bibl" text="tse" />
@@ -2495,8 +2495,8 @@
       <label xml:lang="en" text="Coeur d'Alene" />
     </category>
     <category ID="tst">
-      <label xml:lang="en" text="Tondi Songway Kiini" />
       <label xml:lang="x-bibl" text="tst" />
+      <label xml:lang="en" text="Tondi Songway Kiini" />
       <label xml:lang="x-term" text="tst" />
     </category>
     <category ID="crc">
@@ -2532,8 +2532,8 @@
       <label xml:lang="en" text="Crimean Tatar" />
     </category>
     <category ID="tsx">
-      <label xml:lang="en" text="Mubami" />
       <label xml:lang="x-bibl" text="tsx" />
+      <label xml:lang="en" text="Mubami" />
       <label xml:lang="x-term" text="tsx" />
     </category>
     <category ID="crg">
@@ -2770,8 +2770,8 @@
       <label xml:lang="x-term" text="csf" />
     </category>
     <category ID="ttv">
-      <label xml:lang="en" text="Titan" />
       <label xml:lang="x-bibl" text="ttv" />
+      <label xml:lang="en" text="Titan" />
       <label xml:lang="x-term" text="ttv" />
     </category>
     <category ID="csi">
@@ -2811,8 +2811,8 @@
     </category>
     <category ID="csl">
       <label xml:lang="x-term" text="csl" />
-      <label xml:lang="en" text="Chinese Sign Language" />
       <label xml:lang="x-bibl" text="csl" />
+      <label xml:lang="en" text="Chinese Sign Language" />
     </category>
     <category ID="cso">
       <label xml:lang="x-bibl" text="cso" />
@@ -2870,8 +2870,8 @@
       <label xml:lang="x-term" text="cst" />
     </category>
     <category ID="tue">
-      <label xml:lang="en" text="Tuyuca" />
       <label xml:lang="x-bibl" text="tue" />
+      <label xml:lang="en" text="Tuyuca" />
       <label xml:lang="x-term" text="tue" />
     </category>
     <category ID="tuh">
@@ -3002,8 +3002,8 @@
     </category>
     <category ID="ctn">
       <label xml:lang="x-term" text="ctn" />
-      <label xml:lang="en" text="Chhintange" />
       <label xml:lang="x-bibl" text="ctn" />
+      <label xml:lang="en" text="Chhintange" />
     </category>
     <category ID="ctm">
       <label xml:lang="x-term" text="ctm" />
@@ -3111,13 +3111,13 @@
     <category ID="cug">
       <label xml:lang="x-bibl" text="cug" />
       <label xml:lang="x-term" text="cug" />
-      <label xml:lang="en" text="Chungmboko" />
       <label xml:lang="de" text="Cung" />
+      <label xml:lang="en" text="Chungmboko" />
     </category>
     <category ID="tvw">
       <label xml:lang="x-bibl" text="tvw" />
-      <label xml:lang="en" text="Sedoa" />
       <label xml:lang="x-term" text="tvw" />
+      <label xml:lang="en" text="Sedoa" />
     </category>
     <category ID="cui">
       <label xml:lang="en" text="Cuiba" />
@@ -3125,8 +3125,8 @@
       <label xml:lang="x-term" text="cui" />
     </category>
     <category ID="tvy">
-      <label xml:lang="en" text="Timor Pidgin" />
       <label xml:lang="x-bibl" text="tvy" />
+      <label xml:lang="en" text="Timor Pidgin" />
       <label xml:lang="x-term" text="tvy" />
     </category>
     <category ID="cuh">
@@ -3151,14 +3151,14 @@
       <label xml:lang="x-bibl" text="cum" description="auto-generated" />
     </category>
     <category ID="cul">
-      <label xml:lang="en" text="Culina" />
       <label xml:lang="x-term" text="cul" />
+      <label xml:lang="en" text="Culina" />
       <label xml:lang="x-bibl" text="cul" />
     </category>
     <category ID="cuo">
       <label xml:lang="x-term" text="cuo" />
-      <label xml:lang="en" text="Cumanagoto" />
       <label xml:lang="x-bibl" text="cuo" />
+      <label xml:lang="en" text="Cumanagoto" />
     </category>
     <category ID="cuq">
       <label xml:lang="en" text="Cun" />
@@ -3181,8 +3181,8 @@
       <label xml:lang="en" text="Twana" />
     </category>
     <category ID="twd">
-      <label xml:lang="en" text="Twents" />
       <label xml:lang="x-bibl" text="twd" />
+      <label xml:lang="en" text="Twents" />
       <label xml:lang="x-term" text="twd" />
       <label xml:lang="de" text="Twents" />
     </category>
@@ -3197,8 +3197,8 @@
       <label xml:lang="x-bibl" text="twc" />
     </category>
     <category ID="cuu">
-      <label xml:lang="en" text="Tai Ya" />
       <label xml:lang="x-bibl" text="cuu" />
+      <label xml:lang="en" text="Tai Ya" />
       <label xml:lang="x-term" text="cuu" />
     </category>
     <category ID="twf">
@@ -3263,8 +3263,8 @@
       <label xml:lang="en" text="Ere" />
     </category>
     <category ID="two">
-      <label xml:lang="de" text="Nord-Sotho" />
       <label xml:lang="x-term" text="two" />
+      <label xml:lang="de" text="Nord-Sotho" />
       <label xml:lang="en" text="Tswapong" />
       <label xml:lang="x-bibl" text="two" />
     </category>
@@ -3327,8 +3327,8 @@
     </category>
     <category ID="txb">
       <label xml:lang="de" text="Tocharischn" />
-      <label xml:lang="en" text="Tokharian B" />
       <label xml:lang="x-term" text="txb" />
+      <label xml:lang="en" text="Tokharian B" />
       <label xml:lang="x-bibl" text="txb" />
     </category>
     <category ID="txe">
@@ -3399,8 +3399,8 @@
     <category ID="txr">
       <label xml:lang="en" text="Tartessian" />
       <label xml:lang="x-term" text="txr" />
-      <label xml:lang="de" text="Tartessisch" />
       <label xml:lang="x-bibl" text="txr" />
+      <label xml:lang="de" text="Tartessisch" />
     </category>
     <category ID="cwe">
       <label xml:lang="x-bibl" text="cwe" />
@@ -3529,8 +3529,8 @@
     <category ID="tzm">
       <label xml:lang="en" text="Central Atlas Tamazight" />
       <label xml:lang="x-bibl" text="tzm" />
-      <label xml:lang="de" text="Tamazight" />
       <label xml:lang="x-term" text="tzm" />
+      <label xml:lang="de" text="Tamazight" />
     </category>
     <category ID="tzl">
       <label xml:lang="x-bibl" text="tzl" />
@@ -3582,8 +3582,8 @@
       <label xml:lang="x-term" text="czn" />
     </category>
     <category ID="czt">
-      <label xml:lang="en" text="Zotung Chin" />
       <label xml:lang="x-term" text="czt" />
+      <label xml:lang="en" text="Zotung Chin" />
       <label xml:lang="x-bibl" text="czt" />
     </category>
     <category ID="uam">
@@ -3619,8 +3619,8 @@
     <category ID="daa">
       <label xml:lang="x-bibl" text="daa" />
       <label xml:lang="x-term" text="daa" />
-      <label xml:lang="en" text="Dangaléat" />
       <label xml:lang="de" text="Dangla" />
+      <label xml:lang="en" text="Dangaléat" />
     </category>
     <category ID="dad">
       <label xml:lang="en" text="Marik" />
@@ -3761,8 +3761,8 @@
       <label xml:lang="x-term" text="dbe" />
     </category>
     <category ID="dbd">
-      <label xml:lang="en" text="Dadiya" />
       <label xml:lang="x-bibl" text="dbd" />
+      <label xml:lang="en" text="Dadiya" />
       <label xml:lang="x-term" text="dbd" />
     </category>
     <category ID="dbg">
@@ -3911,14 +3911,14 @@
       <label xml:lang="en" text="Kioko" />
     </category>
     <category ID="dde">
-      <label xml:lang="en" text="Doondo" />
       <label xml:lang="x-bibl" text="dde" />
+      <label xml:lang="en" text="Doondo" />
       <label xml:lang="x-term" text="dde" />
     </category>
     <category ID="ddd">
       <label xml:lang="x-bibl" text="ddd" />
-      <label xml:lang="en" text="Dongotono" />
       <label xml:lang="x-term" text="ddd" />
+      <label xml:lang="en" text="Dongotono" />
     </category>
     <category ID="ddg">
       <label xml:lang="de" text="Fataluku" />
@@ -4001,8 +4001,8 @@
       <label xml:lang="x-term" text="deg" />
     </category>
     <category ID="dei">
-      <label xml:lang="en" text="Demisa" />
       <label xml:lang="x-term" text="dei" />
+      <label xml:lang="en" text="Demisa" />
       <label xml:lang="x-bibl" text="dei" />
     </category>
     <category ID="del">
@@ -4013,8 +4013,8 @@
       <category ID="del-umu">
         <label xml:lang="de" text="Munsee" />
         <label xml:lang="x-term" text="umu" />
-        <label xml:lang="en" text="Munsee" />
         <label xml:lang="x-bibl" text="umu" />
+        <label xml:lang="en" text="Munsee" />
       </category>
       <category ID="del-unm">
         <label xml:lang="x-bibl" text="unm" />
@@ -4068,8 +4068,8 @@
     </category>
     <category ID="deq">
       <label xml:lang="en" text="Dendi (Central African Republic)" />
-      <label xml:lang="de" text="Ngbandi" />
       <label xml:lang="x-term" text="deq" />
+      <label xml:lang="de" text="Ngbandi" />
       <label xml:lang="x-bibl" text="deq" />
     </category>
     <category ID="ugb">
@@ -4089,8 +4089,8 @@
     </category>
     <category ID="dev">
       <label xml:lang="x-bibl" text="dev" />
-      <label xml:lang="en" text="Domung" />
       <label xml:lang="x-term" text="dev" />
+      <label xml:lang="en" text="Domung" />
     </category>
     <category ID="dez">
       <label xml:lang="en" text="Dengese" />
@@ -4214,8 +4214,8 @@
     </category>
     <category ID="dgz">
       <label xml:lang="x-bibl" text="dgz" />
-      <label xml:lang="en" text="Daga" />
       <label xml:lang="x-term" text="dgz" />
+      <label xml:lang="en" text="Daga" />
     </category>
     <category ID="dha">
       <label xml:lang="x-term" text="dha" description="auto-generated" />
@@ -4310,8 +4310,8 @@
     </category>
     <category ID="dic">
       <label xml:lang="de" text="Dida" />
-      <label xml:lang="en" text="Lakota Dida" />
       <label xml:lang="x-term" text="dic" />
+      <label xml:lang="en" text="Lakota Dida" />
       <label xml:lang="x-bibl" text="dic" />
     </category>
     <category ID="dif">
@@ -4418,8 +4418,8 @@
       <label xml:lang="en" text="Ukuriguma" />
     </category>
     <category ID="diu">
-      <label xml:lang="en" text="Diriku" />
       <label xml:lang="x-term" text="diu" />
+      <label xml:lang="en" text="Diriku" />
       <label xml:lang="x-bibl" text="diu" />
     </category>
     <category ID="dix">
@@ -4471,13 +4471,13 @@
     </category>
     <category ID="djc">
       <label xml:lang="x-term" text="djc" />
-      <label xml:lang="en" text="Dar Daju Daju" />
       <label xml:lang="x-bibl" text="djc" />
+      <label xml:lang="en" text="Dar Daju Daju" />
     </category>
     <category ID="uks">
       <label xml:lang="x-term" text="uks" />
-      <label xml:lang="en" text="Urubú-Kaapor Sign Language" />
       <label xml:lang="x-bibl" text="uks" />
+      <label xml:lang="en" text="Urubú-Kaapor Sign Language" />
     </category>
     <category ID="djb">
       <label xml:lang="x-term" text="djb" />
@@ -4544,8 +4544,8 @@
     </category>
     <category ID="djo">
       <label xml:lang="x-bibl" text="djo" />
-      <label xml:lang="en" text="Jangkang" />
       <label xml:lang="x-term" text="djo" />
+      <label xml:lang="en" text="Jangkang" />
     </category>
     <category ID="djn">
       <label xml:lang="en" text="Djauan" />
@@ -4665,8 +4665,8 @@
     <category ID="umb">
       <label xml:lang="x-term" text="umb" />
       <label xml:lang="en" text="Umbundu" />
-      <label xml:lang="de" text="Umbundu" />
       <label xml:lang="x-bibl" text="umb" />
+      <label xml:lang="de" text="Umbundu" />
     </category>
     <category ID="umd">
       <label xml:lang="x-term" text="umd" />
@@ -4738,8 +4738,8 @@
     </category>
     <category ID="dln">
       <label xml:lang="x-bibl" text="dln" />
-      <label xml:lang="en" text="Darlong" />
       <label xml:lang="x-term" text="dln" />
+      <label xml:lang="en" text="Darlong" />
     </category>
     <category ID="una">
       <label xml:lang="en" text="North Watut" />
@@ -4844,8 +4844,8 @@
     </category>
     <category ID="dmo">
       <label xml:lang="x-bibl" text="dmo" />
-      <label xml:lang="en" text="Kemedzung" />
       <label xml:lang="de" text="Kemezung" />
+      <label xml:lang="en" text="Kemedzung" />
       <label xml:lang="x-term" text="dmo" />
     </category>
     <category ID="dmr">
@@ -4921,8 +4921,8 @@
       <label xml:lang="en" text="Dengka" />
     </category>
     <category ID="dnj">
-      <label xml:lang="en" text="Dan" />
       <label xml:lang="x-term" text="dnj" />
+      <label xml:lang="en" text="Dan" />
       <label xml:lang="x-bibl" text="dnj" />
       <label xml:lang="de" text="Dan" />
     </category>
@@ -4932,8 +4932,8 @@
       <label xml:lang="en" text="Dzùùngoo" />
     </category>
     <category ID="dnr">
-      <label xml:lang="en" text="Danaru" />
       <label xml:lang="x-term" text="dnr" />
+      <label xml:lang="en" text="Danaru" />
       <label xml:lang="x-bibl" text="dnr" />
     </category>
     <category ID="dnu">
@@ -4999,8 +4999,8 @@
     </category>
     <category ID="doh">
       <label xml:lang="x-term" text="doh" />
-      <label xml:lang="en" text="Dong" />
       <label xml:lang="x-bibl" text="doh" />
+      <label xml:lang="en" text="Dong" />
     </category>
     <category ID="doi">
       <label xml:lang="de" text="Dogri" />
@@ -5127,8 +5127,8 @@
     <category ID="urh">
       <label xml:lang="en" text="Urhobo" />
       <label xml:lang="x-term" text="urh" />
-      <label xml:lang="de" text="Urhobo" />
       <label xml:lang="x-bibl" text="urh" />
+      <label xml:lang="de" text="Urhobo" />
     </category>
     <category ID="urg">
       <label xml:lang="x-term" text="urg" />
@@ -5269,8 +5269,8 @@
       <label xml:lang="x-bibl" text="dri" />
     </category>
     <category ID="drh">
-      <label xml:lang="en" text="Darkhat" />
       <label xml:lang="x-term" text="drh" description="auto-generated" />
+      <label xml:lang="en" text="Darkhat" />
       <label xml:lang="x-bibl" text="drh" description="auto-generated" />
     </category>
     <category ID="drl">
@@ -5342,14 +5342,14 @@
     <category ID="dsb">
       <label xml:lang="x-bibl" text="dsb" />
       <label xml:lang="en" text="Lower Sorbian" />
-      <label xml:lang="de" text="Niedersorbisch" />
       <label xml:lang="x-term" text="dsb" />
+      <label xml:lang="de" text="Niedersorbisch" />
     </category>
     <category ID="utr">
       <label xml:lang="x-bibl" text="utr" />
       <label xml:lang="de" text="Etulo" />
-      <label xml:lang="en" text="Etulo" />
       <label xml:lang="x-term" text="utr" />
+      <label xml:lang="en" text="Etulo" />
     </category>
     <category ID="dse">
       <label xml:lang="x-bibl" text="dse" />
@@ -5395,8 +5395,8 @@
       <label xml:lang="x-term" text="dsq" />
     </category>
     <category ID="uum">
-      <label xml:lang="en" text="Urum" />
       <label xml:lang="x-term" text="uum" />
+      <label xml:lang="en" text="Urum" />
       <label xml:lang="x-bibl" text="uum" />
     </category>
     <category ID="uun">
@@ -5457,8 +5457,8 @@
     </category>
     <category ID="dtn">
       <label xml:lang="x-term" text="dtn" />
-      <label xml:lang="en" text="Daatsʼíin" />
       <label xml:lang="x-bibl" text="dtn" />
+      <label xml:lang="en" text="Daatsʼíin" />
     </category>
     <category ID="dtp">
       <label xml:lang="x-term" text="dtp" />
@@ -5550,8 +5550,8 @@
       <label xml:lang="x-bibl" text="duj" description="auto-generated" />
     </category>
     <category ID="dui">
-      <label xml:lang="en" text="Dumun" />
       <label xml:lang="x-term" text="dui" />
+      <label xml:lang="en" text="Dumun" />
       <label xml:lang="x-bibl" text="dui" />
     </category>
     <category ID="dul">
@@ -5607,8 +5607,8 @@
       <label xml:lang="x-term" text="duv" />
     </category>
     <category ID="duu">
-      <label xml:lang="en" text="Drung" />
       <label xml:lang="x-bibl" text="duu" />
+      <label xml:lang="en" text="Drung" />
       <label xml:lang="x-term" text="duu" />
     </category>
     <category ID="dux">
@@ -5777,8 +5777,8 @@
       <label xml:lang="x-bibl" text="vae" />
     </category>
     <category ID="vah">
-      <label xml:lang="en" text="Varhadi-Nagpuri" />
       <label xml:lang="x-term" text="vah" />
+      <label xml:lang="en" text="Varhadi-Nagpuri" />
       <label xml:lang="x-bibl" text="vah" />
     </category>
     <category ID="vag">
@@ -5890,8 +5890,8 @@
     <category ID="ved">
       <label xml:lang="x-bibl" text="ved" />
       <label xml:lang="x-term" text="ved" />
-      <label xml:lang="en" text="Veddah" />
       <label xml:lang="de" text="Vedda" />
+      <label xml:lang="en" text="Veddah" />
     </category>
     <category ID="ecr">
       <label xml:lang="de" text="Eteokretisch" />
@@ -6025,8 +6025,8 @@
       <label xml:lang="x-bibl" text="vin" />
     </category>
     <category ID="vit">
-      <label xml:lang="en" text="Viti" />
       <label xml:lang="x-bibl" text="vit" />
+      <label xml:lang="en" text="Viti" />
       <label xml:lang="x-term" text="vit" />
     </category>
     <category ID="vis">
@@ -6055,8 +6055,8 @@
       <label xml:lang="x-bibl" text="vka" />
     </category>
     <category ID="eit">
-      <label xml:lang="en" text="Eitiep" />
       <label xml:lang="x-term" text="eit" />
+      <label xml:lang="en" text="Eitiep" />
       <label xml:lang="x-bibl" text="eit" />
     </category>
     <category ID="eiv">
@@ -6164,8 +6164,8 @@
     <category ID="ekp">
       <label xml:lang="x-term" text="ekp" />
       <label xml:lang="en" text="Ekpeye" />
-      <label xml:lang="de" text="Ekpeye" />
       <label xml:lang="x-bibl" text="ekp" />
+      <label xml:lang="de" text="Ekpeye" />
     </category>
     <category ID="vma">
       <label xml:lang="en" text="Martuyhunira" />
@@ -6180,8 +6180,8 @@
     <category ID="ekr">
       <label xml:lang="x-term" text="ekr" />
       <label xml:lang="de" text="Yace" />
-      <label xml:lang="en" text="Yace" />
       <label xml:lang="x-bibl" text="ekr" />
+      <label xml:lang="en" text="Yace" />
     </category>
     <category ID="vmc">
       <label xml:lang="x-term" text="vmc" />
@@ -6189,8 +6189,8 @@
       <label xml:lang="x-bibl" text="vmc" />
     </category>
     <category ID="vmf">
-      <label xml:lang="en" text="Mainfränkisch" />
       <label xml:lang="x-bibl" text="vmf" />
+      <label xml:lang="en" text="Mainfränkisch" />
       <label xml:lang="x-term" text="vmf" />
       <label xml:lang="de" text="Mainfränkische Dialekte" />
     </category>
@@ -6236,8 +6236,8 @@
       <label xml:lang="de" text="Makua" />
     </category>
     <category ID="vmm">
-      <label xml:lang="en" text="Mitlatongo Mixtec" />
       <label xml:lang="x-bibl" text="vmm" />
+      <label xml:lang="en" text="Mitlatongo Mixtec" />
       <label xml:lang="x-term" text="vmm" />
     </category>
     <category ID="vmp">
@@ -6437,12 +6437,12 @@
     </category>
     <category ID="ena">
       <label xml:lang="x-term" text="ena" />
-      <label xml:lang="en" text="Apali" />
       <label xml:lang="x-bibl" text="ena" />
+      <label xml:lang="en" text="Apali" />
     </category>
     <category ID="end">
-      <label xml:lang="en" text="Ende" />
       <label xml:lang="x-term" text="end" />
+      <label xml:lang="en" text="Ende" />
       <label xml:lang="de" text="Li'o" />
       <label xml:lang="x-bibl" text="end" />
     </category>
@@ -6454,8 +6454,8 @@
     </category>
     <category ID="enc">
       <label xml:lang="x-term" text="enc" />
-      <label xml:lang="en" text="En" />
       <label xml:lang="x-bibl" text="enc" />
+      <label xml:lang="en" text="En" />
     </category>
     <category ID="enf">
       <label xml:lang="x-term" text="enf" />
@@ -6471,8 +6471,8 @@
     </category>
     <category ID="enl">
       <label xml:lang="x-bibl" text="enl" />
-      <label xml:lang="en" text="Enlhet" />
       <label xml:lang="x-term" text="enl" />
+      <label xml:lang="en" text="Enlhet" />
     </category>
     <category ID="enn">
       <label xml:lang="x-bibl" text="enn" />
@@ -6534,8 +6534,8 @@
     </category>
     <category ID="vra">
       <label xml:lang="x-bibl" text="vra" />
-      <label xml:lang="en" text="Vera'a" />
       <label xml:lang="x-term" text="vra" />
+      <label xml:lang="en" text="Vera'a" />
     </category>
     <category ID="vrs">
       <label xml:lang="en" text="Varisi" />
@@ -6644,8 +6644,8 @@
     </category>
     <category ID="esn">
       <label xml:lang="x-term" text="esn" />
-      <label xml:lang="en" text="Salvadoran Sign Language" />
       <label xml:lang="x-bibl" text="esn" />
+      <label xml:lang="en" text="Salvadoran Sign Language" />
     </category>
     <category ID="esq">
       <label xml:lang="x-bibl" text="esq" />
@@ -6706,8 +6706,8 @@
     </category>
     <category ID="eto">
       <label xml:lang="x-term" text="eto" />
-      <label xml:lang="en" text="Eton (Cameroon)" />
       <label xml:lang="x-bibl" text="eto" />
+      <label xml:lang="en" text="Eton (Cameroon)" />
       <label xml:lang="de" text="Eton" />
     </category>
     <category ID="etr">
@@ -6748,8 +6748,8 @@
       <label xml:lang="en" text="Awa (China)" />
     </category>
     <category ID="eve">
-      <label xml:lang="en" text="Even" />
       <label xml:lang="x-bibl" text="eve" />
+      <label xml:lang="en" text="Even" />
       <label xml:lang="x-term" text="eve" />
       <label xml:lang="de" text="Ewenisch" />
     </category>
@@ -6839,8 +6839,8 @@
       <label xml:lang="en" text="Watubela" />
     </category>
     <category ID="waj">
-      <label xml:lang="en" text="Waffa" />
       <label xml:lang="x-term" text="waj" />
+      <label xml:lang="en" text="Waffa" />
       <label xml:lang="x-bibl" text="waj" />
     </category>
     <category ID="wam">
@@ -7115,8 +7115,8 @@
     <category ID="wdd">
       <label xml:lang="en" text="Wandji" />
       <label xml:lang="x-bibl" text="wdd" />
-      <label xml:lang="de" text="Wandji" />
       <label xml:lang="x-term" text="wdd" />
+      <label xml:lang="de" text="Wandji" />
     </category>
     <category ID="wdg">
       <label xml:lang="en" text="Wadaginam" />
@@ -7166,8 +7166,8 @@
       <label xml:lang="x-term" text="wed" />
     </category>
     <category ID="weg">
-      <label xml:lang="en" text="Wergaia" />
       <label xml:lang="x-bibl" text="weg" />
+      <label xml:lang="en" text="Wergaia" />
       <label xml:lang="x-term" text="weg" />
     </category>
     <category ID="wei">
@@ -7198,8 +7198,8 @@
       <label xml:lang="de" text="Westfälische Dialekte" />
     </category>
     <category ID="wes">
-      <label xml:lang="de" text="Kamtok" />
       <label xml:lang="x-bibl" text="wes" />
+      <label xml:lang="de" text="Kamtok" />
       <label xml:lang="en" text="Cameroon Pidgin" />
       <label xml:lang="x-term" text="wes" />
     </category>
@@ -7257,12 +7257,12 @@
     </category>
     <category ID="wgo">
       <label xml:lang="x-bibl" text="wgo" />
-      <label xml:lang="en" text="Waigeo" />
       <label xml:lang="x-term" text="wgo" />
+      <label xml:lang="en" text="Waigeo" />
     </category>
     <category ID="wgu">
-      <label xml:lang="en" text="Wirangu" />
       <label xml:lang="x-bibl" text="wgu" />
+      <label xml:lang="en" text="Wirangu" />
       <label xml:lang="x-term" text="wgu" />
     </category>
     <category ID="wgw">
@@ -7287,8 +7287,8 @@
     </category>
     <category ID="whg">
       <label xml:lang="x-bibl" text="whg" />
-      <label xml:lang="en" text="North Wahgi" />
       <label xml:lang="x-term" text="whg" />
+      <label xml:lang="en" text="North Wahgi" />
     </category>
     <category ID="whk">
       <label xml:lang="x-term" text="whk" />
@@ -7307,8 +7307,8 @@
     </category>
     <category ID="wic">
       <label xml:lang="x-bibl" text="wic" />
-      <label xml:lang="en" text="Wichita" />
       <label xml:lang="x-term" text="wic" />
+      <label xml:lang="en" text="Wichita" />
     </category>
     <category ID="wib">
       <label xml:lang="x-term" text="wib" />
@@ -7367,8 +7367,8 @@
     </category>
     <category ID="wir">
       <label xml:lang="x-term" text="wir" />
-      <label xml:lang="en" text="Wiraféd" />
       <label xml:lang="x-bibl" text="wir" />
+      <label xml:lang="en" text="Wiraféd" />
     </category>
     <category ID="wiu">
       <label xml:lang="en" text="Wiru" />
@@ -7393,8 +7393,8 @@
     <category ID="wiy">
       <label xml:lang="de" text="Wiyot" />
       <label xml:lang="x-bibl" text="wiy" />
-      <label xml:lang="en" text="Wiyot" />
       <label xml:lang="x-term" text="wiy" />
+      <label xml:lang="en" text="Wiyot" />
     </category>
     <category ID="wja">
       <label xml:lang="x-term" text="wja" />
@@ -7413,8 +7413,8 @@
       <label xml:lang="de" text="Nobiin" />
     </category>
     <category ID="fie">
-      <label xml:lang="en" text="Fyer" />
       <label xml:lang="x-bibl" text="fie" />
+      <label xml:lang="en" text="Fyer" />
       <label xml:lang="x-term" text="fie" />
     </category>
     <category ID="fil">
@@ -7529,8 +7529,8 @@
     </category>
     <category ID="an">
       <label xml:lang="en" text="Aragonese" />
-      <label xml:lang="de" text="Aragonesisch" />
       <label xml:lang="x-bibl" text="arg" />
+      <label xml:lang="de" text="Aragonesisch" />
       <label xml:lang="x-term" text="arg" />
     </category>
     <category ID="wla">
@@ -7565,8 +7565,8 @@
         <label xml:lang="x-term" text="abv" />
       </category>
       <category ID="ar-acm">
-        <label xml:lang="en" text="Mesopotamian Arabic" />
         <label xml:lang="x-term" text="acm" />
+        <label xml:lang="en" text="Mesopotamian Arabic" />
         <label xml:lang="x-bibl" text="acm" />
         <label xml:lang="de" text="Irakisch-Arabisch" />
       </category>
@@ -7599,8 +7599,8 @@
       <category ID="ar-aeb">
         <label xml:lang="x-term" text="aeb" />
         <label xml:lang="de" text="Tunesisch-Arabisch" />
-        <label xml:lang="en" text="Tunisian Arabic" />
         <label xml:lang="x-bibl" text="aeb" />
+        <label xml:lang="en" text="Tunisian Arabic" />
       </category>
       <category ID="ar-aec">
         <label xml:lang="x-bibl" text="aec" />
@@ -7624,8 +7624,8 @@
         <label xml:lang="x-term" text="apc" />
       </category>
       <category ID="ar-apd">
-        <label xml:lang="en" text="Sudanese Arabic" />
         <label xml:lang="x-bibl" text="apd" />
+        <label xml:lang="en" text="Sudanese Arabic" />
         <label xml:lang="x-term" text="apd" />
         <label xml:lang="de" text="Sudanesisch-Arabisch" />
       </category>
@@ -7637,8 +7637,8 @@
       <category ID="ar-arq">
         <label xml:lang="x-term" text="arq" />
         <label xml:lang="en" text="Algerian Arabic" />
-        <label xml:lang="de" text="Algerisch-Arabisch" />
         <label xml:lang="x-bibl" text="arq" />
+        <label xml:lang="de" text="Algerisch-Arabisch" />
       </category>
       <category ID="ar-ars">
         <label xml:lang="x-bibl" text="ars" />
@@ -7697,8 +7697,8 @@
       <category ID="ar-pga">
         <label xml:lang="x-term" text="pga" />
         <label xml:lang="de" text="Dschuba-Arabisch" />
-        <label xml:lang="en" text="Sudanese Creole Arabic" />
         <label xml:lang="x-bibl" text="pga" />
+        <label xml:lang="en" text="Sudanese Creole Arabic" />
       </category>
       <category ID="ar-shu">
         <label xml:lang="de" text="Tschadisch-Arabisch" />
@@ -7787,8 +7787,8 @@
       </category>
     </category>
     <category ID="wlm">
-      <label xml:lang="en" text="Middle Welsh" />
       <label xml:lang="x-term" text="wlm" />
+      <label xml:lang="en" text="Middle Welsh" />
       <label xml:lang="x-bibl" text="wlm" />
     </category>
     <category ID="wlo">
@@ -7827,8 +7827,8 @@
     <category ID="wlx">
       <label xml:lang="x-bibl" text="wlx" />
       <label xml:lang="x-term" text="wlx" />
-      <label xml:lang="en" text="Wali (Ghana)" />
       <label xml:lang="de" text="Wali" />
+      <label xml:lang="en" text="Wali (Ghana)" />
     </category>
     <category ID="be">
       <label xml:lang="x-bibl" text="bel" />
@@ -7853,8 +7853,8 @@
       <label xml:lang="x-term" text="wly" />
     </category>
     <category ID="bi">
-      <label xml:lang="de" text="Beach-la-mar" />
       <label xml:lang="x-term" text="bis" />
+      <label xml:lang="de" text="Beach-la-mar" />
       <label xml:lang="en" text="Bislama" />
       <label xml:lang="x-bibl" text="bis" />
     </category>
@@ -8143,8 +8143,8 @@
     <category ID="da">
       <label xml:lang="de" text="Dänisch" />
       <label xml:lang="x-bibl" text="dan" />
-      <label xml:lang="en" text="Danish" />
       <label xml:lang="x-term" text="dan" />
+      <label xml:lang="en" text="Danish" />
     </category>
     <category ID="wnu">
       <label xml:lang="x-term" text="wnu" />
@@ -8416,15 +8416,15 @@
         <label xml:lang="x-bibl" text="fui" />
       </category>
       <category ID="ff-fuq">
-        <label xml:lang="en" text="Central-Eastern Niger Fulfulde" />
         <label xml:lang="de" text="Fulfulde" />
+        <label xml:lang="en" text="Central-Eastern Niger Fulfulde" />
         <label xml:lang="x-bibl" text="fuq" />
         <label xml:lang="x-term" text="fuq" />
       </category>
       <category ID="ff-fuv">
         <label xml:lang="de" text="Fulfulde" />
-        <label xml:lang="en" text="Nigerian Fulfulde" />
         <label xml:lang="x-bibl" text="fuv" />
+        <label xml:lang="en" text="Nigerian Fulfulde" />
         <label xml:lang="x-term" text="fuv" />
       </category>
     </category>
@@ -8468,8 +8468,8 @@
       <label xml:lang="de" text="Färöisch" />
     </category>
     <category ID="fos">
-      <label xml:lang="en" text="Siraya" />
       <label xml:lang="x-term" text="fos" />
+      <label xml:lang="en" text="Siraya" />
       <label xml:lang="x-bibl" text="fos" />
     </category>
     <category ID="fr">
@@ -8510,8 +8510,8 @@
     </category>
     <category ID="wrb">
       <label xml:lang="x-bibl" text="wrb" />
-      <label xml:lang="en" text="Warluwara" />
       <label xml:lang="x-term" text="wrb" />
+      <label xml:lang="en" text="Warluwara" />
     </category>
     <category ID="gn">
       <label xml:lang="x-bibl" text="grn" />
@@ -8593,8 +8593,8 @@
       <label xml:lang="en" text="Garrwa" />
     </category>
     <category ID="wrn">
-      <label xml:lang="de" text="Warnang" />
       <label xml:lang="x-bibl" text="wrn" />
+      <label xml:lang="de" text="Warnang" />
       <label xml:lang="en" text="Warnang" />
       <label xml:lang="x-term" text="wrn" />
     </category>
@@ -8661,15 +8661,15 @@
       <label xml:lang="x-term" text="wrz" />
     </category>
     <category ID="hi">
-      <label xml:lang="en" text="Hindi" />
       <label xml:lang="x-term" text="hin" />
+      <label xml:lang="en" text="Hindi" />
       <label xml:lang="x-bibl" text="hin" />
       <label xml:lang="de" text="Hindi" />
     </category>
     <category ID="wsa">
       <label xml:lang="x-bibl" text="wsa" />
-      <label xml:lang="en" text="Warembori" />
       <label xml:lang="x-term" text="wsa" />
+      <label xml:lang="en" text="Warembori" />
     </category>
     <category ID="ho">
       <label xml:lang="x-term" text="hmo" />
@@ -8684,13 +8684,13 @@
     </category>
     <category ID="ht">
       <label xml:lang="x-term" text="hat" />
-      <label xml:lang="de" text="Haitianisch" />
       <label xml:lang="x-bibl" text="hat" />
+      <label xml:lang="de" text="Haitianisch" />
       <label xml:lang="en" text="Haitian" />
     </category>
     <category ID="wsi">
-      <label xml:lang="en" text="Wusi" />
       <label xml:lang="x-term" text="wsi" />
+      <label xml:lang="en" text="Wusi" />
       <label xml:lang="x-bibl" text="wsi" />
     </category>
     <category ID="hu">
@@ -8745,8 +8745,8 @@
       <label xml:lang="x-term" text="wsu" />
     </category>
     <category ID="frd">
-      <label xml:lang="en" text="Fordata" />
       <label xml:lang="x-term" text="frd" />
+      <label xml:lang="en" text="Fordata" />
       <label xml:lang="x-bibl" text="frd" />
     </category>
     <category ID="wsv">
@@ -8755,8 +8755,8 @@
       <label xml:lang="x-bibl" text="wsv" />
     </category>
     <category ID="ie">
-      <label xml:lang="en" text="Interlingue" />
       <label xml:lang="x-bibl" text="ile" />
+      <label xml:lang="en" text="Interlingue" />
       <label xml:lang="x-term" text="ile" />
       <label xml:lang="de" text="Interlingue" />
     </category>
@@ -8810,8 +8810,8 @@
     </category>
     <category ID="frq">
       <label xml:lang="x-bibl" text="frq" />
-      <label xml:lang="en" text="Forak" />
       <label xml:lang="x-term" text="frq" />
+      <label xml:lang="en" text="Forak" />
     </category>
     <category ID="frp">
       <label xml:lang="x-bibl" text="frp" />
@@ -8832,8 +8832,8 @@
       <label xml:lang="x-term" text="frs" />
     </category>
     <category ID="frr">
-      <label xml:lang="de" text="Nordfriesisch" />
       <label xml:lang="x-bibl" text="frr" />
+      <label xml:lang="de" text="Nordfriesisch" />
       <label xml:lang="en" text="Northern Frisian" />
       <label xml:lang="x-term" text="frr" />
     </category>
@@ -8851,8 +8851,8 @@
     <category ID="is">
       <label xml:lang="de" text="Isländisch" />
       <label xml:lang="en" text="Icelandic" />
-      <label xml:lang="x-bibl" text="ice" />
       <label xml:lang="x-term" text="isl" />
+      <label xml:lang="x-bibl" text="ice" />
     </category>
     <category ID="wth">
       <label xml:lang="x-term" text="wth" />
@@ -8873,8 +8873,8 @@
       <category ID="iu-ike">
         <label xml:lang="x-bibl" text="ike" />
         <label xml:lang="en" text="Eastern Canadian Inuktitut" />
-        <label xml:lang="de" text="Inuktitut" />
         <label xml:lang="x-term" text="ike" />
+        <label xml:lang="de" text="Inuktitut" />
       </category>
       <category ID="iu-ikt">
         <label xml:lang="en" text="Inuinnaqtun" />
@@ -8896,8 +8896,8 @@
     </category>
     <category ID="wtk">
       <label xml:lang="x-term" text="wtk" />
-      <label xml:lang="en" text="Watakataui" />
       <label xml:lang="x-bibl" text="wtk" />
+      <label xml:lang="en" text="Watakataui" />
     </category>
     <category ID="wtm">
       <label xml:lang="en" text="Mewati" />
@@ -9004,8 +9004,8 @@
     </category>
     <category ID="wuv">
       <label xml:lang="x-term" text="wuv" />
-      <label xml:lang="en" text="Wuvulu-Aua" />
       <label xml:lang="x-bibl" text="wuv" />
+      <label xml:lang="en" text="Wuvulu-Aua" />
     </category>
     <category ID="wuy">
       <label xml:lang="x-term" text="wuy" />
@@ -9024,8 +9024,8 @@
       <label xml:lang="en" text="Kongo" />
       <category ID="kg-kng">
         <label xml:lang="x-bibl" text="kng" />
-        <label xml:lang="de" text="Kikongo" />
         <label xml:lang="x-term" text="kng" />
+        <label xml:lang="de" text="Kikongo" />
         <label xml:lang="en" text="Koongo" />
       </category>
       <category ID="kg-kwy">
@@ -9126,15 +9126,15 @@
       </category>
       <category ID="ku-kmr">
         <label xml:lang="en" text="Northern Kurdish" />
-        <label xml:lang="de" text="Kurmandschi" />
         <label xml:lang="x-term" text="kmr" />
+        <label xml:lang="de" text="Kurmandschi" />
         <label xml:lang="x-bibl" text="kmr" />
       </category>
       <category ID="ku-sdh">
         <label xml:lang="de" text="Südkurdisch" />
         <label xml:lang="x-bibl" text="sdh" />
-        <label xml:lang="en" text="Southern Kurdish" />
         <label xml:lang="x-term" text="sdh" />
+        <label xml:lang="en" text="Southern Kurdish" />
       </category>
     </category>
     <category ID="kv">
@@ -9167,15 +9167,15 @@
       <label xml:lang="x-term" text="kir" />
     </category>
     <category ID="fud">
-      <label xml:lang="de" text="Futunisch" />
       <label xml:lang="x-bibl" text="fud" />
+      <label xml:lang="de" text="Futunisch" />
       <label xml:lang="x-term" text="fud" />
       <label xml:lang="en" text="East Futuna" />
     </category>
     <category ID="la">
       <label xml:lang="en" text="Latin" />
-      <label xml:lang="de" text="Latein" />
       <label xml:lang="x-bibl" text="lat" />
+      <label xml:lang="de" text="Latein" />
       <label xml:lang="x-term" text="lat" />
     </category>
     <category ID="lb">
@@ -9224,8 +9224,8 @@
       <label xml:lang="de" text="Lingala" />
     </category>
     <category ID="fur">
-      <label xml:lang="en" text="Friulian" />
       <label xml:lang="x-bibl" text="fur" />
+      <label xml:lang="en" text="Friulian" />
       <label xml:lang="de" text="Friulisch" />
       <label xml:lang="x-term" text="fur" />
     </category>
@@ -9269,8 +9269,8 @@
       <label xml:lang="en" text="Latvian" />
       <category ID="lv-ltg">
         <label xml:lang="x-bibl" text="ltg" />
-        <label xml:lang="de" text="Lettgallisch" />
         <label xml:lang="x-term" text="ltg" />
+        <label xml:lang="de" text="Lettgallisch" />
         <label xml:lang="en" text="Latgalian" />
       </category>
       <category ID="lv-lvs">
@@ -9333,8 +9333,8 @@
       <category ID="mg-msh">
         <label xml:lang="x-bibl" text="msh" />
         <label xml:lang="x-term" text="msh" />
-        <label xml:lang="en" text="Masikoro Malagasy" />
         <label xml:lang="de" text="Malagasy" />
+        <label xml:lang="en" text="Masikoro Malagasy" />
       </category>
       <category ID="mg-plt">
         <label xml:lang="en" text="Plateau Malagasy" />
@@ -9426,16 +9426,16 @@
       <label xml:lang="en" text="Waxianghua" />
     </category>
     <category ID="mo">
+      <label xml:lang="x-bibl" text="mo" description="auto-generated" />
       <label xml:lang="en" text="Moldavian" />
       <label xml:lang="de" text="Moldauisch" />
-      <label xml:lang="x-bibl" text="mo" description="auto-generated" />
       <label xml:lang="x-term" text="mo" description="auto-generated" />
     </category>
     <category ID="fvr">
       <label xml:lang="de" text="Fur" />
       <label xml:lang="x-bibl" text="fvr" />
-      <label xml:lang="en" text="Fur" />
       <label xml:lang="x-term" text="fvr" />
+      <label xml:lang="en" text="Fur" />
     </category>
     <category ID="mr">
       <label xml:lang="en" text="Marathi" />
@@ -9463,8 +9463,8 @@
       <category ID="ms-bjn">
         <label xml:lang="x-bibl" text="bjn" />
         <label xml:lang="de" text="Banjaresisch" />
-        <label xml:lang="en" text="Banjar" />
         <label xml:lang="x-term" text="bjn" />
+        <label xml:lang="en" text="Banjar" />
       </category>
       <category ID="ms-btj">
         <label xml:lang="en" text="Bacanese Malay" />
@@ -9473,13 +9473,13 @@
       </category>
       <category ID="ms-bve">
         <label xml:lang="x-bibl" text="bve" />
-        <label xml:lang="en" text="Berau Malay" />
         <label xml:lang="x-term" text="bve" />
+        <label xml:lang="en" text="Berau Malay" />
       </category>
       <category ID="ms-bvu">
         <label xml:lang="x-bibl" text="bvu" />
-        <label xml:lang="de" text="Banjaresisch" />
         <label xml:lang="x-term" text="bvu" />
+        <label xml:lang="de" text="Banjaresisch" />
         <label xml:lang="en" text="Bukit Malay" />
       </category>
       <category ID="ms-coa">
@@ -9514,8 +9514,8 @@
       </category>
       <category ID="ms-kvr">
         <label xml:lang="x-bibl" text="kvr" />
-        <label xml:lang="en" text="Kerinci" />
         <label xml:lang="x-term" text="kvr" />
+        <label xml:lang="en" text="Kerinci" />
       </category>
       <category ID="ms-kxd">
         <label xml:lang="en" text="Brunei" />
@@ -9627,8 +9627,8 @@
         <label xml:lang="x-bibl" text="xmm" />
       </category>
       <category ID="ms-zlm">
-        <label xml:lang="en" text="Malay (individual language)" />
         <label xml:lang="x-term" text="zlm" />
+        <label xml:lang="en" text="Malay (individual language)" />
         <label xml:lang="de" text="Malaiisch" />
         <label xml:lang="x-bibl" text="zlm" />
       </category>
@@ -9681,8 +9681,8 @@
     </category>
     <category ID="ne">
       <label xml:lang="en" text="Nepali (macrolanguage)" />
-      <label xml:lang="de" text="Nepali" />
       <label xml:lang="x-bibl" text="nep" />
+      <label xml:lang="de" text="Nepali" />
       <label xml:lang="x-term" text="nep" />
       <category ID="ne-dty">
         <label xml:lang="en" text="Dotyali" />
@@ -9721,8 +9721,8 @@
     <category ID="no">
       <label xml:lang="en" text="Norwegian" />
       <label xml:lang="x-bibl" text="nor" />
-      <label xml:lang="de" text="Norwegisch" />
       <label xml:lang="x-term" text="nor" />
+      <label xml:lang="de" text="Norwegisch" />
       <category ID="no-nb">
         <label xml:lang="de" text="Bokmål" />
         <label xml:lang="x-bibl" text="nob" />
@@ -9793,8 +9793,8 @@
       <label xml:lang="x-bibl" text="oji" />
       <category ID="oj-ciw">
         <label xml:lang="x-bibl" text="ciw" />
-        <label xml:lang="en" text="Chippewa" />
         <label xml:lang="x-term" text="ciw" />
+        <label xml:lang="en" text="Chippewa" />
         <label xml:lang="de" text="Ojibwe" />
       </category>
       <category ID="oj-ojb">
@@ -9818,8 +9818,8 @@
         <label xml:lang="x-bibl" text="ojs" />
       </category>
       <category ID="oj-ojw">
-        <label xml:lang="en" text="Western Ojibwa" />
         <label xml:lang="x-term" text="ojw" />
+        <label xml:lang="en" text="Western Ojibwa" />
         <label xml:lang="x-bibl" text="ojw" />
       </category>
       <category ID="oj-otw">
@@ -9846,8 +9846,8 @@
       </category>
       <category ID="om-hae">
         <label xml:lang="x-term" text="hae" />
-        <label xml:lang="en" text="Eastern Oromo" />
         <label xml:lang="x-bibl" text="hae" />
+        <label xml:lang="en" text="Eastern Oromo" />
       </category>
       <category ID="om-orc">
         <label xml:lang="x-term" text="orc" />
@@ -10084,8 +10084,8 @@
       <category ID="qu-qvs">
         <label xml:lang="de" text="Lamas-Quechua" />
         <label xml:lang="x-term" text="qvs" />
-        <label xml:lang="en" text="San Martín Quechua" />
         <label xml:lang="x-bibl" text="qvs" />
+        <label xml:lang="en" text="San Martín Quechua" />
       </category>
       <category ID="qu-qvw">
         <label xml:lang="en" text="Huaylla Wanca Quechua" />
@@ -10096,13 +10096,13 @@
       <category ID="qu-qvz">
         <label xml:lang="x-bibl" text="qvz" />
         <label xml:lang="de" text="Kichwa" />
-        <label xml:lang="en" text="Northern Pastaza Quichua" />
         <label xml:lang="x-term" text="qvz" />
+        <label xml:lang="en" text="Northern Pastaza Quichua" />
       </category>
       <category ID="qu-qwa">
         <label xml:lang="x-term" text="qwa" />
-        <label xml:lang="en" text="Corongo Ancash Quechua" />
         <label xml:lang="de" text="Ancash-Quechua" />
+        <label xml:lang="en" text="Corongo Ancash Quechua" />
         <label xml:lang="x-bibl" text="qwa" />
       </category>
       <category ID="qu-qwc">
@@ -10137,14 +10137,14 @@
       <category ID="qu-qxh">
         <label xml:lang="x-bibl" text="qxh" />
         <label xml:lang="x-term" text="qxh" />
-        <label xml:lang="en" text="Panao Huánuco Quechua" />
         <label xml:lang="de" text="Huánuco-Quechua" />
+        <label xml:lang="en" text="Panao Huánuco Quechua" />
       </category>
       <category ID="qu-qxl">
         <label xml:lang="x-bibl" text="qxl" />
         <label xml:lang="de" text="Kichwa" />
-        <label xml:lang="en" text="Salasaca Highland Quichua" />
         <label xml:lang="x-term" text="qxl" />
+        <label xml:lang="en" text="Salasaca Highland Quichua" />
       </category>
       <category ID="qu-qxn">
         <label xml:lang="en" text="Northern Conchucos Ancash Quechua" />
@@ -10177,8 +10177,8 @@
       </category>
       <category ID="qu-qxu">
         <label xml:lang="de" text="Chanka-Quechua" />
-        <label xml:lang="en" text="Arequipa-La Unión Quechua" />
         <label xml:lang="x-term" text="qxu" />
+        <label xml:lang="en" text="Arequipa-La Unión Quechua" />
         <label xml:lang="x-bibl" text="qxu" />
       </category>
       <category ID="qu-qxw">
@@ -10253,8 +10253,8 @@
     </category>
     <category ID="sd">
       <label xml:lang="de" text="Sindhi-Sprache" />
-      <label xml:lang="en" text="Sindhi" />
       <label xml:lang="x-bibl" text="snd" />
+      <label xml:lang="en" text="Sindhi" />
       <label xml:lang="x-term" text="snd" />
     </category>
     <category ID="se">
@@ -10353,8 +10353,8 @@
       <category ID="sq-als">
         <label xml:lang="en" text="Tosk Albanian" />
         <label xml:lang="de" text="Toskisch" />
-        <label xml:lang="x-bibl" text="als" />
         <label xml:lang="x-term" text="als" />
+        <label xml:lang="x-bibl" text="als" />
       </category>
     </category>
     <category ID="ss">
@@ -11215,8 +11215,8 @@
       <label xml:lang="x-bibl" text="xeg" />
     </category>
     <category ID="xel">
-      <label xml:lang="en" text="Kelo" />
       <label xml:lang="x-bibl" text="xel" />
+      <label xml:lang="en" text="Kelo" />
       <label xml:lang="x-term" text="xel" />
     </category>
     <category ID="xem">
@@ -11236,8 +11236,8 @@
       <label xml:lang="x-term" text="gdb" />
     </category>
     <category ID="xer">
-      <label xml:lang="en" text="Xerénte" />
       <label xml:lang="x-bibl" text="xer" />
+      <label xml:lang="en" text="Xerénte" />
       <label xml:lang="x-term" text="xer" />
     </category>
     <category ID="gdd">
@@ -11307,8 +11307,8 @@
       </category>
       <category ID="za-zlq">
         <label xml:lang="x-bibl" text="zlq" />
-        <label xml:lang="de" text="Zhuang" />
         <label xml:lang="x-term" text="zlq" />
+        <label xml:lang="de" text="Zhuang" />
         <label xml:lang="en" text="Liuqian Zhuang" />
       </category>
       <category ID="za-zqe">
@@ -11392,8 +11392,8 @@
     <category ID="zh">
       <label xml:lang="x-bibl" text="chi" />
       <label xml:lang="en" text="Chinese" />
-      <label xml:lang="de" text="Chinesisch" />
       <label xml:lang="x-term" text="zho" />
+      <label xml:lang="de" text="Chinesisch" />
       <category ID="zh-cdo">
         <label xml:lang="de" text="Min Dong" />
         <label xml:lang="x-term" text="cdo" />

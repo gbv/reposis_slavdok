@@ -3,7 +3,8 @@
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns:mcrxsl="xalan://org.mycore.common.xml.MCRXMLFunctions"
                 xmlns:i18n="xalan://org.mycore.services.i18n.MCRTranslation"
-                exclude-result-prefixes="">
+                xmlns:encoder="xalan://java.net.URLEncoder"
+                exclude-result-prefixes="encoder mcrxsl i18n">
 
   <xsl:param name="CurrentUser"/>
 
@@ -12,10 +13,10 @@
     <xsl:variable name="solrQuery">
       <xsl:choose>
         <xsl:when test="mcrxsl:isCurrentUserInRole('editor') or mcrxsl:isCurrentUserInRole('admin')">
-          <xsl:copy-of select="concat('q=state:published AND objectType:mods','&amp;sort=created+desc')"/>
+          <xsl:value-of select="concat('q=', encoder:encode('state:published AND objectType:mods'),'&amp;sort=created+desc')"/>
         </xsl:when>
         <xsl:otherwise>
-          <xsl:copy-of select="concat('q=state:published AND createdby:', $CurrentUser, '&amp;fq=objectType:mods&amp;sort=created+desc')" />
+          <xsl:value-of select="concat('q=', encoder:encode(concat('state:published AND createdby:', $CurrentUser)), '&amp;fq=objectType:mods&amp;sort=created+desc')" />
         </xsl:otherwise>
       </xsl:choose>
     </xsl:variable>
@@ -65,10 +66,10 @@
     <xsl:variable name="solrQuery">
       <xsl:choose>
         <xsl:when test="mcrxsl:isCurrentUserInRole('editor') or mcrxsl:isCurrentUserInRole('admin')">
-          <xsl:copy-of select="concat('q=state:(state:submitted OR state:blocked) AND objectType:mods','&amp;sort=created+desc')"/>
+          <xsl:value-of select="concat('q=', encoder:encode('state:(state:submitted OR state:blocked) AND objectType:mods'),'&amp;sort=created+desc')"/>
         </xsl:when>
         <xsl:otherwise>
-          <xsl:copy-of select="concat('q=state:submitted AND createdby:', $CurrentUser, '&amp;fq=objectType:mods&amp;sort=created+desc')" />
+          <xsl:value-of select="concat('q=', encoder:encode(concat('state:submitted AND createdby:', $CurrentUser)), '&amp;fq=objectType:mods&amp;sort=created+desc')" />
         </xsl:otherwise>
       </xsl:choose>
     </xsl:variable>

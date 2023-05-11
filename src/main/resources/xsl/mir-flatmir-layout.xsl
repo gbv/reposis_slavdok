@@ -16,7 +16,6 @@
   <xsl:param name="MIR.CustomLayout.CSS" select="''" />
   <xsl:param name="MIR.CustomLayout.JS" select="''" />
   <xsl:param name="MIR.Layout.Theme" />
-  <xsl:param name="MIR.CanonicalBaseURL" />
 
   <xsl:variable name="PageTitle" select="/*/@title" />
   <xsl:variable name="Description" select="i18n:translate(/*/meta/@i18n)" />

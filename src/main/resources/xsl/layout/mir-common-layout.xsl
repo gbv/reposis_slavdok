@@ -86,7 +86,12 @@
 <!--         <label xml:lang="de">Deutsch</label> -->
 <!--         <label xml:lang="en">German</label> -->
 <!--       </language> -->
-      <li class="nav-item">
+      <li class="nav-item dropdown mir-lang">
+        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" title="{i18n:translate('mir.language.change')}">
+          <xsl:value-of select="$curLang/language/@xmlCode" />
+          <span class="caret" />
+        </a>
+        <ul class="dropdown-menu language-menu" role="menu">
           <xsl:for-each select="$langToken">
             <xsl:variable name="lang"><xsl:value-of select="mcrxsl:trim(.)" /></xsl:variable>
             <xsl:if test="$lang!='' and $CurrentLang!=$lang">
@@ -100,16 +105,16 @@
                 <xsl:variable name="langTitle">
                   <xsl:apply-templates select="$langDef/language" mode="mir.langTitle" />
                 </xsl:variable>
-                <a href="{$langURL}" class="nav-link lang-switch" title="{$langTitle}">
+                <a href="{$langURL}" class="dropdown-item" title="{$langTitle}">
                   <xsl:value-of select="$langDef/language/@xmlCode" />
                 </a>
               </li>
             </xsl:if>
           </xsl:for-each>
+        </ul>
       </li>
     </xsl:if>
   </xsl:template>
-
   <xsl:template match="language" mode="mir.langTitle">
     <xsl:variable name="code" select="@xmlCode" />
     <xsl:choose>
@@ -127,7 +132,6 @@
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
-  
   <xsl:template name="mir.languageLink">
     <xsl:param name="lang" />
     <xsl:variable name="langURL">
@@ -272,6 +276,7 @@
       }
     </script>
     <script src="{$WebApplicationBaseURL}js/mir/session-polling.js"></script>
+    <script src="{$WebApplicationBaseURL}js/mir/sherpa.js"></script>
     <script src="{$WebApplicationBaseURL}modules/webtools/upload/js/upload-api.js"></script>
     <script src="{$WebApplicationBaseURL}modules/webtools/upload/js/upload-gui.js"></script>
     <link rel="stylesheet" type="text/css" href="{$WebApplicationBaseURL}modules/webtools/upload/css/upload-gui.css" />

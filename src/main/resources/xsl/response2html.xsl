@@ -2,7 +2,7 @@
 <xsl:stylesheet version="1.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:mcrxsl="xalan://org.mycore.common.xml.MCRXMLFunctions"
-  exclude-result-prefixes="">
+  exclude-result-prefixes="mcrxsl">
 
   <xsl:include href="layout-utils.xsl" />
   <xsl:include href="response-utils.xsl" />
@@ -11,10 +11,10 @@
   <xsl:variable name="Select">
     <xsl:choose>
       <xsl:when test="mcrxsl:isCurrentUserInRole('editor') or mcrxsl:isCurrentUserInRole('admin') or mcrxsl:isCurrentUserInRole('submitter')">
-        <xsl:copy-of select="concat('servlets/solr/', 'select')"/> 
+        <xsl:value-of select="concat('servlets/solr/', 'select')"/>
       </xsl:when>
       <xsl:otherwise>
-        <xsl:copy-of select="concat('servlets/solr/', 'selectPublic')" /> 
+        <xsl:value-of select="concat('servlets/solr/', 'selectPublic')" />
       </xsl:otherwise>
     </xsl:choose>
   </xsl:variable>
