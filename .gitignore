@@ -39,4 +39,6 @@ mycore.resolved.properties
 resources/META-INF/persistence.xml
 data/
 lib/h2-1.4.196.jar
+
+target/
 MCRWebCLI-unprocessed-commands.txt

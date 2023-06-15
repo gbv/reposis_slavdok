@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MyCoReWebPage>
 
-  <section xml:lang="all" xmlns:xed="http://www.mycore.de/xeditor"
-    xmlns:mir="http://www.mycore.de/mir"
-    i18n="project.complex.title">
-    <meta name='description' i18n="project.complex.description" />
+  <section xml:lang="de">
+    <head>
+      <meta name="title" content="SlavDok - erweiterte Suche" />
+      <meta name="description" content="SlavDok - erweiterte Suche im Dokumentenserver" />
+    </head>
+  </section>
+  <section xml:lang="en">
+    <head>
+      <meta name="title" content="SlavDok - Advanced Search" />
+      <meta name="description" content="SlavDok - Advanced search in the document server" />
+    </head>
+  </section>
+
+  <section xml:lang="all" xmlns:xed="http://www.mycore.de/xeditor" xmlns:mir="http://www.mycore.de/mir" i18n="project.complex.title">
     <xed:form class="form-horizontal" role="form">
       <xed:cleanup-rule xpath="//condition" relevant-if="(string-length(@value) &gt; 0) or value[string-length(text()) &gt; 0 ]" />
       <xed:cleanup-rule xpath="//boolean" relevant-if="boolean|condition" />

@@ -3,8 +3,20 @@
 
 <MyCoReWebPage>
 
+    <section xml:lang="de">
+        <head>
+            <meta name="title" content="SlavDok - Suche nach Systematik"/>
+            <meta name="description" content="SlavDok - Suche nach Systematik im Dokumentenserver"/>
+        </head>
+    </section>
+    <section xml:lang="en">
+        <head>
+            <meta name="title" content="SlavDok - Search for systematics"/>
+            <meta name="description" content="SlavDok - Search for systematics in the document server"/>
+        </head>
+    </section>
+
     <section i18n="browse.language_classification.title" xml:lang="all">
-        <meta name='description' i18n="project.classification.description" />
         <div class="row">
             <div class="col-md-8" lang="de">
                 <h3>

@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MyCoReWebPage>
 <MyCoReWebPage>
-  <section xml:lang="de" i18n="project.registration.title">
+  <section xml:lang="de" title="SlavDok - Registrierung">
+    <head>
+      <meta name="title" content="SlavDok - Registrierung"/>
+      <meta name="description" content="SlavDok - bitte registrieren Sie sich als Nutzer"/>
+    </head>
     <h3>Registrierung</h3>
     <p>
       Vor der Publikation Ihres Beitrags auf SlavDok ist eine einmalige Registrierung erforderlich. 
@@ -12,19 +16,23 @@
       klicken Sie den Link in der E-Mail an, um die Registrierung abzuschließen.
     </p>
     <p>
-      Mit Ihren Zugangsdaten können Sie sich nun jederzeit am Server von SlavDok 
-      <a href="../servlets/MCRLoginServlet?url=../content/index.xml">anmelden</a>,
-      um beliebig viele Beiträge im Open Access zu publizieren.
+      Mit Ihren Zugangsdaten können Sie sich nun jederzeit am Server von SlavDok
+      <a href="../servlets/MCRLoginServlet?url=../content/index.xml">anmelden,</a> um beliebig viele Beiträge im
+      Open Access zu publizieren.
     </p>
   </section>
 
-  <section xml:lang="en" i18n="project.registration.title">
+  <section xml:lang="en" title="SlavDok - Registration">
+    <head>
+      <meta name="title" content="SlavDok - Registration"/>
+      <meta name="description" content="SlavDok - Please register as a user"/>
+    </head>
     <h3>Registration</h3>
     <p>
-      Before publishing your contribution on SlavDok, a one-time registration is required. For this purpose, 
-      please complete the following form by entering a user ID (maximum 16 characters, please only use lower 
-      case letters without special characters and/or numbers), as well as a password (minimum 8 and maximum 
-      16 characters long, please no spaces). In order to complete the registration, you must call up the link 
+      Before publishing your contribution on SlavDok, a one-time registration is required.
+      For this purpose, please complete the following form by entering a user ID (maximum 16 characters, please only
+      use lower case letters without special characters and/or numbers), as well as a password (minimum 8 and maximum 16
+      characters long, please no spaces). In order to complete the registration, you must call up the link
       once, which will be sent to you immediately after you have submitted the form.
     </p>
     <p>
@@ -34,8 +42,8 @@
     </p>
   </section>
 
-  <section xml:lang="all" i18n="project.registration.title">
-    <meta name='description' i18n="project.registration.description" />
+  <section xml:lang="all">
+
     <xed:form class="userEditor form-horizontal" role="form" xmlns:xed="http://www.mycore.de/xeditor" xmlns:mcruser="http://www.mycore.de/components/mcruser">
       <xed:cancel url="{$ServletsBaseURL}MirSelfRegistrationServlet" />
       <xed:bind xpath="user">
@@ -56,8 +64,7 @@
             <xed:include uri="xslStyle:user-xeditor-templates:webapp:authorization/new-author-slavdok-includes.xed" ref="captcha" />
 
             <xed:validate display="global" xpath="/user/@name"
-              test="not(xed:call-java('org.mycore.mir.authorization.MirSelfRegistrationServlet', 'userExists', /user))"
-            >
+              test="not(xed:call-java('org.mycore.mir.authorization.MirSelfRegistrationServlet', 'userExists', /user))">
               <xed:output i18n="selfRegistration.error.userExists" />
             </xed:validate>
           </div>

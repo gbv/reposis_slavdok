@@ -1,58 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <MyCoReWebPage>
-    <section xml:lang="all" i18n="project.publish.title" >
-        <meta name='description' i18n="project.publish.description" />
-    </section>
-    <section xml:lang="all" i18n="project.publish.title">
-        <script src='../../js/mir/select-doctype.js'></script>
-        <h1>Publizieren</h1>
 
-        <!-- introduction -->
-        <div class="row">
-            <div class="col-sm-12 col-md-12">
-                <p>
-                    Zur Veröffentlichung Ihres Beitrags auf SlavDok ist zunächst die Erfassung seiner bibliographischen
-                    Daten erforderlich. Dazu kombinieren Sie bitte aus dem zweiteiligen Auswahlmenü – so im konkreten
-                    Fall überhaupt erforderlich – die dem Typus Ihrer Publikation entsprechende Erfassungsmaske. Bitte
-                    beachten Sie, dass alle mit einen Asterisk * gekennzeichneten Felder der jeweils gewählten
-                    Erfassungsmaske verpflichtend zu befüllen sind. Für jede angemeldete Veröffentlichung übersenden
-                    Sie bitte ergänzend einen vollständig ausgefüllten und mit Ihrer elektronischen Unterschrift
-                    versehenen <a href="../rights/Publikationsvertrag-SlavDok.pdf">Publikationsvertrag</a> an:
-                    <span class="madress">slavdok [at] sbb.spk-berlin.de</span>
-                </p>
-            </div>
-        </div>
+	<section xml:lang="de" title="SlavDok - Publizieren">
+		<head>
+			<meta name="title" content="SlavDok - Publizieren"/>
+			<meta name="description" content="SlavDok - Dokumente einreichen"/>
+		</head>
+		<script src='../../js/mir/select-doctype.js'/>
+		<h1>Publizieren</h1>
 
-        <form id="submit_publication"
-              class="form-horizontal"
-              role="form"
-              method="get"
-              action="../../editor/editor-dynamic.xed">
+		<!-- introduction -->
+		<div class="row">
+			<div class="col-sm-12 col-md-12">
+				<p>
+					Zur Veröffentlichung Ihres Beitrags auf SlavDok ist zunächst die Erfassung seiner bibliographischen
+					Daten erforderlich. Dazu kombinieren Sie bitte aus dem zweiteiligen Auswahlmenü – so im konkreten
+					Fall überhaupt erforderlich – die dem Typus Ihrer Publikation entsprechende Erfassungsmaske. Bitte
+					beachten Sie, dass alle mit einem Asterisk * gekennzeichneten Felder der jeweils gewählten
+					Erfassungsmaske verpflichtend zu befüllen sind. Für jede angemeldete Veröffentlichung übersenden
+					Sie bitte ergänzend einen vollständig ausgefüllten und mit Ihrer elektronischen Unterschrift
+					versehenen <a href="../rights/Publikationsvertrag-SlavDok.pdf">Publikationsvertrag</a> an:
+					<span class="madress">slavdok [at] sbb.spk-berlin.de</span>
+				</p>
+			</div>
+		</div>
 
-            <!-- genre -->
-            <div class="row form-group">
-                <div class="col-sm-7 col-md-5 col-lg-4">
-                    <select id="genre" class="form-control" name="genre" size="1">
-                    </select>
-                </div>
-            </div>
+		<form id="submit_publication"
+					class="form-horizontal"
+					role="form"
+					method="get"
+					action="../../editor/editor-dynamic.xed">
 
-            <!-- host -->
-            <div class="row form-group">
-                <div class="col-sm-7 col-md-5 col-lg-4">
-                    <select id="host" class="form-control" name="host" size="1">
-                    </select>
-                </div>
-            </div>
+			<!-- genre -->
+			<div class="row form-group">
+				<div class="col-sm-7 col-md-5 col-lg-4">
+					<select id="genre" class="form-control" name="genre" size="1">
+					</select>
+				</div>
+			</div>
 
-            <!-- submit -->
-            <div class="row form-group">
-                <div class="col-sm-5 col-md-4">
-                    <button type="submit" class="btn btn-primary">Weiter</button>
-                </div>
-            </div>
+			<!-- host -->
+			<div class="row form-group">
+				<div class="col-sm-7 col-md-5 col-lg-4">
+					<select id="host" class="form-control" name="host" size="1">
+					</select>
+				</div>
+			</div>
 
-        </form>
-    </section>
+			<!-- submit -->
+			<div class="row form-group">
+				<div class="col-sm-5 col-md-4">
+					<button type="submit" class="btn btn-primary">Weiter</button>
+				</div>
+			</div>
+
+		</form>
+	</section>
 </MyCoReWebPage>

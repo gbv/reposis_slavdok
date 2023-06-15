@@ -37,7 +37,10 @@
   <xsl:variable name="PageTitle" select="i18n:translate('project.login.title')" />
 
   <xsl:template match="/login">
-    <head><meta name="description" content="{i18n:translate('project.login.description')}" /></head>
+    <head>
+      <meta name="title" content="{i18n:translate('project.login.title')}" />
+      <meta name="description" content="{i18n:translate('project.login.description')}" />
+    </head>
     <!-- +
     | There are three possible error-conditions: wrong password, unknown user and disabled
     | user. If one of these conditions occured, the corresponding information will be

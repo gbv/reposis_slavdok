@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MyCoReWebPage>
-  <section xml:lang="all" i18n="project.index.title">
+  <section xml:lang="all" title="SlavDok - Dashboard">
+    <head>
+      <meta name="title" content="SlavDok - Dashboard"/>
+      <meta name='description' content="SlavDok - Dashboard des Repositorium für slawistische Veröffentlichungen" />
+    </head>
     <div class="jumbotwo" id="project-index-search">
       <unpublished_documents />
     </div>

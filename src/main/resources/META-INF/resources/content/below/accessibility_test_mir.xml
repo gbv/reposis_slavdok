@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MyCoReWebPage>
 <MyCoReWebPage>
-  <section xml:lang="de" title="BITV-Test">
+
+  <section xml:lang="de" title="SlavDok - Prüfungsprotokoll zur Barrierefreiheit">
+    <head>
+      <meta name="title" content="SlavDok - Prüfungsprotokoll zur Barrierefreiheit"/>
+      <meta name="description" content="SlavDok - Protokoll über die Prüfung Design der Webseite, Menü, Eingabeformulare"/>
+    </head>
+
     <div class="row">
       <div class="col-md-12" lang="de">
         <h1>Protokoll über die Prüfung Design der Webseite, Menü, Eingabeformulare</h1>
@@ -341,6 +347,5 @@
     </div>
   </section>
   <meta>
-    <log lastEditor="administrator" date="2021-09-20" time="11:22" />
   </meta>
 </MyCoReWebPage>

@@ -43,6 +43,7 @@
 
   <xsl:template match="/response/result|lst[@name='grouped']/lst[@name='returnId']" priority="10">
     <head>
+      <meta name="title" content="{i18n:translate('project.results.title', $searchString)}" />
       <meta name="description" content="{i18n:translate('project.results.description', concat($hits, ';', $searchString))}" />
     </head>
     <xsl:variable name="ResultPages">
@@ -245,7 +246,7 @@
     <xsl:variable name="hitCount" select="$hitNumberOnPage + (($currentPage) -1) * $rows"/>
 
     <!-- hit entry -->
-    <div id="hit_{$hitCount}" class="hit_item {$hitItemClass}">
+    <div id="hit_{$hitCount}" class="hit_item {normalize-space($hitItemClass)}">
 
       <!-- hit head -->
       <div class="row hit_item_head">

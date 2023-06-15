@@ -32,8 +32,8 @@
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
               <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='search']" />
               <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='publish']" />
-              <xsl:call-template name="mir.basketMenu" />
               <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='about']" />
+              <xsl:call-template name="mir.basketMenu" />
             </ul>
           </div>
 

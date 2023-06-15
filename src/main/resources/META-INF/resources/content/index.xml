@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MyCoReWebPage>
 
-  <section xml:lang="all" i18n="project.index.title">
-    <meta name='description' i18n="project.index.description" />
-  </section>
-
-  <section xml:lang="de" i18n="project.index.title">
+  <section xml:lang="de" title="SlavDok - Repositorium für slawistische Veröffentlichungen">
+    <head>
+      <meta name="title" content="SlavDok - Repositorium für slawistische Veröffentlichungen"/>
+      <meta name='description' content="SlavDok - Startseite des Repositoriums für slawistische Veröffentlichungen" />
+    </head>
     <div class="jumbotwo" id="project-index-search">
       <div class="row mb-4">
         <div class="col-md-12" lang="de">
@@ -57,7 +57,7 @@
         </div>
       </div>
     </div>
-    <script src="../js/jquery.number.js"></script>
+    <script src="../js/jquery.number.js" />
     <script>
       $( document ).ready(function() {
       $.ajax({
@@ -73,8 +73,11 @@
     </script>
   </section>
 
-  <section xml:lang="en" i18n="project.index.title">
-
+  <section xml:lang="en" title="SlavDok - Repository for slavist publications">
+    <head>
+      <meta name="title" content="SlavDok - Repository for slavist publications"/>
+      <meta name='description' content="SlavDok - Landing page of the Repository for slavist publications" />
+    </head>
     <div class="jumbotwo" id="project-index-search">
       <div class="row mb-4">
         <div class="col-md-12" lang="en">
@@ -126,7 +129,7 @@
         </div>
       </div>
 
-      <script src="../js/jquery.number.js"></script>
+      <script src="../js/jquery.number.js"/>
       <script>
         $( document ).ready(function() {
         $.ajax({
