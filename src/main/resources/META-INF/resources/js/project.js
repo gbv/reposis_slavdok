@@ -19,8 +19,12 @@ $(document).ready(function () {
 
   // replace placeholder USERNAME with username
   var userID = $("#currentUser strong").html();
-  var newHref = 'https://reposis-test.gbv.de/slavdok/servlets/solr/select?q=createdby:' + userID + '&fq=objectType:mods';
-  $("a[href='https://reposis-test.gbv.de/slavdok/servlets/solr/select?q=createdby:USERNAME']").attr('href', newHref);
+  var localHref = 'http://localhost:18031/slavdok/servlets/solr/select?q=createdby:' + userID + '&fq=objectType:mods';
+  $("a[href='http://localhost:18031/slavdok/servlets/solr/select?q=createdby:USERNAME']").attr('href', localHref);
+  var testHref = 'https://reposis-test.gbv.de/slavdok/servlets/solr/select?q=createdby:' + userID + '&fq=objectType:mods';
+  $("a[href='https://reposis-test.gbv.de/slavdok/servlets/solr/select?q=createdby:USERNAME']").attr('href', testHref);
+  var prodHref = 'https://slavdok.slavistik-portal.de/servlets/solr/select?q=createdby:' + userID + '&fq=objectType:mods';
+  $("a[href='https://slavdok.slavistik-portal.de/servlets/solr/select?q=createdby:USERNAME']").attr('href', prodHref);
 
   // prevent dropdown from leaving visible page area
   $(".language-menu").addClass('dropdown-menu-right');
