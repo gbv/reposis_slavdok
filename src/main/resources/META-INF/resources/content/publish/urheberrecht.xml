@@ -1,234 +1,297 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <MyCoReWebPage>
-	<section xml:lang="de" title="SlavDok - Hinweise zum Urheberrecht">
-		<head>
-			<meta name="title" content="SlavDok - Hinweise zum Urheberrecht"/>
-			<meta name="description" content="SlavDok - unsere Hinweise zum Urheberrecht, Open-Access und Lizenzierung"/>
-		</head>
-		<div class="row">
-			<div class="col-sm-12 col-md-12">
-				<h1>Urheberrecht und Open Access</h1>
+  <section xml:lang="de" title="SlavDok - Hinweise zum Urheberrecht">
+    <head>
+      <meta name="title" content="SlavDok - Hinweise zum Urheberrecht"/>
+      <meta name="description" content="SlavDok - unsere Hinweise zum Urheberrecht, Open-Access und Lizenzierung"/>
+    </head>
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <h1>Urheberrecht und Open Access</h1>
 
-				<p>
-					Die Erstpublikation von Originalbeiträgen auf SlavDok (Goldener Weg von Open Access) ist unter
-					urheberrechtlichem Aspekt in aller Regel unproblematisch. Bei der Zweitveröffentlichung (Grüner Weg von Open
-					Access) dagegen, die für zuvor bereits in gedruckter oder elektronischer Form in monographischen Sammelwerken
-					(darunter Festschriften, Lexika, Kongressbände und Handbücher – oder abonnementpflichtigen Zeitschriften,
-					Jahrbüchern und Zeitungen) erschienene Aufsätze gilt, ergeben sich regelmäßig Fragen nach der Zulässigkeit. Um
-					diesen Fragen nachzukommen, muss man über Rechte als Autor:in informiert sein.
-				</p>
+        <p>Die Erstpublikation von Originalbeiträgen auf SlavDok (Goldener Weg von Open Access) ist unter
+          urheberrechtlichem Aspekt in aller Regel unproblematisch. Bei der Zweitveröffentlichung (Grüner Weg von Open
+          Access) dagegen, die für zuvor bereits in gedruckter oder elektronischer Form in monographischen Sammelwerken
+          (darunter Festschriften, Lexika, Kongressbände und Handbücher – oder abonnementpflichtigen Zeitschriften,
+          Jahrbüchern und Zeitungen) erschienene Aufsätze gilt, ergeben sich regelmäßig Fragen nach der Zulässigkeit. Um
+          diesen Fragen nachzukommen, muss man über Rechte als Autor:in informiert sein.
+        </p>
 
-				<h2>Publikationsvertrag und Autor:innenrechte</h2>
+        <p>Einen klaren Überblick aller Schritte auf dem Weg zu einer Zweitveröffentlichung nach deutschem Urheberrecht
+          bietet das
+          <em>
+            <a
+              href="https://www.bibb.de/dokumente/pdf/2020-05-12_BIBB_Flussdiagramm_Aufruf-zur-Zweitveroeffentlichung.pdf">
+               Flussdiagramm von Rechtsanwältin Sheila Heidt
+            </a>
+          </em>
+          .
+        </p>
 
-				<p>
-					Zuerst ist es ratsam zu wissen, welches Nutzungsrecht (einfaches oder ausschließliches) dem Verlag in dem
-					Publikationsvertrag eingeräumt wurden und ob bzw. zu welchen Bedingungen eine Zweitveröffentlichung möglich
-					ist.
-				</p>
+        <h2>Publikationsvertrag und Autor:innenrechte</h2>
 
-				<p>
-					Ausschließliches Nutzungsrecht bedeutet, dass alle Rechte an den Verlag abgetreten werden und die
-					Zweitveröffentlichung nur durch explizite Erlaubnis des Verlages gewährt sein kann. Einfaches Nutzungsrecht
-					bedeutet dagegen, dass die Autor:innen die weitere Verwendung ihrer Publikation selbst bestimmen können.
-				</p>
+        <p>Zuerst ist es ratsam zu wissen, welches Nutzungsrecht (einfaches oder ausschließliches) dem Verlag in dem
+          Publikationsvertrag eingeräumt wurden und ob bzw. zu welchen Bedingungen eine Zweitveröffentlichung möglich
+          ist.
+        </p>
 
-				<p>
-					Liegt kein Verlagsvertrag vor, empfiehlt es sich die Konditionen des Verlages mithilfe von
-					<em><a href="https://www.sherpa.ac.uk/romeo/" target="_blank">SHERPA/RoMEO-Verzeichnis</a></em>	zu überprüfen.
-					SHERPA/RoMEO enthält die Nutzungsbedingungen zahlreicher internationaler Wissenschaftsverlage
-					und einzelner Fachzeitschriften in Hinblick auf eine mögliche Zweitveröffentlichung im Open Access. Das
-					Spektrum ist breit: manche Verlage untersagen eine nicht-kommerzielle Zweitveröffentlichung auf
-					institutionellen oder disziplinären Repositorien, andere dagegen geben die Inhalte für eine Open
-					Access-Publikation in der zum Druck akzeptierten Manuskriptversion oder sogar im tatsächlichen Verlagslayout
-					frei.
-				</p>
+        <p>Ausschließliches Nutzungsrecht bedeutet, dass alle Rechte an den Verlag abgetreten werden und die
+          Zweitveröffentlichung nur durch explizite Erlaubnis des Verlages gewährt sein kann. Einfaches Nutzungsrecht
+          bedeutet dagegen, dass die Autor:innen die weitere Verwendung ihrer Publikation selbst bestimmen können.
+        </p>
 
-				<p>
-					Bitte beachten Sie, dass etwaige abweichende Vereinbarungen Ihres jeweiligen Verlagsvertrags von den
-					rechtlich ohnehin unverbindlichen Angaben des SHERPA/RoMEO-Verzeichnisses in jedem Fall unberührt bleiben.
-					Wenn der Verlag oder die Zeitschrift in dem SHERPA/RoMEO-Verzeichniss nicht erfasst ist, empfiehlt es sich die
-					Webseite des jeweiligen Verlages im Hinblick auf Zweitveröffentlichung im Open Access zu überprüfen oder den
-					Verlag direkt zu kontaktieren.
-				</p>
+        <p>Liegt kein Verlagsvertrag vor, empfiehlt es sich die Konditionen des Verlages mithilfe von 
+          <em>
+            <a href="https://www.sherpa.ac.uk/romeo/" target="_blank">SHERPA/RoMEO-Verzeichnis</a>
+          </em>
+            zu überprüfen. SHERPA/RoMEO enthält die Nutzungsbedingungen zahlreicher internationaler Wissenschaftsverlage
+          und einzelner Fachzeitschriften in Hinblick auf eine mögliche Zweitveröffentlichung im Open Access. Das
+          Spektrum ist breit: manche Verlage untersagen eine nicht-kommerzielle Zweitveröffentlichung auf
+          institutionellen oder disziplinären Repositorien, andere dagegen geben die Inhalte für eine Open
+          Access-Publikation in der zum Druck akzeptierten Manuskriptversion oder sogar im tatsächlichen Verlagslayout
+          frei.
+        </p>
 
-				<h2>Self Archiving &amp; Embargofrist</h2>
+        <p>Bitte beachten Sie, dass etwaige abweichende Vereinbarungen Ihres jeweiligen Verlagsvertrags von den
+          rechtlich ohnehin unverbindlichen Angaben des SHERPA/RoMEO-Verzeichnisses in jedem Fall unberührt bleiben.
+          Wenn der Verlag oder die Zeitschrift in dem SHERPA/RoMEO-Verzeichniss nicht erfasst ist, empfiehlt es sich die
+          Webseite des jeweiligen Verlages im Hinblick auf Zweitveröffentlichung im Open Access zu überprüfen oder den
+          Verlag direkt zu kontaktieren.
+        </p>
 
-				<p>
-					Viele Verlage erlauben grundsätzlich, nach einer Embargofrist eine bestimmte Version des Artikels
-					(eingereichtes Manuskript / Preprint, angenommenes Manuskript / Postprint / Authors Accepted Manuscript oder
-					finale Verlagsversion der PDF / Published Version / Version of Record) im Rahmen der Selbstarchivierung (Self
-					Archiving) auf einem Repositorium abzulegen. Nachfolgend sind die Selbstarchivierungsrichtlinien (bzw.
-					Repository Policy, Online-Archivierung) einiger Verlage verlinkt:
-				</p>
+        <h2>Self Archiving &amp; Embargofrist</h2>
 
-				<ul>
-					<li>
-						<a href="https://www.vandenhoeck-ruprecht-verlage.com/service/rights/" target="_blank">Böhlau</a>
-					</li>
-					<li>
-						<a href="https://brill.com/page/selfarchiving/sharing-your-work-selfarchiving" target="_blank">Brill</a>
-					</li>
-					<li>
-						<a href="https://www.cambridge.org/core/services/open-access-policies/open-access-journals/green-open-access-policy-for-journals"
-							 target="_blank">Cambridge University Press</a>
-					</li>
-					<li>
-						<a href="https://www.duncker-humblot.de/_files_media/mediathek/download/duh_autorenrechte_163.pdf"
-							 target="_blank">Duncker &amp; Humblot</a>
-					</li>
-					<li>
-						<a href="https://www.frank-timme.de/de/open-access" target="_blank">Frank &amp; Timme</a>
-					</li>
-					<li>
-						<a href="https://www.harrassowitz-verlag.de/DEU/selbstarchivierung.ahtml?NKLN=23_LSA" target="_blank">
-							Harrassowitz</a>
-					</li>
-					<li>
-						<a href="https://www.springernature.com/gp/open-research/policies/journal-policies" target="_blank">
-							J.B.Metzler</a>
-					</li>
-					<li>
-						<a href="https://www.narr.de/openaccess" target="_blank">Narr Francke Attempo</a>
-					</li>
-					<li>
-						<a href="https://www.peterlang.com/de/repository-policy/" target="_blank">Peter Lang</a>
-					</li>
-					<li>
-						<a href="https://www.schoeningh.de/page/open-access" target="_blank">Schöningh</a>
-					</li>
-					<li>
-						<a href="https://www.transcript-verlag.de/selbstarchivierungsrechte-repository-policy" target="_blank">
-							Transcript</a>
-					</li>
-					<li>
-						<a href="https://www.winter-verlag.de/de/rechte/" target="_blank">Universitätsverlag Winter</a>
-					</li>
-					<li>
-						<a href="https://www.vandenhoeck-ruprecht-verlage.com/service/rights/" target="_blank">Vandenhoeck &amp;
-							Ruprecht</a>
-					</li>
-					<li>
-						<a href="https://www.degruyter.com/publishing/services/rechte-lizenzen/repositorypolicy?lang=de"
-							 target="_blank">Walter de Gruyter</a>
-					</li>
-					<li>
-						<a href="https://www.fink.de/page/open-access" target="_blank">Wilhelm Fink</a>
-					</li>
-				</ul>
+        <p>Viele Verlage erlauben grundsätzlich, nach einer Embargofrist eine bestimmte Version des Artikels
+          (eingereichtes Manuskript / Preprint, angenommenes Manuskript / Postprint / Authors Accepted Manuscript oder
+          finale Verlagsversion der PDF / Published Version / Version of Record) im Rahmen der Selbstarchivierung (Self
+          Archiving) auf einem Repositorium abzulegen. Nachfolgend sind die Selbstarchivierungsrichtlinien (bzw.
+          Repository Policy, Online-Archivierung) einiger Verlage verlinkt:
+        </p>
 
-				<p>
-					Sollte ein Embargo auf der Zweitveröffentlichung liegen, können Sie gerne Ihre Texte und den SlavDok-Vertrag
-					auch bereits vor dem Ende der Embargofrist auf SlavDok hochladen bzw. dem SlavDok Team zusenden. Die
-					Veröffentlichung erfolgt natürlich erst nach Ablauf des Embargos.
-				</p>
+        <ul>
+          <li>
+            <a href="https://www.vandenhoeck-ruprecht-verlage.com/service/rights/" target="_blank">Böhlau</a>
+          </li>
+          <li>
+            <a href="https://brill.com/page/selfarchiving/sharing-your-work-selfarchiving" target="_blank">Brill</a>
+          </li>
+          <li>
+            <a
+              href="https://www.cambridge.org/core/services/open-access-policies/open-access-journals/green-open-access-policy-for-journals"
+              target="_blank">Cambridge University Press
+            </a>
+          </li>
+          <li>
+            <a href="https://www.duncker-humblot.de/_files_media/mediathek/download/duh_autorenrechte_163.pdf"
+               target="_blank">Duncker &amp; Humblot
+            </a>
+          </li>
+          <li>
+            <a href="https://www.frank-timme.de/de/open-access" target="_blank">Frank &amp; Timme</a>
+          </li>
+          <li><a href="https://www.harrassowitz-verlag.de/DEU/selbstarchivierung.ahtml?NKLN=23_LSA" target="_blank">
+            Harrassowitz</a>  
+          </li>
+          <li>
+            <a href="https://verlag.koenigshausen-neumann.de/open-access/">Königshausen &amp; Neumann </a>
+          </li>
+          <li>
+            <a href="https://www.springernature.com/gp/open-research/policies/book-policies">J.B.Metzler</a>
+          </li>
+          <li>
+            <a href="https://www.narr.de/openaccess" target="_blank">Narr Francke Attempo</a>
+          </li>
+          <li>
+            <a href="https://www.peterlang.com/de/repository-policy/" target="_blank">Peter Lang</a>
+          </li>
+          <li>
+            <a href="https://www.routledge.com/contacts/rights-and-permissions">Routledge </a>
+          </li>
+          <li>
+            <a href="https://www.schoeningh.de/page/open-access" target="_blank">Schöningh</a>
+          </li>
+          <li>
+            <a href="https://www.springer.com/gp/open-access/publication-policies/self-archiving-policy">Springer</a>
+          </li>
+          <li><a href="https://www.transcript-verlag.de/selbstarchivierungsrechte-repository-policy" target="_blank">
+            Transcript </a>   
+          </li>
+          <li>
+            <a href="https://www.winter-verlag.de/de/rechte/" target="_blank">Universitätsverlag Winter</a>
+          </li>
+          <li>
+            <a href="https://www.vandenhoeck-ruprecht-verlage.com/service/rights/" target="_blank">Vandenhoeck &amp;
+              Ruprecht  
+            </a>
+          </li>
+          <li>
+            <a href="https://www.degruyter.com/publishing/services/rechte-lizenzen/repositorypolicy?lang=de"
+               target="_blank">Walter de Gruyter
+            </a>
+          </li>
+          <li>
+            <a href="https://brill.com/page/selfarchiving/sharing-your-work-selfarchiving">Wilhelm Fink</a>
+          </li>
+        </ul>
 
-				<h2>Abdingbares Zweitveröffentlichungsrecht</h2>
+        <p>Sollte ein Embargo auf der Zweitveröffentlichung liegen, können Sie gerne Ihre Texte und den SlavDok-Vertrag
+          auch bereits vor dem Ende der Embargofrist auf SlavDok hochladen bzw. dem SlavDok Team zusenden. Die
+          Veröffentlichung erfolgt natürlich erst nach Ablauf des Embargos.
+        </p>
 
-				<p>
-					Wurde keine explizite Vereinbarung über die Nutzungsrechte vertraglich geschlossen, so sind in diesem
-					Zusammenhang vorrangig die Bestimmungen der Absätze eins und zwei des
-					<em><a href="https://www.gesetze-im-internet.de/urhg/__38.html" target="_blank">§ 38 UrhG</a></em> zu
-					berücksichtigen. Diese besagen, dass bei nicht finanziell honorierten Publikationen in monographischen,
-					nicht periodisch erscheinenden Sammlungen – etwa Handbüchern, Lexika, Festschriften oder Kongressbänden –
-					sowie bei Veröffentlichungen in Zeitschriften und Jahrbüchern eine anderweitige Vervielfältigung, Verbreitung
-					und öffentliche Zugänglichmachung der Verlagsversion durch Verfasser:innen nach Ablauf einer Embargofrist von
-					12 Monaten gestattet ist.
-				</p>
+        <h2>Abdingbares Zweitveröffentlichungsrecht</h2>
 
-				<h2>Unabdingbares Zweitveröffentlichungsrecht</h2>
+        <p>Wurde keine explizite Vereinbarung über die Nutzungsrechte vertraglich geschlossen, so sind in diesem
+          Zusammenhang vorrangig die Bestimmungen der Absätze eins und zwei des 
+          <em><a href="https://www.gesetze-im-internet.de/urhg/__38.html" target="_blank">§ 38 UrhG</a> 
+          </em>
+          zu berücksichtigen. Diese besagen, dass bei nicht finanziell honorierten Publikationen in monographischen,
+          nicht periodisch erscheinenden Sammlungen – etwa Handbüchern, Lexika, Festschriften oder Kongressbänden –
+          sowie bei Veröffentlichungen in Zeitschriften und Jahrbüchern eine anderweitige Vervielfältigung, Verbreitung
+          und öffentliche Zugänglichmachung der Verlagsversion durch Verfasser:innen nach Ablauf einer Embargofrist von
+          12 Monaten gestattet ist.
+        </p>
 
-				<p>
-					Selbst wenn Sie einem Verlag ein ausschließliches Nutzungsrecht an einem Beitrag eingeräumt und anderweitige
-					Vereinbarungen zu Ihrem Nachteil getroffen haben, steht es Ihnen unter bestimmten Bedingungen trotzdem frei,
-					das Werk zweitzuveröffentlichen: sollte Ihr wissenschaftlicher Aufsatz im Rahmen einer mindestens zur Hälfte
-					mit öffentlichen Mitteln geförderten Forschungstätigkeit entstanden und in einer periodisch mindestens zweimal
-					jährlich erscheinenden Sammlung veröffentlicht worden sein, so können Sie von den seit 1. Januar 2014
-					novellierten Schrankenregelungen in <a href="https://www.gesetze-im-internet.de/urhg/__38.html" target="_blank">
-					§	<em>38 Abs. 4 UrhG</em></a> profitieren. In diesem Fall ist es Ihnen gestattet, nach Ablauf von 12 Monaten
-					seit der Erstveröffentlichung in der akzeptierten Manuskriptversion (sogenannter Postprint) – also nicht im
-					Verlagslayout – Ihren Artikel öffentlich zugänglich zu machen, soweit dies keinem gewerblichen Zweck dient.
-					Bitte beachten Sie in diesem Zusammenhang die entsprechenden
-					<em> <a href="https://irights.info/wp-content/uploads/2017/09/zweitveroeffentlichungsrecht-20150425.pdf"
-							 target="_blank">Handlungsempfehlungen</a></em> des iRights.Lab.
-				</p>
+        <h2>Unabdingbares Zweitveröffentlichungsrecht</h2>
 
-				<p>
-					Um zukünftige Veröffentlichungen freier gestalten zu können, wird es empfohlen, kein exklusives oder
-					ausschließliches Nutzungsrecht an den Verlag zu übertragen, sondern nur ein einfaches Nutzungsrecht.
-					Autor:innen sollten sich ansonsten zumindest entsprechende Rechte zur Zweitveröffentlichung vorbehalten. Das
-					Projekt AuROA (Autor:innen und Rechtssicherheit für Open Access) entwickelt dafür
-					<em><a href="https://projekt-auroa.de/mustervertraege-fuer-open-access/" target="_blank">modulare
-					Musterverträge</a></em>, um eine faire Zusammenarbeit zwischen Autor:innen und Publikationsdienstleistern
-					zu ermöglichen.
-					Hier finden Sie Empfehlungen und Beispiele für <em>
-					<a href="http://open-access.network/informieren/rechtsfragen/verlagsvertraege" target="_blank">Streichungen
-					und Ergänzungen in Verlagsverträgen</a></em> zugunsten der Autor:innen.
-				</p>
+        <p>Selbst wenn Sie einem Verlag ein ausschließliches Nutzungsrecht an einem Beitrag eingeräumt und anderweitige
+          Vereinbarungen zu Ihrem Nachteil getroffen haben, steht es Ihnen unter bestimmten Bedingungen trotzdem frei,
+          das Werk zweitzuveröffentlichen: sollte Ihr wissenschaftlicher Aufsatz im Rahmen einer mindestens zur Hälfte
+          mit öffentlichen Mitteln geförderten Forschungstätigkeit entstanden und in einer periodisch mindestens zweimal
+          jährlich erscheinenden Sammlung veröffentlicht worden sein, so können Sie von den seit 1. Januar 2014
+          novellierten Schrankenregelungen in 
+          <a href="https://www.gesetze-im-internet.de/urhg/__38.html" target="_blank">§
+            <em>38 Abs. 4 UrhG</em>
+          </a>
+            profitieren. In diesem Fall ist es Ihnen gestattet, nach Ablauf von 12 Monaten seit der Erstveröffentlichung
+          in der akzeptierten Manuskriptversion (sogenannter Postprint) – also nicht im Verlagslayout – Ihren Artikel
+          öffentlich zugänglich zu machen, soweit dies keinem gewerblichen Zweck dient. Bitte beachten Sie in diesem
+          Zusammenhang die entsprechenden 
+          <em><a href="https://irights.info/wp-content/uploads/2017/09/zweitveroeffentlichungsrecht-20150425.pdf"
+                 target="_blank">Handlungsempfehlungen</a> 
+          </em>
+          des iRights.Lab.
+        </p>
 
-				<h2>Open Access-Komponente der Allianz-, National- und FID-Lizenzen</h2>
+        <h2>Verlagsverträge</h2>
 
-				<p>
-					Unabhängig von den skizzierten Handlungsspielräumen des deutschen Urheberrechtsgesetzes können Sie
-					gegebenenfalls auch diejenigen Open Access-Rechte an Ihrem Werk verbindlich in Anspruch nehmen, die im Rahmen
-					der Schwerpunktinitiative Digitale Information der <em>
-					<a href="https://www.allianzinitiative.de/" target="_blank">Allianz der deutschen Wissenschaftsorganisationen
-					</a></em>	oder von den für die jeweilige Disziplin zuständigen Fachinformationsdiensten für die Wissenschaft
-					ausgehandelt wurden. So besteht für die verschiedenen internationalen Zeitschriftenpakete der mit
-					Unterstützung der Deutschen Forschungsgemeinschaft erworbenen sogenannten Allianz-, National- und FID-Lizenzen
-					in der Regel die Möglichkeit, die darin enthaltenen Inhalte nach Ablauf einer variierenden Embargofrist in der
-					zum Druck angenommenen Manuskriptversion und vielfach sogar im Verlagslayout in ein <em>
-					<a href="https://www.nationallizenzen.de/open-access/open-access-allianz-lizenzen.pdf/view" target="_blank">
-					frei wählbares Repositorium</a></em> – also auch in SlavDok – zu laden. Die allgemeinen Informationen über
-					Open Access-Komponente der Allianz-, National- oder FID-Lizenzen finden Sie <em>
-					<a href="https://www.nationallizenzen.de/open-access" target="_blank">hier</a></em>	und über die
-					<em><a href="https://slavistik-portal.de/zeitschriften/zdb-slavistik.html" target="_blank">
-					Zeitschriftendatenbank (ZDB) Slavistik</a></em>	auf dem Slavistik-Portal.
-				</p>
+        <p><img alt=""
+                src="https://www.bibb.de/dokumente/pdf/2020-05-12_BIBB_Flussdiagramm_Aufruf-zur-Zweitveroeffentlichung.pdf"/>
+          Um zukünftige Veröffentlichungen freier gestalten zu können, wird es empfohlen, kein exklusives oder
+          ausschließliches Nutzungsrecht an den Verlag zu übertragen, sondern nur ein einfaches Nutzungsrecht.
+          Autor:innen sollten sich ansonsten zumindest entsprechende Rechte zur Zweitveröffentlichung vorbehalten. Das
+          Projekt AuROA (Autor:innen und Rechtssicherheit für Open Access) entwickelt dafür 
+          <em>
+            <a href="https://projekt-auroa.de/mustervertraege-fuer-open-access/" target="_blank">modulare
+              Musterverträge
+            </a>
+          </em>
+          , um eine faire Zusammenarbeit zwischen Autor:innen und Publikationsdienstleistern zu ermöglichen. Hier finden
+          Sie Empfehlungen und Beispiele für
+          <em>
+            <a href="http://open-access.network/informieren/rechtsfragen/verlagsvertraege" target="_blank">Streichungen
+              und Ergänzungen in Verlagsverträgen
+            </a>
+          </em>
+          zugunsten der Autor:innen.
+        </p>
 
-				<h2>SlavDok - oder Open Content-Lizenz?</h2>
+        <h2>Open Access-Komponente der Allianz-, National- und FID-Lizenzen</h2>
 
-				<p>
-					Mit Upload des Dokuments auf unseren Server sowie auf Grundlage eines <em>
-					<a href="https://slavdok.slavistik-portal.de/content/rights/Publikationsvertrag-SlavDok.pdf"
-						 target="_blank">schriftlichen Publikationsvertrags</a></em>
-					räumen Sie SlavDok ein einfaches Nutzungsrecht zur Vervielfältigung, Verbreitung und öffentlichen
-					Zugänglichmachung Ihres Werks im Internet ein sowie ergänzend das Recht, insbesondere für Archivierungszwecke
-					Änderungen am jeweiligen Dateiformat vorzunehmen (SlavDok-Lizenz). Auf Grundlage dieser SlavDok-Lizenz ist
-					eine Nutzung Ihres auf SlavDok veröffentlichten Beitrags durch Dritte allerdings ziemlich beschränkt
-					<em><a href="https://www.gesetze-im-internet.de/urhg/__53.html" target="_blank">(§§ 53, 60c, 60d UrhG)</a>
-					</em>. Sollten Sie dagegen an einer weitergehenden Nutzung Ihres Werks interessiert sein, so empfiehlt Ihnen
-					der Fachinformationsdienst Slawistik in Übereinstimmung mit der <em>
-					<a href="https://gfzpublic.gfz-potsdam.de/pubman/item/item_2875895_3/component/file_2875894/Appell_Offene_Lizenzen_2014.pdf"
-						 target="_blank">Allianz der deutschen Wissenschaftsorganisationen</a></em>
-					die Vergabe einer <em><a href="https://creativecommons.org/about/cclicenses/" target="_blank">
-					Creative Commons-Lizenz</a></em> mit der Sie Ihre Beiträge auf SlavDok z.B. für die Bearbeitung und
-					Weiterverbreitung durch Dritte freigeben können.
-				</p>
+        <p>Unabhängig von den skizzierten Handlungsspielräumen des deutschen Urheberrechtsgesetzes können Sie
+          gegebenenfalls auch diejenigen Open Access-Rechte an Ihrem Werk verbindlich in Anspruch nehmen, die im Rahmen
+          der Schwerpunktinitiative Digitale Information der 
+          <em>
+            <a href="https://www.allianzinitiative.de/" target="_blank">Allianz der deutschen
+              Wissenschaftsorganisationen
+            </a>
+          </em>
+            oder von den für die jeweilige Disziplin zuständigen Fachinformationsdiensten für die Wissenschaft
+          ausgehandelt wurden. So besteht für die verschiedenen internationalen Zeitschriftenpakete der mit
+          Unterstützung der Deutschen Forschungsgemeinschaft erworbenen sogenannten Allianz-, National- und FID-Lizenzen
+          in der Regel die Möglichkeit, die darin enthaltenen Inhalte nach Ablauf einer variierenden Embargofrist in der
+          zum Druck angenommenen Manuskriptversion und vielfach sogar im Verlagslayout in ein 
+          <em>
+            <a href="https://www.nationallizenzen.de/open-access/open-access-allianz-lizenzen.pdf/view" target="_blank">
+              frei wählbares Repositorium
+            </a>
+          </em>
+           – also auch in SlavDok – zu laden. Die allgemeinen Informationen über Open Access-Komponente der Allianz-,
+          National- oder FID-Lizenzen finden Sie 
+          <em><a href="https://www.nationallizenzen.de/open-access" target="_blank">hier</a> 
+          </em>
+          und über die
+          <em> 
+            <a href="https://slavistik-portal.de/zeitschriften/zdb-slavistik.html" target="_blank">
+              Zeitschriftendatenbank (ZDB) Slavistik
+            </a>
+          </em>
+           auf dem Slavistik-Portal.
+        </p>
 
-				<p>
-					Bitte beachten Sie, dass die Vergabe von Creative Commons- oder anderen Open Content-Lizenzen in der Regel
-					nur für Erstveröffentlichungen auf SlavDok möglich ist sowie für diejenigen Werke, an denen Sie ein <em>
-					ausschließliches</em> Nutzungsrecht besitzen. In allen anderen Fällen ist vor einer freien Lizenzierung die
-					Zustimmung des jeweils betroffenen Verlags einzuholen. Hingegen stehen alle auf SlavDok veröffentlichten
-					beschreibenden bibliographischen Metadaten – mit Ausnahme der Abstracts – unter der <em>
-					<a href="https://creativecommons.org/publicdomain/zero/1.0/deed.de" target="_blank">CC0 1.0	Universell-Lizenz</a>
-					</em>	zur freien Weiterverwendung zur Verfügung.
-				</p>
+        <h2>SlavDok - oder Open Content-Lizenz?</h2>
 
-				<h2>Unterstützung und Kontakt</h2>
+        <p>Mit Upload des Dokuments auf unseren Server sowie auf Grundlage eines 
+          <em>
+            <a href="https://slavdok.slavistik-portal.de/content/rights/Publikationsvertrag-SlavDok.pdf"
+               target="_blank">schriftlichen Publikationsvertrags
+            </a>
+          </em>
+            räumen Sie SlavDok ein einfaches Nutzungsrecht zur Vervielfältigung, Verbreitung und öffentlichen
+          Zugänglichmachung Ihres Werks im Internet ein sowie ergänzend das Recht, insbesondere für Archivierungszwecke
+          Änderungen am jeweiligen Dateiformat vorzunehmen (SlavDok-Lizenz). Auf Grundlage dieser SlavDok -Lizenz ist
+          eine Nutzung Ihres auf SlavDok veröffentlichten Beitrags durch Dritte allerdings ziemlich beschränkt 
+          <em>
+            <a href="https://www.gesetze-im-internet.de/urhg/__53.html" target="_blank">(§§ 53, 60c, 60d UrhG)</a>
+          </em>
+          . Sollten Sie dagegen an einer weitergehenden Nutzung Ihres Werks interessiert sein, so empfiehlt Ihnen der
+          Fachinformationsdienst Slawistik in Übereinstimmung mit der 
+          <em>
+            <a
+              href="https://gfzpublic.gfz-potsdam.de/pubman/item/item_2875895_3/component/file_2875894/Appell_Offene_Lizenzen_2014.pdf"
+              target="_blank">Allianz der deutschen Wissenschaftsorganisationen
+            </a>
+          </em>
+            die Vergabe einer 
+          <em>
+            <a href="https://creativecommons.org/about/cclicenses/" target="_blank">Creative Commons-Lizenz</a>
+          </em>
+           mit der Sie Ihre Beiträge auf SlavDok z.B. für die Bearbeitung und Weiterverbreitung durch Dritte freigeben
+          können.
+        </p>
 
-				<p>Auf Wunsch unterstützt Sie das Team von SlavDok bei der Klärung Ihrer Zweitveröffentlichungsrechte und steht
-					Ihnen überdies bei allen Fragen zum Open Access-Publizieren gerne zur Verfügung. Unser Kontaktformular finden
-					Sie bitte<em><a href="https://slavdok.slavistik-portal.de/content/below/kontakt.xed">hier</a></em>.
-					Unabhängig von der Inanspruchnahme dieses Beratungsangebots sind Sie vor einer Veröffentlichung auf SlavDok
-					in jedem Fall dazu verpflichtet, sich sorgfältig zu vergewissern, dass die dem Fachinformationsdienst
-					Slawistik einzuräumenden Nutzungsrechte insbesondere zur öffentlichen Zugänglichmachung Ihres Werks auch
-					tatsächlich bei Ihnen liegen. SlavDok behält sich u.a. in strafrechtlich relevanten Fällen das Recht vor, den
-					Zugriff auf bereits veröffentliche Dokumente zu sperren.
-				</p>
-			</div>
-		</div>
-	</section>
-	<meta>
-	</meta>
+        <p>Bitte beachten Sie, dass die Vergabe von Creative Commons- oder anderen Open Content-Lizenzen in der Regel
+          nur für Erstveröffentlichungen auf SlavDok möglich ist sowie für diejenigen Werke, an denen Sie ein <em>
+            ausschließliches</em> Nutzungsrecht besitzen. In allen anderen Fällen ist vor einer freien Lizenzierung die
+          Zustimmung des jeweils betroffenen Verlags einzuholen. Hingegen stehen alle auf SlavDok veröffentlichten
+          beschreibenden bibliographischen Metadaten – mit Ausnahme der Abstracts – unter der 
+          <em>
+            <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.de" target="_blank">CC0 1.0
+              Universell-Lizenz
+            </a>
+          </em>
+           zur freien Weiterverwendung zur Verfügung.
+        </p>
+
+        <h2>Unterstützung und Kontakt</h2>
+
+        <p>Auf Wunsch unterstützt Sie das Team von SlavDok bei der Klärung Ihrer Zweitveröffentlichungsrechte und steht
+          Ihnen überdies bei allen Fragen zum Open Access-Publizieren gerne zur Verfügung. Unser Kontaktformular finden
+          Sie bitte 
+          <em>
+            <a href="https://slavdok.slavistik-portal.de/content/below/kontakt.xed">hier</a>
+          </em>
+          . Unabhängig von der Inanspruchnahme dieses Beratungsangebots sind Sie vor einer Veröffentlichung auf SlavDok
+          in jedem Fall dazu verpflichtet, sich sorgfältig zu vergewissern, dass die dem Fachinformationsdienst
+          Slawistik einzuräumenden Nutzungsrechte insbesondere zur öffentlichen Zugänglichmachung Ihres Werks auch
+          tatsächlich bei Ihnen liegen. SlavDok behält sich u.a. in strafrechtlich relevanten Fällen das Recht vor, den
+          Zugriff auf bereits veröffentliche Dokumente zu sperren.
+        </p>
+
+
+      </div>
+    </div>
+  </section>
+  <meta>
+    <log lastEditor="asarayeva" date="2023-08-08" time="10:20"/>
+  </meta>
 </MyCoReWebPage>

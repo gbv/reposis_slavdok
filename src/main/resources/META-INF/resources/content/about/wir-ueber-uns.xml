@@ -1,46 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MyCoReWebPage>
 
-	<section xml:lang="de" title="SlavDok - wer wir sind und was wir machen">
-		<head>
-			<meta name="title" content="SlavDok - wer wir sind und was wir machen"/>
-			<meta name="description" content="SlavDok - Über das Repositorium des FID Slawistik"/>
-		</head>
+  <section xml:lang="de" title="SlavDok - wer wir sind und was wir machen">
+    <head>
+      <meta name="title" content="SlavDok - wer wir sind und was wir machen"/>
+      <meta name="description" content="SlavDok - Über das Repositorium des FID Slawistik"/>
+    </head>
 
-		<div class="row">
-			<div class="col-md-12" lang="de">
-				<h1>SlavDok – wir über uns</h1>
+    <div class="row">
+      <div class="col-md-12" lang="de">
+        <h1>SlavDok – wir über uns</h1>
 
-				<p>Das Fachrepositorium SlavDok ist die zentrale Publikationsplattform des von der Deutschen
-					Forschungsgemeinschaft an der Staatsbibliothek zu Berlin – Preußischer Kulturbesitz eingerichteten
-					Fachinformationsdienstes für Slawistik.
-				</p>
+        <p>Das Fachrepositorium SlavDok ist die zentrale Publikationsplattform des von der Deutschen
+          Forschungsgemeinschaft an der Staatsbibliothek zu Berlin – Preußischer Kulturbesitz eingerichteten
+          Fachinformationsdienstes für Slawistik.
+        </p>
 
-				<h2>Open Access</h2>
+        <h2>Open Access</h2>
 
-				<p>SlavDok bietet allen Angehörigen slawistischer Forschungseinrichtungen Services zur kostenfreien öffentlichen
-					Präsentation qualitätsgesicherter Erst- und Zweitveröffentlichungen aus allen Bereichen der slawistischen
-					Forschung im Open Access. Nicht zuletzt aufgrund seiner nachgewiesenen positiven Effekte für die
-					internationale Sichtbarkeit, Rezeption und Zitierhäufigkeit empfehlen sowohl zahlreiche Hochschulen und
-					Forschungseinrichtungen als auch namhafte Wissenschafts- und Förderorganisationen Open Access als
-					Publikationsstrategie der Zukunft. Neben universitären Open Access-Resolutionen – u.a. der League of European
-					Research Universities – und den Open Access-Mandaten von Forschungsfördereinrichtungen ist in diesem
-					Zusammenhang vor allem die
-					<em><a href="https://www.allianzinitiative.de/" target="_blank">Schwerpunktinitiative Digitale Information</a></em>
-					zu erwähnen, unter deren Dach die Allianz der deutschen Wissenschaftsorganisationen ihre Aktivitäten zur
-					Akzeptanzsteigerung und Etablierung des Open Access-Paradigmas bündelt.
-				</p>
+        <p>SlavDok bietet allen Angehörigen slawistischer Forschungseinrichtungen Services zur kostenfreien öffentlichen
+          Präsentation qualitätsgesicherter Erst- und Zweitveröffentlichungen aus allen Bereichen der slawistischen
+          Forschung im Open Access. Nicht zuletzt aufgrund seiner nachgewiesenen positiven Effekte für die
+          internationale Sichtbarkeit, Rezeption und Zitierhäufigkeit empfehlen sowohl zahlreiche Hochschulen und
+          Forschungseinrichtungen als auch namhafte Wissenschafts- und Förderorganisationen Open Access als
+          Publikationsstrategie der Zukunft. Neben universitären Open Access-Resolutionen – u.a. der League of European
+          Research Universities – und den Open Access-Mandaten von Forschungsfördereinrichtungen ist in diesem
+          Zusammenhang vor allem die
+          <em>
+            <a href="https://www.allianzinitiative.de/" target="_blank">Schwerpunktinitiative Digitale Information</a>
+          </em>
+          zu erwähnen, unter deren Dach die Allianz der deutschen Wissenschaftsorganisationen ihre Aktivitäten zur
+          Akzeptanzsteigerung und Etablierung des Open Access-Paradigmas bündelt.
+        </p>
 
-				<p>
-					In Übereinstimmung mit der Open Access-Politik von Deutscher Forschungsgemeinschaft,
-					<em><a href="https://staatsbibliothek-berlin.de/die-staatsbibliothek/open-access" target="_blank">
-					Staatsbibliothek zu Berlin</a></em>, Global Research Council und Stiftung Preußischer Kulturbesitz versteht
-					sich SlavDok als Beitrag zur Förderung des
-					<em><a href="https://open-access.network/informieren/politische-rahmenbedingungen/positionen-der-politik#c17447"
-					target="_blank">offenen Zugangs zu wissenschaftlichem Wissen</a></em>.
-				</p>
-			</div>
-		</div>
-	</section>
-	<meta></meta>
+        <p>
+          In Übereinstimmung mit der Open Access-Politik von Deutscher Forschungsgemeinschaft,
+          <em>
+            <a href="https://staatsbibliothek-berlin.de/die-staatsbibliothek/open-access" target="_blank">
+              Staatsbibliothek zu Berlin
+            </a>
+          </em>
+          , Global Research Council und Stiftung Preußischer Kulturbesitz versteht
+          sich SlavDok als Beitrag zur Förderung des
+          <em>
+            <a href="https://open-access.network/informieren/politische-rahmenbedingungen/positionen-der-politik#c17447"
+               target="_blank">offenen Zugangs zu wissenschaftlichem Wissen
+            </a>
+          </em>
+          .
+        </p>
+        <h2>Möchten Sie Open Access publizieren?</h2>
+
+        <p>Folgende Tools stehen Ihnen zur Verfügung, um eine passende Open-Access-Fachzeitschrift zu finden:</p>
+
+        <p>
+          <a href="https://service.tib.eu/bison/">
+            <em>
+              <font color="#212529"
+                    face="system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Noto Sans, Liberation Sans, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji">
+                <span style="font-size: 16px;">B!SON</span>
+              </font>
+            </em>
+          </a>
+          - öffnen Sie den Link, geben Sie in das Eingabeformular den Titel und den Abstract Ihres Artikels ein.
+        </p>
+
+        <p>
+          <em>
+            <a href="https://finder.open-access.network/">oa.finder</a>
+          </em>
+          ist eine Plattform, die alle relevanten Informationen zu Open-Access-Zeitschriften zusammenstellt. Sie haben
+          die Möglichkeit, nach Ihrem Fachbereich und bestimmten Schlagworten zu filtern. Darüberhinaus erhalten Sie
+          umfassende Informationen und nützliche Links zu Open Access an Ihrer Wissenschaftseinrichtung - sei es die
+          Open-Access-Leitlinie oder der Publikationsfonds.
+        </p>
+
+        <p></p>
+      </div>
+    </div>
+  </section>
+  <meta></meta>
 </MyCoReWebPage>
