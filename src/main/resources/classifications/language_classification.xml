@@ -1,32 +1,30 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mycoreclass xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="MCRClassification.xsd" ID="language_classification">
-  <label xml:lang="en" text="Language classification" description="List of language types" />
-  <label xml:lang="x-uri" text="https://slavdok.slavistik-portal.de/api/v2/classifications/languages" />
+<?xml version='1.0' encoding='UTF-8'?>
+<mycoreclass ID="language_classification"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="MCRClassification.xsd">
   <label xml:lang="de" text="Sprachensystematik" description="Liste der Sprachkategorien" />
+  <label xml:lang="en" text="Language classification" description="List of language types" />
+  <label xml:lang="x-uri" text="https://slavdok.slavistik-portal.de/api/v2/classifications/language_classification" />
   <categories>
-    <category ID="64168939-5dae-4586-9b5f-85766a19e20b">
-      <label xml:lang="en" text="Slavic languages and literature" />
-      <label xml:lang="de" text="Slawische Sprachen und Literaturen" />
-    </category>
     <category ID="1">
-      <label xml:lang="en" text="Old Church Slavonic" />
-      <label xml:lang="de" text="Altkirchenslawisch" />
+      <label xml:lang="de" text="Kirchenslawisch" />
+      <label xml:lang="en" text="Church Slavonic" />
     </category>
     <category ID="2">
       <label xml:lang="de" text="Belarussische Sprache und Literatur" />
       <label xml:lang="en" text="Belarusian Language and Literature" />
     </category>
     <category ID="3">
-      <label xml:lang="en" text="Rusyn Language and Literature" />
       <label xml:lang="de" text="Rusinische Sprache und Literatur" />
+      <label xml:lang="en" text="Rusyn Language and Literature" />
     </category>
     <category ID="4">
-      <label xml:lang="en" text="Russian Language and Literature" />
       <label xml:lang="de" text="Russische Sprache und Literatur" />
+      <label xml:lang="en" text="Russian Language and Literature" />
     </category>
     <category ID="5">
-      <label xml:lang="en" text="Ukrainian Language and Literature" />
       <label xml:lang="de" text="Ukrainische Sprache und Literatur" />
+      <label xml:lang="en" text="Ukrainian Language and Literature" />
     </category>
     <category ID="6">
       <label xml:lang="de" text="Sorbische Sprache und Literatur" />
@@ -41,8 +39,8 @@
       <label xml:lang="en" text="Polish Language and Literature" />
     </category>
     <category ID="9">
-      <label xml:lang="en" text="Slovak Language and Literature" />
       <label xml:lang="de" text="Slowakische Sprache und Literatur" />
+      <label xml:lang="en" text="Slovak Language and Literature" />
     </category>
     <category ID="10">
       <label xml:lang="de" text="Tschechische Sprache und Literatur" />
@@ -57,12 +55,12 @@
       <label xml:lang="en" text="Serbian Language and Literature" />
     </category>
     <category ID="13">
-      <label xml:lang="en" text="Croatian Language and Literature" />
       <label xml:lang="de" text="Kroatische Sprache und Literatur" />
+      <label xml:lang="en" text="Croatian Language and Literature" />
     </category>
     <category ID="14">
-      <label xml:lang="en" text="Slovenian Language and Literature" />
       <label xml:lang="de" text="Slowenische Sprache und Literatur" />
+      <label xml:lang="en" text="Slovenian Language and Literature" />
     </category>
     <category ID="15">
       <label xml:lang="de" text="Makedonische Sprache und Literatur" />
@@ -73,12 +71,12 @@
       <label xml:lang="en" text="Montenegrin Language and Literature" />
     </category>
     <category ID="17">
-      <label xml:lang="en" text="Bosnian Language and Literature" />
       <label xml:lang="de" text="Bosnische Sprache und Literatur" />
+      <label xml:lang="en" text="Bosnian Language and Literature" />
     </category>
     <category ID="18">
-      <label xml:lang="en" text="Serbo-Croatian Language and Literature" />
       <label xml:lang="de" text="Serbokroatische Sprache und Literatur" />
+      <label xml:lang="en" text="Serbo-Croatian Language and Literature" />
     </category>
     <category ID="19">
       <label xml:lang="de" text="Kaschubische Sprache und Literatur" />
