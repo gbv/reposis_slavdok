@@ -10,12 +10,12 @@
       <div class="row mb-4">
         <div class="col-md-12" lang="de">
           <h1 class="d-none">SlavDok - Repositorium für slawistische Veröffentlichungen</h1>
-          <index_search_form />
+          <index-search-form />
         </div>
       </div>
       <div class="row">
         <div class="col-md-8">
-          <recent_documents />
+          <recent-documents />
         </div>
         <div class="col-md-4">
           <div class="card">
@@ -82,12 +82,12 @@
       <div class="row mb-4">
         <div class="col-md-12" lang="en">
           <h1 class="d-none">SlavDok - Repository for slavist publications</h1>
-          <index_search_form />
+          <index-search-form />
         </div>
       </div>
       <div class="row">
         <div class="col-md-8">
-          <recent_documents />
+          <recent-documents />
         </div>
         <div class="col-md-4">
           <div class="card">
