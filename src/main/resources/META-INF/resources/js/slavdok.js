@@ -96,7 +96,6 @@ function initFieldsetCollapsing() {
 }
 
 function init() {
-  document.getElementById('project-searchMainPage')?.addEventListener('submit', ignoreEmptyFieldsOnSubmit);
   replaceMaskedEmails();
   fixLanguageMenus();
   initOpenAire();

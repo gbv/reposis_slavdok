@@ -50,7 +50,7 @@
       <div class="input-group input-group-lg w-100">
         <input
           name="condQuery"
-          placeholder="{document('i18n:project.index_search.placeholder')/i18n/text()}"
+          placeholder="{document('i18n:project.index_search.placeholder.default')/i18n/text()}"
           class="form-control search-query"
           id="project-searchInput"
           type="text"

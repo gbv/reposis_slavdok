@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MyCoReWebPage>
-
   <section xml:lang="de" title="SlavDok - Repositorium für slawistische Veröffentlichungen">
     <head>
-      <meta name="title" content="SlavDok - Repositorium für slawistische Veröffentlichungen"/>
+      <meta name="title" content="SlavDok - Repositorium für slawistische Veröffentlichungen" />
       <meta name='description' content="SlavDok - Startseite des Repositoriums für slawistische Veröffentlichungen" />
     </head>
     <div class="jumbotwo" id="project-index-search">
@@ -26,11 +25,12 @@
               </h3>
             </div>
             <div class="card-body">
-              <span>SlavDok ist das <a href="./about/wir-ueber-uns.xml">disziplinäre Open Access-Repositorium</a> des Fachinformationsdienstes für Slawistik, der von der
-                Staatsbibliothek zu Berlin betrieben wird.</span>
+              <span>
+                SlavDok ist das <a href="./about/wir-ueber-uns.xml">disziplinäre Open Access-Repositorium</a> des
+                Fachinformationsdienstes für Slawistik, der von der Staatsbibliothek zu Berlin betrieben wird.
+              </span>
             </div>
           </div>
-
           <div class="card">
             <div class="card-header">
               <h3 class="card-title slav-icon-headline">
@@ -38,9 +38,11 @@
                 <span>Sammelprofil</span>
               </h3>
             </div>
-            <div class="card-body">Lesen Sie hier über unsere <a href="./about/sammelprofil.xml">formalen und inhaltlichen Kriterien</a> für das Publizieren auf SlavDok.</div>
+            <div class="card-body">
+              Lesen Sie hier über unsere <a href="./about/sammelprofil.xml">formalen und inhaltlichen Kriterien</a> für
+              das Publizieren auf SlavDok.
+            </div>
           </div>
-
           <div class="card">
             <div class="card-header">
               <h3 class="card-title slav-icon-headline">
@@ -49,33 +51,19 @@
               </h3>
             </div>
             <div class="card-body">
-              Das Veröffentlichen Ihrer wissenschaftlichen Arbeit auf SlavDok ist ganz einfach. Lesen Sie hier alles zur <a href="./publish/funktionsweise.xml">Funktionsweise,
-                vom Registrieren bis zum Dokumenten-Upload</a>.
+              Das Veröffentlichen Ihrer wissenschaftlichen Arbeit auf SlavDok ist ganz einfach. Lesen Sie hier alles
+              zur <a href="./publish/funktionsweise.xml">Funktionsweise, vom Registrieren bis zum Dokumenten-Upload</a>.
             </div>
-
           </div>
         </div>
       </div>
     </div>
-    <script src="../js/jquery.number.js" />
-    <script>
-      $( document ).ready(function() {
-      $.ajax({
-      type: "GET",
-      url: "../api/v1/search?q=objectType:mods AND state:published&amp;rows=0&amp;wt=json&amp;json.wrf=?",
-      dataType: "jsonp",
-      success: function (data) {
-      $('#project-searchInput').attr('placeholder', 'Suche in ' + $.number(data.response.numFound,0, ',', '.') +
-      ' Dokumenten');
-      },
-      });
-      });
-    </script>
+    <script src="../js/index.js" />
   </section>
 
   <section xml:lang="en" title="SlavDok - Repository for slavist publications">
     <head>
-      <meta name="title" content="SlavDok - Repository for slavist publications"/>
+      <meta name="title" content="SlavDok - Repository for slavist publications" />
       <meta name='description' content="SlavDok - Landing page of the Repository for slavist publications" />
     </head>
     <div class="jumbotwo" id="project-index-search">
@@ -98,51 +86,39 @@
               </h3>
             </div>
             <div class="card-body">
-              <span>SlavDok is the <a href="./about/wir-ueber-uns.xml">disciplinary open access repository</a> of the specialist information service for Slavic Studies, operated from the
-                  State library to Berlin.</span>
-              </div>
+              <span>
+                SlavDok is the <a href="./about/wir-ueber-uns.xml">disciplinary open access repository</a> of the
+                specialist information service for Slavic Studies, operated from the State library to Berlin.
+              </span>
             </div>
-
-            <div class="card">
-              <div class="card-header">
-                <h3 class="card-title slav-icon-headline">
-                  <i class="fas fa-bookmark" aria-hidden="true" />
-                  Collection profile
-                </h3>
-              </div>
-              <div class="card-body">Read about our <a href="./about/sammelprofil.xml"> formal and content criteria</a> for publishing on SlavDok.</div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title slav-icon-headline">
+                <i class="fas fa-bookmark" aria-hidden="true" />
+                Collection profile
+              </h3>
             </div>
-
-            <div class="card">
-              <div class="card-header">
-                <h3 class="card-title slav-icon-headline">
-                  <i class="fas fa-file-alt" aria-hidden="true" />
-                  Publish
-                </h3>
-              </div>
-              <div class="card-body">
-                Publishing your scientific work on Slavdok is easy. Learn here <a href="./publish/funktionsweise.xml"> how it works,
-                  from registration to document upload</a>.
-              </div>
+            <div class="card-body">
+              Read about our <a href="./about/sammelprofil.xml">formal and content criteria</a> for publishing on
+              SlavDok.
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title slav-icon-headline">
+                <i class="fas fa-file-alt" aria-hidden="true" />
+                Publish
+              </h3>
+            </div>
+            <div class="card-body">
+              Publishing your scientific work on Slavdok is easy. Learn here
+              <a href="./publish/funktionsweise.xml">how it works, from registration to document upload</a>.
             </div>
           </div>
         </div>
       </div>
-
-      <script src="../js/jquery.number.js"/>
-      <script>
-        $( document ).ready(function() {
-        $.ajax({
-        type: "GET",
-        url: "../api/v1/search?q=objectType:mods AND state:published&amp;rows=0&amp;wt=json&amp;json.wrf=?",
-        dataType: "jsonp",
-        success: function (data) {
-        $('#project-searchInput').attr('placeholder', 'Search in ' + $.number(data.response.numFound,0, ',', '.') +
-        ' documents');
-        },
-        });
-        });
-      </script>
-    </section>
-    <meta></meta>
-  </MyCoReWebPage>
+    </div>
+    <script src="../js/index.js" />
+  </section>
+</MyCoReWebPage>
