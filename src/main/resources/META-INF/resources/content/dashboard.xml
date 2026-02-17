@@ -6,11 +6,10 @@
       <meta name='description' content="SlavDok - Dashboard des Repositorium für slawistische Veröffentlichungen" />
     </head>
     <div class="jumbotwo" id="project-index-search">
-      <unpublished_documents />
+      <unpublished-documents />
     </div>
     <div>
-      <published_documents />
+      <published-documents />
     </div>
   </section>
-  <meta></meta>
 </MyCoReWebPage>
