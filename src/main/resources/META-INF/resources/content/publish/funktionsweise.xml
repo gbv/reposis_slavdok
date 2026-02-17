@@ -1,119 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MyCoReWebPage>
+<MyCoReWebPage><section xml:lang="de" title="SlavDok - Funktionsweise des Dokumentenservers"><head>
+  <meta name="title" content="SlavDok - Funktionsweise des Dokumentenservers" />
+  <meta name="description" content="SlavDok - alle Infos zur Registrierung, Dokumenten-Upload, Inhaltserschließung und Löschpolitik" />
+</head><p>
+</p><p> </p><p>
 
-	<section xml:lang="de" title="SlavDok - Funktionsweise des Dokumentenservers">
-		<head>
-			<meta name="title" content="SlavDok - Funktionsweise des Dokumentenservers"/>
-			<meta name="description"	content="SlavDok - alle Infos zur Registrierung, Dokumenten-Upload, Inhaltserschließung und Löschpolitik"/>
-		</head>
+</p><div class="row">
+  <div class="col-md-12">
+    <h1>Funktionsweise</h1>
 
-		<div class="row">
-			<div class="col-md-12">
-				<h1>Funktionsweise</h1>
+    <p> </p>
 
-				<p>
-					SlavDok ist Serviceangebot des Fachinformationsdiensts (FID) Slawistik. Diese Plattform steht dem Personal
-					universitärer wie außeruniversitärer Forschungseinrichtungen für das wissenschaftliche Open Access-Publizieren
-					offen. Sollten Sie aktuell mit einer entsprechenden Institution affiliiert sein und der Schwerpunkt Ihrer
-					wissenschaftlichen Aktivitäten auf den verschiedenen Feldern der Forschung zur Slawistik liegen, so bietet
-					Ihnen SlavDok die Möglichkeit, wissenschaftliche Originalbeiträge sowie Zweitpublikationen bereits an anderer
-					Stelle erschienener Texte nach den <a href="https://www.open-access.net/" target="_blank"><em>
-					Prinzipien des Open Access</em></a>	zu veröffentlichen.
-				</p>
+    <p>SlavDok ist Serviceangebot des Fachinformationsdiensts (FID) Slawistik. Diese Plattform steht dem Personal universitärer wie außeruniversitärer Forschungseinrichtungen für das wissenschaftliche Open Access-Publizieren offen. Sollten Sie aktuell mit einer entsprechenden Institution affiliiert sein und der Schwerpunkt Ihrer wissenschaftlichen Aktivitäten auf den verschiedenen Feldern der Forschung zur Slawistik liegen, so bietet Ihnen SlavDok die Möglichkeit, wissenschaftliche Originalbeiträge sowie Zweitpublikationen bereits an anderer Stelle erschienener Texte nach den <a href="https://www.open-access.net/" target="_blank"><em>Prinzipien des Open Access</em></a> zu veröffentlichen.</p>
 
-				<h2>Registrierung</h2>
+    <p> </p>
 
-				<p>
-					Vor der erstmaligen Nutzung des Publikationsservice müssen Sie sich zunächst registrieren. Dazu
-					vervollständigen Sie bitte das
-					<a href="https://slavdok.slavistik-portal.de/authorization/new-author.xed?action=register" target="_self">
-						<em>Registrierungsformular</em></a>	oder senden alternativ eine formlose E-Mail mit Ihren Kontaktdaten sowie
-					Angaben zur Forschungseinrichtung, der Sie gegenwärtig angehören, an:
-					<a href="mailto:slavdok@sbb.spk-berlin.de">slavdok@sbb.spk-berlin.de</a>. Bitte verwenden Sie in beiden Fällen
-					Ihre dienstliche E-Mail-Adresse. Unmittelbar im Anschluss wird Ihnen ein Link an die angegebene E-Mail-Adresse
-					zugesendet, dessen Aktivierung den Registrierungsvorgang abschließt. Mit Ihren Zugangsdaten können Sie sich
-					nun jederzeit am Server von SlavDok
-					<a href="https://slavdok.slavistik-portal.de/servlets/MCRLoginServlet?action=login&amp;url=..%2Fcontent%2Fdashboard.xml&amp;realm=local"
-					target="_self"><em>anmelden</em></a>.
-				</p>
+    <h2>Registrierung</h2>
 
-				<h2>Dokumenten-Upload</h2>
+    <p> </p>
 
-				<p>
-					Nach erfolgter Registrierung haben Sie als Inhaberin bzw. als Inhaber der jeweiligen Urheberrechte die
-					Möglichkeit, in Übereinstimmung mit unseren
-					<a href="https://slavdok.slavistik-portal.de/content/about/sammelprofil.xml" target="_self">
-					<em>Publikationsleitlinien</em></a>	beliebig viele Texte auf SlavDok zu veröffentlichen. Den
-					Publikationsvorgang starten Sie bitte durch Ihre
-					<a href="https://slavdok.slavistik-portal.de/servlets/MCRLoginServlet?action=login&amp;url=..%2Fcontent%2Fdashboard.xml&amp;realm=local"
-					target="_self"><em>Anmeldung</em></a>	am Server. Nach Erfassung und Speicherung der bibliographischen
-					Metadaten Ihres Beitrags laden Sie bitte die zugehörige(n) Datei(en) über die Menüfelder "Aktionen" und
-					"Hinzufügen eines Datenobjektes" in das Repositorium. Bitte beachten Sie, dass die von Ihnen zur
-					Veröffentlichung vorgesehenen Beiträge erst nach formaler und inhaltlicher Prüfung auf SlavDok freigeschaltet
-					werden. Sie tragen die Verantwortung dafür, dass keine Urheberrechte oder andere Rechte Dritter verletzt
-					werden – etwa im Kontext von Gemeinschaftspublikationen. Ihre Publikationsdateien u.a. in den Dateiformaten
-					MP3, PDF oder idealerweise PDF/A sollen DRM-frei (Digital Rights Management) sein, also nicht passwort- oder
-					schreibgeschützt, um die elektronische Langzeitarchivierung der Dokumente zu ermöglichen. Mit dem Upload Ihres
-					Dokuments sowie auf Grundlage eines schriftlichen
-					<a href="https://slavdok.slavistik-portal.de/content/rights/Publikationsvertrag-SlavDok.pdf" target="_blank">
-					<em>Publikationsvertrags</em></a>	wird SlavDok ein einfaches Nutzungsrecht zur Verbreitung und öffentlichen
-					Zugänglichmachung des Werks im Internet übertragen sowie ergänzend das Recht, insbesondere für
-					Archivierungszwecke Änderungen am jeweiligen Dateiformat vorzunehmen. Die elektronische Langzeitverfügbarkeit
-					der Publikationen und der Metadaten ist garantiert. Den vollständig ausgefüllten und mit Ihrer elektronischen
-					Unterschrift versehenen Publikationsvertrag im Dateiformat PDF senden Sie bitte per E-Mail an:
-					<a href="mailto:slavdok@sbb.spk-berlin.de">slavdok@sbb.spk-berlin.de</a>. Inhaltliche Modifikationen an
-					bereits auf SlavDok veröffentlichten Beiträgen sind dagegen ausschließlich durch Upload einer aktualisierten
-					Version möglich.
-				</p>
+    <p>Vor der erstmaligen Nutzung des Publikationsservice müssen Sie sich zunächst registrieren. Dazu vervollständigen Sie bitte das <a href="https://slavdok.slavistik-portal.de/authorization/new-author.xed?action=register" target="_self"><em>Registrierungsformular</em></a> oder senden alternativ eine formlose E-Mail mit Ihren Kontaktdaten sowie Angaben zur Forschungseinrichtung, der Sie gegenwärtig angehören, an: <a href="mailto:slavdok@sbb.spk-berlin.de">slavdok@sbb.spk-berlin.de</a>. Bitte verwenden Sie in beiden Fällen Ihre dienstliche E-Mail-Adresse. Unmittelbar im Anschluss wird Ihnen ein Link an die angegebene E-Mail-Adresse zugesendet, dessen Aktivierung den Registrierungsvorgang abschließt. Mit Ihren Zugangsdaten können Sie sich nun jederzeit am Server von SlavDok <a href="https://slavdok.slavistik-portal.de/servlets/MCRLoginServlet?action=login&amp;url=..%2Fcontent%2Fdashboard.xml&amp;realm=local" target="_self"><em>anmelden</em></a>.</p>
 
-				<p>
-					Handelt es sich bei dem zur Publikation auf SlavDok vorgesehenen Dokument um eine Erstveröffentlichung, so
-					verbleibt das ausschließliche Nutzungsrecht auch weiterhin bei Ihnen, weshalb Sie beliebig anderweitig über
-					das von Ihnen geschaffene Werk verfügen können. Bitte beachten Sie in diesem Zusammenhang auch die
-					ausführlichen <a href="urheberrecht.xml" target="_self">Hinweise zu den urheberrechtlichen Rahmenbedingungen
-					</a> des Open Access-Publizierens auf dem Fachrepositorium SlavDok. Der FID Slawistik empfiehlt Ihnen im
-					Interesse der eindeutigen Personenidentifikation die Nutzung der kostenfreien Open Researcher and Contributor
-					ID <a href="https://orcid.org/" target="_blank"> <em>(ORCID)</em></a>
-					und unterstützt Sie auf Wunsch beim Upload Ihrer Beiträge. Anleitungen und multimediale Schulungsmaterialien
-					zur Bedienung von SlavDok finden Sie in Kürze<a href="#">hier</a>.
-				</p>
+    <p> </p>
 
-				<h2>Inhaltserschließung</h2>
+    <h2>Dokumenten-Upload</h2>
 
-				<p>
-					Alle auf SlavDok veröffentlichten Textbeiträge werden mit Suchmaschinentechnologie im Volltext recherchierbar
-					gemacht. Zur Gewährleistung eines thematischen Browsings aller Inhalte von SlavDok sind Sie zudem gebeten, Ihr
-					Werk mit beschreibenden Metadaten systematisch zu erschließen. Hierzu wählen Sie im Zuge des
-					Einreichungsvorgangs bitte die passende Notation aus dem Ausklappmenü "SlavDok-Systematik" aus. Zusätzlich
-					haben Sie die Möglichkeit, den Inhalt Ihres Beitrags sowohl mit frei wählbaren als auch mit normierten
-					Schlagworten zu umschreiben. Bitte erfassen Sie jedes Schlagwort separat und überprüfen Sie – sofern Sie
-					normiertes Vokabular verwenden wollen – via "Suchen" dessen Konformität mit der Terminologie der im
-					Hintergrund eingebundenen
-					<a href="https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd.html" target="_blank">
-					<em>Gemeinsamen Normdatei der Deutschen Nationalbibliothek (GND)</em></a>. Bitte nutzen Sie die bevorzugte
-					Singularform der GND-Schlagwörter.
-				</p>
+    <p> </p>
 
-				<h2>Kontaktdaten und Löschpolitik</h2>
+    <p>Nach erfolgter Registrierung haben Sie als Inhaberin bzw. als Inhaber der jeweiligen Urheberrechte die Möglichkeit, in Übereinstimmung mit unseren <a href="https://slavdok.slavistik-portal.de/content/about/sammelprofil.xml" target="_self"><em>Publikationsleitlinien</em></a> beliebig viele Texte auf SlavDok zu veröffentlichen. Den Publikationsvorgang starten Sie bitte durch Ihre <a href="https://slavdok.slavistik-portal.de/servlets/MCRLoginServlet?action=login&amp;url=..%2Fcontent%2Fdashboard.xml&amp;realm=local" target="_self"><em>Anmeldung</em></a> am Server. Nach Erfassung und Speicherung der bibliographischen Metadaten Ihres Beitrags laden Sie bitte die zugehörige(n) Datei(en) über die Menüfelder "Aktionen" und "Hinzufügen eines Datenobjektes" in das Repositorium. Bitte beachten Sie, dass die von Ihnen zur Veröffentlichung vorgesehenen Beiträge erst nach formaler und inhaltlicher Prüfung auf SlavDok freigeschaltet werden. Sie tragen die Verantwortung dafür, dass keine Urheberrechte oder andere Rechte Dritter verletzt werden – etwa im Kontext von Gemeinschaftspublikationen. Ihre Publikationsdateien u.a. in den Dateiformaten MP3, PDF oder idealerweise PDF/A sollen DRM-frei (Digital Rights Management) sein, also nicht passwort- oder schreibgeschützt, um die elektronische Langzeitarchivierung der Dokumente zu ermöglichen.</p>
 
-				<p>
-					Sollten Sie weitere Rückfragen haben oder technische Schwierigkeiten während des Registrierungsvorgangs
-					auftreten, so stehen wir Ihnen jederzeit beratend zur Seite. Hier finden Sie unsere
-					<a href="https://slavdok.slavistik-portal.de/content/below/impressum.xml" target="_self"><em>Kontaktdaten</em></a>.
-				</p>
+    <p>Mit dem Upload Ihres Dokuments sowie auf Grundlage eines schriftlichen <a href="https://slavdok.slavistik-portal.de/content/rights/Publikationsvertrag-SlavDok.pdf" target="_blank"><em>Publikationsvertrags</em></a> wird SlavDok ein einfaches Nutzungsrecht zur Verbreitung und öffentlichen Zugänglichmachung des Werks im Internet übertragen sowie ergänzend das Recht, insbesondere für Archivierungszwecke Änderungen am jeweiligen Dateiformat vorzunehmen. Die elektronische Langzeitverfügbarkeit der Publikationen und der Metadaten ist garantiert. Den vollständig ausgefüllten und mit Ihrer elektronischen Unterschrift versehenen Publikationsvertrag im Dateiformat PDF senden Sie bitte per E-Mail an: <a href="mailto:slavdok@sbb.spk-berlin.de">slavdok@sbb.spk-berlin.de</a>. Inhaltliche Modifikationen an bereits auf SlavDok veröffentlichten Beiträgen sind dagegen ausschließlich durch Upload einer aktualisierten Version möglich.</p>
 
-				<p>
-					Der FID Slawistik behält es sich vor, die Registrierung bei SlavDok wie auch die Veröffentlichung einzelner
-					Beiträge in begründeten Ausnahmefällen zu verweigern. Auch ist eine Löschung sowie jede nachträgliche
-					Veränderung von auf SlavDok veröffentlichten Dokumenten nicht vorgesehen. Selbstverständlich steht es Ihnen
-					aber frei, Ihre Beiträge in aktualisierten Versionen erneut zu publizieren. Sollte – etwa aus strafrechtlichen
-					oder urheberrechtlichen Gründen – die öffentliche Zugänglichkeit eines bereits publizierten Beitrags nicht
-					erlaubt sein, so wird der Zugriff auf ihn gesperrt und dies unter seinen persistenten Webadressen
-					bekannt gegeben.
-				</p>
-			</div>
-		</div>
-	</section>
-	<meta>
-	</meta>
-</MyCoReWebPage>
+    <p>Handelt es sich bei dem zur Publikation auf SlavDok vorgesehenen Dokument um eine Erstveröffentlichung, so verbleibt das ausschließliche Nutzungsrecht auch weiterhin bei Ihnen, weshalb Sie beliebig anderweitig über das von Ihnen geschaffene Werk verfügen können. Bitte beachten Sie in diesem Zusammenhang auch die ausführlichen <a href="https://reposis-test.gbv.de/slavdok/content/publish/urheberrecht.xml" target="_self">Hinweise zu den urheberrechtlichen Rahmenbedingungen </a>des Open Access-Publizierens auf dem Fachrepositorium SlavDok. Der FID Slawistik empfiehlt Ihnen im Interesse der eindeutigen Personenidentifikation die Nutzung der kostenfreien Open Researcher and Contributor ID <a href="https://orcid.org/" target="_blank"><em>(ORCID)</em></a> und unterstützt Sie auf Wunsch beim Upload Ihrer Beiträge. Anleitungen und multimediale Schulungsmaterialien zur Nutzung von SlavDok werden in Kürze verfügbar sein.</p>
+
+    <p> </p>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Inhaltserschließung</h2>
+
+        <p> </p>
+
+        <p>Alle auf SlavDok veröffentlichten Textbeiträge werden mit Suchmaschinentechnologie im Volltext recherchierbar gemacht. Zur Gewährleistung eines thematischen Browsings aller Inhalte von SlavDok sind Sie zudem gebeten, Ihr Werk mit beschreibenden Metadaten systematisch zu erschließen. Hierzu wählen Sie im Zuge des Einreichungsvorgangs bitte die passende Notation aus dem Ausklappmenü "SlavDok-Systematik" aus. Zusätzlich haben Sie die Möglichkeit, den Inhalt Ihres Beitrags sowohl mit frei wählbaren als auch mit normierten Schlagworten zu umschreiben. Bitte erfassen Sie jedes Schlagwort separat und überprüfen Sie – sofern Sie normiertes Vokabular verwenden wollen – via "Suchen" dessen Konformität mit der Terminologie der im Hintergrund eingebundenen <a href="https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd.html" target="_blank"><em>Gemeinsamen Normdatei der Deutschen Nationalbibliothek (GND)</em></a>. Bitte nutzen Sie die bevorzugte Singularform der GND-Schlagwörter.</p>
+
+        <p> </p>
+
+        <h2>Kontaktdaten und Löschpolitik</h2>
+
+        <p>Sollten Sie weitere Rückfragen haben oder technische Schwierigkeiten während des Registrierungsvorgangs auftreten, so stehen wir Ihnen jederzeit beratend zur Seite. Hier finden Sie unsere <a href="https://slavdok.slavistik-portal.de/content/below/impressum.xml" target="_self"><em>Kontaktdaten</em></a>.</p>
+
+        <p>Der FID Slawistik behält es sich vor, die Registrierung bei SlavDok wie auch die Veröffentlichung einzelner Beiträge in begründeten Ausnahmefällen zu verweigern. Auch ist eine Löschung sowie jede nachträgliche Veränderung von auf SlavDok veröffentlichten Dokumenten nicht vorgesehen. Selbstverständlich steht es Ihnen aber frei, Ihre Beiträge in aktualisierten Versionen erneut zu publizieren. Sollte – etwa aus strafrechtlichen oder urheberrechtlichen Gründen – die öffentliche Zugänglichkeit eines bereits publizierten Beitrags nicht erlaubt sein, so wird der Zugriff auf ihn gesperrt und dies unter seinen persistenten Webadressen bekannt gegeben.</p>
+      </div>
+    </div>
+
+    <p> </p>
+  </div>
+</div><p>
+</p></section><section xml:lang="en" title="How It Works"><head>
+  <meta name="title" content="SlavDok - General Informations" />
+  <meta name="description" content="SlavDok - alle Infos zur Registrierung, Dokumenten-Upload, Inhaltserschließung und Löschpolitik" />
+</head><p>
+</p><h1>How It Works</h1><p>
+
+</p><p> </p><p>
+
+</p><p>SlavDok is a service offered by the Slavic Studies Information Service (FID). This platform is open to staff members of both university and non-university research institutions for scholarly open-access publishing. If you are currently affiliated with a relevant institution, and your academic activities focus on various fields of research in Slavic studies, SlavDok offers you the opportunity to publish original academic contributions as well as secondary publications of texts that have already appeared elsewhere in accordance with the <a href="https://open-access.network/en/home">principles of Open Access</a>.</p><p>
+
+</p><p> </p><p>
+
+</p><h2>Registration</h2><p>
+
+</p><p> </p><p>
+
+</p><p>Before using the publication service for the first time, you must first register. To do so, please complete the registration form or alternatively send an informal e-mail with your contact details as well as details of the research institution to which you currently belong to:<a href="mailto: slavdok@sbb.spk-berlin.de"> slavdok@sbb.spk-berlin.de</a>. In both cases, please use your official e-mail address. Immediately afterwards, a link will be sent to the e-mail address you provided, the activation of which completes the registration process. With your access data, you can now log in to the SlavDok server at any time.</p><p>
+
+</p><p> </p><p>
+
+</p><h2>Document upload</h2><p>
+
+</p><p> </p><p>
+
+</p><p>Once you have registered, as the copyright holder, you can publish as many texts as you wish on SlavDok in accordance with our publication guidelines. To begin the publication process, please log in to the server. After entering and saving the bibliographic metadata for your contribution, upload the corresponding file(s) to the repository using the 'Actions' and 'Add a data object' menu fields. Please note that the contributions you intend to publish will only be released on SlavDok after formal and content-related checks have been carried out. You are responsible for ensuring that no copyrights or other rights of third parties are violated, for example in the context of joint publications. Your publication files should be in formats like MP3, PDF, or ideally PDF/A, among others, and should be DRM-free (Digital Rights Management), meaning they should not be password-protected or set to read-only, to enable long-term electronic archiving of the documents.</p><p>
+
+</p><p>With the upload of your document and based on a written publication contract, SlavDok is granted a simple right of use for the distribution and public accessibility of the work on the internet, as well as the supplementary right to make changes to the respective file format, particularly for archiving purposes. The long-term electronic availability of the publications and metadata is guaranteed. Please send the completed publication contract in PDF format with your electronic signature via email to: <a href="mailto:slavdok@sbb.spk-berlin.de">slavdok@sbb.spk-berlin.de.</a> On the other hand, modifications to the content of articles already published on SlavDok are only possible by uploading an updated version.</p><p>
+
+</p><p>If the document intended for publication on SlavDok is a first publication, the exclusive right of use remains with you, allowing you to dispose of the work you've created in any other way you wish. Please also review the detailed information on <a href="https://slavdok.slavistik-portal.de/content/publish/urheberrecht.xml">the copyright framework for open access publishing</a> in the SlavDok repository. To ensure unique personal identification, FID Slavonic Studies recommends using the free Open Researcher and Contributor ID (<a href="https://orcid.org/">ORCID</a>) and will assist you in uploading your contributions if desired. Instructions and multimedia training materials on how to use SlavDok will be available shortly.</p><p>
+
+</p><p> </p><p>
+
+</p><h2>Content indexing</h2><p>
+
+</p><p> </p><p>
+
+</p><p>All text contributions published on SlavDok are made searchable in full text using search engine technology. To ensure thematic browsing of all SlavDok content, you are also asked to index your work with descriptive metadata. For this purpose, please select the appropriate notation from the drop-down menu "SlavDok systematics" in the course of the submission process. In addition, you have the option of describing the content of your contribution using both freely selectable and standardised keywords. Please enter each keyword separately and - if you wish to use standardised vocabulary - check via "Search" that it conforms to the terminology of the Gemeinsame Normdatei der Deutschen Nationalbibliothek (<a href="https://explore.gnd.network/en/">GND</a>), which is integrated in the background. Please use the preferred singular form of the GND keywords.</p><p>
+
+</p><p> </p><p>
+
+</p><h2>Contact details and deletion policy</h2><p>
+
+</p><p> </p><p>
+
+</p><p>If you have any further questions or encounter technical difficulties during the registration process, we are always available to advise you. Please send us an email at <a href="mailto:slavdok@sbb.spk-berlin.de">slavdok@sbb.spk-berlin.de</a></p><p>
+
+</p><p>The FID Slavonic Studies reserves the right to refuse registration with SlavDok as well as the publication of individual contributions in justified exceptional cases. Deletion and any subsequent alteration of documents published on SlavDok is also not envisaged. However, you are of course free to republish your contributions in updated versions. If - for example, for reasons of copyright - public access to a contribution that has already been published is not permitted, access to it will be blocked and this will be announced under its persistent web addresses.</p><p>
+
+</p><p> </p><p>
+</p></section><meta><log lastEditor="asarayeva" date="2023-10-16" time="14:58" /></meta></MyCoReWebPage>

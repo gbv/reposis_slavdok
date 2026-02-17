@@ -1,60 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MyCoReWebPage>
+<MyCoReWebPage><section xml:lang="de" title="SlavDok - FAQ, Häufig gestellte Fragen"><head>
+  <meta name="title" content="SlavDok - FAQ, Häufig gestellte Fragen" />
+  <meta name="description" content="SlavDok - alle Fragen und Antworten zum Repositorium" />
+</head><p>
+</p><h1>Häufig gestellte Fragen (FAQ)</h1><p>
 
-	<section xml:lang="de" title="SlavDok - FAQ, Häufig gestellte Fragen">
+</p><div class="row">
+  <div class="col-md-12">
+    <h2>Wie erfolgt der Publikationsprozess?</h2>
 
-		<head>
-			<meta name="title" content="SlavDok - FAQ, Häufig gestellte Fragen"/>
-			<meta name="description" content="SlavDok - alle Fragen und Antworten zum Repositorium"/>
-		</head>
+    <p>Die Publikation eines Dokuments auf SlavDok erfolgt nach erfolgreichem <a href="https://slavdok.slavistik-portal.de/servlets/MCRLoginServlet?action=login&amp;url=..%2Fcontent%2Fdashboard.xml&amp;realm=local">Login</a> in drei Schritten und mittels Online-Eingabemaske:</p>
 
-		<div class="row">
-			<div class="col-md-12">
-				<h1>Häufig gestellte Fragen (FAQ)</h1>
+    <ol>
+      <li><strong>Publikationstyp auswählen, bibliographische Angaben erfassen und Lizenz auswählen</strong><br />
+        <br />
+        Nach <a href="https://slavdok.slavistik-portal.de/content/publish/index.xml" target="_self"><em>Auswahl des Publikationstyps</em></a> erfassen Sie in der Eingabemaske bitte die bibliographischen Angaben zu Ihrem Dokument (Autoren, Titel, Jahr, Abstract usw.). Außerdem haben Sie hier die Möglichkeit, eine Creative-Commons-Lizenz für die Publikation auszuwählen.
 
-				<h2>Wie erfolgt der Publikationsprozess?</h2>
+        <hr />
+        <p> </p>
+      </li>
+      <li><strong>Dokument (z.B. PDF, PDF/A, MP3) hochladen</strong><br />
+        <br />
+        Nach dem Speichern Ihrer Eingaben kann das zu publizierende Dokument auf den SlavDok-Server hochgeladen werden.
+        <hr />
+        <p> </p>
+      </li>
+      <li><strong>Publikationsvertrag ausfüllen und per Email an SlavDok senden</strong><br />
+        <br />
+        Nach dem Hochladen des Dokuments laden Sie bitte den <a href="https://slavdok.slavistik-portal.de/content/rights/Publikationsvertrag-SlavDok.pdf" target="_blank"><em>Publikationsvertrag</em></a> herunter, füllen ihn (online) aus, unterschreiben ihn (digital) und senden ihn eingescannt per E-Mail an <a href="mailto:slavdok@sbb.spk-berlin.de">slavdok@sbb.spk-berlin.de</a>. Das SlavDok-Team prüft dann die bibliographischen Angaben, sowie die hochgeladene Datei und publiziert nach Eintreffen der unterschriebenen Veröffentlichungsgenehmigung Ihr Dokument auf SlavDok. Sie werden per E-Mail informiert.</li>
+    </ol>
+  </div>
+</div><p>
 
-				<p>
-					Die Publikation eines Dokuments auf SlavDok erfolgt nach erfolgreichem
-					<a href="https://slavdok.slavistik-portal.de/servlets/MCRLoginServlet?action=login&amp;url=..%2Fcontent%2Fdashboard.xml&amp;realm=local">
-					Login</a> in drei Schritten und mittels Online-Eingabemaske:
-				</p>
+</p><p> </p><p>
+</p></section><section xml:lang="en" title="Frequently asked questions (FAQ)"><div class="row">
+  <div class="col-md-12">
+    <h1>Frequently asked questions (FAQ)</h1>
 
-				<ol>
-					<li>
-						<strong>Publikationstyp auswählen, bibliographische Angaben erfassen und Lizenz auswählen</strong>
-						<br/>
-						<br/>
-						Nach <a href="https://slavdok.slavistik-portal.de/content/publish/index.xml" target="_self"><em>Auswahl des
-						Publikationstyps</em></a>	erfassen Sie in der Eingabemaske bitte die bibliographischen Angaben zu Ihrem
-						Dokument (Autoren, Titel, Jahr, Abstract usw.). Außerdem haben Sie hier die Möglichkeit, eine
-						Creative-Commons-Lizenz für die Publikation auszuwählen.
-						<br/>
-					</li>
-					<li>
-						<strong>Dokument (z.B. PDF, PDF/A, MP3) hochladen</strong>
-						<br/>
-						<br/>
-						Nach dem Speichern Ihrer Eingaben kann das zu publizierende Dokument auf den SlavDok-Server hochgeladen
-						werden.
-						<br/>
-					</li>
-					<li>
-						<strong>Publikationsvertrag ausfüllen und per Email an SlavDok senden</strong>
-						<br/>
-						<br/>
-						Nach dem Hochladen des Dokuments laden Sie bitte den
-						<a href="https://slavdok.slavistik-portal.de/content/rights/Publikationsvertrag-SlavDok.pdf"
-						target="_blank"><em>Publikationsvertrag</em></a>	herunter, füllen ihn (online) aus, unterschreiben ihn
-						(digital) und senden ihn eingescannt per E-Mail an
-						<a href="mailto:slavdok@sbb.spk-berlin.de">slavdok@sbb.spk-berlin.de</a>. Das SlavDok-Team prüft dann die
-						bibliographischen Angaben, sowie die hochgeladene Datei und publiziert nach Eintreffen der unterschriebenen
-						Veröffentlichungsgenehmigung Ihr Dokument auf SlavDok. Sie werden per E-Mail informiert.
-					</li>
-				</ol>
-			</div>
-		</div>
-	</section>
-	<meta>
-	</meta>
-</MyCoReWebPage>
+    <h2>How does the publication process work?</h2>
+
+    <p> </p>
+
+    <p>After successful login, the publication of a document on SlavDok takes place in three steps and via an online input mask:</p>
+
+    <ol>
+      <li><strong>Select publication type, enter bibliographic information and select licence</strong>: After selecting the publication type, please enter the bibliographic data for your document (authors, title, year, abstract, keywords, affiliation) in the input mask. You also have the option of selecting a Creative Commons licence for the publication.
+
+        <hr />
+        <p> </p>
+      </li>
+      <li><strong>Upload document (e.g. PDF, PDF/A, MP3)</strong>: After saving your entries, the document to be published can be uploaded to the SlavDok server.
+        <hr />
+        <p> </p>
+      </li>
+      <li><strong>Fill in the publication contract and send it to SlavDok via email:</strong> After uploading the document, please download the publication contract, fill it out (online), sign it (digitally) and send it scanned by email to <a href="mailto:slavdok@sbb.spk-berlin.de">slavdok@sbb.spk-berlin.de</a>. The SlavDok team will then check the bibliographic information as well as the uploaded file and publish your document on SlavDok after receiving the signed publication authorisation. You will be informed by email.</li>
+    </ol>
+  </div>
+</div><p>
+
+</p><p> </p><p>
+
+</p><p> </p><p>
+
+</p><p> </p><p>
+</p></section><meta><log lastEditor="asarayeva" date="2023-10-12" time="17:05" /></meta></MyCoReWebPage>
