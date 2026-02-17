@@ -1,55 +1,111 @@
-
-$(document).ready(function () {
-
-  // spam protection for mails
-  $('span.madress').each(function (i) {
-    var text = $(this).text();
-    var address = text.replace(" [at] ", "@");
-    $(this).after('<a href="mailto:' + address + '">' + address + '</a>')
-    $(this).remove();
+function replaceMaskedEmails() {
+  document.querySelectorAll('span.madress').forEach(span => {
+    const address = span.textContent.replace(' [at] ', '@');
+    const link = document.createElement('a');
+    link.href = `mailto:${address}`;
+    link.textContent = address;
+    span.replaceWith(link);
   });
+}
 
-  // activate empty search on start page
-  $("#project-searchMainPage").submit(function (evt) {
-    $(this).find(":input").filter(function () {
-      return !this.value;
-    }).attr("disabled", true);
-    return true;
+function ignoreEmptyFieldsOnSubmit(event) {
+  const form = event.currentTarget;
+  const inputs = form.querySelectorAll('input');
+  inputs.forEach(input => {
+    if (!input.value) {
+      input.dataset.nameBackup = input.name;
+      input.removeAttribute('name');
+    }
   });
+  // Restore field names after the form is submitted
+  // setTimeout ensures this runs after the submit event completes
+  setTimeout(() => {
+    inputs.forEach(input => {
+      if (input.dataset.nameBackup) {
+        input.name = input.dataset.nameBackup;
+        delete input.dataset.nameBackup;
+      }
+    });
+  }, 0);
+}
 
-  // replace placeholder USERNAME with username
-  var userID = $("#currentUser strong").html();
-  var localHref = 'http://localhost:18031/slavdok/servlets/solr/select?q=createdby:' + userID + '&fq=objectType:mods';
-  $("a[href='http://localhost:18031/slavdok/servlets/solr/select?q=createdby:USERNAME']").attr('href', localHref);
-  var testHref = 'https://reposis-test.gbv.de/slavdok/servlets/solr/select?q=createdby:' + userID + '&fq=objectType:mods';
-  $("a[href='https://reposis-test.gbv.de/slavdok/servlets/solr/select?q=createdby:USERNAME']").attr('href', testHref);
-  var prodHref = 'https://slavdok.slavistik-portal.de/servlets/solr/select?q=createdby:' + userID + '&fq=objectType:mods';
-  $("a[href='https://slavdok.slavistik-portal.de/servlets/solr/select?q=createdby:USERNAME']").attr('href', prodHref);
+function fixLanguageMenus() {
+  document.querySelectorAll(".language-menu")
+    .forEach(el => el.classList.add('dropdown-menu-right'));
+}
 
-  // prevent dropdown from leaving visible page area
-  $(".language-menu").addClass('dropdown-menu-right');
+function initOpenAire() {
+  const openAireBox = document.getElementById('open-aire_box');
+  const openAireTrigger = document.getElementById('open-aire_trigger');
+  const openAireCheckbox = document.getElementById('open-aire_trigger_checkbox');
+  const duration = 500; // ms
 
-  // hide openAIRE in forms intially
+  if (!openAireBox || !openAireTrigger || !openAireCheckbox) return;
+
   if (localStorage.getItem('open_aire_options_are_visible') === "false") {
-    $('#open-aire_box').css('display', 'none');
+    openAireBox.style.display = 'none';
+    openAireBox.style.opacity = 0;
+  } else {
+    openAireBox.style.display = 'block';
+    openAireBox.style.opacity = 1;
   }
 
-  // toggle openAIRE in forms on-click
-  $("#open-aire_trigger_checkbox").click(function () {
-    toggleOAOptions();
-  });
-
-
-  // expand click behavoir to legend that contains the trigger
-  // collapsed legend was clicked
-  $("body").on("click", ".mir-fieldset-collapsed", function (event) {
-    // if contained trigger was not clicked
-    if (!$(event.target).hasClass('expand-item')) {
-      // simulate click on trigger
-      $(event.target).find('.expand-item').click();
+  openAireCheckbox.addEventListener('click', () => {
+    if (openAireBox.style.display !== 'none' && openAireBox.style.opacity !== '0') {
+      openAireTrigger.classList.remove('glyphicon-check');
+      openAireTrigger.classList.add('glyphicon-unchecked');
+      fadeOut(openAireBox, duration);
+      localStorage.setItem("open_aire_options_are_visible", false);
+    } else {
+      openAireTrigger.classList.remove('glyphicon-unchecked');
+      openAireTrigger.classList.add('glyphicon-check');
+      fadeIn(openAireBox, duration);
+      localStorage.setItem("open_aire_options_are_visible", true);
     }
   });
 
+  function fadeOut(element, duration) {
+    element.style.transition = `opacity ${duration}ms`;
+    element.style.opacity = '0';
+    setTimeout(() => {
+      element.style.display = 'none';
+    }, duration);
+  }
+
+  function fadeIn(element, duration) {
+    element.style.display = 'block';
+    element.style.transition = `opacity ${duration}ms`;
+    void element.offsetWidth; // trigger reflow
+    element.style.opacity = '1';
+  }
+}
+
+// Expand click behavior to legend that contains the trigger collapsed legend was clicked
+function initFieldsetCollapsing() {
+  document.body.addEventListener('click', function(event) {
+    const fieldset = event.target.closest('.mir-fieldset-collapsed');
+    if (!fieldset) return;
+
+    if (!event.target.classList.contains('expand-item')) {
+      const trigger = fieldset.querySelector('.expand-item');
+      if (trigger) {
+        trigger.click();
+      }
+    }
+  });
+}
+
+function init() {
+  document.getElementById('project-searchMainPage')?.addEventListener('submit', ignoreEmptyFieldsOnSubmit);
+  replaceMaskedEmails();
+  fixLanguageMenus();
+  initOpenAire();
+  initFieldsetCollapsing();
+}
+
+document.addEventListener("DOMContentLoaded", init);
+
+$(document).ready(function () {
   $(".bc-select").each(function () {
     // setDefault($(this));
     if ($(this).children("option").length > 0) {
@@ -59,40 +115,7 @@ $(document).ready(function () {
       setSelect2BC($(this));
     }
   });
-
-
 });
-
-function getNewestSubmissions() {
-  $.ajax({
-    method: "GET",
-    url: webApplicationBaseURL + "servlets/solr/find?rows=5&sort=created+desc",
-    dataType: "html"
-  }).done(function (html) {
-    var hitListHtml = $(html).find('#hit_list').html();
-    if (hitListHtml.includes("hit_1")) {
-      $('#hit_list').html(hitListHtml);
-      $('.hit_counter').html("&nbsp");
-      $('.hit_options').html("&nbsp");
-      $('.single_hit_option').html("&nbsp");
-    }
-  });
-};
-
-function toggleOAOptions() {
-  var duration = 500;
-  if ($('#open-aire_box').is(':visible')) {
-    $('#open-aire_trigger').removeClass('glyphicon-check');
-    $('#open-aire_trigger').addClass('glyphicon-unchecked');
-    $('#open-aire_box').fadeOut(duration);
-    localStorage.setItem("open_aire_options_are_visible", false);
-  } else {
-    $('#open-aire_trigger').removeClass('glyphicon-unchecked');
-    $('#open-aire_trigger').addClass('glyphicon-check');
-    $('#open-aire_box').fadeIn(duration);
-    localStorage.setItem("open_aire_options_are_visible", true);
-  }
-};
 
 // TODO: Parameterize the select function in MIR (type-ahead)
 function setLabelForClassificationBC(parent) {
