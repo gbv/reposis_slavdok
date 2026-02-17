@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0"
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:mods="http://www.loc.gov/mods/v3"
-    xmlns:mcrmods="xalan://org.mycore.mods.classification.MCRMODSClassificationSupport"
-    xmlns:mcrxsl="xalan://org.mycore.common.xml.MCRXMLFunctions"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-    xmlns:encoder="xalan://java.net.URLEncoder"
-    xmlns:i18n="xalan://org.mycore.services.i18n.MCRTranslation"
-    exclude-result-prefixes=" i18n mods mcrmods mcrxsl xlink encoder">
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  xmlns:mods="http://www.loc.gov/mods/v3"
+  xmlns:mcrmods="xalan://org.mycore.mods.classification.MCRMODSClassificationSupport"
+  xmlns:mcrxsl="xalan://org.mycore.common.xml.MCRXMLFunctions"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:encoder="xalan://java.net.URLEncoder"
+  xmlns:i18n="xalan://org.mycore.services.i18n.MCRTranslation"
+  exclude-result-prefixes=" i18n mods mcrmods mcrxsl xlink encoder">
   <xsl:import href="xslImport:modsmeta" />
   <xsl:include href="layout/mir-layout-utils.xsl" />
   <xsl:include href="mods-utils.xsl" />
   <xsl:include href="mir-mods-utils.xsl" />
+
+  <!-- START slavdok adjustments -->
+  <xsl:include href="resource:xsl/slavdok-user-rights.xsl" />
+  <!-- END slavdok adjustments -->
+
   <xsl:key use="@id" name="rights" match="/mycoreobject/rights/right" />
   <xsl:variable name="mods-type">
     <xsl:apply-templates mode="mods-type" select="." />
@@ -48,7 +53,7 @@
                     </xsl:for-each>
                   </xsl:if>
                   <xsl:variable name="hitsPrecending"
-                                select="document(concat('solr:q=',encoder:encode(concat('mods.relatedItem.preceding:', mycoreobject/@ID)), '&amp;rows=1000&amp;sort=mods.dateIssued desc,mods.dateIssued.host desc,mods.title.main desc&amp;group=true&amp;group.limit=100&amp;group.field=mods.yearIssued'))/response/lst[@name='grouped']/lst[@name='mods.yearIssued']" />
+                    select="document(concat('solr:q=',encoder:encode(concat('mods.relatedItem.preceding:', mycoreobject/@ID)), '&amp;rows=1000&amp;sort=mods.dateIssued%20desc,mods.dateIssued.host%20desc,mods.title.main%20desc&amp;group=true&amp;group.limit=100&amp;group.field=mods.yearIssued'))/response/lst[@name='grouped']/lst[@name='mods.yearIssued']" />
                   <xsl:if test="$hitsPrecending/int[@name='matches'] &gt; 0">
                     <xsl:call-template name="listRelatedItems">
                       <xsl:with-param name="hits" select="$hitsPrecending" />
@@ -167,12 +172,9 @@
     <xsl:param name="title" />
     <xsl:param name="linkText" />
     <xsl:param name="query" />
-
-    <xsl:variable name="requestHandler">
-      <xsl:call-template name="getRequestHandler" />
-    </xsl:variable>
-
-    <a href="{$ServletsBaseURL}solr/{$requestHandler}?condQuery={$query}">
+    <!-- START slavdok adjustments -->
+    <a href="{$ServletsBaseURL}solr/{$solr-find-core}?condQuery={$query}">
+    <!-- END slavdok adjustments -->
       <xsl:if test="$title">
         <xsl:attribute name="title">
           <xsl:value-of select="$title" />
@@ -185,17 +187,6 @@
       </xsl:if>
       <xsl:copy-of select="$linkText" />
     </a>
-  </xsl:template>
-
-  <xsl:template name="getRequestHandler">
-    <xsl:choose>
-      <xsl:when test="mcrxsl:isCurrentUserInRole('editor') or mcrxsl:isCurrentUserInRole('admin')">
-        <xsl:text>/find</xsl:text>
-      </xsl:when>
-      <xsl:otherwise>
-        <xsl:text>/findPublic</xsl:text>
-      </xsl:otherwise>
-    </xsl:choose>
   </xsl:template>
 
 </xsl:stylesheet>
