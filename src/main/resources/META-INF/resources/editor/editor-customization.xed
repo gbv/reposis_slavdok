@@ -342,26 +342,38 @@
 
   <!-- ========== General overrides ========== -->
   <xed:template id="blog_entry_link">
-    <mir:textfield xpath="mods:location/mods:url[@access='raw object']" label="mir.link.blog_entry"
-      help-text="{i18n:mir.help.link.blog_entry}" class="required" required="true"
+    <mir:textfield
+      xpath="mods:location/mods:url[@access='raw object']"
+      label="mir.link.blog_entry"
+      help-text="{i18n:mir.help.link.blog_entry}"
+      class="required"
+      required="true"
       required-i18n="mir.validation.link.blog_entry" />
   </xed:template>
 
   <xed:template id="blog_link.relItemsearch">
-    <mir:relItemsearch searchengine="empty" genre="blog" responsefield="url.access.raw_object"
-      xpath="mods:location/mods:url[@access='raw object']" label="mir.link.blog"
+    <mir:relItemsearch
+      searchengine="empty"
+      genre="blog"
+      responsefield="url.access.raw_object"
+      xpath="mods:location/mods:url[@access='raw object']"
+      label="mir.link.blog"
       help-text="{i18n:mir.help.link.blog}" />
   </xed:template>
 
   <!-- TODO: Fix in mir missing help text  -->
   <xed:template id="identifier.isbn">
-    <mir:textfield xpath="mods:identifier[@type='isbn']" label="mir.identifier.isbn"
+    <mir:textfield
+      xpath="mods:identifier[@type='isbn']"
+      label="mir.identifier.isbn"
       help-text="{i18n:mir.help.identifier.isbn}" />
   </xed:template>
 
   <!-- TODO: Fix in mir missing help text  -->
   <xed:template id="identifier.issn">
-    <mir:textfield xpath="mods:identifier[@type='issn']" label="mir.identifier.issn" 
+    <mir:textfield
+      xpath="mods:identifier[@type='issn']"
+      label="mir.identifier.issn"
       help-text="{i18n:mir.help.identifier.issn}" />
   </xed:template>
 
@@ -393,20 +405,40 @@
       </legend>
       <div class="d-none">
         <div class="mir-fieldset-content mir-openAIRE-container">
-          <mir:textfield.nobind id="name" label="mir.project.name" help-text="{i18n:mir.help.project.name}" autocomplete="off" />
-          <mir:textfield.nobind id="acronym" label="mir.project.acronym" help-text="{i18n:mir.help.project.acronym}" autocomplete="off" />
+          <mir:textfield.nobind
+            id="name"
+            label="mir.project.name"
+            help-text="{i18n:mir.help.project.name}"
+            autocomplete="off" />
+          <mir:textfield.nobind
+            id="acronym"
+            label="mir.project.acronym"
+            help-text="{i18n:mir.help.project.acronym}"
+            autocomplete="off" />
           <div class="form-group row">
             <label class="col-md-3 col-form-label text-right" />
             <div class="col-md-6">
               <div class="row">
                 <div class="col-md-4">
-                  <input type="text" class="form-control inputWarning" name="" placeholder="{i18n:mir.project.grantID}" />
+                  <input
+                    type="text"
+                    class="form-control inputWarning"
+                    name=""
+                    placeholder="{i18n:mir.project.grantID}" />
                 </div>
                 <div class="col-md-4">
-                  <input type="text" class="form-control inputWarning" name="" placeholder="{i18n:mir.project.sponsor.programmID}" />
+                  <input
+                    type="text"
+                    class="form-control inputWarning"
+                    name=""
+                    placeholder="{i18n:mir.project.sponsor.programmID}" />
                 </div>
                 <div class="col-md-4">
-                  <input type="text" class="form-control inputWarning" name="" placeholder="{i18n:mir.project.sponsor.organisationID}" />
+                  <input
+                    type="text"
+                    class="form-control inputWarning"
+                    name=""
+                    placeholder="{i18n:mir.project.sponsor.organisationID}" />
                 </div>
               </div>
             </div>
@@ -422,9 +454,12 @@
   </xed:template>
 
   <xed:template id="producer.speaker.repeated">
-    <xed:bind xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='cre']" />
-    <xed:bind xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='pro']" />
-    <xed:bind xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='spk']" />
+    <xed:bind
+      xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='cre']" />
+    <xed:bind
+      xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='pro']" />
+    <xed:bind
+      xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='spk']" />
     <mir:person.repeated help-text="{i18n:mir.help.producer.speaker}">
       <option value="cre">
         <xed:output i18n="mir.role.creator" />
@@ -459,15 +494,28 @@
   </xed:template>
 
   <xed:template id="title.blog.relItemsearch">
-    <mir:relItemsearch searchengine="title" genre="blog" responsefield="mods.title"
-      xpath="mods:titleInfo/mods:title" label="mir.title.blog" help-text="{i18n:mir.help.title.blog}"
-      class="required" required="true" required-i18n="mir.validation.blog.title" />
+    <mir:relItemsearch
+      searchengine="title"
+      genre="blog"
+      responsefield="mods.title"
+      xpath="mods:titleInfo/mods:title"
+      label="mir.title.blog"
+      help-text="{i18n:mir.help.title.blog}"
+      class="required"
+      required="true"
+      required-i18n="mir.validation.blog.title" />
   </xed:template>
 
   <!-- overwrite: set field as required -->
   <xed:template id="title.proceedings.relItemsearch">
-    <mir:relItemsearch searchengine="title" genre="proceedings" responsefield="mods.title"
-      xpath="mods:titleInfo/mods:title" label="mir.title" class="required" required="true"
+    <mir:relItemsearch
+      searchengine="title"
+      genre="proceedings"
+      responsefield="mods.title"
+      xpath="mods:titleInfo/mods:title"
+      label="mir.title"
+      class="required"
+      required="true"
       required-i18n="mir.validation.title.proceedings" />
   </xed:template>
 
