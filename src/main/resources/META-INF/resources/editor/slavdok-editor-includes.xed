@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xed:template xmlns:xed="http://www.mycore.de/xeditor" xmlns:mir="http://www.mycore.de/mir">
+
+  <xed:param name="host" default="standalone" />
+
+  <!-- TODO: Replace once the collapse feature is available in MIR -->
+  <xed:template id="abstract.repeated.collapsed">
+    <fieldset>
+      <legend class="mir-fieldset-legend mir-fieldset-collapsed">
+        <xed:output i18n="mir.abstract.text" />
+        <span class="fas fa-chevron-down expand-item" title="{i18n:mir.help.expand}" aria-hidden="true"></span>
+      </legend>
+      <div class="d-none">
+        <xed:repeat xpath="mods:abstract" min="1" max="3">
+          <div class="mir-fieldset-content">
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label text-right">
+                <xed:output i18n="mir.abstract.in" />
+              </label>
+              <div class="col-md-6">
+                <xed:bind xpath="@xml:lang" initially="de">
+                  <xed:include ref="lang.list" />
+                </xed:bind>
+              </div>
+              <mir:help-pmud help-text="{i18n:mir.help.abstract.language}" pmud="true" />
+            </div>
+            <mir:textfield xpath="@xlink:href" label="mir.abstract.aslink" help-text="{i18n:mir.help.abstract.aslink}" placeholder="{i18n:mir.placeholder.abstract.link}" />
+            <mir:htmlArea xpath="." label="mir.abstract.ortext" help-text="{i18n:mir.help.abstract.ortext}" rows="5" />
+          </div>
+        </xed:repeat>
+      </div>
+    </fieldset>
+  </xed:template>
+
+  <xed:template id="base_classification.list">
+    <select class="form-control form-control-inline bc-select">
+      <xed:choose>
+        <xed:when test="string-length(.) &gt; 0">
+          <option value="{.}" selected="">
+            <xed:output value="." />
+          </option>
+        </xed:when>
+        <xed:otherwise>
+          <option value="" selected="">
+            <xed:output value="" />
+          </option>
+        </xed:otherwise>
+      </xed:choose>
+    </select>
+  </xed:template>
+
+  <xed:template id="base_classification.search">
+    <xed:repeat xpath="mods:classification[@authorityURI='https://slavdok.slavistik-portal.de/classifications/base_classification'][@displayLabel='base_classification']" min="1" max="20" method="build">
+      <div class="form-group row {$xed-validation-marker}">
+        <label class="col-md-3 col-form-label text-right">
+          <xed:output i18n="project.form.label.base_classification" />
+        </label>
+        <div class="col-md-6">
+          <xed:bind xpath="@valueURIxEditor">
+            <div class="controls">
+              <xed:include ref="base_classification.list" />
+            </div>
+          </xed:bind>
+        </div>
+        <mir:help-pmud help-text="{i18n:project.help.base_classification}" pmud="true" />
+      </div>
+    </xed:repeat>
+  </xed:template>
+
+  <xed:template id="date.issued.required">
+    <mir:textfield xpath="mods:originInfo[@eventType='publication']/mods:dateIssued[@encoding='w3cdtf']" label="mir.date.issued.10" help-text="{i18n:mir.help.date.issued.10}" placeholder="{i18n:mir.placeholder.date}" class="required" required="true" required-i18n="mir.validation.date.issued" />
+  </xed:template>
+
+  <xed:template id="further_information">
+    <fieldset>
+      <legend class="mir-fieldset-legend">
+        <xed:output i18n="project.forms.further_information" />
+      </legend>
+      <div class="mir-fieldset-content">
+        <xed:include ref="rights" />
+        <xed:include ref="embargo.datetimepicker" />
+        <xed:include ref="institutes" />
+        <xed:include ref="comment" />
+      </div>
+    </fieldset>
+  </xed:template>
+
+  <xed:template id="further_information.without_embargo">
+    <fieldset>
+      <legend class="mir-fieldset-legend">
+        <xed:output i18n="project.forms.further_information" />
+      </legend>
+      <div class="mir-fieldset-content">
+        <xed:include ref="rights" />
+        <xed:include ref="institutes" />
+        <xed:include ref="comment" />
+      </div>
+    </fieldset>
+  </xed:template>
+
+  <xed:template id="further_information_with_copyrightMD">
+    <fieldset>
+      <legend class="mir-fieldset-legend">
+        <xed:output i18n="project.forms.further_information" />
+      </legend>
+      <div class="mir-fieldset-content">
+        <xed:include ref="rights" />
+        <xed:include ref="embargo.datetimepicker" />
+        <xed:include ref="copyrightMD" />
+        <xed:include ref="institutes" />
+        <xed:include ref="comment" />
+      </div>
+    </fieldset>
+  </xed:template>
+
+  <xed:template id="genres_upload_hint">
+    <xed:if test="$host='standalone'">
+      <div class="col-md-9 mb-3">
+        <xed:output i18n="project.forms.hint" />
+      </div>
+    </xed:if>
+  </xed:template>
+
+  <xed:template id="hosts_upload_hint">
+    <div class="col-md-9 pt-3" style="position: absolute;">
+      <xed:output i18n="project.forms.hint" />
+    </div>
+    <div class="mb-5 pt-1" />
+  </xed:template>
+
+  <xed:template id="identifier.issn.blog.relItemsearch">
+    <mir:relItemsearch searchengine="issn" genre="blog" responsefield="identifier.type.issn" xpath="mods:identifier[@type='issn']" label="mir.identifier.issn" help-text="{i18n:mir.help.identifier.issn}" />
+  </xed:template>
+
+  <xed:template id="language_classification">
+    <xed:repeat xpath="mods:classification[@authorityURI='https://slavdok.slavistik-portal.de/api/v2/classifications/language'][@displayLabel='language_classification']">
+      <div class="form-group row {$xed-validation-marker}">
+        <label class="col-md-3 col-form-label text-right">
+          <xed:output i18n="project.form.label.systematics" />
+        </label>
+        <div class="col-md-6">
+          <xed:bind xpath="@valueURIxEditor">
+            <select class="form-control form-control-inline">
+              <option value="">
+                <xed:output i18n="mir.select" />
+              </option>
+              <xed:include uri="xslStyle:items2options:classification:editor:-1:children:language_classification" />
+            </select>
+          </xed:bind>
+        </div>
+        <mir:help-pmud help-text="{i18n:project.help.language_classification}" pmud="true" />
+      </div>
+    </xed:repeat>
+  </xed:template>
+
+  <!-- TODO: Add row to <div class="form-group"> in MIR -->
+  <xed:template id="research.data.date.repeated.creation">
+    <xed:repeat xpath="mods:originInfo" min="1" max="6">
+      <div class="form-group row">
+        <div class="col-md-3">
+          <xed:bind xpath="@eventType" default="creation">
+            <select class="form-control form-control-inline date-select">
+              <option value="creation">
+                <xed:output i18n="mir.date.created" />
+              </option>
+              <option value="collection">
+                <xed:output i18n="mir.date.collected" />
+              </option>
+              <option value="publication">
+                <xed:output i18n="mir.date.issued.10" />
+              </option>
+              <option value="review">
+                <xed:output i18n="mir.date.reviewed" />
+              </option>
+              <option value="update">
+                <xed:output i18n="mir.date.updated" />
+              </option>
+            </select>
+          </xed:bind>
+        </div>
+        <mir:dateRangeInput xpath="mods:dateCreated[@encoding='w3cdtf']" class="datetimepicker date-changeable col-md-6" placeholder="{i18n:mir.placeholder.date}" type="creation" />
+        <mir:dateRangeInput xpath="mods:dateCaptured[@encoding='w3cdtf']" class="datetimepicker date-changeable d-none col-md-6" placeholder="{i18n:mir.placeholder.date}" type="collection" />
+        <mir:dateRangeInput xpath="mods:dateIssued[@encoding='w3cdtf']" class="datetimepicker date-changeable d-none col-md-6" placeholder="{i18n:mir.placeholder.date}" type="publication" />
+        <mir:dateRangeInput xpath="mods:dateOther[@type='reviewed'][@encoding='w3cdtf']" class="datetimepicker date-changeable d-none col-md-6" placeholder="{i18n:mir.placeholder.date}" type="review" />
+        <mir:dateRangeInput xpath="mods:dateModified[@encoding='w3cdtf']" class="datetimepicker date-changeable d-none col-md-6" placeholder="{i18n:mir.placeholder.date}" type="update" />
+        <mir:help-pmud help-text="{i18n:mir.help.date.repeated}" pmud="true" />
+      </div>
+    </xed:repeat>
+  </xed:template>
+
+  <xed:template id="sdnb.hidden">
+    <xed:bind xpath="mods:classification[@authority='sdnb']" initially="491.8">
+      <input id="sdnb" type="hidden" />
+    </xed:bind>
+  </xed:template>
+
+  <xed:template id="thesis.advisor.reviewer.extented.habil.repeated">
+    <xed:bind xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='aut']" />
+    <xed:bind xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='ths']" />
+    <xed:bind xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='rev']" />
+    <mir:person.repeated help-text="{i18n:mir.help.thesis.advisor.reviewer}">
+      <option value="aut">
+        <xed:output i18n="mir.role.thesis" />
+      </option>
+      <option value="aut" selected="selected">
+        <xed:output i18n="project.role.thesis.habilitand" />
+      </option>
+      <option value="ths">
+        <xed:output i18n="mir.role.advisor" />
+      </option>
+      <option value="rev">
+        <xed:output i18n="mir.role.reviewer" />
+      </option>
+    </mir:person.repeated>
+  </xed:template>
+
+  <xed:template id="thesis.advisor.reviewer.extented.repeated">
+    <xed:bind xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='aut']" />
+    <xed:bind xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='ths']" />
+    <xed:bind xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='rev']" />
+    <mir:person.repeated help-text="{i18n:mir.help.thesis.advisor.reviewer}">
+      <option value="aut">
+        <xed:output i18n="project.role.thesis.habilitand" />
+      </option>
+      <option value="aut">
+        <xed:output i18n="mir.role.thesis" />
+      </option>
+      <option value="ths">
+        <xed:output i18n="mir.role.advisor" />
+      </option>
+      <option value="rev">
+        <xed:output i18n="mir.role.reviewer" />
+      </option>
+    </mir:person.repeated>
+  </xed:template>
+
+  <xed:template id="thesis.advisor.reviewer.reduced.repeated">
+    <xed:bind xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='aut']" />
+    <xed:bind xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='ths']" />
+    <mir:person.repeated help-text="{i18n:mir.help.thesis.advisor.reviewer}">
+      <xed:include uri="xslStyle:items2options:classification:editor:-1:children:marcrelator" />
+    </mir:person.repeated>
+  </xed:template>
+
+</xed:template>
