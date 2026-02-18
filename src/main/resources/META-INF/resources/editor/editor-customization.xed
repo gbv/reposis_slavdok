@@ -341,27 +341,8 @@
   </xed:modify>
 
   <!-- ========== General overrides ========== -->
-  <xed:template id="blog_entry_link">
-    <mir:textfield
-      xpath="mods:location/mods:url[@access='raw object']"
-      label="mir.link.blog_entry"
-      help-text="{i18n:mir.help.link.blog_entry}"
-      class="required"
-      required="true"
-      required-i18n="mir.validation.link.blog_entry" />
-  </xed:template>
 
-  <xed:template id="blog_link.relItemsearch">
-    <mir:relItemsearch
-      searchengine="empty"
-      genre="blog"
-      responsefield="url.access.raw_object"
-      xpath="mods:location/mods:url[@access='raw object']"
-      label="mir.link.blog"
-      help-text="{i18n:mir.help.link.blog}" />
-  </xed:template>
-
-  <!-- TODO: Fix in mir missing help text  -->
+  <!-- Add help text  -->
   <xed:template id="identifier.isbn">
     <mir:textfield
       xpath="mods:identifier[@type='isbn']"
@@ -369,7 +350,7 @@
       help-text="{i18n:mir.help.identifier.isbn}" />
   </xed:template>
 
-  <!-- TODO: Fix in mir missing help text  -->
+  <!-- Add help text  -->
   <xed:template id="identifier.issn">
     <mir:textfield
       xpath="mods:identifier[@type='issn']"
@@ -377,7 +358,7 @@
       help-text="{i18n:mir.help.identifier.issn}" />
   </xed:template>
 
-  <!-- TODO: Fix wrong message property in mir -->
+  <!-- Make language label independent -->
   <xed:template id="language">
     <xed:repeat xpath="mods:language" max="5">
       <div class="form-group row {$xed-validation-marker}">
@@ -396,7 +377,7 @@
     </xed:repeat>
   </xed:template>
 
-  <!-- TODO: Replace once the collapse feature is available in MIR -->
+  <!-- Collapse the fieldset by default -->
   <xed:template id="openAIRE">
     <fieldset id="open-aire_box">
       <legend class="mir-fieldset-legend mir-fieldset-collapsed">
@@ -453,6 +434,7 @@
     <script type="text/javascript" src="{$WebApplicationBaseURL}js/mir/openaire.min.js" />
   </xed:template>
 
+  <!-- Add creator role -->
   <xed:template id="producer.speaker.repeated">
     <xed:bind
       xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='cre']" />
@@ -473,6 +455,7 @@
     </mir:person.repeated>
   </xed:template>
 
+  <!-- Disable required validation -->
   <xed:template id="sdnb.repeat">
     <xed:repeat xpath="mods:classification[@authority='sdnb'][@displayLabel='sdnb']" min="1" max="10" method="build">
       <div class="form-group row {$xed-validation-marker}">
@@ -493,20 +476,7 @@
     </xed:repeat>
   </xed:template>
 
-  <xed:template id="title.blog.relItemsearch">
-    <mir:relItemsearch
-      searchengine="title"
-      genre="blog"
-      responsefield="mods.title"
-      xpath="mods:titleInfo/mods:title"
-      label="mir.title.blog"
-      help-text="{i18n:mir.help.title.blog}"
-      class="required"
-      required="true"
-      required-i18n="mir.validation.blog.title" />
-  </xed:template>
-
-  <!-- overwrite: set field as required -->
+  <!-- Make this field required -->
   <xed:template id="title.proceedings.relItemsearch">
     <mir:relItemsearch
       searchengine="title"
