@@ -26,6 +26,7 @@
     <xed:include ref="abstract.repeated.collapsed" after="link.repeated" />
     <xed:include ref="base_classification.search" before="abstract.repeated.collapsed" />
     <xed:include ref="language_classification" after="base_classification.search" />
+    <xed:remove ref="related.item.other.search.of.all.items" />
   </xed:modify>
 
   <!-- ========== Host: Overrides ========== -->
