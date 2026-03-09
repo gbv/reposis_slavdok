@@ -4,7 +4,7 @@
   <xsl:include href="resource:xsl/layout-utils.xsl" />
   <xsl:include href="resource:xsl/response-utils.xsl" />
   <xsl:include href="xslInclude:solrResponse" />
-  <xsl:include href="resource:xsl/slavdok-user-rights.xsl" />
+  <xsl:include href="resource:xsl/slavdok-solr-utils.xsl" />
 
   <!-- Changed from find to select in order to work properly with the dashboard-->
   <xsl:param name="proxyBaseURL" select="concat($WebApplicationBaseURL, 'servlets/solr/', $solr-select-core)" />

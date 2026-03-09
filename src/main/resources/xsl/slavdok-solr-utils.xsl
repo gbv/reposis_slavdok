@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-  <xsl:variable name="is-admin" select="document('userobjectrights:isCurrentUserInRole:admin')/boolean='true'" />
-  <xsl:variable name="is-editor" select="document('userobjectrights:isCurrentUserInRole:editor')/boolean='true'" />
-  <xsl:variable name="is-submitter" select="document('userobjectrights:isCurrentUserInRole:submitter')/boolean='true'" />
+<xsl:stylesheet version="1.0"
+  xmlns:mcracl="xalan://org.mycore.common.xml.MCRXMLFunctions"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  exclude-result-prefixes="mcracl">
 
   <xsl:variable name="solr-find-core">
     <xsl:choose>
-      <xsl:when test="$is-admin or $is-editor">
+      <xsl:when test="mcracl:isCurrentUserInRole('admin') or mcracl:isCurrentUserInRole('editor')">
         <xsl:value-of select="'find'" />
       </xsl:when>
       <xsl:otherwise>
@@ -16,7 +16,11 @@
   </xsl:variable>
   <xsl:variable name="solr-select-core">
     <xsl:choose>
-      <xsl:when test="$is-admin or $is-editor or $is-submitter">
+      <xsl:when test="
+        mcracl:isCurrentUserInRole('admin')
+        or mcracl:isCurrentUserInRole('editor')
+        or mcracl:isCurrentUserInRole('submitter')
+      ">
         <xsl:value-of select="'select'" />
       </xsl:when>
       <xsl:otherwise>

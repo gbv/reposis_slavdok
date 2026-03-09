@@ -14,7 +14,7 @@
   <xsl:include href="mir-mods-utils.xsl" />
 
   <!-- START slavdok adjustments -->
-  <xsl:include href="resource:xsl/slavdok-user-rights.xsl" />
+  <xsl:include href="resource:xsl/slavdok-solr-utils.xsl" />
   <!-- END slavdok adjustments -->
 
   <xsl:key use="@id" name="rights" match="/mycoreobject/rights/right" />

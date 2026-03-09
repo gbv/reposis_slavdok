@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:stylesheet version="1.0"
+  xmlns:mcracl="xalan://org.mycore.common.xml.MCRXMLFunctions"
+  xmlns:mcri18n="xalan://org.mycore.services.i18n.MCRTranslation"
+  xmlns:mcrversion="xalan://org.mycore.common.MCRCoreVersion"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  exclude-result-prefixes="mcracl mcri18n mcrversion">
 
   <xsl:import href="resource:xsl/layout/mir-common-layout.xsl" />
-  <xsl:include href="resource:xsl/slavdok-user-rights.xsl" />
 
   <xsl:param name="MIR.Matomo" select="false" />
 
@@ -33,7 +37,7 @@
           <div class="searchBox order-3 order-sm-2 order-lg-3">
             <xsl:variable name="solr-core">
               <xsl:choose>
-                <xsl:when test="$is-admin or $is-editor">
+                <xsl:when test="mcracl:isCurrentUserInRole('admin') or mcracl:isCurrentUserInRole('editor')">
                   <xsl:value-of select="'find'" />
                 </xsl:when>
                 <xsl:otherwise>
@@ -47,16 +51,16 @@
               role="search">
               <input
                 name="condQuery"
-                placeholder="{document('i18n:mir.navsearch.placeholder')/i18n/text()}"
+                placeholder="{mcri18n:translate('mir.navsearch.placeholder')}"
                 class="form-control search-query"
                 id="searchInput"
                 type="text"
                 aria-label="Search" />
               <xsl:choose>
-                <xsl:when test="$is-admin or $is-editor">
+                <xsl:when test="mcracl:isCurrentUserInRole('admin') or mcracl:isCurrentUserInRole('editor')">
                   <input name="owner" type="hidden" value="createdby:*" />
                 </xsl:when>
-                <xsl:when test="not($CurrentUser='guest')">
+                <xsl:when test="not(mcracl:isCurrentUserGuestUser())">
                   <input name="owner" type="hidden" value="createdby:{$CurrentUser}" />
                 </xsl:when>
               </xsl:choose>
@@ -178,12 +182,12 @@
   </xsl:template>
 
   <xsl:template name="mir.powered_by">
-    <xsl:variable name="mcr-version" select="document('version:full')/version/text()" />
+    <xsl:variable name="version" select="concat('MyCoRe ', mcrversion:getCompleteVersion())" />
     <div id="powered_by">
       <a href="https://www.mycore.de">
         <img
           src="{$WebApplicationBaseURL}mir-layout/images/mycore_logo_small_invert.png"
-          title="{$mcr-version}"
+          title="{$version}"
           alt="powered by MyCoRe" />
       </a>
     </div>

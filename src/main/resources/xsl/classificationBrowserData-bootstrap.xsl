@@ -12,7 +12,7 @@
   <xsl:param name="ServletsBaseURL" />
   <xsl:param name="template" />
   <!-- START slavdok adjustments -->
-  <xsl:include href="resource:xsl/slavdok-user-rights.xsl" />
+  <xsl:include href="resource:xsl/slavdok-solr-utils.xsl" />
 
   <xsl:param name="MCR.classbrowser.folder.closed" select="'fas fa-expand'" />
   <xsl:param name="MCR.classbrowser.folder.open" select="'fas fa-compress'" />

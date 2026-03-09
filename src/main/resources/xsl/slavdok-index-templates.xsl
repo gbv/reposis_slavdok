@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:stylesheet version="1.0"
+  xmlns:mcri18n="xalan://org.mycore.services.i18n.MCRTranslation"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  exclude-result-prefixes="mcri18n">
 
-  <xsl:include href="resource:xsl/slavdok-user-rights.xsl" />
+  <xsl:include href="resource:xsl/slavdok-solr-utils.xsl" />
 
   <xsl:template match="recent-documents">
     <xsl:variable name="solr-uri" select="
@@ -17,7 +20,7 @@
       <div class="card-header">
         <h3 class="card-title slav-icon-headline">
           <i class="fas fa-arrow-right" aria-hidden="true" />
-          <xsl:value-of select="document('i18n:index.header.latestPublications')/i18n/text()" />
+          <xsl:value-of select="mcri18n:translate('index.header.latestPublications')" />
         </h3>
       </div>
       <div class="card-body">
@@ -33,7 +36,7 @@
         <div class="row">
           <div class="col-12 text-center">
             <a href="{concat('../servlets/solr/', $solr-find-core)}" class="btn btn-primary btn-sm">
-              <xsl:value-of select="document('i18n:index.button.furtherPublications')/i18n/text()" />
+              <xsl:value-of select="mcri18n:translate('index.button.furtherPublications')" />
             </a>
           </div>
         </div>
@@ -50,7 +53,7 @@
       <div class="input-group input-group-lg w-100">
         <input
           name="condQuery"
-          placeholder="{document('i18n:project.index_search.placeholder.default')/i18n/text()}"
+          placeholder="{mcri18n:translate('project.index_search.placeholder.default')}"
           class="form-control search-query"
           id="project-searchInput"
           type="text"

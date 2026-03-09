@@ -96,6 +96,7 @@ function initFieldsetCollapsing() {
 }
 
 function init() {
+  document.querySelector('form.searchfield_box')?.addEventListener('submit', ignoreEmptyFieldsOnSubmit);
   replaceMaskedEmails();
   fixLanguageMenus();
   initOpenAire();

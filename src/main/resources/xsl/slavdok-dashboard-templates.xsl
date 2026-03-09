@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:stylesheet version="1.0"
+  xmlns:mcracl="xalan://org.mycore.common.xml.MCRXMLFunctions"
+  xmlns:mcri18n="xalan://org.mycore.services.i18n.MCRTranslation"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  exclude-result-prefixes="mcracl mcri18n">
 
   <xsl:param name="CurrentUser" />
-  <xsl:include href="resource:xsl/slavdok-user-rights.xsl" />
+  <xsl:include href="resource:xsl/slavdok-solr-utils.xsl" />
 
   <xsl:template name="document-card">
     <xsl:param name="solr-query" />
     <xsl:param name="type" />
     <xsl:variable name="role">
       <xsl:choose>
-        <xsl:when test="$is-editor or $is-admin">
+        <xsl:when test="mcracl:isCurrentUserInRole('editor') or mcracl:isCurrentUserInRole('admin')">
           <xsl:value-of select="'admin'" />
         </xsl:when>
         <xsl:otherwise>
@@ -25,15 +29,7 @@
               <i class="fas fa-arrow-right" aria-hidden="true" />
               <span>
                 <xsl:value-of select="
-                  document(
-                    concat(
-                      'i18n:dashboard.header.',
-                      $role,
-                      '.',
-                      $type,
-                      '_documents'
-                    )
-                  )/i18n/text()
+                  mcri18n:translate(concat('dashboard.header.',$role,'.',$type,'_documents'))
                 " />
               </span>
             </h3>
@@ -61,7 +57,7 @@
                 href="../servlets/solr/select?{$solr-query}"
                 class="btn btn-primary btn-sm"
                 style="margin:auto; display:block; max-width:200px;">
-                <xsl:value-of select="document('i18n:dashboard.button.more')/i18n/text()" />
+                <xsl:value-of select="mcri18n:translate('dashboard.button.more')" />
               </a>
             </div>
           </div>
@@ -73,7 +69,7 @@
   <xsl:template match="published-documents">
     <xsl:variable name="solr-query">
       <xsl:choose>
-        <xsl:when test="$is-editor or $is-admin">
+        <xsl:when test="mcracl:isCurrentUserInRole('editor') or mcracl:isCurrentUserInRole('admin')">
           <xsl:value-of select="'q=state%3Apublished+AND+objectType%3Amods&amp;sort=created+desc'" />
         </xsl:when>
         <xsl:otherwise>
@@ -96,7 +92,7 @@
   <xsl:template match="unpublished-documents">
     <xsl:variable name="solr-query">
       <xsl:choose>
-        <xsl:when test="$is-editor or $is-admin">
+        <xsl:when test="mcracl:isCurrentUserInRole('editor') or mcracl:isCurrentUserInRole('admin')">
           <xsl:value-of select="
             concat(
               'q=state%3A%28state%3Asubmitted+OR+state%3Ablocked%29+AND+objectType%3Amods',
