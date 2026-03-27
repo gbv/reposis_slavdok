@@ -237,6 +237,12 @@
     </xed:bind>
   </xed:template>
 
+  <xed:template id="subject_indexing">
+    <xed:include ref="subject.simple.required" />
+    <xed:include ref="base_classification.search" />
+    <xed:include ref="language_classification" />
+  </xed:template>
+
   <xed:template id="thesis.advisor.reviewer.extented.habil.repeated">
     <xed:bind
       xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='aut']" />
