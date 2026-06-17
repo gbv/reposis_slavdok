@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-  <!--
-    XSL to transform XML output from MCRClassificationBrowser servlet to
-    HTML for client browser, which is loaded by AJAX. The browser sends
-    data of all child categories of the requested node.
-  -->
+<!--
+  XSL to transform XML output from MCRClassificationBrowser servlet to
+  HTML for client browser, which is loaded by AJAX. The browser sends
+  data of all child categories of the requested node.
+-->
 
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-                xmlns:i18n="xalan://org.mycore.services.i18n.MCRTranslation"
-                xmlns:mcrxsl="xalan://org.mycore.common.xml.MCRXMLFunctions"
-  xmlns:xalan="http://xml.apache.org/xalan" exclude-result-prefixes="xalan i18n mcrxsl">
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:i18n="xalan://org.mycore.services.i18n.MCRTranslation"
+  xmlns:xalan="http://xml.apache.org/xalan" exclude-result-prefixes="xalan i18n">
   <xsl:param name="WebApplicationBaseURL" />
   <xsl:param name="ServletsBaseURL" />
   <xsl:param name="template" />
+  <!-- START slavdok adjustments -->
+  <xsl:include href="resource:xsl/slavdok-solr-utils.xsl" />
 
   <xsl:param name="MCR.classbrowser.folder.closed" select="'fas fa-expand'" />
   <xsl:param name="MCR.classbrowser.folder.open" select="'fas fa-compress'" />
   <xsl:param name="MCR.classbrowser.folder.leaf" select="'fas fa-square'" />
+  <!-- END slavdok adjustments -->
 
   <xsl:output method="xml" omit-xml-declaration="yes" />
 
@@ -29,9 +30,6 @@
     </xsl:variable>
     <xsl:variable name="maxResults">
       <xsl:value-of select="category[not(@numResults &lt; following-sibling::category/@numResults)]/@numResults" />
-    </xsl:variable>
-    <xsl:variable name="core">
-      <xsl:call-template name="getClassBrowserSolrCore" />
     </xsl:variable>
 
     <ul class="cbList">
@@ -52,9 +50,11 @@
           <xsl:apply-templates select="@numLinks" mode="formatCount">
             <xsl:with-param name="maxCount" select="$maxLinks" />
           </xsl:apply-templates>
-          <a onclick="return startSearch('{$ServletsBaseURL}solr{$core}?','{@query}','{../@webpage}','{../@parameters}');" href="{$ServletsBaseURL}solr{$core}?{@query}&amp;mask={../@webpage}&amp;{../@parameters}">
+          <!-- START slavdok adjustments -->
+          <a onclick="return startSearch('{$ServletsBaseURL}solr{$solr-select-core}?','{@query}','{../@webpage}','{../@parameters}');" href="{$ServletsBaseURL}solr{$core}?{@query}&amp;mask={../@webpage}&amp;{../@parameters}">
             <xsl:value-of select="label" />
           </a>
+          <!-- END slavdok adjustments -->
           <xsl:if test="uri">
             <xsl:text> </xsl:text>
             <a href="{uri}" class="cbURI">
@@ -91,19 +91,5 @@
       <xsl:value-of select="concat('[',$cntString,']')" />
     </span>
   </xsl:template>
-
-
-  <xsl:template name="getClassBrowserSolrCore">
-    <xsl:choose>
-      <xsl:when test="mcrxsl:isCurrentUserInRole('editor') or mcrxsl:isCurrentUserInRole('admin') or mcrxsl:isCurrentUserInRole('submitter')">
-        <xsl:text>/select</xsl:text>
-      </xsl:when>
-      <xsl:otherwise>
-        <xsl:text>/selectPublic</xsl:text>
-      </xsl:otherwise>
-    </xsl:choose>
-  </xsl:template>
-
-
 
 </xsl:stylesheet>

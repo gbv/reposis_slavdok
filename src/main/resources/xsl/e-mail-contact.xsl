@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   <xsl:output method="xml" encoding="UTF-8" />
   <xsl:param name="MCR.mir-module.EditorMail" />

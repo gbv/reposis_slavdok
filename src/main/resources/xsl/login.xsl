@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE xsl:stylesheet [
   <!ENTITY html-output SYSTEM "xsl/xsl-output-html.fragment">
-]>
+  ]>
 
 <!-- ============================================== -->
 <!-- $Revision: 1.4 $ $Date: 2009/03/20 10:42:33 $ -->
@@ -29,18 +29,23 @@
 + -->
 
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:i18n="xalan://org.mycore.services.i18n.MCRTranslation"
-  xmlns:encoder="xalan://java.net.URLEncoder" exclude-result-prefixes="xlink encoder i18n">
+  xmlns:encoder="xalan://java.net.URLEncoder" exclude-result-prefixes="xlink encoder i18n"
+>
   &html-output;
   <xsl:include href="MyCoReLayout.xsl" />
   <xsl:param name="FormTarget" select="concat($ServletsBaseURL,'MCRLoginServlet')" />
 
+  <!-- START slavdok adjustments -->
   <xsl:variable name="PageTitle" select="i18n:translate('project.login.title')" />
+  <!-- END slavdok adjustments -->
 
   <xsl:template match="/login">
+    <!-- START slavdok adjustments -->
     <head>
       <meta name="title" content="{i18n:translate('project.login.title')}" />
       <meta name="description" content="{i18n:translate('project.login.description')}" />
     </head>
+    <!-- END slavdok adjustments -->
     <!-- +
     | There are three possible error-conditions: wrong password, unknown user and disabled
     | user. If one of these conditions occured, the corresponding information will be
@@ -82,9 +87,14 @@
             </button>
           </xsl:otherwise>
         </xsl:choose>
+        <!-- START slavdok adjustments -->
         <div class="mt-5">
-          <xsl:value-of select="i18n:translate('component.user2.registration.hint')" />
-          <a href='../authorization/new-author.xed?action=register'> <xsl:value-of select="i18n:translate('component.user2.registration.linkText')" /></a>.</div>
+          <xsl:value-of select="concat(i18n:translate('component.user2.registration.hint'), ' ')" />
+          <a href='../authorization/new-author.xed?action=register'>
+            <xsl:value-of select="i18n:translate('component.user2.registration.linkText')" />
+          </a>.
+        </div>
+        <!-- END slavdok adjustments -->
       </div>
     </form>
   </xsl:template>

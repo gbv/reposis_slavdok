@@ -17,6 +17,9 @@
   <xsl:param name="page" />
   <xsl:param name="breadCrumb" />
   <xsl:param name="MCR.Metadata.Languages" select="'de'" />
+  <xsl:param name="mcruser" select="document('user:current')/user"/>
+  <xsl:param name="MIR.Layout.usermenu.realname.enabled" select="'false'"/>
+
   <xsl:include href="layout/mir-layout-utils.xsl" />
   <xsl:include href="resource:xsl/layout/mir-navigation.xsl" />
   <xsl:include href="resource:xsl/mir-utils.xsl" />
@@ -38,10 +41,20 @@
     </xsl:choose>
   </xsl:variable>
 
+
   <xsl:template name="mir.loginMenu">
+    <!-- START slavdok adjustments -->
     <!-- SLAV-28 and SLAV-41 : go to dashboard after login  -->
-    <xsl:variable xmlns:encoder="xalan://java.net.URLEncoder" name="loginURL"
-      select="concat( $ServletsBaseURL, 'MCRLoginServlet',$HttpSession,'?url=', encoder:encode( string(  '../content/dashboard.xml' ) ) )" />
+    <xsl:variable xmlns:encoder="xalan://java.net.URLEncoder" name="loginURL" select="
+      concat(
+        $ServletsBaseURL,
+        'MCRLoginServlet',
+        $HttpSession,
+        '?url=',
+        encoder:encode(concat($WebApplicationBaseURL ,'content/dashboard.xml'))
+      )
+    " />
+    <!-- END slavdok adjustments -->
     <xsl:choose>
       <xsl:when test="contains($RequestURL, 'MCRLoginServlet') and mcrxsl:isCurrentUserGuestUser()"></xsl:when>
       <xsl:when test="mcrxsl:isCurrentUserGuestUser()">
@@ -60,7 +73,24 @@
           </xsl:if>
           <a id="currentUser" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">
             <strong>
-              <xsl:value-of select="$CurrentUser" />
+              <xsl:choose>
+                <xsl:when test="$MIR.Layout.usermenu.realname.enabled != 'true'">
+                  <xsl:value-of select="$mcruser/@name"/>
+                </xsl:when>
+                <xsl:otherwise>
+                  <xsl:choose>
+                    <xsl:when test="$mcruser/realName">
+                      <xsl:value-of select="$mcruser/realName"/>
+                    </xsl:when>
+                    <xsl:when test="$mcruser/eMail">
+                      <xsl:value-of select="$mcruser/eMail"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                      <xsl:value-of select="$mcruser/@name"/>
+                    </xsl:otherwise>
+                  </xsl:choose>
+                </xsl:otherwise>
+              </xsl:choose>
             </strong>
             <span class="caret" />
           </a>
@@ -82,10 +112,10 @@
     <xsl:variable name="langToken" select="exslt:node-set($availableLanguages)/token" />
     <xsl:if test="count($langToken) &gt; 1">
       <xsl:variable name="curLang" select="document(concat('language:',$CurrentLang))" />
-<!--       <language termCode="deu" biblCode="ger" xmlCode="de"> -->
-<!--         <label xml:lang="de">Deutsch</label> -->
-<!--         <label xml:lang="en">German</label> -->
-<!--       </language> -->
+      <!--       <language termCode="deu" biblCode="ger" xmlCode="de"> -->
+      <!--         <label xml:lang="de">Deutsch</label> -->
+      <!--         <label xml:lang="en">German</label> -->
+      <!--       </language> -->
       <li class="nav-item dropdown mir-lang">
         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" title="{i18n:translate('mir.language.change')}">
           <xsl:value-of select="$curLang/language/@xmlCode" />
@@ -191,7 +221,7 @@
                     <xsl:attribute name="href">
                       <xsl:call-template name="UrlAddSession">
                         <xsl:with-param name="url"
-                      select="concat($WebApplicationBaseURL,substring-after(@href,'/'))" />
+                          select="concat($WebApplicationBaseURL,substring-after(@href,'/'))" />
                       </xsl:call-template>
                     </xsl:attribute>
                     <xsl:choose>
@@ -279,6 +309,7 @@
     <script src="{$WebApplicationBaseURL}js/mir/sherpa.js"></script>
     <script src="{$WebApplicationBaseURL}modules/webtools/upload/js/upload-api.js"></script>
     <script src="{$WebApplicationBaseURL}modules/webtools/upload/js/upload-gui.js"></script>
+    <script src="{$WebApplicationBaseURL}js/mir/ror-search.min.js"/>
     <link rel="stylesheet" type="text/css" href="{$WebApplicationBaseURL}modules/webtools/upload/css/upload-gui.css" />
   </xsl:template>
 
@@ -307,7 +338,7 @@
               alert alert-dismissible fade show
             </xsl:attribute>
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">×</span></button>
+              <span aria-hidden="true">×</span></button>
             <span aria-hidden="true"><xsl:value-of select="i18n:translate($XSL.Status.Message)" /></span>
           </div>
         </div>

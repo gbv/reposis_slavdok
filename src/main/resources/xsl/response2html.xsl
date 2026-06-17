@@ -1,26 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0"
-  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-  xmlns:mcrxsl="xalan://org.mycore.common.xml.MCRXMLFunctions"
-  exclude-result-prefixes="mcrxsl">
-
-  <xsl:include href="layout-utils.xsl" />
-  <xsl:include href="response-utils.xsl" />
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+  <xsl:include href="resource:xsl/layout-utils.xsl" />
+  <xsl:include href="resource:xsl/response-utils.xsl" />
   <xsl:include href="xslInclude:solrResponse" />
+  <xsl:include href="resource:xsl/slavdok-solr-utils.xsl" />
 
-  <xsl:variable name="Select">
-    <xsl:choose>
-      <xsl:when test="mcrxsl:isCurrentUserInRole('editor') or mcrxsl:isCurrentUserInRole('admin') or mcrxsl:isCurrentUserInRole('submitter')">
-        <xsl:value-of select="concat('servlets/solr/', 'select')"/>
-      </xsl:when>
-      <xsl:otherwise>
-        <xsl:value-of select="concat('servlets/solr/', 'selectPublic')" />
-      </xsl:otherwise>
-    </xsl:choose>
-  </xsl:variable>
-
-  <!-- Changed from find to select in order to work properly with the dashboard-->
-  <xsl:param name="proxyBaseURL" select="concat($WebApplicationBaseURL, $Select)" />
+  <!-- Changed from find to select in order to work properly with the dashboard -->
+  <xsl:param name="proxyBaseURL" select="concat($WebApplicationBaseURL, 'servlets/solr/', $solr-select-core)" />
 
   <xsl:template match="/">
     <div>

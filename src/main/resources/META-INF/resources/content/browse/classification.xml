@@ -1,40 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE MyCoReWebPage>
-
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE MyCoReWebPage>
 <MyCoReWebPage>
-
-    <section xml:lang="de">
-        <head>
-            <meta name="title" content="SlavDok - Suche nach Systematik"/>
-            <meta name="description" content="SlavDok - Suche nach Systematik im Dokumentenserver"/>
-        </head>
-    </section>
-    <section xml:lang="en">
-        <head>
-            <meta name="title" content="SlavDok - Search for systematics"/>
-            <meta name="description" content="SlavDok - Search for systematics in the document server"/>
-        </head>
-    </section>
-
-    <section i18n="browse.language_classification.title" xml:lang="all">
-        <div class="row">
-            <div class="col-md-8" lang="de">
-                <h3>
-                    <i18n key="browse.language_classification.title"/>
-                </h3>
-                <classificationbrowser classification="language_classification"
-                                       objecttype="mods"
-                                       restriction="+category.top:&quot;state:published&quot;"
-                                       field="category.top"
-                                       countresults="true"
-                                       addclassid="true"
-                                       emptyleaves="true"
-                                       style="bootstrap"
-                                       parameters="sort=mods.dateIssued+desc"
-                                       addParameter="XSL.template=template_mir"
-                />
-            </div>
-        </div>
-    </section>
-
+  <section xml:lang="de">
+    <head>
+      <meta name="title" content="SlavDok - Suche nach Systematik" />
+      <meta name="description" content="SlavDok - Suche nach Systematik im Dokumentenserver" />
+    </head>
+  </section>
+  <section xml:lang="en">
+    <head>
+      <meta name="title" content="SlavDok - Search for systematics" />
+      <meta name="description" content="SlavDok - Search for systematics in the document server" />
+    </head>
+  </section>
+  <section i18n="browse.language_classification.title" xml:lang="all">
+    <div class="row">
+      <div class="col-md-8" lang="de">
+        <h3>
+          <i18n key="browse.language_classification.title" />
+        </h3>
+        <classificationbrowser
+          classification="language_classification"
+          objecttype="mods"
+          restriction="+category.top:&quot;state:published&quot;"
+          field="category.top"
+          countresults="true"
+          addclassid="true"
+          emptyleaves="true"
+          style="bootstrap"
+          parameters="sort=mods.dateIssued+desc"
+          addParameter="XSL.template=template_mir" />
+      </div>
+    </div>
+  </section>
 </MyCoReWebPage>

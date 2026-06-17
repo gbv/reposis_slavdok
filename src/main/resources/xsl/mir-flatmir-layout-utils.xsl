@@ -1,31 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0"
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:i18n="xalan://org.mycore.services.i18n.MCRTranslation"
-    xmlns:mcrver="xalan://org.mycore.common.MCRCoreVersion"
-    xmlns:mcrxsl="xalan://org.mycore.common.xml.MCRXMLFunctions"
-    exclude-result-prefixes="i18n mcrver mcrxsl">
+  xmlns:mcracl="xalan://org.mycore.common.xml.MCRXMLFunctions"
+  xmlns:mcri18n="xalan://org.mycore.services.i18n.MCRTranslation"
+  xmlns:mcrversion="xalan://org.mycore.common.MCRCoreVersion"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  exclude-result-prefixes="mcracl mcri18n mcrversion">
 
   <xsl:import href="resource:xsl/layout/mir-common-layout.xsl" />
+
   <xsl:param name="MIR.Matomo" select="false" />
 
   <xsl:template name="mir.navigation">
-
     <div class="mir-main-nav">
       <div class="container container-no-padding">
         <nav class="navbar navbar-expand-lg navbar-dark">
-
           <button
-                  class="navbar-toggler order-1"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#mir-main-nav__entries"
-                  aria-controls="mir-main-nav__entries"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation">
+            class="navbar-toggler order-1"
+            type="button"
+            data-toggle="collapse"
+            data-target="#mir-main-nav__entries"
+            aria-controls="mir-main-nav__entries"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-
           <div
             id="mir-main-nav__entries"
             class="collapse navbar-collapse mir-main-nav__entries order-4 order-lg-2">
@@ -36,34 +34,33 @@
               <xsl:call-template name="mir.basketMenu" />
             </ul>
           </div>
-
           <div class="searchBox order-3 order-sm-2 order-lg-3">
-            <xsl:variable name="Find">
+            <xsl:variable name="solr-core">
               <xsl:choose>
-                <xsl:when test="mcrxsl:isCurrentUserInRole('editor') or mcrxsl:isCurrentUserInRole('admin')">
-                  <xsl:copy-of select="concat('servlets/solr/', 'find')"/>
+                <xsl:when test="mcracl:isCurrentUserInRole('admin') or mcracl:isCurrentUserInRole('editor')">
+                  <xsl:value-of select="'find'" />
                 </xsl:when>
                 <xsl:otherwise>
-                  <xsl:copy-of select="concat('servlets/solr/', 'findPublic')" />
+                  <xsl:value-of select="'findPublic'" />
                 </xsl:otherwise>
               </xsl:choose>
             </xsl:variable>
             <form
-                    action="{$WebApplicationBaseURL}{$Find}"
-                    class="searchfield_box form-inline my-2 my-lg-0"
-                    role="search">
+              action="{concat($WebApplicationBaseURL, 'servlets/solr/', $solr-core)}"
+              class="searchfield_box form-inline my-2 my-lg-0"
+              role="search">
               <input
-                      name="condQuery"
-                      placeholder="{i18n:translate('mir.navsearch.placeholder')}"
-                      class="form-control search-query"
-                      id="searchInput"
-                      type="text"
-                      aria-label="Search" />
+                name="condQuery"
+                placeholder="{mcri18n:translate('mir.navsearch.placeholder')}"
+                class="form-control search-query"
+                id="searchInput"
+                type="text"
+                aria-label="Search" />
               <xsl:choose>
-                <xsl:when test="mcrxsl:isCurrentUserInRole('admin') or mcrxsl:isCurrentUserInRole('editor')">
+                <xsl:when test="mcracl:isCurrentUserInRole('admin') or mcracl:isCurrentUserInRole('editor')">
                   <input name="owner" type="hidden" value="createdby:*" />
                 </xsl:when>
-                <xsl:when test="not(mcrxsl:isCurrentUserGuestUser())">
+                <xsl:when test="not(mcracl:isCurrentUserGuestUser())">
                   <input name="owner" type="hidden" value="createdby:{$CurrentUser}" />
                 </xsl:when>
               </xsl:choose>
@@ -72,7 +69,6 @@
               </button>
             </form>
           </div>
-
           <div id="options_nav_box" class="mir-prop-nav order-2 order-sm-3 order-lg-4">
             <div class="container container-no-padding">
               <nav>
@@ -83,18 +79,21 @@
               </nav>
             </div>
           </div>
-
         </nav>
       </div>
     </div>
-
     <div id="header_box">
       <div class="clearfix container container-no-padding">
         <div class="project_logo_box">
           <div class="project_logo">
-            <a href="{concat($WebApplicationBaseURL,substring($loaded_navigation_xml/@hrefStartingPage,2),$HttpSession)}"
-               title="Home"
-               class="project-logo__link">
+            <xsl:variable name="link" select="
+              concat(
+                $WebApplicationBaseURL,
+                substring($loaded_navigation_xml/@hrefStartingPage,2),
+                $HttpSession
+              )
+            " />
+            <a href="{$link}" title="Home" class="project-logo__link">
               <span class="fid logo main">SlavDok</span>
               <span class="fid logo sub">Dokumentenserver</span>
             </a>
@@ -102,20 +101,16 @@
         </div>
       </div>
     </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-
   </xsl:template>
 
   <xsl:template name="mir.jumbotwo">
-
+    <!-- ignore -->
   </xsl:template>
 
   <xsl:template name="mir.footer">
     <div class="container container-no-padding">
       <div class="row">
         <div class="col-12 d-flex justify-content-center logo-section">
-
           <a
             class="sbb-logo-link logo-link"
             href="https://www.staatsbibliothek-berlin.de"
@@ -127,7 +122,6 @@
               src="{$WebApplicationBaseURL}/images/logo-sbb-grau.png"
               alt="Logo SBB" />
           </a>
-
           <a
             class="dfg-logo-link logo-link"
             href="https://www.dfg.de"
@@ -139,7 +133,6 @@
               src="{$WebApplicationBaseURL}/images/logo-dfg-grau.png"
               alt="Logo DFG" />
           </a>
-
           <a
             class="slavistik-logo-link logo-link"
             href="https://slavistik-portal.de/"
@@ -151,7 +144,6 @@
               src="{$WebApplicationBaseURL}/images/logo-slavistikportal-grau.png"
               alt="Logo Slavistik-Portal" />
           </a>
-
         </div>
       </div>
       <div class="row">
@@ -164,40 +156,41 @@
     </div>
   </xsl:template>
 
-  <xsl:template name="slavdok.generate_single_menu_entry">
+  <xsl:template name="project.generate_single_menu_entry">
     <xsl:param name="menuID" />
+    <xsl:variable name="menu-item" select="$loaded_navigation_xml/menu[@id=$menuID]/item" />
     <li class="nav-item">
-      <xsl:variable name="activeClass">
+      <xsl:variable name="active-class">
         <xsl:choose>
-          <xsl:when test="$loaded_navigation_xml/menu[@id=$menuID]/item[@href = $browserAddress ]">
-          <xsl:text>active</xsl:text>
+          <xsl:when test="$menu-item/@href = $browserAddress">
+            <xsl:text>active</xsl:text>
           </xsl:when>
           <xsl:otherwise>
             <xsl:text>not-active</xsl:text>
           </xsl:otherwise>
         </xsl:choose>
       </xsl:variable>
-      <a id="{$menuID}" href="{$WebApplicationBaseURL}{$loaded_navigation_xml/menu[@id=$menuID]/item/@href}" class="nav-link {$activeClass}" >
-        <xsl:choose>
-          <xsl:when test="$loaded_navigation_xml/menu[@id=$menuID]/item/label[lang($CurrentLang)] != ''">
-            <xsl:value-of select="$loaded_navigation_xml/menu[@id=$menuID]/item/label[lang($CurrentLang)]" />
-          </xsl:when>
-          <xsl:otherwise>
-            <xsl:value-of select="$loaded_navigation_xml/menu[@id=$menuID]/item/label[lang($DefaultLang)]" />
-          </xsl:otherwise>
-        </xsl:choose>
+      <xsl:variable name="full-url">
+        <xsl:call-template name="resolve-full-url">
+          <xsl:with-param name="link" select="$menu-item/@href" />
+        </xsl:call-template>
+      </xsl:variable>
+      <a id="{$menuID}" href="{$full-url}" class="nav-link {$active-class}">
+        <xsl:apply-templates select="$menu-item" mode="linkText" />
       </a>
     </li>
   </xsl:template>
 
   <xsl:template name="mir.powered_by">
-    <xsl:variable name="mcr_version" select="concat('MyCoRe ',mcrver:getCompleteVersion())" />
+    <xsl:variable name="version" select="concat('MyCoRe ', mcrversion:getCompleteVersion())" />
     <div id="powered_by">
-      <a href="http://www.mycore.de">
-        <img src="{$WebApplicationBaseURL}mir-layout/images/mycore_logo_small_invert.png" title="{$mcr_version}" alt="powered by MyCoRe" />
+      <a href="https://www.mycore.de">
+        <img
+          src="{$WebApplicationBaseURL}mir-layout/images/mycore_logo_small_invert.png"
+          title="{$version}"
+          alt="powered by MyCoRe" />
       </a>
     </div>
-
     <!-- Matomo -->
     <!-- #SLAVDOK-142 -->
     <xsl:if test="contains($MIR.Matomo, 'true')">
@@ -207,14 +200,49 @@
         _paq.push(['trackPageView']);
         _paq.push(['enableLinkTracking']);
         (function() {
-        var u="https://webstats.sbb.berlin/";
-        _paq.push(['setTrackerUrl', u+'matomo.php']);
-        _paq.push(['setSiteId', '97']);
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+          var u="https://webstats.sbb.berlin/";
+          _paq.push(['setTrackerUrl', u+'matomo.php']);
+          _paq.push(['setSiteId', '97']);
+          var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+          g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
         })();
       </script>
     </xsl:if>
+  </xsl:template>
+
+  <xsl:template name="resolve-full-url">
+    <xsl:param name="link" />
+    <xsl:param name="base-url" select="$WebApplicationBaseURL" />
+    <xsl:choose>
+      <xsl:when test="
+        starts-with($link,'http:')
+        or starts-with($link,'https:')
+        or starts-with($link,'mailto:')
+        or starts-with($link,'ftp:')
+      ">
+        <xsl:value-of select="$link" />
+      </xsl:when>
+      <xsl:when test="starts-with($link,'/')">
+        <xsl:choose>
+          <xsl:when test="substring($base-url, string-length($base-url), 1) = '/'">
+            <xsl:value-of select="concat(substring($base-url, 1, string-length($base-url) - 1), $link)" />
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:value-of select="concat($base-url, $link)" />
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:choose>
+          <xsl:when test="substring($base-url, string-length($base-url), 1) = '/'">
+            <xsl:value-of select="concat($base-url, $link)" />
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:value-of select="concat($base-url, '/', $link)" />
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
 </xsl:stylesheet>

@@ -8679,6 +8679,12 @@
       <label xml:lang="x-bibl" text="hmo" />
       <label xml:lang="x-term" text="hmo" />
     </category>
+    <category ID="hr">
+      <label xml:lang="de" text="Kroatisch" />
+      <label xml:lang="en" text="Croatian" />
+      <label xml:lang="x-bibl" text="hr" />
+      <label xml:lang="x-term" text="hr" />
+    </category>
     <category ID="fqs">
       <label xml:lang="en" text="Fas" />
       <label xml:lang="x-bibl" text="fqs" />
