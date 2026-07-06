@@ -51,7 +51,7 @@
             <xsl:with-param name="maxCount" select="$maxLinks" />
           </xsl:apply-templates>
           <!-- START slavdok adjustments -->
-          <a onclick="return startSearch('{$ServletsBaseURL}solr{$solr-select-core}?','{@query}','{../@webpage}','{../@parameters}');" href="{$ServletsBaseURL}solr{$core}?{@query}&amp;mask={../@webpage}&amp;{../@parameters}">
+          <a onclick="return startSearch('{$ServletsBaseURL}solr/{$solr-select-core}?','{@query}','{../@webpage}','{../@parameters}');" href="{$ServletsBaseURL}solr/{$solr-select-core}?{@query}&amp;mask={../@webpage}&amp;{../@parameters}">
             <xsl:value-of select="label" />
           </a>
           <!-- END slavdok adjustments -->
