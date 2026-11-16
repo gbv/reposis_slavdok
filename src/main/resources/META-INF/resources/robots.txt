@@ -4,6 +4,7 @@ Crawl-delay: 10
 Allow: /servlets/MCRFileNodeServlet/
 Allow: /rsc/sass/
 Allow: /rsc/locale/
+Allow: /sitelinks
 Allow: /rsc/jwt?*
 Allow: /api/v1/objects/
 Allow: /receive/*?XSL.Transformer=mods2csl*
